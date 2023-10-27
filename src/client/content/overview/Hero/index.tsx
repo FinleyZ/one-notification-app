@@ -151,7 +151,7 @@ function Hero() {
           </Button>
           <ListItemWrapper sx={{ mt: 5, mb: 2 }}>
             <NextJsAvatar>
-              <img src="/static/images/logo/next-js.svg" alt="NextJS" />
+              <img src="/static/image/logo/next-js.svg" alt="NextJS" />
             </NextJsAvatar>
             <Typography variant="h6">
               <b>Built with Next.js </b>
@@ -180,8 +180,7 @@ function Hero() {
           >
             <MuiAvatar>
               <img
-                // src="/static/images/logo/material-ui.svg"
-                src="src/client/logo/material-ui.svg"
+                src="/static/images/logo/material-ui.svg"
                 alt="MUI (Material-UI)"
               />
             </MuiAvatar>

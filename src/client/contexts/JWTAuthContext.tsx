@@ -9,7 +9,7 @@ interface AuthState {
   user: User | null;
 }
 
-interface AuthContextValue extends AuthState {
+export interface AuthContextValue extends AuthState {
   method: 'JWT';
   login: (email: string, password: string) => Promise<void>;
   logout: () => Promise<void>;

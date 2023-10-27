@@ -1,6 +1,6 @@
 import { subHours, subDays } from 'date-fns';
 import type { Mail, Tag } from 'src/client/models/mailbox';
-import { copy } from 'src/utils/copy';
+import { copy } from 'src/client/utils/copy';
 
 const tags: Tag[] = [
   {
