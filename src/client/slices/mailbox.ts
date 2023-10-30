@@ -5,7 +5,7 @@ import type { AppThunk } from 'src/client/store';
 import objectArray from 'src/client/utils/objectArray';
 import type { Mail, Tag } from 'src/client/models/mailbox';
 
-interface MailState {
+export interface MailState {
   mails: {
     byId: Record<string, Mail>;
     allIds: string[];
