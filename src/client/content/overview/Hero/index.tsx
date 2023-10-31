@@ -146,7 +146,6 @@ function Hero() {
             size="large"
             variant="contained"
           >
-            {/* i18n */}
             Login(demo)
           </Button>
           <ListItemWrapper sx={{ mt: 5, mb: 2 }}>

@@ -47,14 +47,14 @@ function Overview() {
             >
               <Box />
               <Box>
-                <Button
+                {/* <Button
                   component={Link}
                   href="/dashboards/reports"
                   variant="contained"
                   sx={{ ml: 2 }}
                 >
                   Live Preview
-                </Button>
+                </Button> */}
               </Box>
             </Box>
           </Box>
