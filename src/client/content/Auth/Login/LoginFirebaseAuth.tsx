@@ -56,7 +56,7 @@ export const LoginFirebaseAuth: FC = (props) => {
 
         if (isMountedRef()) {
           const backTo =
-            (router.query.backTo as string) || '/dashboards/reports';
+            (router.query.backTo as string) || '/dashboards/monitoring';
           router.push(backTo);
         }
       } catch (err) {

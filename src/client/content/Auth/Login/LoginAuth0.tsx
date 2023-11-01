@@ -22,7 +22,7 @@ export const LoginAuth0: FC = (props) => {
       await loginWithPopup();
 
       if (isMountedRef()) {
-        const backTo = (router.query.backTo as string) || '/dashboards/reports';
+        const backTo = (router.query.backTo as string) || '/dashboards/monitoring';
         router.push(backTo);
       }
     } catch (err) {
