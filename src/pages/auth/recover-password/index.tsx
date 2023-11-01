@@ -22,12 +22,12 @@ import BaseLayout from 'src/layouts/BaseLayout';
 import { TransitionProps } from '@mui/material/transitions';
 import { useRefMounted } from 'src/hooks/useRefMounted';
 import CloseIcon from '@mui/icons-material/Close';
-import { Guest } from 'src/components/Guest';
-import Link from 'src/components/Link';
+import { Guest } from 'src/client/components/Guest';
+import Link from 'src/client/components/Link';
 import { useRouter } from 'next/router';
 
 import { useTranslation } from 'react-i18next';
-import Logo from 'src/components/LogoSign';
+import Logo from 'src/client/components/LogoSign';
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 
 const Transition = forwardRef(function Transition(

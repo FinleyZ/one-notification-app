@@ -23,12 +23,12 @@ import { CheckboxWithLabel, TextField } from 'formik-mui';
 import * as Yup from 'yup';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
-import { Guest } from 'src/components/Guest';
-import Link from 'src/components/Link';
+import { Guest } from 'src/client/components/Guest';
+import Link from 'src/client/components/Link';
 
 import Head from 'next/head';
 import { useTranslation } from 'react-i18next';
-import Logo from 'src/components/LogoSign';
+import Logo from 'src/client/components/LogoSign';
 
 const MainContent = styled(Box)(
   () => `
