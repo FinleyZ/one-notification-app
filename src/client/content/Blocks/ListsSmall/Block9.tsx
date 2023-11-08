@@ -14,7 +14,7 @@ import {
   useTheme
 } from '@mui/material';
 
-import Text from 'src/components/Text';
+import Text from 'src/client/components/Text';
 
 import { useTranslation } from 'react-i18next';
 import KeyboardArrowRightTwoToneIcon from '@mui/icons-material/KeyboardArrowRightTwoTone';

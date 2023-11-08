@@ -101,7 +101,7 @@ const SidebarMenuItem: FC<SidebarMenuItemProps> = ({
       <NextLink href={link} passHref>
         <Button
           disableRipple
-          component="a"
+          component="button"
           className={clsx({ 'Mui-active': active })}
           onClick={closeSidebar}
           startIcon={Icon && <Icon />}
