@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import ExtendedSidebarLayout from 'src/layouts/ExtendedSidebarLayout';
-import { Authenticated } from 'src/components/Authenticated';
+import ExtendedSidebarLayout from 'src/client/layouts/ExtendedSidebarLayout';
+import { Authenticated } from 'src/client/components/Authenticated';
 import { useRouter } from 'next/router';
-import { useDispatch, useSelector } from 'src/store';
+import { useDispatch, useSelector } from 'src/client/store';
 
 import {
   Box,
@@ -16,10 +16,10 @@ import {
   useTheme,
   Drawer
 } from '@mui/material';
-import { MailboxResults } from 'src/content/Applications/Mailbox/Results';
-import { MailboxSingle } from 'src/content/Applications/Mailbox/Single';
-import { MailboxSidebar } from 'src/content/Applications/Mailbox/Sidebar';
-import { getTags, openSidebar, closeSidebar } from 'src/slices/mailbox';
+import { MailboxResults } from 'src/client/content/Applications/Mailbox/Results';
+import { MailboxSingle } from 'src/client/content/Applications/Mailbox/Single';
+import { MailboxSidebar } from 'src/client/content/Applications/Mailbox/Sidebar';
+import { getTags, openSidebar, closeSidebar } from 'src/client/slices/mailbox';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 // import MessageDrawer from '@/content/Applications/Mailbox/MessageDrawer';
 

@@ -14,11 +14,11 @@ import {
 import Head from 'next/head';
 import { Guest } from 'src/client/components/Guest';
 import { useAuth } from 'src/client/hooks/useAuth';
-import { RegisterAuth0 } from 'src/content/Auth/Register/RegisterAuth0';
-import { RegisterFirebaseAuth } from 'src/content/Auth/Register/RegisterFirebaseAuth';
-import { RegisterJWT } from 'src/content/Auth/Register/RegisterJWT';
-import { RegisterAmplify } from 'src/content/Auth/Register/RegisterAmplify';
-import BaseLayout from 'src/layouts/BaseLayout';
+import { RegisterAuth0 } from 'src/client/content/Auth/Register/RegisterAuth0';
+import { RegisterFirebaseAuth } from 'src/client/content/Auth/Register/RegisterFirebaseAuth';
+import { RegisterJWT } from 'src/client/content/Auth/Register/RegisterJWT';
+import { RegisterAmplify } from 'src/client/content/Auth/Register/RegisterAmplify';
+import BaseLayout from 'src/client/layouts/BaseLayout';
 import Link from 'src/client/components/Link';
 import { useRouter } from 'next/router';
 
@@ -27,7 +27,7 @@ import CheckCircleOutlineTwoToneIcon from '@mui/icons-material/CheckCircleOutlin
 import Scrollbar from 'src/client/components/Scrollbar';
 import Logo from 'src/client/components/LogoSign';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

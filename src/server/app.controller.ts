@@ -10,7 +10,7 @@ export class AppController {
   page()  {
     return {};
   }
-  // getHello(): string {
-  //   return this.appService.getHello();
-  // }
+  getHello(): string {
+    return this.appService.getHello();
+  }
 }
