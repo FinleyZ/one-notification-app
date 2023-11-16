@@ -98,6 +98,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
   const [state, dispatch] = useReducer(reducer, initialAuthState);
 
   useEffect(() => {
+    console.log('AuthProvider useEffect');
     const initialize = async (): Promise<void> => {
       try {
         auth0Client = new Auth0Client({
@@ -159,6 +160,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
   }, []);
 
   const loginWithPopup = async (options): Promise<void> => {
+    console.log('loginWithPopup');
     await auth0Client.loginWithPopup(options);
 
     const isAuthenticated = await auth0Client.isAuthenticated();
