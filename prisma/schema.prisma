@@ -1,0 +1,46 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  email     String  @unique
+  hash      String
+  firstName String?
+  LastName  String?
+
+  emailNotifications EmailNotifications[]
+
+  @@map("users")
+}
+
+// This "EmailNotifications" model is used to store the email notifications user has sent.
+model EmailNotifications {
+  id Int @id @default(autoincrement())
+
+  recipient   String
+  object      String
+  content     String
+  // emailDetails Json     // Storing recipient, subject, body, etc., as a JSON object
+  attachments Json
+
+  status      String   @default("pending") // possible values: pending, sent, failed, etc.
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  userId Int
+  user   User @relation(fields: [userId], references: [id])
+
+  @@map("email_notifications")
+}
