@@ -30,10 +30,10 @@ model EmailNotifications {
   id Int @id @default(autoincrement())
 
   recipient   String
-  object      String
+  subject      String
   content     String
   // emailDetails Json     // Storing recipient, subject, body, etc., as a JSON object
-  attachments Json
+  attachments Json?
 
   status      String   @default("pending") // possible values: pending, sent, failed, etc.
   createdAt   DateTime @default(now())

@@ -3,13 +3,15 @@ import { ConfigService } from '@nestjs/config';
 import { MailerService } from '@nestjs-modules/mailer';
 import { google } from 'googleapis';
 import { Options } from 'nodemailer/lib/smtp-transport';
-import { EmailDto } from '../auth/dto';
+import { EmailDto } from './dto/email.dto';
+import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
-export class EmailApiService {
+export class EmailApiService { 
   constructor(
     private readonly configService: ConfigService,
     private readonly mailerService: MailerService,
+    private prisma: PrismaService,
   ) {}
 
   private async setTransport() {
@@ -47,16 +49,15 @@ export class EmailApiService {
     this.mailerService.addTransporter('gmail', config);
   }
 
-  // public async sendMail(dto: EmailDto) {
-  public async sendMail() {
+  public async sendMail(dto: EmailDto) {
     await this.setTransport();
     this.mailerService
       .sendMail({
         transporterName: 'gmail',
-        to: 'reciver@mail.com', // list of receivers
-        from: 'robot.fin.one@gmail.com', // sender address
-        subject: 'My stupid code works', // Subject line
-        text: 'welcome', // plaintext body
+        to: dto.recipient,
+        from: 'robot.fin.one@gmail.com', // mocking for now 
+        subject: dto.subject, // Subject line
+        text: dto.content, // plaintext body
         // text: 'Hey hey hey, this is your first email!!!',
         // template: 'action',
         // context: {
