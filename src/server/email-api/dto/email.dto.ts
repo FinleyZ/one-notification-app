@@ -1,5 +1,5 @@
 import { User } from '@prisma/client';
-import { IsEmail, IsNotEmpty, IsString, IsJSON } from 'class-validator';
+import { IsEmail, IsNotEmpty, IsString, IsJSON, IsIn } from 'class-validator';
 
 
 export class EmailDto {
@@ -7,9 +7,9 @@ export class EmailDto {
     @IsNotEmpty()
     recipient: string;
   
-    @IsEmail()
-    @IsNotEmpty()
-    sender: User;
+    // @IsEmail()
+    // @IsNotEmpty()
+    // sender: User;
   
     @IsString()
     @IsNotEmpty()
@@ -18,9 +18,12 @@ export class EmailDto {
     @IsString()
     @IsNotEmpty()
     content: string;
+
+    // @IsString()
+    status?: string;
   
-    @IsJSON()
-    attachments: JSON;
+    // @IsJSON()
+    // attachments?: JSON;
   
     //may have to add template and context
   }

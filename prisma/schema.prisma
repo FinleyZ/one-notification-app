@@ -20,7 +20,7 @@ model User {
   firstName String?
   LastName  String?
 
-  emailNotifications EmailNotifications[]
+  // emailNotifications EmailNotifications[]
 
   @@map("users")
 }
@@ -39,8 +39,8 @@ model EmailNotifications {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  userId Int
-  user   User @relation(fields: [userId], references: [id])
+  // userId Int
+  // user   User @relation(fields: [userId], references: [id])
 
   @@map("email_notifications")
 }

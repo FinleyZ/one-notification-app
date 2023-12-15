@@ -6,6 +6,7 @@ import { Options } from 'nodemailer/lib/smtp-transport';
 import { EmailDto } from './dto/email.dto';
 import { PrismaService } from '../prisma/prisma.service';
 
+//https://blog.iamstarcode.com/how-to-send-emails-using-nestjs-nodemailer-smtp-gmail-and-oauth2
 @Injectable()
 export class EmailApiService { 
   constructor(
@@ -29,7 +30,7 @@ export class EmailApiService {
     const accessToken: string = await new Promise((resolve, reject) => {
       oauth2Client.getAccessToken((err, token) => {
         if (err) {
-          // console.log(err);
+          console.log(err);
           reject('Failed to create access token :(');
         }
         resolve(token);
@@ -49,28 +50,39 @@ export class EmailApiService {
     this.mailerService.addTransporter('gmail', config);
   }
 
+  //Save the email to the database
+  private async saveEmail(dto: EmailDto) {
+    await this.prisma.emailNotifications.create({
+      data: {
+        recipient: dto.recipient,
+        subject: dto.subject,
+        content: dto.content,
+      },
+    });
+  }
+
   public async sendMail(dto: EmailDto) {
     await this.setTransport();
     this.mailerService
       .sendMail({
         transporterName: 'gmail',
-        to: dto.recipient,
-        from: 'robot.fin.one@gmail.com', // mocking for now 
+        to: dto.recipient, // receiver
+        from: 'robot.fin.one@gmail.com', // sender address
         subject: dto.subject, // Subject line
         text: dto.content, // plaintext body
-        // text: 'Hey hey hey, this is your first email!!!',
-        // template: 'action',
-        // context: {
-        //     Data to bef sent to template engine..
-        //     code: 'Hey hey hey, this is your first email!!!',
-        // },
+        html: `<p>${dto.content}</p>`, // HTML body content
       })
       .then((success) => {
         console.log(success);
+        this.saveEmail(dto);
+        dto.status = 'sent';
       })
       .catch((err) => {
+        //need error handling here
         console.log('Failed to sent email :(');
         console.log(err);
+
+        dto.status = 'sent';
       });
   }
 }
