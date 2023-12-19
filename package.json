@@ -10,7 +10,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "npm build:next && npm build:nest",
+    "build": "npm run build:next && npm run build:nest",
     "build:next": "next build",
     "build:nest": "nest build --path tsconfig.server.json",
     "start:nest": "node ./dist/server/main.js",
