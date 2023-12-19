@@ -7,7 +7,7 @@ import {
   LinearProgress,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressInfo = styled(LinearProgress)(
@@ -41,7 +41,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.info.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -57,7 +57,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.alpha.black[10]};
         }
-    `
+    `,
 );
 
 const LinearProgressPrimary = styled(LinearProgress)(
@@ -73,7 +73,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 function Block3() {
@@ -88,7 +88,7 @@ function Block3() {
             pt: 2.5,
             pb: 2,
             px: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -97,13 +97,13 @@ function Block3() {
             flex={1}
             mb={1}
             sx={{
-              width: '100%'
+              width: '100%',
             }}
           >
             <Typography
               sx={{
                 color: `${theme.colors.primary.main}`,
-                pr: 1.5
+                pr: 1.5,
               }}
               variant="h3"
             >
@@ -124,7 +124,7 @@ function Block3() {
             pt: 2.5,
             pb: 2,
             px: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -133,13 +133,13 @@ function Block3() {
             flex={1}
             mb={1}
             sx={{
-              width: '100%'
+              width: '100%',
             }}
           >
             <Typography
               sx={{
                 color: `${theme.colors.success.main}`,
-                pr: 1.5
+                pr: 1.5,
               }}
               variant="h3"
             >
@@ -161,7 +161,7 @@ function Block3() {
             pb: 2,
             px: 2.5,
             flexGrow: 1,
-            background: `${theme.colors.gradients.orange1}`
+            background: `${theme.colors.gradients.orange1}`,
           }}
         >
           <Box
@@ -170,13 +170,13 @@ function Block3() {
             flex={1}
             mb={1}
             sx={{
-              width: '100%'
+              width: '100%',
             }}
           >
             <Typography
               sx={{
                 color: `${theme.colors.error.main}`,
-                pr: 1.5
+                pr: 1.5,
               }}
               variant="h3"
             >
@@ -190,7 +190,7 @@ function Block3() {
             variant="subtitle2"
             fontWeight="bold"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
             noWrap
           >
@@ -205,7 +205,7 @@ function Block3() {
             pb: 2,
             px: 2.5,
             flexGrow: 1,
-            background: `${theme.colors.gradients.blue3}`
+            background: `${theme.colors.gradients.blue3}`,
           }}
         >
           <Box
@@ -214,13 +214,13 @@ function Block3() {
             flex={1}
             mb={1}
             sx={{
-              width: '100%'
+              width: '100%',
             }}
           >
             <Typography
               sx={{
                 color: `${theme.colors.info.main}`,
-                pr: 1.5
+                pr: 1.5,
               }}
               variant="h3"
             >
@@ -233,7 +233,7 @@ function Block3() {
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
             noWrap
           >

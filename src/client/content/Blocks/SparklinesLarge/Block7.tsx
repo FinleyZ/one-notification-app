@@ -8,7 +8,7 @@ import {
   alpha,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -32,7 +32,7 @@ const CardBorderBottom = styled(Card)(
         border-radius: ${theme.general.borderRadiusLg};
         transform: scale(1.05);
     }
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -41,20 +41,20 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
   () => `
     position: relative;
     z-index: 7;
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -68,7 +68,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -80,7 +80,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 function Block7() {
@@ -91,30 +91,30 @@ function Block7() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.success.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.success.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -126,58 +126,58 @@ function Block7() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Orders',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
 
   const Box2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.error.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.error.main],
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -189,47 +189,47 @@ function Block7() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
   const Box2Data = [
     {
       name: 'Refunds',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6]
-    }
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6],
+    },
   ];
 
   const chart3Options: ApexOptions = {
     stroke: {
       curve: 'smooth',
-      width: [0, 5]
+      width: [0, 5],
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     colors: [alpha(theme.colors.primary.main, 0.4), theme.colors.primary.main],
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     labels: [
       '01 Aug 2021',
@@ -243,34 +243,34 @@ function Block7() {
       '09 Aug 2021',
       '10 Aug 2021',
       '11 Aug 2021',
-      '12 Aug 2021'
+      '12 Aug 2021',
     ],
     xaxis: {
-      type: 'datetime'
+      type: 'datetime',
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
 
   const chart3Data = [
     {
       name: 'Income',
       type: 'column',
-      data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160]
+      data: [440, 505, 414, 671, 227, 413, 201, 352, 752, 320, 257, 160],
     },
     {
       name: 'Expenses',
       type: 'line',
-      data: [231, 442, 335, 227, 433, 222, 117, 316, 242, 252, 162, 176]
-    }
+      data: [231, 442, 335, 227, 433, 222, 117, 316, 242, 252, 162, 176],
+    },
   ];
 
   return (
@@ -281,7 +281,7 @@ function Block7() {
           xs={12}
           lg={5}
           sx={{
-            display: 'flex'
+            display: 'flex',
           }}
         >
           <BoxComposed
@@ -291,26 +291,26 @@ function Block7() {
               width: '100%',
               position: 'relative',
               minHeight: '100%',
-              background: `${theme.colors.gradients.orange2}`
+              background: `${theme.colors.gradients.orange2}`,
             }}
           >
             <BoxComposedBg
               sx={{
                 opacity: 0.6,
-                background: `${theme.colors.gradients.blue1}`
+                background: `${theme.colors.gradients.blue1}`,
               }}
             />
             <BoxComposedBg
               sx={{
                 opacity: 0.4,
-                background: `${theme.colors.gradients.black2}`
+                background: `${theme.colors.gradients.black2}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.4,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/1.jpg")'
+                  'url("/static/images/placeholders/covers/1.jpg")',
               }}
             />
             <BoxComposedContent
@@ -324,7 +324,7 @@ function Block7() {
                 <Grid item xs={12}>
                   <CardBorderBottom
                     sx={{
-                      borderBottomColor: `${theme.colors.success.main}`
+                      borderBottomColor: `${theme.colors.success.main}`,
                     }}
                   >
                     <Box p={3}>
@@ -333,7 +333,7 @@ function Block7() {
                         variant="h1"
                         sx={{
                           color: `${theme.colors.success.main}`,
-                          fontSize: `${theme.typography.pxToRem(30)}`
+                          fontSize: `${theme.typography.pxToRem(30)}`,
                         }}
                       >
                         <CountUp
@@ -366,7 +366,7 @@ function Block7() {
                 <Grid item xs={12}>
                   <CardBorderBottom
                     sx={{
-                      borderBottomColor: `${theme.colors.error.main}`
+                      borderBottomColor: `${theme.colors.error.main}`,
                     }}
                   >
                     <Box p={3}>
@@ -375,7 +375,7 @@ function Block7() {
                         variant="h1"
                         sx={{
                           color: `${theme.colors.error.main}`,
-                          fontSize: `${theme.typography.pxToRem(30)}`
+                          fontSize: `${theme.typography.pxToRem(30)}`,
                         }}
                       >
                         <CountUp
@@ -415,7 +415,7 @@ function Block7() {
           lg={7}
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <Box p={3}>
@@ -426,7 +426,7 @@ function Block7() {
               <Typography
                 variant="subtitle2"
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(15)}`
+                  fontSize: `${theme.typography.pxToRem(15)}`,
                 }}
               >
                 {t("Check how you're doing financially for current month")}
@@ -447,7 +447,7 @@ function Block7() {
             p={3}
             sx={{
               textAlign: 'center',
-              background: `${theme.colors.alpha.black[5]}`
+              background: `${theme.colors.alpha.black[5]}`,
             }}
           >
             <Button
@@ -461,11 +461,11 @@ function Block7() {
 
                 '&:hover': {
                   transform: 'translateY(-2px)',
-                  boxShadow: `${theme.colors.shadows.primary}`
+                  boxShadow: `${theme.colors.shadows.primary}`,
                 },
                 '&:active': {
-                  boxShadow: 'none'
-                }
+                  boxShadow: 'none',
+                },
               }}
               variant="contained"
               startIcon={<PieChartTwoToneIcon />}

@@ -11,7 +11,7 @@ import {
   Button,
   styled,
   linearProgressClasses,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { Chart } from 'src/client/components/Chart';
 import type { ApexOptions } from 'apexcharts';
@@ -31,7 +31,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -47,7 +47,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressWarning = styled(LinearProgress)(
@@ -63,7 +63,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.warning.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -79,7 +79,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 function Block4() {
@@ -90,82 +90,82 @@ function Block4() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '50%'
-      }
+        columnWidth: '50%',
+      },
     },
     colors: [
       alpha(theme.colors.primary.main, 0.4),
       alpha(theme.colors.primary.main, 0.6),
       alpha(theme.colors.primary.main, 0.8),
-      alpha(theme.colors.primary.main, 1)
+      alpha(theme.colors.primary.main, 1),
     ],
 
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       width: 2,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: ['2018', '2019', '2020', '2021', '2022'],
     xaxis: {
       labels: {
-        show: true
+        show: true,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box2Data = [
     {
       name: 'Orders',
-      data: [1008, 940, 1010, 821, 1035]
+      data: [1008, 940, 1010, 821, 1035],
     },
     {
       name: 'Sales',
-      data: [648, 745, 897, 743, 635]
+      data: [648, 745, 897, 743, 635],
     },
     {
       name: 'Users',
-      data: [1030, 897, 463, 856, 285]
+      data: [1030, 897, 463, 856, 285],
     },
     {
       name: 'Customers',
-      data: [675, 386, 283, 897, 498]
-    }
+      data: [675, 386, 283, 897, 498],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         action={
           <Button
@@ -181,12 +181,12 @@ function Block4() {
       <Divider />
       <CardContent
         sx={{
-          p: 2
+          p: 2,
         }}
       >
         <Box
           sx={{
-            mb: 2
+            mb: 2,
           }}
         >
           <Chart
@@ -203,7 +203,7 @@ function Block4() {
               color="text.primary"
               variant="h4"
               sx={{
-                pb: 1
+                pb: 1,
               }}
             >
               {t('Orders')}
@@ -212,7 +212,7 @@ function Block4() {
             <Box
               display="flex"
               sx={{
-                mt: 0.5
+                mt: 0.5,
               }}
               alignItems="center"
               justifyContent="space-between"
@@ -231,7 +231,7 @@ function Block4() {
               color="text.primary"
               variant="h4"
               sx={{
-                pb: 1
+                pb: 1,
               }}
             >
               {t('Sales')}
@@ -240,7 +240,7 @@ function Block4() {
             <Box
               display="flex"
               sx={{
-                mt: 0.5
+                mt: 0.5,
               }}
               alignItems="center"
               justifyContent="space-between"
@@ -259,7 +259,7 @@ function Block4() {
               color="text.primary"
               variant="h4"
               sx={{
-                pb: 1
+                pb: 1,
               }}
             >
               {t('Users')}
@@ -268,7 +268,7 @@ function Block4() {
             <Box
               display="flex"
               sx={{
-                mt: 0.5
+                mt: 0.5,
               }}
               alignItems="center"
               justifyContent="space-between"
@@ -287,7 +287,7 @@ function Block4() {
               color="text.primary"
               variant="h4"
               sx={{
-                pb: 1
+                pb: 1,
               }}
             >
               {t('Customers')}
@@ -296,7 +296,7 @@ function Block4() {
             <Box
               display="flex"
               sx={{
-                mt: 0.5
+                mt: 0.5,
               }}
               alignItems="center"
               justifyContent="space-between"

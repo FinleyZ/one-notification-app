@@ -6,7 +6,7 @@ import {
   Typography,
   Avatar,
   circularProgressClasses,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ function Block2() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            p: 2
+            p: 2,
           }}
         >
           <Box display="inline-flex" position="relative">
@@ -37,7 +37,7 @@ function Block2() {
                 left: '50%',
                 top: '50%',
                 marginTop: '-21px',
-                marginLeft: '-21px'
+                marginLeft: '-21px',
               }}
             >
               <Avatar
@@ -46,7 +46,7 @@ function Block2() {
                   height: 42,
                   p: 0,
                   background: `${theme.colors.error.lighter}`,
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
               >
                 <ShowChartTwoToneIcon fontSize="small" />
@@ -55,7 +55,7 @@ function Block2() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.error.lighter
+                color: theme.colors.error.lighter,
               }}
               size={96}
               thickness={3}
@@ -70,8 +70,8 @@ function Block2() {
                 color: theme.colors.error.main,
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={3}
               variant="determinate"
@@ -91,7 +91,7 @@ function Block2() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            p: 2
+            p: 2,
           }}
         >
           <Box display="inline-flex" position="relative">
@@ -102,7 +102,7 @@ function Block2() {
                 left: '50%',
                 top: '50%',
                 marginTop: '-21px',
-                marginLeft: '-21px'
+                marginLeft: '-21px',
               }}
             >
               <Avatar
@@ -111,7 +111,7 @@ function Block2() {
                   height: 42,
                   p: 0,
                   background: `${theme.colors.info.lighter}`,
-                  color: `${theme.colors.info.main}`
+                  color: `${theme.colors.info.main}`,
                 }}
               >
                 <InsertChartTwoToneIcon fontSize="small" />
@@ -120,7 +120,7 @@ function Block2() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.info.lighter
+                color: theme.colors.info.lighter,
               }}
               size={96}
               thickness={3}
@@ -135,8 +135,8 @@ function Block2() {
                 color: theme.colors.info.main,
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={3}
               variant="determinate"
@@ -157,7 +157,7 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             p: 2,
-            background: `${theme.colors.gradients.blue1}`
+            background: `${theme.colors.gradients.blue1}`,
           }}
         >
           <Box display="inline-flex" position="relative">
@@ -168,7 +168,7 @@ function Block2() {
                 left: '50%',
                 top: '50%',
                 marginTop: '-21px',
-                marginLeft: '-21px'
+                marginLeft: '-21px',
               }}
             >
               <Avatar
@@ -178,7 +178,7 @@ function Block2() {
                   height: 42,
                   p: 0,
                   background: `${theme.colors.alpha.trueWhite[10]}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 <LiveHelpTwoToneIcon fontSize="small" />
@@ -187,7 +187,7 @@ function Block2() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.alpha.trueWhite[10]
+                color: theme.colors.alpha.trueWhite[10],
               }}
               size={96}
               thickness={3}
@@ -202,8 +202,8 @@ function Block2() {
                 color: theme.colors.alpha.trueWhite[70],
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={3}
               variant="determinate"
@@ -215,7 +215,7 @@ function Block2() {
               gutterBottom
               variant="h4"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('Issues')}
@@ -223,7 +223,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               142
@@ -237,7 +237,7 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             p: 2,
-            background: `${theme.colors.gradients.green2}`
+            background: `${theme.colors.gradients.green2}`,
           }}
         >
           <Box display="inline-flex" position="relative">
@@ -248,7 +248,7 @@ function Block2() {
                 left: '50%',
                 top: '50%',
                 marginTop: '-21px',
-                marginLeft: '-21px'
+                marginLeft: '-21px',
               }}
             >
               <Avatar
@@ -257,7 +257,7 @@ function Block2() {
                   height: 42,
                   p: 0,
                   background: `${theme.colors.alpha.trueWhite[10]}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 <PeopleAltTwoToneIcon fontSize="small" />
@@ -266,7 +266,7 @@ function Block2() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.alpha.trueWhite[10]
+                color: theme.colors.alpha.trueWhite[10],
               }}
               size={96}
               thickness={3}
@@ -281,8 +281,8 @@ function Block2() {
                 color: theme.colors.alpha.trueWhite[100],
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={3}
               variant="determinate"
@@ -294,7 +294,7 @@ function Block2() {
               gutterBottom
               variant="h4"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('Users')}
@@ -302,7 +302,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               14,345k

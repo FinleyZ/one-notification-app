@@ -5,7 +5,7 @@ export const JWT_EXPIRES_IN = 3600 * 24 * 2;
 export const sign = (
   payload: Record<string, any>,
   privateKey: string,
-  header: Record<string, any>
+  header: Record<string, any>,
 ) => {
   const now = new Date();
   header.expiresIn = new Date(now.getTime() + header.expiresIn);
@@ -15,10 +15,11 @@ export const sign = (
     Array.from(encodedPayload)
       .map((item, key) =>
         String.fromCharCode(
-          item.charCodeAt(0) ^ privateKey[key % privateKey.length].charCodeAt(0)
-        )
+          item.charCodeAt(0) ^
+            privateKey[key % privateKey.length].charCodeAt(0),
+        ),
       )
-      .join('')
+      .join(''),
   );
 
   return `${encodedHeader}.${encodedPayload}.${signature}`;
@@ -38,10 +39,11 @@ export const decode = (token: string): any => {
     Array.from(encodedPayload)
       .map((item, key) =>
         String.fromCharCode(
-          item.charCodeAt(0) ^ JWT_SECRET[key % JWT_SECRET.length].charCodeAt(0)
-        )
+          item.charCodeAt(0) ^
+            JWT_SECRET[key % JWT_SECRET.length].charCodeAt(0),
+        ),
       )
-      .join('')
+      .join(''),
   );
 
   if (verifiedSignature !== signature) {
@@ -53,7 +55,7 @@ export const decode = (token: string): any => {
 
 export const verify = (
   token: string,
-  privateKey: string
+  privateKey: string,
 ): Record<string, any> => {
   const [encodedHeader, encodedPayload, signature] = token.split('.');
   const header = JSON.parse(atob(encodedHeader));
@@ -68,10 +70,11 @@ export const verify = (
     Array.from(encodedPayload)
       .map((item, key) =>
         String.fromCharCode(
-          item.charCodeAt(0) ^ privateKey[key % privateKey.length].charCodeAt(0)
-        )
+          item.charCodeAt(0) ^
+            privateKey[key % privateKey.length].charCodeAt(0),
+        ),
       )
-      .join('')
+      .join(''),
   );
 
   if (verifiedSignature !== signature) {

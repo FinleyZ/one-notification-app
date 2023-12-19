@@ -7,7 +7,7 @@ import {
   CardActionArea,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ import ChevronRightTwoToneIcon from '@mui/icons-material/ChevronRightTwoTone';
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -40,7 +40,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .03;
           }
         }
-  `
+  `,
 );
 
 function Block7() {
@@ -56,7 +56,7 @@ function Block7() {
               p: 3,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
             }}
           >
             <Box display="flex">
@@ -66,8 +66,8 @@ function Block7() {
                   height: `${theme.spacing(5.5)}`,
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.dark
-                  )}`
+                    theme.colors.error.dark,
+                  )}`,
                 }}
               >
                 <AccountBoxTwoToneIcon />
@@ -84,13 +84,13 @@ function Block7() {
                       display: 'flex',
                       alignItems: 'center',
                       pr: 0.5,
-                      color: `${theme.colors.success.main}`
+                      color: `${theme.colors.success.main}`,
                     }}
                   >
                     <ArrowUpwardTwoToneIcon
                       fontSize="small"
                       sx={{
-                        mr: 0.2
+                        mr: 0.2,
                       }}
                     />
                     <span>65.44%</span>
@@ -108,7 +108,7 @@ function Block7() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            background: `${theme.colors.gradients.blue4}`
+            background: `${theme.colors.gradients.blue4}`,
           }}
         >
           <CardActionAreaWrapper
@@ -118,8 +118,8 @@ function Block7() {
               alignItems: 'center',
               justifyContent: 'space-between',
               '.MuiCardActionArea-focusHighlight': {
-                background: `${theme.colors.alpha.trueWhite[100]}`
-              }
+                background: `${theme.colors.alpha.trueWhite[100]}`,
+              },
             }}
           >
             <Box display="flex">
@@ -129,8 +129,8 @@ function Block7() {
                   height: `${theme.spacing(5.5)}`,
                   background: `${theme.colors.success.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.success.dark
-                  )}`
+                    theme.colors.success.dark,
+                  )}`,
                 }}
               >
                 <CompareArrowsTwoToneIcon />
@@ -138,7 +138,7 @@ function Block7() {
               <Box ml={2}>
                 <Typography
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[70]}`
+                    color: `${theme.colors.alpha.trueWhite[70]}`,
                   }}
                   gutterBottom
                   component="div"
@@ -148,7 +148,7 @@ function Block7() {
                 </Typography>
                 <Typography
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[100]}`
+                    color: `${theme.colors.alpha.trueWhite[100]}`,
                   }}
                   variant="h2"
                 >
@@ -161,20 +161,20 @@ function Block7() {
                       display: 'flex',
                       alignItems: 'center',
                       pr: 0.5,
-                      color: `${theme.colors.success.main}`
+                      color: `${theme.colors.success.main}`,
                     }}
                   >
                     <ArrowUpwardTwoToneIcon
                       fontSize="small"
                       sx={{
-                        mr: 0.2
+                        mr: 0.2,
                       }}
                     />
                     <span>54.28%</span>
                   </Typography>
                   <Typography
                     sx={{
-                      color: `${theme.colors.alpha.trueWhite[70]}`
+                      color: `${theme.colors.alpha.trueWhite[70]}`,
                     }}
                     variant="subtitle2"
                     noWrap
@@ -186,7 +186,7 @@ function Block7() {
             </Box>
             <ChevronRightTwoToneIcon
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             />
           </CardActionAreaWrapper>
@@ -201,9 +201,12 @@ function Block7() {
                     0 0.94rem 1.4rem ${alpha(theme.colors.success.main, 0.04)}, 
                     0 0.25rem 0.54rem ${alpha(
                       theme.colors.success.main,
-                      0.06
+                      0.06,
                     )}, 
-                    0 0.13rem 0.19rem ${alpha(theme.colors.success.main, 0.04)}`
+                    0 0.13rem 0.19rem ${alpha(
+                      theme.colors.success.main,
+                      0.04,
+                    )}`,
           }}
         >
           <CardActionAreaWrapper
@@ -211,7 +214,7 @@ function Block7() {
               p: 3,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
             }}
           >
             <Box display="flex">
@@ -222,8 +225,8 @@ function Block7() {
                   height: `${theme.spacing(5.5)}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.dark
-                  )}`
+                    theme.colors.primary.dark,
+                  )}`,
                 }}
               >
                 <AddAlertTwoToneIcon />
@@ -240,13 +243,13 @@ function Block7() {
                       display: 'flex',
                       alignItems: 'center',
                       pr: 0.5,
-                      color: `${theme.colors.error.main}`
+                      color: `${theme.colors.error.main}`,
                     }}
                   >
                     <ArrowDownwardTwoToneIcon
                       fontSize="small"
                       sx={{
-                        mr: 0.2
+                        mr: 0.2,
                       }}
                     />
                     <span>5.25%</span>

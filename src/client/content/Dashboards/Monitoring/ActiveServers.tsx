@@ -11,7 +11,7 @@ import {
   ListItemText,
   Typography,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import Label from 'src/client/components/Label';
@@ -28,7 +28,7 @@ const ListItemWrapper = styled(ListItem)(
   ({ theme }) => `
         border-radius: 0;
         padding: ${theme.spacing(2)};
-`
+`,
 );
 
 function ActiveServers() {
@@ -38,58 +38,58 @@ function ActiveServers() {
   const chartOptions: ApexOptions = {
     stroke: {
       curve: 'smooth',
-      width: [0, 5]
+      width: [0, 5],
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     markers: {
       hover: {
-        sizeOffset: 2
+        sizeOffset: 2,
       },
       shape: 'circle',
       size: 6,
       strokeWidth: 3,
       strokeOpacity: 1,
       strokeColors: theme.colors.error.dark,
-      colors: [theme.colors.alpha.white[100]]
+      colors: [theme.colors.alpha.white[100]],
     },
     colors: [theme.colors.warning.light, theme.colors.error.light],
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     states: {
       normal: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       hover: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       active: {
         filter: {
-          type: 'none'
-        }
-      }
+          type: 'none',
+        },
+      },
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 10,
-        columnWidth: '28%'
-      }
+        columnWidth: '28%',
+      },
     },
     labels: [
       'Jan',
@@ -103,58 +103,58 @@ function ActiveServers() {
       'Sep',
       'Oct',
       'Nov',
-      'Dec'
+      'Dec',
     ],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
+      show: false,
     },
     xaxis: {
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       labels: {
         style: {
-          colors: theme.palette.text.secondary
-        }
-      }
+          colors: theme.palette.text.secondary,
+        },
+      },
     },
     yaxis: {
       show: false,
       tickAmount: 6,
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       labels: {
         style: {
-          colors: theme.palette.text.secondary
-        }
-      }
-    }
+          colors: theme.palette.text.secondary,
+        },
+      },
+    },
   };
 
   const chartData = [
     {
       name: 'Completed',
       type: 'column',
-      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879]
+      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879],
     },
     {
       name: 'Cancelled',
       type: 'line',
-      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731]
-    }
+      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731],
+    },
   ];
 
   return (
@@ -169,7 +169,7 @@ function ActiveServers() {
                 sx={{
                   minWidth: '36px',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <DE title="Germany" />
@@ -183,7 +183,7 @@ function ActiveServers() {
 
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Label color="success">{t('active')}</Label>
@@ -193,7 +193,7 @@ function ActiveServers() {
                   color="text.secondary"
                   noWrap
                   sx={{
-                    pt: 0.5
+                    pt: 0.5,
                   }}
                 >
                   {t('Page Load')}:{' '}
@@ -209,7 +209,7 @@ function ActiveServers() {
                 sx={{
                   minWidth: '36px',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <US title="USA" />
@@ -223,7 +223,7 @@ function ActiveServers() {
 
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Label color="warning">{t('provisioning')}</Label>
@@ -233,7 +233,7 @@ function ActiveServers() {
                   color="text.secondary"
                   noWrap
                   sx={{
-                    pt: 0.5
+                    pt: 0.5,
                   }}
                 >
                   {t('Page Load')}:{' '}
@@ -249,7 +249,7 @@ function ActiveServers() {
                 sx={{
                   minWidth: '36px',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <ES title="Spain" />
@@ -263,7 +263,7 @@ function ActiveServers() {
 
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Label color="error">{t('high risk')}</Label>
@@ -273,7 +273,7 @@ function ActiveServers() {
                   color="text.secondary"
                   noWrap
                   sx={{
-                    pt: 0.5
+                    pt: 0.5,
                   }}
                 >
                   {t('Page Load')}:{' '}
@@ -289,7 +289,7 @@ function ActiveServers() {
                 sx={{
                   minWidth: '36px',
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <FR title="France" />
@@ -303,7 +303,7 @@ function ActiveServers() {
 
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Label color="error">{t('high risk')}</Label>
@@ -313,7 +313,7 @@ function ActiveServers() {
                   color="text.secondary"
                   noWrap
                   sx={{
-                    pt: 0.5
+                    pt: 0.5,
                   }}
                 >
                   {t('Page Load')}:{' '}
@@ -332,7 +332,7 @@ function ActiveServers() {
               p: 3,
               height: '100%',
               display: 'flex',
-              flexDirection: 'column'
+              flexDirection: 'column',
             }}
           >
             <Alert severity="warning">

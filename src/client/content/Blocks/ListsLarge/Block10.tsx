@@ -16,7 +16,7 @@ import {
   OutlinedInput,
   InputAdornment,
   FormControl,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Scrollbar from 'src/client/components/Scrollbar';
 
@@ -30,7 +30,7 @@ const AvatarGradient = styled(Avatar)(
   ({ theme }) => `
         background: ${theme.colors.gradients.blue1};
         color: ${theme.colors.alpha.trueWhite[100]};
-    `
+    `,
 );
 
 const DotLegend = styled('span')(
@@ -40,7 +40,7 @@ const DotLegend = styled('span')(
       height: 10px;
       display: inline-block;
       margin-right: ${theme.spacing(0.5)};
-  `
+  `,
 );
 
 const OutlinedInputWrapper = styled(OutlinedInput)(
@@ -50,7 +50,7 @@ const OutlinedInputWrapper = styled(OutlinedInput)(
       .MuiOutlinedInput-notchedOutline {
           border: 0;
       }
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -58,7 +58,7 @@ const ListWrapper = styled(List)(
       .MuiListItem-root:last-of-type + .MuiDivider-root {
           display: none;
       }
-  `
+  `,
 );
 
 function Block10() {
@@ -72,7 +72,7 @@ function Block10() {
       jobtitle: 'Senior Cost Accountant',
       company: 'Trudoo',
       avatar: '/static/images/avatars/1.jpg',
-      value: 65
+      value: 65,
     },
     {
       id: 2,
@@ -80,7 +80,7 @@ function Block10() {
       jobtitle: 'Associate Professor',
       company: 'Buzzdog',
       avatar: '/static/images/avatars/2.jpg',
-      value: 76
+      value: 76,
     },
     {
       id: 3,
@@ -88,7 +88,7 @@ function Block10() {
       jobtitle: 'Pharmacist',
       company: 'Yozio',
       avatar: '/static/images/avatars/3.jpg',
-      value: 54
+      value: 54,
     },
     {
       id: 4,
@@ -96,7 +96,7 @@ function Block10() {
       jobtitle: 'VP Product Management',
       company: 'Cogibox',
       avatar: '/static/images/avatars/4.jpg',
-      value: 23
+      value: 23,
     },
     {
       id: 5,
@@ -104,8 +104,8 @@ function Block10() {
       jobtitle: 'Social Worker',
       company: 'Babbleblab',
       avatar: '/static/images/avatars/5.jpg',
-      value: 16
-    }
+      value: 16,
+    },
   ];
 
   return (
@@ -121,7 +121,7 @@ function Block10() {
             variant="caption"
             fontWeight="bold"
             sx={{
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
           >
             {t('Messages')}
@@ -132,7 +132,7 @@ function Block10() {
           color="error"
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'left'
+            horizontal: 'left',
           }}
           variant="dot"
           overlap="circular"
@@ -148,7 +148,7 @@ function Block10() {
         alignItems="center"
         justifyContent="space-between"
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
       >
         <Button size="small" color="error">
@@ -175,7 +175,7 @@ function Block10() {
       <Divider />
       <Box
         sx={{
-          height: 210
+          height: 210,
         }}
       >
         <Scrollbar>
@@ -185,8 +185,8 @@ function Block10() {
                 <ListItem
                   sx={{
                     '&:hover': {
-                      background: `${theme.colors.alpha.black[5]}`
-                    }
+                      background: `${theme.colors.alpha.black[5]}`,
+                    },
                   }}
                   secondaryAction={
                     <Button
@@ -203,9 +203,9 @@ function Block10() {
                         '&:hover': {
                           backgroundColor: `${theme.colors.secondary.main}`,
                           color: `${theme.palette.getContrastText(
-                            theme.colors.secondary.main
-                          )}`
-                        }
+                            theme.colors.secondary.main,
+                          )}`,
+                        },
                       }}
                     >
                       {t('Add')}
@@ -214,13 +214,13 @@ function Block10() {
                 >
                   <ListItemAvatar
                     sx={{
-                      mr: 1
+                      mr: 1,
                     }}
                   >
                     <Avatar
                       sx={{
                         width: 50,
-                        height: 50
+                        height: 50,
                       }}
                       alt={item.name}
                       src={item.avatar}
@@ -230,13 +230,13 @@ function Block10() {
                     sx={{
                       flexGrow: 0,
                       maxWidth: '50%',
-                      flexBasis: '50%'
+                      flexBasis: '50%',
                     }}
                     disableTypography
                     primary={
                       <Typography
                         sx={{
-                          pb: 0.6
+                          pb: 0.6,
                         }}
                         color="text.primary"
                         variant="h5"
@@ -249,13 +249,13 @@ function Block10() {
                         <Box display="flex" alignItems="flex-start">
                           <DotLegend
                             style={{
-                              background: `${theme.colors.success.main}`
+                              background: `${theme.colors.success.main}`,
                             }}
                           />
                           <Typography
                             sx={{
                               fontSize: `${theme.typography.pxToRem(11)}`,
-                              lineHeight: 1
+                              lineHeight: 1,
                             }}
                             variant="body1"
                           >
@@ -276,7 +276,7 @@ function Block10() {
       <Box
         sx={{
           background: `${theme.colors.alpha.black[5]}`,
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         p={2}
       >

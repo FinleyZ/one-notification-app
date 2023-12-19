@@ -8,7 +8,7 @@ import {
   Button,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -22,7 +22,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const LinkHover = styled(Box)(
@@ -34,7 +34,7 @@ const LinkHover = styled(Box)(
     &:hover {
         transform: scale(1.1);
     }
-  `
+  `,
 );
 
 const Dot = styled(Box)(
@@ -54,7 +54,7 @@ const Dot = styled(Box)(
         transform: scale(1.3);
         box-shadow: 0 0 0 2px ${theme.colors.primary.main};
     }
-  `
+  `,
 );
 
 function Block3() {
@@ -66,14 +66,14 @@ function Block3() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <CardActions>
             <IconButton
               sx={{
                 p: 1,
-                borderRadius: 55
+                borderRadius: 55,
               }}
               size="small"
               color="error"
@@ -84,7 +84,7 @@ function Block3() {
           <CardContent
             sx={{
               p: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <LinkHover>
@@ -99,7 +99,7 @@ function Block3() {
             <Typography
               sx={{
                 pt: 2,
-                pb: 1
+                pb: 1,
               }}
               variant="h4"
             >
@@ -110,7 +110,7 @@ function Block3() {
               sx={{
                 mb: 2,
                 px: 2,
-                lineHeight: 1.5
+                lineHeight: 1.5,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -124,28 +124,28 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mt: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Box display="flex" alignItems="center" justifyContent="center">
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.blue2}`
+                  background: `${theme.colors.gradients.blue2}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.purple1}`
+                  background: `${theme.colors.gradients.purple1}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.error.main}`
+                  background: `${theme.colors.error.main}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.orange2}`
+                  background: `${theme.colors.gradients.orange2}`,
                 }}
               />
             </Box>
@@ -153,7 +153,7 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mb: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Button variant="contained" color="success">
@@ -165,14 +165,14 @@ function Block3() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <CardActions>
             <IconButton
               sx={{
                 p: 1,
-                borderRadius: 55
+                borderRadius: 55,
               }}
               size="small"
               color="error"
@@ -183,7 +183,7 @@ function Block3() {
           <CardContent
             sx={{
               p: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <LinkHover>
@@ -198,7 +198,7 @@ function Block3() {
             <Typography
               sx={{
                 pt: 2,
-                pb: 1
+                pb: 1,
               }}
               variant="h4"
             >
@@ -209,7 +209,7 @@ function Block3() {
               sx={{
                 mb: 2,
                 px: 2,
-                lineHeight: 1.5
+                lineHeight: 1.5,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -223,23 +223,23 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mt: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Box display="flex" alignItems="center" justifyContent="center">
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.black2}`
+                  background: `${theme.colors.gradients.black2}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.success.main}`
+                  background: `${theme.colors.success.main}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.info.main}`
+                  background: `${theme.colors.info.main}`,
                 }}
               />
             </Box>
@@ -247,7 +247,7 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mb: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Button variant="contained" color="success">
@@ -259,14 +259,14 @@ function Block3() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <CardActions>
             <IconButton
               sx={{
                 p: 1,
-                borderRadius: 55
+                borderRadius: 55,
               }}
               size="small"
               color="error"
@@ -277,7 +277,7 @@ function Block3() {
           <CardContent
             sx={{
               p: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <LinkHover>
@@ -292,7 +292,7 @@ function Block3() {
             <Typography
               sx={{
                 pt: 2,
-                pb: 1
+                pb: 1,
               }}
               variant="h4"
             >
@@ -303,7 +303,7 @@ function Block3() {
               sx={{
                 mb: 2,
                 px: 2,
-                lineHeight: 1.5
+                lineHeight: 1.5,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -317,28 +317,28 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mt: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Box display="flex" alignItems="center" justifyContent="center">
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.blue4}`
+                  background: `${theme.colors.gradients.blue4}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.purple3}`
+                  background: `${theme.colors.gradients.purple3}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.warning.main}`
+                  background: `${theme.colors.warning.main}`,
                 }}
               />
               <Dot
                 sx={{
-                  background: `${theme.colors.gradients.pink1}`
+                  background: `${theme.colors.gradients.pink1}`,
                 }}
               />
             </Box>
@@ -346,7 +346,7 @@ function Block3() {
               sx={{
                 mx: 'auto',
                 mb: 2,
-                width: '60%'
+                width: '60%',
               }}
             />
             <Button variant="contained" color="success">

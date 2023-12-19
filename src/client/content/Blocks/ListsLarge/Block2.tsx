@@ -16,7 +16,7 @@ import {
   Tooltip,
   circularProgressClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -36,7 +36,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -44,7 +44,7 @@ const ListWrapper = styled(List)(
     .MuiDivider-root:first-of-type {
         display: none;
     }
-  `
+  `,
 );
 
 function Block2() {
@@ -58,7 +58,7 @@ function Block2() {
       jobtitle: 'UI Engineer, Apple Inc.',
       progress: 76,
       arrow: '',
-      value: '685'
+      value: '685',
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ function Block2() {
       jobtitle: 'Manager, Google Inc.',
       progress: 48,
       arrow: 'up',
-      value: '3,685'
+      value: '3,685',
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ function Block2() {
       jobtitle: 'Project Manager, Spotify',
       progress: 38,
       arrow: '',
-      value: '765'
+      value: '765',
     },
     {
       id: 4,
@@ -82,7 +82,7 @@ function Block2() {
       jobtitle: 'Senior Designer, Amazon Inc.',
       progress: 85,
       arrow: '',
-      value: '43,548'
+      value: '43,548',
     },
     {
       id: 5,
@@ -90,37 +90,37 @@ function Block2() {
       jobtitle: 'Senior Accountant, Microsoft',
       progress: 29,
       arrow: 'up',
-      value: '1,584'
-    }
+      value: '1,584',
+    },
   ];
 
   const Box1Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.warning.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.warning.main],
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     fill: {
       gradient: {
@@ -130,8 +130,8 @@ function Block2() {
         inverseColors: false,
         opacityFrom: 0.9,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     labels: [
       'Monday',
@@ -144,35 +144,35 @@ function Block2() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last 10 Years'
+      'Last 10 Years',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Top grossing products',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2]
-    }
+      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2],
+    },
   ];
 
   return (
     <Card
       sx={{
-        position: 'relative'
+        position: 'relative',
       }}
     >
       <CardActions>
@@ -182,14 +182,14 @@ function Block2() {
             sx={{
               backgroundColor: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
+                theme.colors.primary.main,
               )}`,
               '&:hover': {
-                backgroundColor: `${theme.colors.primary.dark}`
+                backgroundColor: `${theme.colors.primary.dark}`,
               },
               '.MuiSvgIcon-root': {
-                transition: `${theme.transitions.create(['color'])}`
-              }
+                transition: `${theme.transitions.create(['color'])}`,
+              },
             }}
           >
             <AddCircleTwoToneIcon />
@@ -200,7 +200,7 @@ function Block2() {
         <Typography
           variant="h3"
           sx={{
-            pb: 4
+            pb: 4,
           }}
         >
           {t('Top Grossing Products')}
@@ -209,7 +209,7 @@ function Block2() {
           fontWeight="bold"
           gutterBottom
           sx={{
-            fontSize: `${theme.typography.pxToRem(14)}`
+            fontSize: `${theme.typography.pxToRem(14)}`,
           }}
           component="h6"
           variant="caption"
@@ -222,7 +222,7 @@ function Block2() {
           </Text>
           <Typography
             sx={{
-              px: 0.5
+              px: 0.5,
             }}
             variant="h1"
           >
@@ -239,7 +239,7 @@ function Block2() {
         sx={{
           py: 1,
           px: 2,
-          fontSize: `${theme.typography.pxToRem(13)}`
+          fontSize: `${theme.typography.pxToRem(13)}`,
         }}
         component="h6"
         variant="caption"
@@ -248,7 +248,7 @@ function Block2() {
       </Typography>
       <Box
         sx={{
-          height: 263
+          height: 263,
         }}
       >
         <Scrollbar>
@@ -259,20 +259,20 @@ function Block2() {
                 <ListItem
                   sx={{
                     py: 2,
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
                       display: 'flex',
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                   >
                     <Box display="inline-flex" position="relative">
                       <CircularProgress
                         variant="determinate"
                         sx={{
-                          color: (theme) => theme.colors.alpha.black[10]
+                          color: (theme) => theme.colors.alpha.black[10],
                         }}
                         size={46}
                         thickness={2}
@@ -286,8 +286,8 @@ function Block2() {
                           left: -1,
                           top: -1,
                           [`& .${circularProgressClasses.circle}`]: {
-                            strokeLinecap: 'round'
-                          }
+                            strokeLinecap: 'round',
+                          },
                         }}
                         thickness={4}
                         variant="determinate"
@@ -299,12 +299,12 @@ function Block2() {
                     primary={<Text color="black">{item.username}</Text>}
                     primaryTypographyProps={{
                       variant: 'h5',
-                      noWrap: true
+                      noWrap: true,
                     }}
                     secondary={item.jobtitle}
                     secondaryTypographyProps={{
                       variant: 'subtitle2',
-                      noWrap: true
+                      noWrap: true,
                     }}
                   />
                   <Typography variant="subtitle1">${item.value}</Typography>
@@ -317,7 +317,7 @@ function Block2() {
                         height: 28,
                         p: 0,
                         background: `${theme.colors.error.lighter}`,
-                        color: `${theme.colors.error.main}`
+                        color: `${theme.colors.error.main}`,
                       }}
                     >
                       <KeyboardArrowDownTwoToneIcon />
@@ -331,7 +331,7 @@ function Block2() {
                         height: 28,
                         p: 0,
                         background: `${theme.colors.success.lighter}`,
-                        color: `${theme.colors.success.main}`
+                        color: `${theme.colors.success.main}`,
                       }}
                     >
                       <KeyboardArrowUpTwoToneIcon />
@@ -347,7 +347,7 @@ function Block2() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button

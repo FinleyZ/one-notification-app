@@ -12,7 +12,7 @@ import {
   styled,
   Tooltip,
   IconButton,
-  alpha
+  alpha,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,7 @@ const DotLegend = styled('span')(
       display: inline-block;
       margin-right: ${theme.spacing(0.8)};
       border: ${theme.colors.alpha.white[100]} solid 2px;
-  `
+  `,
 );
 
 const ListItemWrapper = styled(ListItem)(
@@ -67,7 +67,7 @@ const ListItemWrapper = styled(ListItem)(
             opacity: 1;
       }   
       }
-  `
+  `,
 );
 
 function Block6() {
@@ -79,14 +79,14 @@ function Block6() {
       <CardHeader
         sx={{
           p: 2,
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Pricing Plans')}
@@ -98,7 +98,7 @@ function Block6() {
         <ListItemWrapper
           sx={{
             alignItems: 'flex-start',
-            p: 3.15
+            p: 3.15,
           }}
         >
           <Box className="MuiActionButtons">
@@ -119,12 +119,12 @@ function Block6() {
           </Box>
           <ListItemAvatar
             sx={{
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <DotLegend
               style={{
-                background: `${theme.colors.success.main}`
+                background: `${theme.colors.success.main}`,
               }}
             />
           </ListItemAvatar>
@@ -139,14 +139,14 @@ function Block6() {
                 <Typography
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   noWrap
                   variant="subtitle2"
                 >
                   <PersonOutlineTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
@@ -160,7 +160,7 @@ function Block6() {
           />
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
             alignSelf="center"
           >
@@ -172,7 +172,7 @@ function Block6() {
         <ListItemWrapper
           sx={{
             alignItems: 'flex-start',
-            p: 3.15
+            p: 3.15,
           }}
         >
           <Box className="MuiActionButtons">
@@ -193,12 +193,12 @@ function Block6() {
           </Box>
           <ListItemAvatar
             sx={{
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <DotLegend
               style={{
-                background: `${theme.colors.warning.main}`
+                background: `${theme.colors.warning.main}`,
               }}
             />
           </ListItemAvatar>
@@ -213,14 +213,14 @@ function Block6() {
                 <Typography
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   noWrap
                   variant="subtitle2"
                 >
                   <PersonOutlineTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
@@ -234,7 +234,7 @@ function Block6() {
           />
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
             alignSelf="center"
           >
@@ -246,7 +246,7 @@ function Block6() {
         <ListItemWrapper
           sx={{
             alignItems: 'flex-start',
-            p: 3.15
+            p: 3.15,
           }}
         >
           <Box className="MuiActionButtons">
@@ -267,12 +267,12 @@ function Block6() {
           </Box>
           <ListItemAvatar
             sx={{
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <DotLegend
               style={{
-                background: `${theme.colors.primary.main}`
+                background: `${theme.colors.primary.main}`,
               }}
             />
           </ListItemAvatar>
@@ -287,14 +287,14 @@ function Block6() {
                 <Typography
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   noWrap
                   variant="subtitle2"
                 >
                   <PersonOutlineTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
@@ -308,7 +308,7 @@ function Block6() {
           />
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
             alignSelf="center"
           >

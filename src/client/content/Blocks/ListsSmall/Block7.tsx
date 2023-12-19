@@ -12,7 +12,7 @@ import {
   Divider,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -41,7 +41,7 @@ const IconButtonWrapper = styled(IconButton)(
             transform: scale(1.4);
         }
     }
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -51,7 +51,7 @@ const LabelWrapper = styled(Box)(
     text-transform: uppercase;
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.5, 1)};
-  `
+  `,
 );
 
 function Block7() {
@@ -81,14 +81,14 @@ function Block7() {
       <Divider />
       <Box
         sx={{
-          height: 350
+          height: 350,
         }}
       >
         <Scrollbar>
           <List disablePadding>
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -96,7 +96,7 @@ function Block7() {
                   mr: 2,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
@@ -105,7 +105,7 @@ function Block7() {
                     color: `${theme.colors.primary.main}`,
                     border: `${theme.colors.primary.main} solid 2px`,
                     width: 58,
-                    height: 58
+                    height: 58,
                   }}
                 >
                   <OndemandVideoTwoToneIcon />
@@ -118,7 +118,7 @@ function Block7() {
                     variant="h4"
                     sx={{
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     {t('Business')}
@@ -137,7 +137,7 @@ function Block7() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -145,7 +145,7 @@ function Block7() {
                   mr: 2,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
@@ -154,7 +154,7 @@ function Block7() {
                     color: `${theme.colors.primary.main}`,
                     border: `${theme.colors.primary.main} solid 2px`,
                     width: 58,
-                    height: 58
+                    height: 58,
                   }}
                 >
                   <AutoAwesomeMosaicTwoToneIcon />
@@ -167,7 +167,7 @@ function Block7() {
                     variant="h4"
                     sx={{
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     {t('Finance')}
@@ -176,7 +176,7 @@ function Block7() {
                       component="span"
                       sx={{
                         background: `${alpha(theme.colors.info.light, 0.2)}`,
-                        color: `${theme.colors.info.main}`
+                        color: `${theme.colors.info.main}`,
                       }}
                     >
                       {t('New')}
@@ -196,7 +196,7 @@ function Block7() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -204,7 +204,7 @@ function Block7() {
                   mr: 2,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
@@ -213,7 +213,7 @@ function Block7() {
                     color: `${theme.colors.primary.main}`,
                     border: `${theme.colors.primary.main} solid 2px`,
                     width: 58,
-                    height: 58
+                    height: 58,
                   }}
                 >
                   <EvStationTwoToneIcon />
@@ -226,7 +226,7 @@ function Block7() {
                     variant="h4"
                     sx={{
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     {t('Images')}
@@ -235,7 +235,7 @@ function Block7() {
                       component="span"
                       sx={{
                         background: `${alpha(theme.colors.error.light, 0.2)}`,
-                        color: `${theme.colors.error.main}`
+                        color: `${theme.colors.error.main}`,
                       }}
                     >
                       {t('Hot')}
@@ -255,7 +255,7 @@ function Block7() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -263,7 +263,7 @@ function Block7() {
                   mr: 2,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
@@ -272,7 +272,7 @@ function Block7() {
                     color: `${theme.colors.primary.main}`,
                     border: `${theme.colors.primary.main} solid 2px`,
                     width: 58,
-                    height: 58
+                    height: 58,
                   }}
                 >
                   <EvStationTwoToneIcon />
@@ -285,7 +285,7 @@ function Block7() {
                     variant="h4"
                     sx={{
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     {t('Finance')}
@@ -304,7 +304,7 @@ function Block7() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -312,7 +312,7 @@ function Block7() {
                   mr: 2,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
@@ -321,7 +321,7 @@ function Block7() {
                     color: `${theme.colors.primary.main}`,
                     border: `${theme.colors.primary.main} solid 2px`,
                     width: 58,
-                    height: 58
+                    height: 58,
                   }}
                 >
                   <ContactPhoneTwoToneIcon />
@@ -334,7 +334,7 @@ function Block7() {
                     variant="h4"
                     sx={{
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     {t('Accounts')}
@@ -343,7 +343,7 @@ function Block7() {
                       component="span"
                       sx={{
                         background: `${alpha(theme.colors.warning.light, 0.2)}`,
-                        color: `${theme.colors.warning.main}`
+                        color: `${theme.colors.warning.main}`,
                       }}
                     >
                       {t('In progress')}
@@ -367,13 +367,13 @@ function Block7() {
       <Box
         p={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
           sx={{
             textTransform: 'uppercase',
-            fontSize: `${theme.typography.pxToRem(12)}`
+            fontSize: `${theme.typography.pxToRem(12)}`,
           }}
           variant="contained"
           endIcon={<KeyboardArrowRightTwoToneIcon />}

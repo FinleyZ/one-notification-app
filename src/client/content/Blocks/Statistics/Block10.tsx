@@ -14,7 +14,7 @@ const DividerVertialPrimary = styled(Box)(
     position: absolute;
     top: 20%;
     background: ${theme.colors.primary.main};
-  `
+  `,
 );
 
 const DividerVertialSuccess = styled(Box)(
@@ -26,7 +26,7 @@ const DividerVertialSuccess = styled(Box)(
     position: absolute;
     top: 20%;
     background: ${theme.colors.success.main};
-  `
+  `,
 );
 
 const DividerVertialWarning = styled(Box)(
@@ -38,7 +38,7 @@ const DividerVertialWarning = styled(Box)(
     position: absolute;
     top: 20%;
     background: ${theme.colors.warning.main};
-  `
+  `,
 );
 
 const LabelPrimary = styled(Box)(
@@ -50,7 +50,7 @@ const LabelPrimary = styled(Box)(
       font-size: ${theme.typography.pxToRem(10)};
       padding: ${theme.spacing(0.5, 1.5)};
       color: ${theme.palette.primary.contrastText};
-  `
+  `,
 );
 
 const LabelSuccess = styled(Box)(
@@ -62,7 +62,7 @@ const LabelSuccess = styled(Box)(
       font-size: ${theme.typography.pxToRem(10)};
       padding: ${theme.spacing(0.5, 1.5)};
       color: ${theme.palette.success.contrastText};
-  `
+  `,
 );
 
 const LabelWarning = styled(Box)(
@@ -74,7 +74,7 @@ const LabelWarning = styled(Box)(
       font-size: ${theme.typography.pxToRem(10)};
       padding: ${theme.spacing(0.5, 1.5)};
       color: ${theme.palette.warning.contrastText};
-  `
+  `,
 );
 
 function Block5() {
@@ -87,17 +87,12 @@ function Block5() {
           sx={{
             overflow: 'visible',
             position: 'relative',
-            p: 2
+            p: 2,
           }}
           variant="outlined"
         >
           <DividerVertialPrimary />
-          <Link
-            color="text.primary"
-            variant="h4"
-            fontWeight="normal"
-            href="#"
-          >
+          <Link color="text.primary" variant="h4" fontWeight="normal" href="#">
             Presentation site design
           </Link>
           <Box mt={1.5} display="flex" alignItems="center">
@@ -106,7 +101,7 @@ function Block5() {
               <AccessTimeTwoToneIcon
                 sx={{
                   ml: 1,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 fontSize="small"
               />
@@ -120,17 +115,12 @@ function Block5() {
           sx={{
             overflow: 'visible',
             position: 'relative',
-            p: 2
+            p: 2,
           }}
           variant="outlined"
         >
           <DividerVertialSuccess />
-          <Link
-            color="text.primary"
-            variant="h4"
-            fontWeight="normal"
-            href="#"
-          >
+          <Link color="text.primary" variant="h4" fontWeight="normal" href="#">
             Create UI mockups
           </Link>
           <Box mt={1.5} display="flex" alignItems="center">
@@ -139,7 +129,7 @@ function Block5() {
               <AccessTimeTwoToneIcon
                 sx={{
                   ml: 1,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 fontSize="small"
               />
@@ -153,17 +143,12 @@ function Block5() {
           sx={{
             overflow: 'visible',
             position: 'relative',
-            p: 2
+            p: 2,
           }}
           variant="outlined"
         >
           <DividerVertialWarning />
-          <Link
-            color="text.primary"
-            variant="h4"
-            fontWeight="normal"
-            href="#"
-          >
+          <Link color="text.primary" variant="h4" fontWeight="normal" href="#">
             UX research
           </Link>
           <Box mt={1.5} display="flex" alignItems="center">
@@ -172,7 +157,7 @@ function Block5() {
               <AccessTimeTwoToneIcon
                 sx={{
                   ml: 1,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 fontSize="small"
               />

@@ -7,7 +7,7 @@ import {
   Tooltip,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.9, 1.5, 0.7)};
     line-height: 1;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -33,7 +33,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block13() {
@@ -51,7 +51,7 @@ function Block13() {
         justifyContent: 'center',
         background: `${theme.colors.gradients.pink2}`,
         p: 3,
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <CardActions>
@@ -63,8 +63,8 @@ function Block13() {
 
             '&:hover': {
               background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
-            }
+              color: `${theme.colors.alpha.trueWhite[100]}`,
+            },
           }}
           size="small"
           color="primary"
@@ -79,13 +79,13 @@ function Block13() {
           mb: 2,
           mx: 'auto',
           boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
-          border: `${theme.colors.alpha.white[100]} solid 3px`
+          border: `${theme.colors.alpha.white[100]} solid 3px`,
         }}
         src="/static/images/avatars/3.jpg"
       />
       <Typography
         sx={{
-          color: `${theme.colors.alpha.trueWhite[100]}`
+          color: `${theme.colors.alpha.trueWhite[100]}`,
         }}
         gutterBottom
         variant="h2"
@@ -94,7 +94,7 @@ function Block13() {
       </Typography>
       <Typography
         sx={{
-          color: `${theme.colors.alpha.trueWhite[70]}`
+          color: `${theme.colors.alpha.trueWhite[70]}`,
         }}
         variant="subtitle2"
       >
@@ -104,7 +104,9 @@ function Block13() {
         <LabelWrapper
           sx={{
             background: `${theme.colors.warning.main}`,
-            color: `${theme.palette.getContrastText(theme.colors.warning.dark)}`
+            color: `${theme.palette.getContrastText(
+              theme.colors.warning.dark,
+            )}`,
           }}
         >
           {t('Pending')}
@@ -115,11 +117,11 @@ function Block13() {
         sx={{
           fontSize: `${theme.typography.pxToRem(16)}`,
           py: 3,
-          color: `${theme.colors.alpha.trueWhite[70]}`
+          color: `${theme.colors.alpha.trueWhite[70]}`,
         }}
       >
         {t(
-          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
         )}
         .
       </Typography>
@@ -134,15 +136,15 @@ function Block13() {
               transition: `${theme.transitions.create(['all'])}`,
               '&:hover': {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
-                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`
+                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
               },
-              borderRadius: 50
+              borderRadius: 50,
             }}
             size="large"
           >
             <VisibilityTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(20)}`
+                fontSize: `${theme.typography.pxToRem(20)}`,
               }}
             />
           </IconButton>
@@ -158,15 +160,15 @@ function Block13() {
               transition: `${theme.transitions.create(['all'])}`,
               '&:hover': {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
-                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`
+                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
               },
               borderRadius: 50,
-              mx: 0.5
+              mx: 0.5,
             }}
           >
             <FavoriteTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(20)}`
+                fontSize: `${theme.typography.pxToRem(20)}`,
               }}
             />
           </IconButton>
@@ -181,15 +183,15 @@ function Block13() {
               transition: `${theme.transitions.create(['all'])}`,
               '&:hover': {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
-                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`
+                background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
               },
-              borderRadius: 50
+              borderRadius: 50,
             }}
             size="large"
           >
             <PersonSearchTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(20)}`
+                fontSize: `${theme.typography.pxToRem(20)}`,
               }}
             />
           </IconButton>

@@ -12,7 +12,7 @@ import {
   ListItem,
   circularProgressClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -26,7 +26,7 @@ const ListWrapper = styled(List)(
     .MuiDivider-root:first-of-type {
         display: none;
     }
-  `
+  `,
 );
 
 function Block6() {
@@ -40,7 +40,7 @@ function Block6() {
       jobtitle: 'UI Engineer, Apple Inc.',
       progress: 46,
       arrow: '',
-      sales: '685'
+      sales: '685',
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ function Block6() {
       jobtitle: 'Frontend Engineer',
       progress: 59,
       arrow: 'up',
-      sales: '3,685'
+      sales: '3,685',
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ function Block6() {
       jobtitle: 'UX Designer',
       progress: 87,
       arrow: '',
-      sales: '765'
+      sales: '765',
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ function Block6() {
       jobtitle: 'Frontend Engineer',
       progress: 34,
       arrow: '',
-      sales: '43,548'
+      sales: '43,548',
     },
     {
       id: 5,
@@ -72,7 +72,7 @@ function Block6() {
       jobtitle: 'Senior Project Manager',
       progress: 20,
       arrow: 'up',
-      sales: '1,584'
+      sales: '1,584',
     },
     {
       id: 6,
@@ -80,8 +80,8 @@ function Block6() {
       jobtitle: 274,
       progress: 64,
       arrow: 'up',
-      sales: '1,584'
-    }
+      sales: '1,584',
+    },
   ];
 
   return (
@@ -97,7 +97,7 @@ function Block6() {
       <Divider />
       <Box
         sx={{
-          height: 300
+          height: 300,
         }}
       >
         <Scrollbar>
@@ -108,14 +108,14 @@ function Block6() {
                 <ListItem
                   sx={{
                     py: 2,
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
                       display: 'flex',
                       alignItems: 'center',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <Box display="inline-flex" position="relative">
@@ -129,14 +129,14 @@ function Block6() {
                           bottom: 0,
                           display: 'flex',
                           alignItems: 'center',
-                          justifyContent: 'center'
+                          justifyContent: 'center',
                         }}
                       >
                         <Typography
                           sx={{
                             fontWeight: 'bold',
                             fontSize: `${theme.typography.pxToRem(12)}`,
-                            color: (theme) => theme.colors.primary.main
+                            color: (theme) => theme.colors.primary.main,
                           }}
                         >
                           {item.progress}%
@@ -145,7 +145,7 @@ function Block6() {
                       <CircularProgress
                         variant="determinate"
                         sx={{
-                          color: (theme) => theme.colors.alpha.black[10]
+                          color: (theme) => theme.colors.alpha.black[10],
                         }}
                         size={56}
                         thickness={2}
@@ -159,8 +159,8 @@ function Block6() {
                           left: 0,
                           top: 0,
                           [`& .${circularProgressClasses.circle}`]: {
-                            strokeLinecap: 'round'
-                          }
+                            strokeLinecap: 'round',
+                          },
                         }}
                         thickness={2}
                         variant="determinate"
@@ -178,8 +178,8 @@ function Block6() {
                           transition: `${theme.transitions.create(['color'])}`,
 
                           '&:hover': {
-                            color: `${theme.colors.primary.main}`
-                          }
+                            color: `${theme.colors.primary.main}`,
+                          },
                         }}
                         variant="h4"
                       >
@@ -195,7 +195,7 @@ function Block6() {
                     }
                     secondaryTypographyProps={{
                       variant: 'subtitle2',
-                      noWrap: true
+                      noWrap: true,
                     }}
                   />
                   <Box display="flex" alignItems="center">
@@ -205,7 +205,7 @@ function Block6() {
                         sx={{
                           display: 'flex',
                           ml: 0.2,
-                          color: `${theme.colors.error.main}`
+                          color: `${theme.colors.error.main}`,
                         }}
                       >
                         <KeyboardArrowDownTwoToneIcon />
@@ -215,7 +215,7 @@ function Block6() {
                         sx={{
                           display: 'flex',
                           ml: 0.2,
-                          color: `${theme.colors.success.main}`
+                          color: `${theme.colors.success.main}`,
                         }}
                       >
                         <KeyboardArrowUpTwoToneIcon />

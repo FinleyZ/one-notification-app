@@ -7,7 +7,7 @@ import {
   alpha,
   Stack,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import ScreenSearchDesktopTwoToneIcon from '@mui/icons-material/ScreenSearchDesktopTwoTone';
 import { useTranslation } from 'react-i18next';
@@ -21,13 +21,13 @@ const DotLegend = styled('span')(
       display: inline-block;
       margin-right: ${theme.spacing(0.8)};
       border: ${theme.colors.alpha.white[100]} solid 2px;
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.08)};
-  `
+  `,
 );
 
 function Block8() {
@@ -40,32 +40,32 @@ function Block8() {
       colors: [
         theme.colors.info.main,
         theme.colors.error.main,
-        theme.colors.success.main
+        theme.colors.success.main,
       ],
-      width: 3
+      width: 3,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     colors: [
       theme.colors.info.main,
       theme.colors.error.main,
-      theme.colors.success.main
+      theme.colors.success.main,
     ],
     fill: {
       opacity: 1,
       colors: [
         theme.colors.info.main,
         theme.colors.error.main,
-        theme.colors.success.main
+        theme.colors.success.main,
       ],
-      type: 'solid'
+      type: 'solid',
     },
     labels: [
       'Jan',
@@ -79,36 +79,36 @@ function Block8() {
       'Sep',
       'Oct',
       'Nov',
-      'Dec'
+      'Dec',
     ],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     legend: {
-      show: false
+      show: false,
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
 
   const chart3Data = [
     {
       name: 'Total Loss',
-      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879]
+      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879],
     },
     {
       name: 'Net Profit',
-      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731]
+      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731],
     },
     {
       name: 'Gross Profit',
-      data: [1030, 897, 463, 856, 285, 764, 426, 635, 1030, 1021, 1008, 821]
-    }
+      data: [1030, 897, 463, 856, 285, 764, 426, 635, 1030, 1021, 1008, 821],
+    },
   ];
 
   return (
@@ -123,7 +123,7 @@ function Block8() {
           <Typography
             component="div"
             sx={{
-              fontSize: `${theme.typography.pxToRem(17)}`
+              fontSize: `${theme.typography.pxToRem(17)}`,
             }}
             gutterBottom
             variant="h3"
@@ -150,7 +150,7 @@ function Block8() {
       <CardWrapper
         sx={{
           mx: 3,
-          p: 3
+          p: 3,
         }}
       >
         <Stack
@@ -158,7 +158,7 @@ function Block8() {
           divider={
             <Divider
               sx={{
-                background: `${theme.colors.alpha.black[10]}`
+                background: `${theme.colors.alpha.black[10]}`,
               }}
               orientation="vertical"
               flexItem
@@ -180,7 +180,7 @@ function Block8() {
             <Box display="flex" alignItems="center" justifyContent="center">
               <DotLegend
                 style={{
-                  background: `${theme.colors.info.main}`
+                  background: `${theme.colors.info.main}`,
                 }}
               />
               <Typography color="text.primary" variant="h4">
@@ -200,7 +200,7 @@ function Block8() {
             <Box display="flex" alignItems="center" justifyContent="center">
               <DotLegend
                 style={{
-                  background: `${theme.colors.success.main}`
+                  background: `${theme.colors.success.main}`,
                 }}
               />
               <Typography color="text.primary" variant="h4">
@@ -220,7 +220,7 @@ function Block8() {
             <Box display="flex" alignItems="center" justifyContent="center">
               <DotLegend
                 style={{
-                  background: `${theme.colors.error.main}`
+                  background: `${theme.colors.error.main}`,
                 }}
               />
               <Typography color="text.primary" variant="h4">

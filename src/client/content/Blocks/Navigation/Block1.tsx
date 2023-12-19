@@ -11,7 +11,7 @@ import {
   Button,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -37,13 +37,13 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(1.2, 2.5, 1)};
     line-height: 1;
-  `
+  `,
 );
 
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -61,7 +61,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .05;
           }
         }
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -70,7 +70,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -86,7 +86,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -100,7 +100,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -112,13 +112,13 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const CardWrapper = styled(Box)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -132,7 +132,7 @@ const IconButtonWrapper = styled(IconButton)(
         background: transparent;
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Button)(
@@ -148,7 +148,7 @@ const ButtonWrapper = styled(Button)(
         border-color: ${theme.colors.alpha.trueWhite[30]};
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 function Block1() {
@@ -163,7 +163,7 @@ function Block1() {
           xs={12}
           lg={5}
           sx={{
-            display: 'flex'
+            display: 'flex',
           }}
         >
           <BoxComposed
@@ -172,7 +172,7 @@ function Block1() {
             sx={{
               position: 'relative',
               minHeight: '100%',
-              background: `${theme.colors.gradients.black1}`
+              background: `${theme.colors.gradients.black1}`,
             }}
           >
             <CardActions display="flex" alignItems="center">
@@ -182,7 +182,7 @@ function Block1() {
                   sx={{
                     px: 1,
                     fontSize: `${theme.typography.pxToRem(10)}`,
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
                   }}
                 >
                   {t('New release')}
@@ -195,7 +195,7 @@ function Block1() {
               >
                 <IconButtonWrapper
                   sx={{
-                    ml: 0.5
+                    ml: 0.5,
                   }}
                 >
                   <HelpTwoToneIcon fontSize="small" />
@@ -205,14 +205,14 @@ function Block1() {
             <BoxComposedBg
               sx={{
                 opacity: 0.4,
-                background: `${theme.colors.gradients.green2}`
+                background: `${theme.colors.gradients.green2}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.3,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/2.jpg")'
+                  'url("/static/images/placeholders/covers/2.jpg")',
               }}
             />
             <BoxComposedContent
@@ -221,7 +221,7 @@ function Block1() {
               alignItems="center"
               flexDirection="column"
               sx={{
-                textAlign: 'center'
+                textAlign: 'center',
               }}
               p={{ xs: 4, xl: 8 }}
             >
@@ -230,7 +230,7 @@ function Block1() {
                 sx={{
                   pt: 3,
                   pb: 2,
-                  fontSize: `${theme.typography.pxToRem(32)}`
+                  fontSize: `${theme.typography.pxToRem(32)}`,
                 }}
                 variant="h1"
               >
@@ -238,7 +238,7 @@ function Block1() {
               </Typography>
               <Typography lineHeight="1.5" fontWeight="normal" variant="h4">
                 {t(
-                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                 )}
                 .
               </Typography>
@@ -247,7 +247,7 @@ function Block1() {
                   disableRipple={false}
                   variant="outlined"
                   sx={{
-                    mt: 5
+                    mt: 5,
                   }}
                   endIcon={<ArrowForwardTwoToneIcon />}
                   size="large"
@@ -265,7 +265,7 @@ function Block1() {
           lg={7}
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <Box
@@ -278,7 +278,7 @@ function Block1() {
             px={5}
             sx={{
               position: 'relative',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <CardActions>
@@ -297,9 +297,9 @@ function Block1() {
                     '&:hover': {
                       backgroundColor: `${theme.colors.primary.main}`,
                       color: `${theme.palette.getContrastText(
-                        theme.colors.primary.main
-                      )}`
-                    }
+                        theme.colors.primary.main,
+                      )}`,
+                    },
                   }}
                 >
                   <EmailTwoToneIcon fontSize="small" />
@@ -312,7 +312,7 @@ function Block1() {
                   mx: 'auto',
                   mb: 1.5,
                   width: 94,
-                  height: 94
+                  height: 94,
                 }}
                 src="/static/images/avatars/2.jpg"
               />
@@ -320,7 +320,7 @@ function Block1() {
                 sx={{
                   display: 'inline-flex',
                   background: `${theme.colors.success.lighter}`,
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
               >
                 {t('Online')}
@@ -328,7 +328,7 @@ function Block1() {
               <Typography
                 gutterBottom
                 sx={{
-                  pt: 2
+                  pt: 2,
                 }}
                 variant="h2"
               >
@@ -340,7 +340,7 @@ function Block1() {
               <Box
                 mt={1.5}
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <Tooltip arrow placement="top" title="Facebook">
@@ -351,7 +351,7 @@ function Block1() {
                 <Tooltip arrow placement="top" title="Twitter">
                   <IconButton
                     sx={{
-                      mx: 1
+                      mx: 1,
                     }}
                     color="primary"
                     size="large"
@@ -374,13 +374,13 @@ function Block1() {
                 <Card variant="outlined">
                   <CardActionAreaWrapper
                     sx={{
-                      p: 2
+                      p: 2,
                     }}
                   >
                     <Text color="warning">
                       <AccountTreeTwoToneIcon
                         sx={{
-                          mb: 1
+                          mb: 1,
                         }}
                       />
                     </Text>
@@ -397,13 +397,13 @@ function Block1() {
                 <Card variant="outlined">
                   <CardActionAreaWrapper
                     sx={{
-                      p: 2
+                      p: 2,
                     }}
                   >
                     <Text color="success">
                       <ContactSupportTwoToneIcon
                         sx={{
-                          mb: 1
+                          mb: 1,
                         }}
                       />
                     </Text>
@@ -420,13 +420,13 @@ function Block1() {
                 <Card variant="outlined">
                   <CardActionAreaWrapper
                     sx={{
-                      p: 2
+                      p: 2,
                     }}
                   >
                     <Text color="primary">
                       <DashboardCustomizeTwoToneIcon
                         sx={{
-                          mb: 1
+                          mb: 1,
                         }}
                       />
                     </Text>
@@ -443,13 +443,13 @@ function Block1() {
                 <Card variant="outlined">
                   <CardActionAreaWrapper
                     sx={{
-                      p: 2
+                      p: 2,
                     }}
                   >
                     <Text color="error">
                       <PeopleOutlineTwoToneIcon
                         sx={{
-                          mb: 1
+                          mb: 1,
                         }}
                       />
                     </Text>

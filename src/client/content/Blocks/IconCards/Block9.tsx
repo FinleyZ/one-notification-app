@@ -7,7 +7,7 @@ import {
   Tooltip,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block9() {
@@ -41,21 +41,21 @@ function Block9() {
             pl: 3,
             pr: 2.5,
             pt: 5,
-            pb: 3
+            pb: 3,
           }}
         >
           <CardActions>
             <Tooltip arrow placement="top" title={t('Add to favourites')}>
               <IconButton
                 sx={{
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 size="small"
                 color="secondary"
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -64,7 +64,7 @@ function Block9() {
               <IconButton size="small" color="secondary">
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -81,7 +81,7 @@ function Block9() {
                 width: 50,
                 height: 50,
                 background: `${theme.colors.alpha.black[100]}`,
-                color: `${theme.colors.alpha.white[100]}`
+                color: `${theme.colors.alpha.white[100]}`,
               }}
             >
               <NotificationImportantTwoToneIcon fontSize="small" />
@@ -93,12 +93,12 @@ function Block9() {
                   width: 24,
                   height: 24,
                   background: `${theme.colors.success.main}`,
-                  color: `${theme.palette.success.contrastText}`
+                  color: `${theme.palette.success.contrastText}`,
                 }}
               >
                 <CheckTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
@@ -120,21 +120,21 @@ function Block9() {
             pl: 3,
             pr: 2.5,
             pt: 5,
-            pb: 3
+            pb: 3,
           }}
         >
           <CardActions>
             <Tooltip arrow placement="top" title={t('Add to favourites')}>
               <IconButton
                 sx={{
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 size="small"
                 color="secondary"
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -143,7 +143,7 @@ function Block9() {
               <IconButton size="small" color="secondary">
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -160,7 +160,7 @@ function Block9() {
                 width: 50,
                 height: 50,
                 background: `${theme.colors.info.main}`,
-                color: `${theme.palette.info.contrastText}`
+                color: `${theme.palette.info.contrastText}`,
               }}
             >
               <CameraAltTwoToneIcon fontSize="small" />
@@ -172,12 +172,12 @@ function Block9() {
                   width: 24,
                   height: 24,
                   background: `${theme.colors.success.main}`,
-                  color: `${theme.palette.success.contrastText}`
+                  color: `${theme.palette.success.contrastText}`,
                 }}
               >
                 <CheckTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
@@ -199,21 +199,21 @@ function Block9() {
             pl: 3,
             pr: 2.5,
             pt: 5,
-            pb: 3
+            pb: 3,
           }}
         >
           <CardActions>
             <Tooltip arrow placement="top" title={t('Add to favourites')}>
               <IconButton
                 sx={{
-                  mr: 0.5
+                  mr: 0.5,
                 }}
                 size="small"
                 color="secondary"
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -222,7 +222,7 @@ function Block9() {
               <IconButton size="small" color="secondary">
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </IconButton>
@@ -239,7 +239,7 @@ function Block9() {
                 width: 50,
                 height: 50,
                 background: `${theme.colors.warning.main}`,
-                color: `${theme.palette.warning.contrastText}`
+                color: `${theme.palette.warning.contrastText}`,
               }}
             >
               <InsertCommentTwoToneIcon fontSize="small" />
@@ -251,19 +251,19 @@ function Block9() {
                   width: 24,
                   height: 24,
                   background: `${theme.colors.error.main}`,
-                  color: `${theme.palette.error.contrastText}`
+                  color: `${theme.palette.error.contrastText}`,
                 }}
               >
                 <CloseTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
               <Typography
                 variant="body1"
                 sx={{
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
               >
                 {t('Target failed')}

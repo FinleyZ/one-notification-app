@@ -5,7 +5,7 @@ const FooterWrapper = styled(Card)(
   ({ theme }) => `
         border-radius: 0;
         margin-top: ${theme.spacing(4)};
-`
+`,
 );
 
 function Footer() {
@@ -25,7 +25,7 @@ function Footer() {
         </Box>
         <Typography
           sx={{
-            pt: { xs: 2, md: 0 }
+            pt: { xs: 2, md: 0 },
           }}
           variant="subtitle1"
         >

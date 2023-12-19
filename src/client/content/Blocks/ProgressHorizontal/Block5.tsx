@@ -13,7 +13,7 @@ import {
   alpha,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -30,7 +30,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -38,14 +38,14 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.02)};
       border-radius: 0;
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -53,7 +53,7 @@ const ListWrapper = styled(List)(
       .MuiListItem-root:last-of-type + .MuiDivider-root {
           display: none;
       }
-  `
+  `,
 );
 
 function Block5() {
@@ -65,32 +65,32 @@ function Block5() {
       id: 1,
       title: 'Orders',
       value: '345',
-      progress: 34
+      progress: 34,
     },
     {
       id: 2,
       title: 'Sales',
       value: '84',
-      progress: 15
+      progress: 15,
     },
     {
       id: 3,
       title: 'Users',
       value: '4,564',
-      progress: 53
+      progress: 53,
     },
     {
       id: 4,
       title: 'Visits',
       value: '1,54k',
-      progress: 71
+      progress: 71,
     },
     {
       id: 5,
       title: 'Revenue',
       value: '$34,325',
-      progress: 47
-    }
+      progress: 47,
+    },
   ];
 
   return (
@@ -116,7 +116,7 @@ function Block5() {
       <Divider />
       <Box
         sx={{
-          height: 301
+          height: 301,
         }}
       >
         <Scrollbar>
@@ -127,7 +127,7 @@ function Block5() {
                   sx={{
                     display: 'block',
                     py: 1.5,
-                    px: 3
+                    px: 3,
                   }}
                 >
                   <Box
@@ -139,7 +139,7 @@ function Block5() {
                     <Typography variant="h4">{t(item.title)}</Typography>
                     <Typography
                       sx={{
-                        color: `${theme.colors.primary.main}`
+                        color: `${theme.colors.primary.main}`,
                       }}
                       variant="h3"
                     >
@@ -153,7 +153,7 @@ function Block5() {
                   <Box
                     display="flex"
                     sx={{
-                      pt: 0.4
+                      pt: 0.4,
                     }}
                     alignItems="center"
                     justifyContent="space-between"
@@ -173,7 +173,7 @@ function Block5() {
         elevation={0}
         sx={{
           textAlign: 'center',
-          p: 2
+          p: 2,
         }}
       >
         <Button startIcon={<PageviewTwoToneIcon />} variant="outlined">

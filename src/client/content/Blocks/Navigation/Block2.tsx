@@ -10,7 +10,7 @@ import {
   IconButton,
   ListItemText,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ import ChevronRightTwoToneIcon from '@mui/icons-material/ChevronRightTwoTone';
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -31,14 +31,14 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 12;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
   () => `
     position: relative;
     z-index: 7;
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -52,7 +52,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -64,7 +64,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -78,7 +78,7 @@ const IconButtonWrapper = styled(IconButton)(
         background: transparent;
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 const MenuListWrapper = styled(MenuList)(
@@ -124,7 +124,7 @@ const MenuListWrapper = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -134,7 +134,7 @@ const LabelWrapper = styled(Box)(
     text-transform: uppercase;
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.5, 1)};
-  `
+  `,
 );
 
 function Block2() {
@@ -150,7 +150,7 @@ function Block2() {
           lg={4}
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <Box
@@ -169,14 +169,14 @@ function Block2() {
                     width: 'auto',
                     height: 54,
                     '& img': {
-                      objectFit: 'contain'
-                    }
+                      objectFit: 'contain',
+                    },
                   }}
                   src="/static/images/placeholders/logo/stripe.svg"
                 />
                 <Typography variant="subtitle2" textAlign="center">
                   {t(
-                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                   )}
                   .
                 </Typography>
@@ -185,55 +185,55 @@ function Block2() {
                 disablePadding
                 sx={{
                   mb: 3,
-                  mr: 3
+                  mr: 3,
                 }}
               >
                 <MenuItem selected>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Analytics')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Reports Management')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Real Estate')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Server Status')}
                   />
@@ -243,8 +243,8 @@ function Block2() {
                       sx={{
                         background: `${theme.colors.success.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.success.dark
-                        )}`
+                          theme.colors.success.dark,
+                        )}`,
                       }}
                     >
                       23
@@ -253,7 +253,7 @@ function Block2() {
                       sx={{
                         ml: 1,
                         color: `${theme.colors.alpha.black[30]}`,
-                        opacity: 0.8
+                        opacity: 0.8,
                       }}
                     />
                   </Box>
@@ -267,7 +267,7 @@ function Block2() {
           xs={12}
           lg={8}
           sx={{
-            display: 'flex'
+            display: 'flex',
           }}
         >
           <BoxComposed
@@ -277,7 +277,7 @@ function Block2() {
               width: '100%',
               position: 'relative',
               minHeight: '100%',
-              background: `${theme.colors.gradients.black1}`
+              background: `${theme.colors.gradients.black1}`,
             }}
           >
             <CardActions display="flex" alignItems="center">
@@ -288,7 +288,7 @@ function Block2() {
               >
                 <IconButtonWrapper
                   sx={{
-                    ml: 0.5
+                    ml: 0.5,
                   }}
                 >
                   <HelpTwoToneIcon fontSize="small" />
@@ -298,14 +298,14 @@ function Block2() {
             <BoxComposedBg
               sx={{
                 opacity: 0.5,
-                background: `${theme.colors.gradients.purple1}`
+                background: `${theme.colors.gradients.purple1}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.3,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/3.jpg")'
+                  'url("/static/images/placeholders/covers/3.jpg")',
               }}
             />
             <BoxComposedContent

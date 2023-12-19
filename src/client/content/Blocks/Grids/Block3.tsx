@@ -17,7 +17,7 @@ function Block3() {
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
       }}
     >
       <Box py={3} px={5} display="flex" alignItems="center">
@@ -25,13 +25,13 @@ function Block3() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            opacity: 0.4
+            opacity: 0.4,
           }}
           color="text.secondary"
         >
           <AccountBalanceWalletTwoToneIcon
             sx={{
-              fontSize: 54
+              fontSize: 54,
             }}
           />
         </Typography>
@@ -49,13 +49,13 @@ function Block3() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            opacity: 0.4
+            opacity: 0.4,
           }}
           color="text.secondary"
         >
           <MonetizationOnTwoToneIcon
             sx={{
-              fontSize: 54
+              fontSize: 54,
             }}
           />
         </Typography>
@@ -73,13 +73,13 @@ function Block3() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            opacity: 0.4
+            opacity: 0.4,
           }}
           color="text.secondary"
         >
           <PersonTwoToneIcon
             sx={{
-              fontSize: 54
+              fontSize: 54,
             }}
           />
         </Typography>
@@ -97,13 +97,13 @@ function Block3() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            opacity: 0.4
+            opacity: 0.4,
           }}
           color="text.secondary"
         >
           <StorefrontTwoToneIcon
             sx={{
-              fontSize: 54
+              fontSize: 54,
             }}
           />
         </Typography>
@@ -119,13 +119,13 @@ function Block3() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            opacity: 0.4
+            opacity: 0.4,
           }}
           color="text.secondary"
         >
           <MoneyTwoToneIcon
             sx={{
-              fontSize: 54
+              fontSize: 54,
             }}
           />
         </Typography>
@@ -135,7 +135,7 @@ function Block3() {
           </Typography>
           <Typography
             sx={{
-              width: 90
+              width: 90,
             }}
             variant="h4"
           >

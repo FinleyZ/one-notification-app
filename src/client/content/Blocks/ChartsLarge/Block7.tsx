@@ -11,7 +11,7 @@ import {
   Grid,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 import ArrowForwardTwoToneIcon from '@mui/icons-material/ArrowForwardTwoTone';
 import { useTranslation } from 'react-i18next';
@@ -31,7 +31,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -47,7 +47,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 const LinearProgressInfo = styled(LinearProgress)(
@@ -63,7 +63,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.info.main};
         }
-    `
+    `,
 );
 
 const LinearProgressPrimary = styled(LinearProgress)(
@@ -79,13 +79,13 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.08)};
-  `
+  `,
 );
 
 function Block7() {
@@ -96,18 +96,18 @@ function Block7() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '50%'
-      }
+        columnWidth: '50%',
+      },
     },
     colors: [theme.colors.primary.main],
     fill: {
@@ -120,63 +120,63 @@ function Block7() {
         opacityFrom: 1,
         opacityTo: 1,
         stops: [0, 50, 100],
-        colorStops: []
-      }
+        colorStops: [],
+      },
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       width: 2,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
     markers: {
       hover: {
-        sizeOffset: 2
+        sizeOffset: 2,
       },
       shape: 'circle',
       size: 7,
       strokeWidth: 2,
       strokeOpacity: 1,
       strokeColors: theme.colors.alpha.white[100],
-      colors: theme.colors.success.main
+      colors: theme.colors.success.main,
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     yaxis: {
       show: false,
       min: 0,
       axisBorder: {
-        show: false
-      }
+        show: false,
+      },
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
-    }
+        show: false,
+      },
+    },
   };
   const Box2Data = [
     {
       name: 'Visitors',
-      data: [765, 1265, 653, 1225, 875, 986]
-    }
+      data: [765, 1265, 653, 1225, 875, 986],
+    },
   ];
 
   return (
@@ -191,7 +191,7 @@ function Block7() {
           <Typography
             component="div"
             sx={{
-              fontSize: `${theme.typography.pxToRem(17)}`
+              fontSize: `${theme.typography.pxToRem(17)}`,
             }}
             gutterBottom
             variant="h3"
@@ -225,19 +225,19 @@ function Block7() {
             md={5}
             sx={{
               display: 'flex',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <List
               sx={{
-                width: '100%'
+                width: '100%',
               }}
               disablePadding
             >
               <ListItem
                 disableGutters
                 sx={{
-                  display: 'block'
+                  display: 'block',
                 }}
               >
                 <Box pb={0.5}>
@@ -245,7 +245,7 @@ function Block7() {
                     component="span"
                     variant="h3"
                     sx={{
-                      pr: 1
+                      pr: 1,
                     }}
                   >
                     54,695
@@ -257,26 +257,26 @@ function Block7() {
                 <Box
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <Box
                     sx={{
                       width: '100%',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <LinearProgressError variant="determinate" value={34} />
                   </Box>
                   <Box
                     sx={{
-                      minWidth: 35
+                      minWidth: 35,
                     }}
                   >
                     <Typography
                       variant="h5"
                       sx={{
-                        color: `${theme.colors.error.main}`
+                        color: `${theme.colors.error.main}`,
                       }}
                     >
                       34%
@@ -287,7 +287,7 @@ function Block7() {
               <ListItem
                 disableGutters
                 sx={{
-                  display: 'block'
+                  display: 'block',
                 }}
               >
                 <Box pb={0.5}>
@@ -295,7 +295,7 @@ function Block7() {
                     component="span"
                     variant="h3"
                     sx={{
-                      pr: 1
+                      pr: 1,
                     }}
                   >
                     12,543
@@ -307,26 +307,26 @@ function Block7() {
                 <Box
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <Box
                     sx={{
                       width: '100%',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <LinearProgressSuccess variant="determinate" value={21} />
                   </Box>
                   <Box
                     sx={{
-                      minWidth: 35
+                      minWidth: 35,
                     }}
                   >
                     <Typography
                       variant="h5"
                       sx={{
-                        color: `${theme.colors.success.main}`
+                        color: `${theme.colors.success.main}`,
                       }}
                     >
                       21%
@@ -338,7 +338,7 @@ function Block7() {
               <ListItem
                 disableGutters
                 sx={{
-                  display: 'block'
+                  display: 'block',
                 }}
               >
                 <Box pb={0.5}>
@@ -346,7 +346,7 @@ function Block7() {
                     component="span"
                     variant="h3"
                     sx={{
-                      pr: 1
+                      pr: 1,
                     }}
                   >
                     6,374
@@ -358,26 +358,26 @@ function Block7() {
                 <Box
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <Box
                     sx={{
                       width: '100%',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <LinearProgressInfo variant="determinate" value={15} />
                   </Box>
                   <Box
                     sx={{
-                      minWidth: 35
+                      minWidth: 35,
                     }}
                   >
                     <Typography
                       variant="h5"
                       sx={{
-                        color: `${theme.colors.info.main}`
+                        color: `${theme.colors.info.main}`,
                       }}
                     >
                       15%
@@ -389,7 +389,7 @@ function Block7() {
               <ListItem
                 disableGutters
                 sx={{
-                  display: 'block'
+                  display: 'block',
                 }}
               >
                 <Box pb={0.5}>
@@ -397,7 +397,7 @@ function Block7() {
                     component="span"
                     variant="h3"
                     sx={{
-                      pr: 1
+                      pr: 1,
                     }}
                   >
                     65,492
@@ -409,26 +409,26 @@ function Block7() {
                 <Box
                   sx={{
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <Box
                     sx={{
                       width: '100%',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <LinearProgressPrimary variant="determinate" value={65} />
                   </Box>
                   <Box
                     sx={{
-                      minWidth: 35
+                      minWidth: 35,
                     }}
                   >
                     <Typography
                       variant="h5"
                       sx={{
-                        color: `${theme.colors.primary.main}`
+                        color: `${theme.colors.primary.main}`,
                       }}
                     >
                       65%
@@ -442,7 +442,7 @@ function Block7() {
             <CardWrapper
               sx={{
                 px: 3,
-                pt: 3
+                pt: 3,
               }}
             >
               <Chart

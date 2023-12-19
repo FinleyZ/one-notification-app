@@ -5,7 +5,7 @@ import {
   Typography,
   Container,
   Alert,
-  styled
+  styled,
 } from '@mui/material';
 import Head from 'next/head';
 import { useAuth } from 'src/client/hooks/useAuth';
@@ -26,7 +26,7 @@ const icons = {
   Auth0: '/static/images/logo/auth0.svg',
   FirebaseAuth: '/static/images/logo/firebase.svg',
   JWT: '/static/images/logo/jwt.svg',
-  Amplify: '/static/images/logo/amplify.svg'
+  Amplify: '/static/images/logo/amplify.svg',
 };
 
 const Content = styled(Box)(
@@ -34,7 +34,7 @@ const Content = styled(Box)(
     display: flex;
     flex: 1;
     width: 100%;
-`
+`,
 );
 
 const MainContent = styled(Box)(
@@ -45,7 +45,7 @@ const MainContent = styled(Box)(
   width: 100%;
   display: flex;
   align-items: center;
-`
+`,
 );
 
 const SidebarWrapper = styled(Box)(
@@ -56,7 +56,7 @@ const SidebarWrapper = styled(Box)(
     height: 100%;
     background: ${theme.colors.alpha.white[100]};
     width: 440px;
-`
+`,
 );
 
 const SidebarContent = styled(Box)(
@@ -64,7 +64,7 @@ const SidebarContent = styled(Box)(
   display: flex;
   flex-direction: column;
   padding: ${theme.spacing(6)};
-`
+`,
 );
 
 const CardImg = styled(Card)(
@@ -81,13 +81,13 @@ const CardImg = styled(Card)(
     &:hover {
       border-color: ${theme.colors.primary.main};
     }
-`
+`,
 );
 
 const TypographyH1 = styled(Typography)(
   ({ theme }) => `
     font-size: ${theme.typography.pxToRem(33)};
-`
+`,
 );
 
 function LoginCover() {
@@ -105,7 +105,7 @@ function LoginCover() {
       <Content>
         <SidebarWrapper
           sx={{
-            display: { xs: 'none', md: 'flex' }
+            display: { xs: 'none', md: 'flex' },
           }}
         >
           <Scrollbar>
@@ -115,7 +115,7 @@ function LoginCover() {
                 <TypographyH1
                   variant="h1"
                   sx={{
-                    mb: 7
+                    mb: 7,
                   }}
                 >
                   {t('Multiple auth methods included')}
@@ -124,7 +124,7 @@ function LoginCover() {
                   sx={{
                     position: 'relative',
                     width: 300,
-                    height: 120
+                    height: 120,
                   }}
                 >
                   <Tooltip arrow placement="top" title="Auth0">
@@ -133,7 +133,7 @@ function LoginCover() {
                         width: 80,
                         height: 80,
                         left: -20,
-                        top: -40
+                        top: -40,
                       }}
                     >
                       <img width={40} alt="Auth0" src={icons['Auth0']} />
@@ -144,7 +144,7 @@ function LoginCover() {
                       sx={{
                         width: 90,
                         height: 90,
-                        left: 70
+                        left: 70,
                       }}
                     >
                       <img
@@ -160,7 +160,7 @@ function LoginCover() {
                         width: 110,
                         height: 110,
                         top: -30,
-                        left: 170
+                        left: 170,
                       }}
                     >
                       <img width={80} alt="JSON Web Token" src={icons['JWT']} />
@@ -172,7 +172,7 @@ function LoginCover() {
                         width: 70,
                         height: 70,
                         bottom: 0,
-                        right: -55
+                        right: -55,
                       }}
                     >
                       <img width={50} alt="Amplify" src={icons['Amplify']} />
@@ -182,11 +182,11 @@ function LoginCover() {
                 <Typography
                   variant="subtitle1"
                   sx={{
-                    my: 3
+                    my: 3,
                   }}
                 >
                   {t(
-                    'Choose between JSON Web Token, Firebase, AWS Amplify or Auth0. Regular login/register functionality is also available.'
+                    'Choose between JSON Web Token, Firebase, AWS Amplify or Auth0. Regular login/register functionality is also available.',
                   )}
                 </Typography>
                 <Typography
@@ -198,7 +198,7 @@ function LoginCover() {
                 </Typography>
                 <Typography variant="subtitle1">
                   {t(
-                    'It only takes seconds. There is a documentation section showing how to do exactly that'
+                    'It only takes seconds. There is a documentation section showing how to do exactly that',
                   )}
                   . <Link href="/docs">Read docs</Link>
                 </Typography>
@@ -211,21 +211,21 @@ function LoginCover() {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              flexDirection: 'column'
+              flexDirection: 'column',
             }}
             maxWidth="sm"
           >
             <Card
               sx={{
                 p: 4,
-                my: 4
+                my: 4,
               }}
             >
               <Box textAlign="center">
                 <Typography
                   variant="h2"
                   sx={{
-                    mb: 1
+                    mb: 1,
                   }}
                 >
                   {t('Sign in')}
@@ -235,7 +235,7 @@ function LoginCover() {
                   color="text.secondary"
                   fontWeight="normal"
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   {t('Fill in the fields below to sign into your account.')}

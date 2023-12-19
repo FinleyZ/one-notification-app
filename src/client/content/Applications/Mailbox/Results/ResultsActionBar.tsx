@@ -12,7 +12,7 @@ import {
   List,
   InputAdornment,
   Menu,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
@@ -35,14 +35,14 @@ const SearchInputWrapper = styled(TextField)(
       .MuiInputBase-input {
           font-size: ${theme.typography.pxToRem(17)};
       }
-`
+`,
 );
 
 const ActionBarItem: FC<ActionBarItemProps> = ({
   mails,
   onDeselectAll,
   onSelectAll,
-  selectedMails
+  selectedMails,
 }) => {
   const handleCheckboxChange = (event: ChangeEvent<HTMLInputElement>) =>
     event.target.checked ? onSelectAll() : onDeselectAll();
@@ -69,7 +69,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
       <Box
         px={3}
         sx={{
-          pt: { lg: 3 }
+          pt: { lg: 3 },
         }}
         pb={1}
       >
@@ -80,7 +80,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
               <InputAdornment position="start">
                 <SearchTwoToneIcon />
               </InputAdornment>
-            )
+            ),
           }}
           placeholder={t('Search messages...')}
           fullWidth
@@ -109,7 +109,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
                   color="primary"
                   sx={{
                     ml: 1,
-                    p: 1
+                    p: 1,
                   }}
                 >
                   <ArchiveTwoToneIcon />
@@ -119,7 +119,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
                 <IconButton
                   color="primary"
                   sx={{
-                    p: 1
+                    p: 1,
                   }}
                 >
                   <DeleteTwoToneIcon />
@@ -129,7 +129,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
                 <IconButton
                   color="primary"
                   sx={{
-                    p: 1
+                    p: 1,
                   }}
                 >
                   <MarkEmailReadTwoToneIcon />
@@ -141,7 +141,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
                 ref={moreRef}
                 sx={{
                   ml: 1,
-                  p: 1
+                  p: 1,
                 }}
               >
                 <MoreVertTwoToneIcon />
@@ -156,7 +156,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
               color="primary"
               sx={{
                 mr: 0.5,
-                p: 0.5
+                p: 0.5,
               }}
             >
               <ChevronLeftTwoToneIcon />
@@ -169,7 +169,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
               color="primary"
               sx={{
                 ml: 0.5,
-                p: 0.5
+                p: 0.5,
               }}
             >
               <ChevronRightTwoToneIcon />
@@ -185,23 +185,23 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
         onClose={closeMenu}
         anchorOrigin={{
           vertical: 'center',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
         transformOrigin={{
           vertical: 'center',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
       >
         <List
           sx={{
-            p: 1
+            p: 1,
           }}
           component="nav"
         >
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Mark as read')}
             />
@@ -209,7 +209,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Mark as important')}
             />
@@ -217,7 +217,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Show similar emails')}
             />
@@ -225,7 +225,7 @@ const ActionBarItem: FC<ActionBarItemProps> = ({
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Forward as attachment')}
             />
@@ -240,12 +240,12 @@ ActionBarItem.propTypes = {
   mails: PropTypes.number.isRequired,
   onDeselectAll: PropTypes.func,
   onSelectAll: PropTypes.func,
-  selectedMails: PropTypes.number.isRequired
+  selectedMails: PropTypes.number.isRequired,
 };
 
 ActionBarItem.defaultProps = {
   onDeselectAll: () => {},
-  onSelectAll: () => {}
+  onSelectAll: () => {},
 };
 
 export default ActionBarItem;

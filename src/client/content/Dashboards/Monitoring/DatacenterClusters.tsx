@@ -16,7 +16,7 @@ import {
   CardActions,
   Divider,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import AddCircleTwoToneIcon from '@mui/icons-material/AddCircleTwoTone';
@@ -33,7 +33,7 @@ const TextfieldWrapper = styled(Box)(
     .MuiOutlinedInput-root {
       background: ${theme.colors.alpha.white[100]};
     }
-`
+`,
 );
 
 const CardIndicatorWrapper = styled(Card)(
@@ -47,21 +47,21 @@ const CardIndicatorWrapper = styled(Card)(
       top: 0;
       height: 5px;
     }
-`
+`,
 );
 
 const CardActionsWrapper = styled(CardActions)(
   ({ theme }) => `
     background: ${theme.colors.alpha.black[5]};
     padding: ${theme.spacing(2)} ${theme.spacing(2)};
-`
+`,
 );
 
 const IconWrapper = styled(Box)(
   ({ theme }) => `
     display: flex;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 const AvatarAddWrapper = styled(Avatar)(
@@ -70,7 +70,7 @@ const AvatarAddWrapper = styled(Avatar)(
         color: ${theme.colors.primary.main};
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
-`
+`,
 );
 
 const CardAddAction = styled(Card)(
@@ -94,7 +94,7 @@ const CardAddAction = styled(Card)(
         &:hover {
           border-color: ${theme.colors.alpha.black[70]};
         }
-`
+`,
 );
 
 function DatacenterClusters() {
@@ -105,41 +105,41 @@ function DatacenterClusters() {
     {
       value: '1',
       badge: '15',
-      text: t('All clusters')
+      text: t('All clusters'),
     },
     {
       value: '2',
       badge: '25',
-      text: t('Oracle')
+      text: t('Oracle'),
     },
     {
       value: '3',
       badge: '35',
-      text: t('IBM')
+      text: t('IBM'),
     },
     {
       value: '4',
       badge: '45',
-      text: t('Microsoft')
-    }
+      text: t('Microsoft'),
+    },
   ];
   const sorts = [
     {
       value: '1',
-      text: t('Sort by name')
+      text: t('Sort by name'),
     },
     {
       value: '2',
-      text: t('Sort by name')
+      text: t('Sort by name'),
     },
     {
       value: '3',
-      text: t('Sort by status')
+      text: t('Sort by status'),
     },
     {
       value: '4',
-      text: t('Sort by hosts')
-    }
+      text: t('Sort by hosts'),
+    },
   ];
 
   const actionRef = useRef<any>(null);
@@ -154,7 +154,7 @@ function DatacenterClusters() {
       <Typography
         variant="h3"
         sx={{
-          pb: 3
+          pb: 3,
         }}
       >
         {t('Datacenter Clusters')}
@@ -164,13 +164,13 @@ function DatacenterClusters() {
         alignItems="center"
         justifyContent="space-between"
         sx={{
-          pb: 3
+          pb: 3,
         }}
       >
         <Box display="flex" alignItems="center">
           <Button
             sx={{
-              mr: 1
+              mr: 1,
             }}
             variant="contained"
             color="secondary"
@@ -187,11 +187,11 @@ function DatacenterClusters() {
             open={openCluster}
             anchorOrigin={{
               vertical: 'bottom',
-              horizontal: 'left'
+              horizontal: 'left',
             }}
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'left'
+              horizontal: 'left',
             }}
           >
             {clusters.map((_cluster) => (
@@ -205,7 +205,7 @@ function DatacenterClusters() {
                 {_cluster.text}
                 <Box
                   sx={{
-                    ml: 1
+                    ml: 1,
                   }}
                 >
                   <Label color="success">{_cluster.badge}</Label>
@@ -221,7 +221,7 @@ function DatacenterClusters() {
                   <InputAdornment position="start">
                     <SearchTwoToneIcon />
                   </InputAdornment>
-                )
+                ),
               }}
               placeholder={t('Search...')}
             />
@@ -229,7 +229,7 @@ function DatacenterClusters() {
         </Box>
         <Box
           sx={{
-            pt: { xs: 2, md: 0 }
+            pt: { xs: 2, md: 0 },
           }}
         >
           <Button
@@ -247,11 +247,11 @@ function DatacenterClusters() {
             open={openSort}
             anchorOrigin={{
               vertical: 'bottom',
-              horizontal: 'right'
+              horizontal: 'right',
             }}
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'right'
+              horizontal: 'right',
             }}
           >
             {sorts.map((_sort) => (
@@ -268,7 +268,7 @@ function DatacenterClusters() {
           </Menu>
           <Button
             sx={{
-              ml: 1
+              ml: 1,
             }}
             variant="contained"
             startIcon={<AddCircleTwoToneIcon />}
@@ -284,7 +284,7 @@ function DatacenterClusters() {
             <Box
               className="MuiCard-indicator"
               sx={{
-                background: `${theme.colors.info.main}`
+                background: `${theme.colors.info.main}`,
               }}
             />
             <CardContent
@@ -292,7 +292,7 @@ function DatacenterClusters() {
                 pb: 4,
                 pt: 7,
                 px: 3,
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <img
@@ -304,7 +304,7 @@ function DatacenterClusters() {
                 variant="h3"
                 sx={{
                   pt: 2,
-                  px: 3
+                  px: 3,
                 }}
                 gutterBottom
               >
@@ -317,7 +317,7 @@ function DatacenterClusters() {
                 variant="outlined"
                 color="primary"
                 sx={{
-                  mt: 3
+                  mt: 3,
                 }}
               >
                 {t('View details')}
@@ -327,7 +327,7 @@ function DatacenterClusters() {
             <CardActionsWrapper
               sx={{
                 display: 'flex',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
               }}
             >
               <Typography variant="subtitle1">
@@ -339,13 +339,13 @@ function DatacenterClusters() {
               <Typography
                 sx={{
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <IconWrapper
                   sx={{
-                    color: `${theme.colors.success.main}`
+                    color: `${theme.colors.success.main}`,
                   }}
                 >
                   <CheckTwoToneIcon />
@@ -360,7 +360,7 @@ function DatacenterClusters() {
             <Box
               className="MuiCard-indicator"
               sx={{
-                background: `${theme.colors.success.main}`
+                background: `${theme.colors.success.main}`,
               }}
             />
             <CardContent
@@ -368,7 +368,7 @@ function DatacenterClusters() {
                 pb: 4,
                 pt: 7,
                 px: 3,
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <img
@@ -380,7 +380,7 @@ function DatacenterClusters() {
                 variant="h3"
                 sx={{
                   pt: 2,
-                  px: 3
+                  px: 3,
                 }}
                 gutterBottom
               >
@@ -393,7 +393,7 @@ function DatacenterClusters() {
                 variant="outlined"
                 color="primary"
                 sx={{
-                  mt: 3
+                  mt: 3,
                 }}
               >
                 {t('View details')}
@@ -403,7 +403,7 @@ function DatacenterClusters() {
             <CardActionsWrapper
               sx={{
                 display: 'flex',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
               }}
             >
               <Typography variant="subtitle1">
@@ -415,13 +415,13 @@ function DatacenterClusters() {
               <Typography
                 sx={{
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <IconWrapper
                   sx={{
-                    color: `${theme.colors.warning.main}`
+                    color: `${theme.colors.warning.main}`,
                   }}
                 >
                   <RefreshTwoToneIcon />
@@ -436,7 +436,7 @@ function DatacenterClusters() {
             <CardAddAction>
               <CardActionArea
                 sx={{
-                  px: 1
+                  px: 1,
                 }}
               >
                 <CardContent>

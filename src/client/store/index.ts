@@ -1,6 +1,6 @@
 import {
   useDispatch as useReduxDispatch,
-  useSelector as useReduxSelector
+  useSelector as useReduxSelector,
 } from 'react-redux';
 import type { TypedUseSelectorHook } from 'react-redux';
 import type { ThunkAction } from 'redux-thunk';
@@ -10,7 +10,7 @@ import { rootReducer } from './rootReducer';
 
 export const store = configureStore({
   reducer: rootReducer,
-  devTools: process.env.REACT_APP_ENABLE_REDUX_DEV_TOOLS === 'true'
+  devTools: process.env.REACT_APP_ENABLE_REDUX_DEV_TOOLS === 'true',
 });
 
 export type RootState = ReturnType<typeof store.getState>;

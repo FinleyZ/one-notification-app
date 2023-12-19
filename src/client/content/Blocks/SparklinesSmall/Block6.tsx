@@ -5,7 +5,7 @@ import {
   Typography,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const ButtonWrapper = styled(Button)(
     &:hover {
         transform: translateY(-2px);
     }
-  `
+  `,
 );
 
 function Block6() {
@@ -32,39 +32,39 @@ function Block6() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.success.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
       colors: [theme.colors.success.lighter],
-      type: 'solid'
+      type: 'solid',
     },
     grid: {
       padding: {
-        top: 5
-      }
+        top: 5,
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.success.main],
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -73,71 +73,71 @@ function Block6() {
       'Thursday',
       'Friday',
       'Saturday',
-      'Sunday'
+      'Sunday',
     ],
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 2
-    }
+      min: 2,
+    },
   };
   const Box1Data = [
     {
       name: 'Deploys',
-      data: [5, 3, 4, 3, 5, 3, 4]
-    }
+      data: [5, 3, 4, 3, 5, 3, 4],
+    },
   ];
 
   const Box2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.error.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
       colors: [theme.colors.error.lighter],
-      type: 'solid'
+      type: 'solid',
     },
     grid: {
       padding: {
-        top: 5
-      }
+        top: 5,
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.error.main],
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -146,71 +146,71 @@ function Block6() {
       'Thursday',
       'Friday',
       'Saturday',
-      'Sunday'
+      'Sunday',
     ],
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box2Data = [
     {
       name: 'Servers',
-      data: [3, 1, 4, 7, 5, 6, 4]
-    }
+      data: [3, 1, 4, 7, 5, 6, 4],
+    },
   ];
 
   const Box3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.warning.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
       colors: [theme.colors.warning.lighter],
-      type: 'solid'
+      type: 'solid',
     },
     grid: {
       padding: {
-        top: 5
-      }
+        top: 5,
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.warning.main],
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -219,32 +219,32 @@ function Block6() {
       'Thursday',
       'Friday',
       'Saturday',
-      'Sunday'
+      'Sunday',
     ],
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 2
-    }
+      min: 2,
+    },
   };
   const Box3Data = [
     {
       name: 'Customers',
-      data: [234, 315, 408, 387, 512, 363, 405]
-    }
+      data: [234, 315, 408, 387, 512, 363, 405],
+    },
   ];
 
   return (
@@ -268,9 +268,9 @@ function Block6() {
                 '&:hover': {
                   background: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -282,7 +282,7 @@ function Block6() {
             <Typography
               sx={{
                 color: `${theme.colors.success.main}`,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
               gutterBottom
               variant="h1"
@@ -322,9 +322,9 @@ function Block6() {
                 '&:hover': {
                   background: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -336,7 +336,7 @@ function Block6() {
             <Typography
               sx={{
                 color: `${theme.colors.error.main}`,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
               gutterBottom
               variant="h1"
@@ -376,9 +376,9 @@ function Block6() {
                 '&:hover': {
                   background: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -390,7 +390,7 @@ function Block6() {
             <Typography
               sx={{
                 color: `${theme.colors.warning.main}`,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
               gutterBottom
               variant="h1"

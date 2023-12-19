@@ -5,7 +5,7 @@ import {
   Typography,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -18,14 +18,14 @@ const CardActions = styled(Box)(
     top: ${theme.spacing(2)};
     right: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
     position: relative;
-  `
+  `,
 );
 
 function Block5() {
@@ -36,171 +36,171 @@ function Block5() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.error.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.error.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     yaxis: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Daily visitors',
-      data: [47, 38, 56, 24, 45, 54]
-    }
+      data: [47, 38, 56, 24, 45, 54],
+    },
   ];
 
   const chart2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.success.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.success.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart2Data = [
     {
       name: 'Revenue',
-      data: [45, 56, 24, 56, 54, 38]
-    }
+      data: [45, 56, 24, 56, 54, 38],
+    },
   ];
 
   const chart3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.warning.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.warning.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart3Data = [
     {
       name: 'Sales',
-      data: [45, 56, 24, 54, 38, 47]
-    }
+      data: [45, 56, 24, 54, 38, 47],
+    },
   ];
 
   const chart4Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.info.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.info.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart4Data = [
     {
       name: 'Tests',
-      data: [24, 54, 38, 47, 56, 47]
-    }
+      data: [24, 54, 38, 47, 56, 47],
+    },
   ];
 
   return (
@@ -210,7 +210,7 @@ function Block5() {
           sx={{
             borderBottomColor: `${theme.colors.error.main}`,
             py: 3,
-            px: 4
+            px: 4,
           }}
         >
           <CardActions>
@@ -225,9 +225,9 @@ function Block5() {
                 '&:hover': {
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
-                  )}`
-                }
+                    theme.colors.error.main,
+                  )}`,
+                },
               }}
             >
               {t('View all')}
@@ -252,7 +252,7 @@ function Block5() {
           sx={{
             borderBottomColor: `${theme.colors.success.main}`,
             py: 3,
-            px: 4
+            px: 4,
           }}
         >
           <CardActions>
@@ -267,9 +267,9 @@ function Block5() {
                 '&:hover': {
                   background: `${theme.colors.success.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.success.dark
-                  )}`
-                }
+                    theme.colors.success.dark,
+                  )}`,
+                },
               }}
             >
               {t('View all')}
@@ -294,7 +294,7 @@ function Block5() {
           sx={{
             borderBottomColor: `${theme.colors.warning.main}`,
             py: 3,
-            px: 4
+            px: 4,
           }}
         >
           <CardActions>
@@ -309,9 +309,9 @@ function Block5() {
                 '&:hover': {
                   background: `${theme.colors.warning.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.warning.dark
-                  )}`
-                }
+                    theme.colors.warning.dark,
+                  )}`,
+                },
               }}
             >
               {t('View all')}
@@ -336,7 +336,7 @@ function Block5() {
           sx={{
             borderBottomColor: `${theme.colors.info.main}`,
             py: 3,
-            px: 4
+            px: 4,
           }}
         >
           <CardActions>
@@ -351,9 +351,9 @@ function Block5() {
                 '&:hover': {
                   background: `${theme.colors.info.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.info.dark
-                  )}`
-                }
+                    theme.colors.info.dark,
+                  )}`,
+                },
               }}
             >
               {t('View all')}

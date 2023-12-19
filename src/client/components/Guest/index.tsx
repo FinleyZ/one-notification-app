@@ -35,5 +35,5 @@ export const Guest: FC<GuestProps> = (props) => {
 };
 
 Guest.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

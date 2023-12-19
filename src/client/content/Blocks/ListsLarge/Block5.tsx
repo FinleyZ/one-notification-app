@@ -13,7 +13,7 @@ import {
   Avatar,
   styled,
   alpha,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -27,7 +27,7 @@ const LinkHover = styled('a')(
     transition: ${theme.transitions.create([
       'transform',
       'opacity',
-      'box-shadow'
+      'box-shadow',
     ])};
     transform: translateY(0px);
     display: block;
@@ -43,7 +43,7 @@ const LinkHover = styled('a')(
             0 0.225rem 0.8rem ${alpha(theme.colors.alpha.black[100], 0.15)};
         transform: translateY(-4px);
     }
-  `
+  `,
 );
 
 function Block5() {
@@ -59,7 +59,7 @@ function Block5() {
       image: '/static/images/placeholders/fitness/1.jpg',
       info_value: '12.589',
       info_title: 'visits',
-      date: format(subHours(new Date(), 5), 'MMMM dd yyyy')
+      date: format(subHours(new Date(), 5), 'MMMM dd yyyy'),
     },
     {
       id: 2,
@@ -69,7 +69,7 @@ function Block5() {
       image: '/static/images/placeholders/fitness/2.jpg',
       info_value: '345',
       info_title: 'reports',
-      date: format(subDays(new Date(), 8), 'MMMM dd yyyy')
+      date: format(subDays(new Date(), 8), 'MMMM dd yyyy'),
     },
     {
       id: 3,
@@ -79,7 +79,7 @@ function Block5() {
       image: '/static/images/placeholders/fitness/3.jpg',
       info_value: '$68,593',
       info_title: 'sales',
-      date: format(subDays(new Date(), 12), 'MMMM dd yyyy')
+      date: format(subDays(new Date(), 12), 'MMMM dd yyyy'),
     },
     {
       id: 4,
@@ -89,8 +89,8 @@ function Block5() {
       image: '/static/images/placeholders/fitness/4.jpg',
       info_value: '65',
       info_title: 'orders',
-      date: format(subDays(new Date(), 13), 'MMMM dd yyyy')
-    }
+      date: format(subDays(new Date(), 13), 'MMMM dd yyyy'),
+    },
   ];
 
   return (
@@ -107,7 +107,7 @@ function Block5() {
             variant="caption"
             fontWeight="bold"
             sx={{
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
           >
             {t('Targets')}
@@ -125,9 +125,9 @@ function Block5() {
             '&:hover': {
               backgroundColor: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
-              )}`
-            }
+                theme.colors.primary.main,
+              )}`,
+            },
           }}
         >
           {t('View all')}
@@ -136,7 +136,7 @@ function Block5() {
       <Divider />
       <Box
         sx={{
-          height: 380
+          height: 380,
         }}
       >
         <Scrollbar>
@@ -147,13 +147,13 @@ function Block5() {
                   sx={{
                     display: { xs: 'block', md: 'flex' },
                     py: 2,
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
                       mr: 2,
-                      mb: { xs: 2, md: 0 }
+                      mb: { xs: 2, md: 0 },
                     }}
                   >
                     <LinkHover href="#">
@@ -161,7 +161,7 @@ function Block5() {
                         variant="rounded"
                         sx={{
                           width: 'auto',
-                          height: 120
+                          height: 120,
                         }}
                         alt={item.title}
                         src={item.image}
@@ -179,7 +179,7 @@ function Block5() {
                       <>
                         <Typography
                           sx={{
-                            pt: 1
+                            pt: 1,
                           }}
                           variant="subtitle2"
                         >
@@ -191,7 +191,7 @@ function Block5() {
                   <Box
                     component="span"
                     sx={{
-                      display: { xs: 'none', md: 'inline-block' }
+                      display: { xs: 'none', md: 'inline-block' },
                     }}
                   >
                     <Box ml={3} textAlign="right">
@@ -211,7 +211,7 @@ function Block5() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button

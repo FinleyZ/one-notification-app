@@ -11,7 +11,7 @@ import {
   ListItemAvatar,
   Divider,
   Tooltip,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import Text from 'src/client/components/Text';
@@ -50,7 +50,7 @@ function Block9() {
               color="primary"
               sx={{
                 fontWeight: 'bold',
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
             >
               1W
@@ -61,7 +61,7 @@ function Block9() {
               color="primary"
               sx={{
                 fontWeight: 'bold',
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
             >
               1M
@@ -72,7 +72,7 @@ function Block9() {
               color="primary"
               sx={{
                 fontWeight: 'bold',
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
             >
               1Y
@@ -85,20 +85,20 @@ function Block9() {
         px={2}
         py={4}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Typography
           fontWeight="bold"
           sx={{
             lineHeight: 1,
-            fontSize: `${theme.typography.pxToRem(40)}`
+            fontSize: `${theme.typography.pxToRem(40)}`,
           }}
         >
           <Typography
             variant="caption"
             sx={{
-              fontSize: `${theme.typography.pxToRem(30)}`
+              fontSize: `${theme.typography.pxToRem(30)}`,
             }}
             component="span"
           >
@@ -119,7 +119,7 @@ function Block9() {
         <Typography
           variant="caption"
           sx={{
-            fontSize: `${theme.typography.pxToRem(15)}`
+            fontSize: `${theme.typography.pxToRem(15)}`,
           }}
           fontWeight="bold"
         >
@@ -130,7 +130,7 @@ function Block9() {
       <List disablePadding>
         <ListItem
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
         >
           <ListItemAvatar
@@ -138,7 +138,7 @@ function Block9() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -150,8 +150,8 @@ function Block9() {
                 height: 48,
 
                 '& img': {
-                  borderRadius: 'inherit'
-                }
+                  borderRadius: 'inherit',
+                },
               }}
               src="/static/images/placeholders/logo/bitcoin.png"
             />
@@ -168,7 +168,7 @@ function Block9() {
             display="flex"
             alignItems="center"
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Box mr={1}>
@@ -185,7 +185,7 @@ function Block9() {
         <Divider />
         <ListItem
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
         >
           <ListItemAvatar
@@ -193,7 +193,7 @@ function Block9() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -205,8 +205,8 @@ function Block9() {
                 height: 48,
 
                 '& img': {
-                  borderRadius: 'inherit'
-                }
+                  borderRadius: 'inherit',
+                },
               }}
               src="/static/images/placeholders/logo/ethereum.png"
             />
@@ -223,7 +223,7 @@ function Block9() {
             display="flex"
             alignItems="center"
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Box mr={1}>
@@ -240,7 +240,7 @@ function Block9() {
         <Divider />
         <ListItem
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
         >
           <ListItemAvatar
@@ -248,7 +248,7 @@ function Block9() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -258,7 +258,7 @@ function Block9() {
                 background: `${theme.colors.alpha.trueWhite[100]}`,
                 padding: '0',
                 width: 48,
-                height: 48
+                height: 48,
               }}
             >
               <MonetizationOnTwoToneIcon />
@@ -276,7 +276,7 @@ function Block9() {
             display="flex"
             alignItems="center"
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Box mr={1}>
@@ -292,13 +292,13 @@ function Block9() {
       <Box
         p={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
           sx={{
             textTransform: 'uppercase',
-            fontSize: `${theme.typography.pxToRem(12)}`
+            fontSize: `${theme.typography.pxToRem(12)}`,
           }}
           variant="contained"
           endIcon={<KeyboardArrowRightTwoToneIcon />}

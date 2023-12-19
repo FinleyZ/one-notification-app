@@ -9,7 +9,7 @@ import {
   styled,
   useTheme,
   Drawer,
-  ListSubheader
+  ListSubheader,
 } from '@mui/material';
 import { MailboxSidebarItem } from './SidebarItem';
 import { useTranslation } from 'react-i18next';
@@ -40,7 +40,7 @@ const DrawerWrapper = styled(Drawer)(
         z-index: 3;
         background: ${alpha(theme.colors.alpha.white[100], 0.1)};
     }
-`
+`,
 );
 
 const DrawerWrapperMobile = styled(Drawer)(
@@ -52,7 +52,7 @@ const DrawerWrapperMobile = styled(Drawer)(
         width: 280px;
         z-index: 3;
   }
-`
+`,
 );
 
 const ListItemWrapper = styled(MailboxSidebarItem)(
@@ -81,13 +81,13 @@ const ListItemWrapper = styled(MailboxSidebarItem)(
     &:hover {
       background-color: ${theme.colors.alpha.white[70]};
     }
-`
+`,
 );
 
 const groupTags = (tags) => {
   const groups = {
     category_tag: [],
-    label_tag: []
+    label_tag: [],
   };
 
   tags.forEach((tag) => {
@@ -115,13 +115,13 @@ export const MailboxSidebar: FC<MailboxSidebarProps> = (props) => {
 
   const sidebarContent = (
     <Box p={3}>
-      <Button 
-        sx={{ mb: 3 }} 
-        fullWidth 
+      <Button
+        sx={{ mb: 3 }}
+        fullWidth
         variant="contained"
         href="/applications/mailbox/create"
         // onClick={handleMessageEvent}
-        >
+      >
         {t('Compose message')}
       </Button>
 
@@ -132,7 +132,7 @@ export const MailboxSidebar: FC<MailboxSidebarProps> = (props) => {
               disableGutters
               sx={{
                 fontWeight: 'bold',
-                textTransform: 'uppercase'
+                textTransform: 'uppercase',
               }}
               disableSticky={true}
             >
@@ -160,7 +160,7 @@ export const MailboxSidebar: FC<MailboxSidebarProps> = (props) => {
     <>
       <DrawerWrapperMobile
         sx={{
-          display: { lg: 'none', xs: 'inline-block' }
+          display: { lg: 'none', xs: 'inline-block' },
         }}
         variant="temporary"
         anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -171,7 +171,7 @@ export const MailboxSidebar: FC<MailboxSidebarProps> = (props) => {
       </DrawerWrapperMobile>
       <DrawerWrapper
         sx={{
-          display: { xs: 'none', lg: 'block' }
+          display: { xs: 'none', lg: 'block' },
         }}
         variant="permanent"
         anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -188,9 +188,9 @@ MailboxSidebar.propTypes = {
   tag: PropTypes.string,
   tags: PropTypes.array.isRequired,
   onClose: PropTypes.func,
-  handleMessageEvent: PropTypes.func
+  handleMessageEvent: PropTypes.func,
 };
 
 MailboxSidebar.defaultProps = {
-  handleMessageEvent: () => {}
+  handleMessageEvent: () => {},
 };

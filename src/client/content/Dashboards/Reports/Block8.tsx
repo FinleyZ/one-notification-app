@@ -13,7 +13,7 @@ import {
   Button,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -30,7 +30,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -38,7 +38,7 @@ const ListWrapper = styled(List)(
     .MuiDivider-root:first-of-type {
         display: none;
     }
-  `
+  `,
 );
 
 function Block8() {
@@ -50,61 +50,61 @@ function Block8() {
       id: 1,
       username: 'Shanelle Wynn',
       jobtitle: 'UI Engineer, Apple Inc.',
-      avatar: '/static/images/avatars/1.jpg'
+      avatar: '/static/images/avatars/1.jpg',
     },
     {
       id: 2,
       username: 'Akeem Griffith',
       jobtitle: 'Manager, Google Inc.',
-      avatar: '/static/images/avatars/2.jpg'
+      avatar: '/static/images/avatars/2.jpg',
     },
     {
       id: 3,
       username: 'Abigayle Hicks',
       jobtitle: 'Project Manager, Spotify',
-      avatar: '/static/images/avatars/3.jpg'
+      avatar: '/static/images/avatars/3.jpg',
     },
     {
       id: 4,
       username: 'Reece Corbett',
       jobtitle: 'Senior Designer, Amazon Inc.',
-      avatar: '/static/images/avatars/4.jpg'
+      avatar: '/static/images/avatars/4.jpg',
     },
     {
       id: 5,
       username: 'Zain Baptista',
       jobtitle: 'Senior Accountant, Microsoft',
-      avatar: '/static/images/avatars/5.jpg'
-    }
+      avatar: '/static/images/avatars/5.jpg',
+    },
   ];
 
   const Box1Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.info.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.info.main],
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     fill: {
       gradient: {
@@ -114,8 +114,8 @@ function Block8() {
         inverseColors: false,
         opacityFrom: 0.8,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     labels: [
       'Monday',
@@ -127,38 +127,38 @@ function Block8() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       crosshairs: {
-        width: 1
-      }
+        width: 1,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Weekly Sales',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
 
   return (
     <Card
       sx={{
-        position: 'relative'
+        position: 'relative',
       }}
     >
       <CardActions>
@@ -170,7 +170,7 @@ function Block8() {
         <Typography
           variant="h3"
           sx={{
-            fontSize: `${theme.typography.pxToRem(19)}`
+            fontSize: `${theme.typography.pxToRem(19)}`,
           }}
         >
           {t('Weekly Sales')}
@@ -182,7 +182,7 @@ function Block8() {
       <Chart options={Box1Options} series={Box1Data} type="area" height={119} />
       <Box
         sx={{
-          height: 237
+          height: 237,
         }}
       >
         <Scrollbar>
@@ -193,12 +193,12 @@ function Block8() {
                 <ListItem
                   sx={{
                     py: 2,
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
-                      mr: 0
+                      mr: 0,
                     }}
                   >
                     <Avatar alt={item.username} src={item.avatar} />
@@ -207,12 +207,12 @@ function Block8() {
                     primary={<Text color="black">{item.username}</Text>}
                     primaryTypographyProps={{
                       variant: 'h5',
-                      noWrap: true
+                      noWrap: true,
                     }}
                     secondary={item.jobtitle}
                     secondaryTypographyProps={{
                       variant: 'subtitle2',
-                      noWrap: true
+                      noWrap: true,
                     }}
                   />
                   <Button
@@ -223,9 +223,9 @@ function Block8() {
                       '&:hover': {
                         backgroundColor: `${theme.colors.secondary.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.secondary.main
-                        )}`
-                      }
+                          theme.colors.secondary.main,
+                        )}`,
+                      },
                     }}
                   >
                     {t('View')}
@@ -240,7 +240,7 @@ function Block8() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button

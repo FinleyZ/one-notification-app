@@ -23,7 +23,7 @@ const categoryTagIcons = {
   outbox: OutboxTwoToneIcon,
   favourites: FavoriteTwoToneIcon,
   drafts: DraftsTwoToneIcon,
-  deleted: AutoDeleteTwoToneIcon
+  deleted: AutoDeleteTwoToneIcon,
 };
 
 const getTagIcon = (tag: any) => {
@@ -56,7 +56,7 @@ export const MailboxSidebarItem: FC<MailboxSidebarItemProps> = (props) => {
   return (
     <ListItemButton
       sx={{
-        my: '2px'
+        my: '2px',
       }}
       component={Link}
       href={href}
@@ -67,7 +67,7 @@ export const MailboxSidebarItem: FC<MailboxSidebarItemProps> = (props) => {
         <TagIcon
           color="inherit"
           sx={{
-            color: color
+            color: color,
           }}
         />
       </ListItemIcon>
@@ -75,7 +75,7 @@ export const MailboxSidebarItem: FC<MailboxSidebarItemProps> = (props) => {
       <ListItemText
         primary={tag.name}
         primaryTypographyProps={{
-          fontWeight: tag.type === 'category_tag' ? 'bold' : null
+          fontWeight: tag.type === 'category_tag' ? 'bold' : null,
         }}
       />
       {showUnread && <Label color="primary">{tag.unreadMails}</Label>}
@@ -88,5 +88,5 @@ MailboxSidebarItem.propTypes = {
   // @ts-ignore
   tag: PropTypes.object.isRequired,
   href: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };

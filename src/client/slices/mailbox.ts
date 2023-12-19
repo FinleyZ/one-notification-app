@@ -17,10 +17,10 @@ export interface MailState {
 const initialState: MailState = {
   mails: {
     byId: {},
-    allIds: []
+    allIds: [],
   },
   tags: [],
-  sidebarOpen: false
+  sidebarOpen: false,
 };
 
 const slice = createSlice({
@@ -50,8 +50,8 @@ const slice = createSlice({
     },
     closeSidebar(state: MailState): void {
       state.sidebarOpen = false;
-    }
-  }
+    },
+  },
 });
 
 export const { reducer } = slice;

@@ -12,19 +12,19 @@ function StorageUsage() {
       {
         bg: alpha(theme.colors.primary.main, 0.2),
         data: 40,
-        title: t('Free')
+        title: t('Free'),
       },
       {
         bg: alpha(theme.colors.primary.main, 0.9),
         data: 25,
-        title: t('Used')
+        title: t('Used'),
       },
       {
         bg: alpha(theme.colors.primary.main, 0.5),
         data: 35,
-        title: t('Available')
-      }
-    ]
+        title: t('Available'),
+      },
+    ],
   };
 
   const chartOptions: ApexOptions = {
@@ -32,41 +32,41 @@ function StorageUsage() {
       background: 'transparent',
       stacked: false,
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     states: {
       normal: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       hover: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       active: {
         filter: {
-          type: 'none'
-        }
-      }
+          type: 'none',
+        },
+      },
     },
     colors: data.series.map((chart) => chart.bg),
     labels: data.series.map((chart) => chart.title),
     plotOptions: {
       radialBar: {
         track: {
-          background: theme.colors.alpha.black[5]
+          background: theme.colors.alpha.black[5],
         },
         hollow: {
-          size: '35%'
-        }
-      }
+          size: '35%',
+        },
+      },
     },
     theme: {
-      mode: theme.palette.mode
-    }
+      mode: theme.palette.mode,
+    },
   };
 
   const chartSeries = data.series.map((chart) => chart.data);
@@ -75,7 +75,7 @@ function StorageUsage() {
     <Card
       sx={{
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
       }}
     >
       <Chart

@@ -8,7 +8,7 @@ import {
   ListItemText,
   Typography,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -28,72 +28,72 @@ function Block2() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.primary.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
       colors: [theme.colors.success.lighter],
-      type: 'solid'
+      type: 'solid',
     },
     stroke: {
       show: true,
       colors: [theme.colors.success.main],
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
   const Box1Data = [
     {
       name: 'Top grossing products',
-      data: [4, 54, 30, 57, 11, 30, 10, 30, 6]
-    }
+      data: [4, 54, 30, 57, 11, 30, 10, 30, 6],
+    },
   ];
 
   return (
     <Card variant="outlined">
       <CardHeader
         sx={{
-          p: 2
+          p: 2,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Updates')}
@@ -105,7 +105,7 @@ function Block2() {
         <ListItem
           sx={{
             px: 2,
-            py: 1.5
+            py: 1.5,
           }}
         >
           <ListItemAvatar
@@ -114,12 +114,12 @@ function Block2() {
               display: 'flex',
               alignItems: 'center',
               minWidth: 0,
-              opacity: 0.3
+              opacity: 0.3,
             }}
           >
             <ContactPhoneTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(28)}`
+                fontSize: `${theme.typography.pxToRem(28)}`,
               }}
             />
           </ListItemAvatar>
@@ -136,7 +136,7 @@ function Block2() {
         <ListItem
           sx={{
             px: 2,
-            py: 1.5
+            py: 1.5,
           }}
         >
           <ListItemAvatar
@@ -145,12 +145,12 @@ function Block2() {
               display: 'flex',
               alignItems: 'center',
               minWidth: 0,
-              opacity: 0.3
+              opacity: 0.3,
             }}
           >
             <EvStationTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(28)}`
+                fontSize: `${theme.typography.pxToRem(28)}`,
               }}
             />
           </ListItemAvatar>
@@ -167,7 +167,7 @@ function Block2() {
         <ListItem
           sx={{
             px: 2,
-            py: 1.5
+            py: 1.5,
           }}
         >
           <ListItemAvatar
@@ -176,12 +176,12 @@ function Block2() {
               display: 'flex',
               alignItems: 'center',
               minWidth: 0,
-              opacity: 0.3
+              opacity: 0.3,
             }}
           >
             <AutoAwesomeMosaicTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(28)}`
+                fontSize: `${theme.typography.pxToRem(28)}`,
               }}
             />
           </ListItemAvatar>
@@ -198,7 +198,7 @@ function Block2() {
         <ListItem
           sx={{
             px: 2,
-            py: 1.5
+            py: 1.5,
           }}
         >
           <ListItemAvatar
@@ -207,12 +207,12 @@ function Block2() {
               display: 'flex',
               alignItems: 'center',
               minWidth: 0,
-              opacity: 0.3
+              opacity: 0.3,
             }}
           >
             <CardTravelTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(28)}`
+                fontSize: `${theme.typography.pxToRem(28)}`,
               }}
             />
           </ListItemAvatar>

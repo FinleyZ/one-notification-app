@@ -26,8 +26,8 @@ const Scrollbar: FC<ScrollbarProps> = ({ className, children, ...rest }) => {
               transition: `${theme.transitions.create(['background'])}`,
 
               '&:hover': {
-                background: `${theme.colors.alpha.black[30]}`
-              }
+                background: `${theme.colors.alpha.black[30]}`,
+              },
             }}
           />
         );
@@ -41,7 +41,7 @@ const Scrollbar: FC<ScrollbarProps> = ({ className, children, ...rest }) => {
 
 Scrollbar.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default Scrollbar;

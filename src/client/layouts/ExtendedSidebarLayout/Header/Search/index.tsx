@@ -4,7 +4,7 @@ import {
   Ref,
   useState,
   ReactElement,
-  ChangeEvent
+  ChangeEvent,
 } from 'react';
 import {
   Box,
@@ -22,7 +22,7 @@ import {
   alpha,
   Slide,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -43,7 +43,7 @@ const wait = (time: number): Promise<void> =>
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & { children: ReactElement<any, any> },
-  ref: Ref<unknown>
+  ref: Ref<unknown>,
 ) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
@@ -57,7 +57,7 @@ const DialogWrapper = styled(Dialog)(
     .MuiDialog-paperScrollPaper {
         max-height: calc(100vh - 64px)
     }
-`
+`,
 );
 
 const SearchInputWrapper = styled(InputBase)(
@@ -65,7 +65,7 @@ const SearchInputWrapper = styled(InputBase)(
     font-size: ${theme.typography.pxToRem(18)};
     padding: ${theme.spacing(2)};
     width: 100%;
-`
+`,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -73,7 +73,7 @@ const IconButtonWrapper = styled(IconButton)(
         width: ${theme.spacing(4)};
         height: ${theme.spacing(4)};
         border-radius: ${theme.general.borderRadiusLg};
-`
+`,
 );
 
 const ListButton = styled(Box)(
@@ -104,43 +104,43 @@ const ListButton = styled(Box)(
           color:  ${theme.colors.primary.main};
         }
       }
-`
+`,
 );
 
 const searchTerms = {
   Dashboards: [
     {
-      title: 'Automation UI'
+      title: 'Automation UI',
     },
     {
-      title: 'Banking Performance'
+      title: 'Banking Performance',
     },
     {
-      title: 'Fitness Statistics'
-    }
+      title: 'Fitness Statistics',
+    },
   ],
   Applications: [
     {
-      title: 'Events Manager'
+      title: 'Events Manager',
     },
     {
-      title: 'Messenging Platform'
-    }
+      title: 'Messenging Platform',
+    },
   ],
   Management: [
     {
-      title: 'Products Admin'
+      title: 'Products Admin',
     },
     {
-      title: 'Customers Database'
+      title: 'Customers Database',
     },
     {
-      title: 'Learning Center'
+      title: 'Learning Center',
     },
     {
-      title: 'Invoices Archive'
-    }
-  ]
+      title: 'Invoices Archive',
+    },
+  ],
 };
 
 function HeaderSearch() {
@@ -210,7 +210,7 @@ function HeaderSearch() {
                 <SearchTwoToneIcon
                   sx={{
                     ml: 2,
-                    color: theme.colors.secondary.main
+                    color: theme.colors.secondary.main,
                   }}
                 />
                 <SearchInputWrapper
@@ -227,7 +227,7 @@ function HeaderSearch() {
                   mr: 2,
                   py: 0.5,
                   px: 1,
-                  background: theme.colors.alpha.black[10]
+                  background: theme.colors.alpha.black[10],
                 }}
               >
                 <Typography
@@ -257,13 +257,13 @@ function HeaderSearch() {
                   alignItems: 'center',
                   p: 1,
                   mx: 2,
-                  my: 2
+                  my: 2,
                 }}
               >
                 <ContactSupportTwoToneIcon
                   sx={{
                     mr: 0.8,
-                    fontSize: theme.typography.pxToRem(18)
+                    fontSize: theme.typography.pxToRem(18),
                   }}
                 />
                 {t('Start typing to see the search results...')}
@@ -276,7 +276,7 @@ function HeaderSearch() {
             sx={{
               display: 'flex',
               justifyContent: 'center',
-              my: 5
+              my: 5,
             }}
           >
             <CircularProgress />
@@ -286,7 +286,7 @@ function HeaderSearch() {
             {searchResults ? (
               <Box
                 sx={{
-                  height: 450
+                  height: 450,
                 }}
               >
                 <Scrollbar>
@@ -294,7 +294,7 @@ function HeaderSearch() {
                     <Box px={2} py={1} key={index}>
                       <Typography
                         sx={{
-                          py: 1
+                          py: 1,
                         }}
                         variant="h5"
                       >
@@ -306,7 +306,7 @@ function HeaderSearch() {
                             <Box display="flex" alignItems="flex-start">
                               <RestoreTwoToneIcon
                                 sx={{
-                                  mr: 1
+                                  mr: 1,
                                 }}
                                 fontSize="small"
                               />
@@ -323,14 +323,14 @@ function HeaderSearch() {
             ) : (
               <Box
                 sx={{
-                  height: 450
+                  height: 450,
                 }}
               >
                 <Scrollbar>
                   <Box pb={2} px={2}>
                     <Typography
                       sx={{
-                        pb: 0.5
+                        pb: 0.5,
                       }}
                       variant="h5"
                     >
@@ -340,7 +340,7 @@ function HeaderSearch() {
                       <Box display="flex" alignItems="center">
                         <RestoreTwoToneIcon
                           sx={{
-                            mr: 1
+                            mr: 1,
                           }}
                           fontSize="small"
                         />
@@ -371,7 +371,7 @@ function HeaderSearch() {
                       <Box display="flex" alignItems="center">
                         <RestoreTwoToneIcon
                           sx={{
-                            mr: 1
+                            mr: 1,
                           }}
                           fontSize="small"
                         />
@@ -401,7 +401,7 @@ function HeaderSearch() {
                     <Typography
                       sx={{
                         pt: 2,
-                        pb: 0.5
+                        pb: 0.5,
                       }}
                       variant="h5"
                     >
@@ -411,7 +411,7 @@ function HeaderSearch() {
                       <Box display="flex" alignItems="center">
                         <StarTwoToneIcon
                           sx={{
-                            mr: 1
+                            mr: 1,
                           }}
                           fontSize="small"
                         />
@@ -431,7 +431,7 @@ function HeaderSearch() {
                     </ListButton>
                     <Divider
                       sx={{
-                        my: 4
+                        my: 4,
                       }}
                     />
                     <Typography variant="h5">
@@ -450,7 +450,7 @@ function HeaderSearch() {
                               sx={{
                                 color: theme.colors.primary.main,
                                 fontSize: theme.typography.pxToRem(18),
-                                mr: 1
+                                mr: 1,
                               }}
                             />
                             <b>{t('Dashboards')}</b>
@@ -459,7 +459,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -470,7 +470,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -481,7 +481,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -492,7 +492,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -513,7 +513,7 @@ function HeaderSearch() {
                               sx={{
                                 color: theme.colors.primary.main,
                                 fontSize: theme.typography.pxToRem(18),
-                                mr: 1
+                                mr: 1,
                               }}
                             />
                             <b>{t('Management')}</b>
@@ -522,7 +522,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -533,7 +533,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -544,7 +544,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >
@@ -555,7 +555,7 @@ function HeaderSearch() {
                             <ListItem
                               sx={{
                                 pl: 3,
-                                py: 0.4
+                                py: 0.4,
                               }}
                               disableGutters
                             >

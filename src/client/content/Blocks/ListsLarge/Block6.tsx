@@ -15,7 +15,7 @@ import {
   IconButton,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -30,7 +30,7 @@ const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
       border-radius: 0;
-  `
+  `,
 );
 
 const LinkHover = styled('a')(
@@ -38,7 +38,7 @@ const LinkHover = styled('a')(
     transition: ${theme.transitions.create([
       'transform',
       'opacity',
-      'box-shadow'
+      'box-shadow',
     ])};
     transform: translateY(0px);
     display: block;
@@ -48,7 +48,7 @@ const LinkHover = styled('a')(
         opacity: .9;
         transform: translateY(-4px);
     }
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -60,7 +60,7 @@ const IconButtonWrapper = styled(IconButton)(
     &:hover {
         transform: scale(1.1);
     }
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -68,7 +68,7 @@ const ListWrapper = styled(List)(
       .MuiListItem-root:last-of-type + .MuiDivider-root {
           display: none;
       }
-  `
+  `,
 );
 
 function Block6() {
@@ -80,39 +80,39 @@ function Block6() {
       id: 1,
       title: 'Amazon Dot Echo 3',
       image: '/static/images/placeholders/products/1.png',
-      price: '79'
+      price: '79',
     },
     {
       id: 2,
       title: 'Autodesk 3D Printer PRO',
       image: '/static/images/placeholders/products/2.png',
-      price: '399'
+      price: '399',
     },
     {
       id: 3,
       title: 'Apple iPhone 12 PRO',
       image: '/static/images/placeholders/products/3.png',
-      price: '749'
+      price: '749',
     },
     {
       id: 4,
       title: 'GoPro Action Camera 3',
       image: '/static/images/placeholders/products/4.png',
-      price: '289'
+      price: '289',
     },
     {
       id: 5,
       title: 'Apple Watch 42mm Gen. 4',
       image: '/static/images/placeholders/products/5.png',
-      price: '199'
-    }
+      price: '199',
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 2
+          p: 2,
         }}
         disableTypography
         action={
@@ -124,7 +124,7 @@ function Block6() {
           <>
             <Typography
               sx={{
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
               gutterBottom
               variant="h3"
@@ -145,7 +145,7 @@ function Block6() {
       <Divider />
       <Box
         sx={{
-          height: 303
+          height: 303,
         }}
       >
         <Scrollbar>
@@ -156,13 +156,13 @@ function Block6() {
                   sx={{
                     display: { xs: 'block', md: 'flex' },
                     py: 1.5,
-                    px: 2
+                    px: 2,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
                       mr: 2,
-                      mb: { xs: 2, md: 0 }
+                      mb: { xs: 2, md: 0 },
                     }}
                   >
                     <LinkHover href="#">
@@ -170,7 +170,7 @@ function Block6() {
                         variant="rounded"
                         sx={{
                           width: 100,
-                          height: 'auto'
+                          height: 'auto',
                         }}
                         alt={item.title}
                         src={item.image}
@@ -183,7 +183,7 @@ function Block6() {
                       <Link
                         sx={{
                           display: 'block',
-                          mb: 1
+                          mb: 1,
                         }}
                         noWrap
                         color="text.primary"
@@ -202,7 +202,7 @@ function Block6() {
                   <Box
                     component="span"
                     sx={{
-                      display: { xs: 'none', md: 'inline-block' }
+                      display: { xs: 'none', md: 'inline-block' },
                     }}
                   >
                     <Box ml={3} textAlign="right">
@@ -210,16 +210,16 @@ function Block6() {
                         sx={{
                           backgroundColor: `${theme.colors.primary.main}`,
                           color: `${theme.palette.getContrastText(
-                            theme.colors.primary.main
+                            theme.colors.primary.main,
                           )}`,
                           transition: `${theme.transitions.create(['all'])}`,
 
                           '&:hover': {
                             backgroundColor: `${theme.colors.primary.main}`,
                             color: `${theme.palette.getContrastText(
-                              theme.colors.primary.main
-                            )}`
-                          }
+                              theme.colors.primary.main,
+                            )}`,
+                          },
                         }}
                         size="small"
                       >
@@ -235,9 +235,9 @@ function Block6() {
                           '&:hover': {
                             backgroundColor: `${theme.colors.error.main}`,
                             color: `${theme.palette.getContrastText(
-                              theme.colors.error.main
-                            )}`
-                          }
+                              theme.colors.error.main,
+                            )}`,
+                          },
                         }}
                         size="small"
                       >
@@ -257,14 +257,14 @@ function Block6() {
         elevation={0}
         sx={{
           textAlign: 'right',
-          p: 2
+          p: 2,
         }}
       >
         <Typography variant="caption" fontWeight="bold">
           {t('Total')}
           <Typography
             sx={{
-              pl: 1
+              pl: 1,
             }}
             component="span"
             variant="h4"
@@ -279,7 +279,7 @@ function Block6() {
       <Box
         p={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
@@ -288,7 +288,7 @@ function Block6() {
           sx={{
             py: 2,
             fontSize: `${theme.typography.pxToRem(12)}`,
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
           }}
         >
           {t('Proceed to checkout')}

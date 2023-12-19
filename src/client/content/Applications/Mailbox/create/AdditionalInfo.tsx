@@ -18,7 +18,7 @@ import {
   InputLabel,
   Select,
   Card,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import HelpOutlineTwoToneIcon from '@mui/icons-material/HelpOutlineTwoTone';
@@ -27,7 +27,7 @@ const TabsContainerWrapper = styled(Box)(
   ({ theme }) => `
     background-color: ${theme.colors.alpha.black[5]};
     padding: ${theme.spacing(2)};
-  `
+  `,
 );
 
 function AdditionalInfo() {
@@ -38,7 +38,7 @@ function AdditionalInfo() {
   const tabs = [
     { value: 'general', label: t('General') },
     { value: 'inventory', label: t('Inventory') },
-    { value: 'shipping', label: t('Shipping') }
+    { value: 'shipping', label: t('Shipping') },
   ];
 
   const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
@@ -92,7 +92,7 @@ function AdditionalInfo() {
                   native
                   label={t('Tax Status')}
                   inputProps={{
-                    name: 'tax_status'
+                    name: 'tax_status',
                   }}
                 >
                   <option aria-label="None" value="" />
@@ -107,7 +107,7 @@ function AdditionalInfo() {
                   native
                   label={t('Tax Class')}
                   inputProps={{
-                    name: 'tax_status'
+                    name: 'tax_status',
                   }}
                 >
                   <option aria-label="None" value="" />
@@ -132,13 +132,13 @@ function AdditionalInfo() {
                   arrow
                   placement="top"
                   title={t(
-                    'This field helps identify the current product stocks'
+                    'This field helps identify the current product stocks',
                   )}
                 >
                   <IconButton
                     size="small"
                     sx={{
-                      ml: 1
+                      ml: 1,
                     }}
                     color="primary"
                   >
@@ -156,7 +156,7 @@ function AdditionalInfo() {
                   native
                   label={t('Stock Status')}
                   inputProps={{
-                    name: 'stock_status'
+                    name: 'stock_status',
                   }}
                 >
                   <option aria-label="None" value="" />
@@ -173,7 +173,7 @@ function AdditionalInfo() {
               />
               <Typography variant="h6" color="text.secondary">
                 {t(
-                  'Enable this to only allow one of this item to be bought in a single order'
+                  'Enable this to only allow one of this item to be bought in a single order',
                 )}
               </Typography>
             </Grid>
@@ -187,7 +187,7 @@ function AdditionalInfo() {
                   InputProps={{
                     endAdornment: (
                       <InputAdornment position="end">Kg</InputAdornment>
-                    )
+                    ),
                   }}
                   fullWidth
                   name="weight"
@@ -200,13 +200,13 @@ function AdditionalInfo() {
                   arrow
                   placement="top"
                   title={t(
-                    'Your have the weight units set to kilograms in your app settings'
+                    'Your have the weight units set to kilograms in your app settings',
                   )}
                 >
                   <IconButton
                     size="small"
                     sx={{
-                      ml: 1
+                      ml: 1,
                     }}
                     color="primary"
                   >
@@ -220,7 +220,7 @@ function AdditionalInfo() {
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">CM</InputAdornment>
-                  )
+                  ),
                 }}
                 fullWidth
                 name="length"
@@ -234,7 +234,7 @@ function AdditionalInfo() {
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">CM</InputAdornment>
-                  )
+                  ),
                 }}
                 fullWidth
                 name="width"
@@ -252,7 +252,7 @@ function AdditionalInfo() {
                   native
                   label={t('Shipping class')}
                   inputProps={{
-                    name: 'shipping_class'
+                    name: 'shipping_class',
                   }}
                 >
                   <option aria-label="None" value="" />

@@ -12,7 +12,7 @@ import {
   Checkbox,
   TableContainer,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Scrollbar from 'src/client/components/Scrollbar';
 import Text from 'src/client/components/Text';
@@ -25,7 +25,7 @@ import Label from 'src/client/components/Label';
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -41,7 +41,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -55,7 +55,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -67,7 +67,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 function Block2() {
@@ -77,32 +77,32 @@ function Block2() {
   return (
     <Card
       sx={{
-        p: 2
+        p: 2,
       }}
     >
       <BoxComposed
         sx={{
           borderRadius: `${theme.general.borderRadius}`,
-          background: `${theme.colors.gradients.black2}`
+          background: `${theme.colors.gradients.black2}`,
         }}
       >
         <BoxComposedBg
           sx={{
             opacity: 0.1,
-            background: `${theme.colors.gradients.black1}`
+            background: `${theme.colors.gradients.black1}`,
           }}
         />
         <BoxComposedImage
           sx={{
             opacity: 0.2,
-            backgroundImage: 'url("/static/images/placeholders/covers/5.jpg")'
+            backgroundImage: 'url("/static/images/placeholders/covers/5.jpg")',
           }}
         />
         <BoxComposedContent py={3}>
           <Typography
             textAlign="center"
             sx={{
-              pb: 1
+              pb: 1,
             }}
             variant="h3"
           >
@@ -116,7 +116,7 @@ function Block2() {
       <Box
         py={2}
         sx={{
-          height: 493
+          height: 493,
         }}
       >
         <Scrollbar>
@@ -127,13 +127,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -142,7 +142,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -161,13 +161,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -176,7 +176,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -195,13 +195,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -210,7 +210,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -229,13 +229,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -244,7 +244,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -264,13 +264,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -279,7 +279,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -298,13 +298,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -313,7 +313,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -332,13 +332,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -347,7 +347,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -366,13 +366,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -381,7 +381,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -400,13 +400,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -415,7 +415,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -434,13 +434,13 @@ function Block2() {
                   <TableCell padding="checkbox">
                     <Checkbox
                       sx={{
-                        padding: 0.5
+                        padding: 0.5,
                       }}
                     />
                   </TableCell>
                   <TableCell
                     sx={{
-                      pl: 0
+                      pl: 0,
                     }}
                   >
                     <Box pb={0.5} display="flex" alignItems="center">
@@ -449,7 +449,7 @@ function Block2() {
                       </Text>
                       <Typography
                         sx={{
-                          pl: 0.5
+                          pl: 0.5,
                         }}
                         variant="h4"
                         noWrap
@@ -471,13 +471,13 @@ function Block2() {
       </Box>
       <Box
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Badge color="success" variant="dot">
           <Button
             sx={{
-              px: 4
+              px: 4,
             }}
             variant="contained"
           >

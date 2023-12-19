@@ -11,7 +11,7 @@ import {
   TextField,
   Typography,
   FormControlLabel,
-  CircularProgress
+  CircularProgress,
 } from '@mui/material';
 import { useAuth } from 'src/client/hooks/useAuth';
 import { useRefMounted } from 'src/client/hooks/useRefMounted';
@@ -29,7 +29,7 @@ export const RegisterJWT: FC = (props) => {
       name: '',
       password: '',
       terms: false,
-      submit: null
+      submit: null,
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -43,8 +43,8 @@ export const RegisterJWT: FC = (props) => {
         .required(t('The password field is required')),
       terms: Yup.boolean().oneOf(
         [true],
-        t('You must agree to our terms and conditions')
-      )
+        t('You must agree to our terms and conditions'),
+      ),
     }),
     onSubmit: async (values, helpers): Promise<void> => {
       try {
@@ -64,7 +64,7 @@ export const RegisterJWT: FC = (props) => {
           helpers.setSubmitting(false);
         }
       }
-    }
+    },
   });
 
   return (
@@ -130,7 +130,7 @@ export const RegisterJWT: FC = (props) => {
       )}
       <Button
         sx={{
-          mt: 3
+          mt: 3,
         }}
         color="primary"
         startIcon={

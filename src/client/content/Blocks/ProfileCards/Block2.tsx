@@ -8,7 +8,7 @@ import {
   Typography,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     bottom: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const Label = styled(Box)(
@@ -36,7 +36,7 @@ const Label = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 function Block2() {
@@ -54,16 +54,16 @@ function Block2() {
           transform: 'translateY(-10px)',
           boxShadow: `0 2rem 8rem 0 ${alpha(
             theme.colors.alpha.black[100],
-            0.05
+            0.05,
           )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
-                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`
-        }
+                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
+        },
       }}
     >
       <Box
         sx={{
-          position: 'relative'
+          position: 'relative',
         }}
       >
         <CardMedia
@@ -84,13 +84,13 @@ function Block2() {
             height: `${theme.spacing(14)}`,
             mt: `-${theme.spacing(10)}`,
             mx: 'auto',
-            boxShadow: `0 0 0 4px ${theme.colors.alpha.white[100]}`
+            boxShadow: `0 0 0 4px ${theme.colors.alpha.white[100]}`,
           }}
           src="/static/images/avatars/5.jpg"
         />
         <Typography
           sx={{
-            py: 2
+            py: 2,
           }}
           variant="h3"
         >
@@ -98,13 +98,13 @@ function Block2() {
         </Typography>
         <Typography
           sx={{
-            px: 3
+            px: 3,
           }}
           variant="subtitle2"
           textAlign="center"
         >
           {t(
-            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
           )}
           .
         </Typography>
@@ -118,8 +118,8 @@ function Block2() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"
@@ -137,8 +137,8 @@ function Block2() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"
@@ -155,8 +155,8 @@ function Block2() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"

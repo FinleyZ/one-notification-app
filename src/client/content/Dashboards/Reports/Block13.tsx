@@ -10,7 +10,7 @@ import {
   Avatar,
   Typography,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -27,14 +27,14 @@ function Block13() {
     <Card variant="outlined">
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Users list')}
@@ -51,9 +51,9 @@ function Block13() {
               '&:hover': {
                 backgroundColor: `${theme.colors.secondary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.secondary.main
-                )}`
-              }
+                  theme.colors.secondary.main,
+                )}`,
+              },
             }}
           >
             {t('Export')}
@@ -63,19 +63,19 @@ function Block13() {
       <Divider />
       <List
         sx={{
-          py: 0
+          py: 0,
         }}
       >
         <ListItem
           sx={{
             px: 2,
-            py: 1.95
+            py: 1.95,
           }}
         >
           <ListItemAvatar
             sx={{
               mr: 2,
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar src="/static/images/avatars/1.jpg" />
@@ -95,7 +95,7 @@ function Block13() {
           <Box display="flex" alignItems="center">
             <Typography
               sx={{
-                pr: 1
+                pr: 1,
               }}
               variant="h3"
             >
@@ -104,7 +104,7 @@ function Block13() {
             <ArrowUpwardTwoToneIcon
               fontSize="small"
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
           </Box>
@@ -113,13 +113,13 @@ function Block13() {
         <ListItem
           sx={{
             px: 2,
-            py: 1.95
+            py: 1.95,
           }}
         >
           <ListItemAvatar
             sx={{
               mr: 2,
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar src="/static/images/avatars/2.jpg" />
@@ -135,7 +135,7 @@ function Block13() {
           <Box display="flex" alignItems="center">
             <Typography
               sx={{
-                pr: 1
+                pr: 1,
               }}
               variant="h3"
             >
@@ -144,7 +144,7 @@ function Block13() {
             <ArrowUpwardTwoToneIcon
               fontSize="small"
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
           </Box>

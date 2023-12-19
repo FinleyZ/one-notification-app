@@ -9,7 +9,7 @@ import {
   IconButton,
   Divider,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { formatDistance, subMinutes } from 'date-fns';
@@ -23,7 +23,7 @@ const CardHeaderWrapper = styled(CardHeader)(
       align-self: center;
       margin: 0;
     }
-`
+`,
 );
 
 function ResourcesAlarm() {
@@ -32,22 +32,21 @@ function ResourcesAlarm() {
   const theme = useTheme();
 
   const chartOptions: ApexOptions = {
-    
     chart: {
       background: 'transparent',
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     stroke: {
       curve: 'smooth',
       // width: [3, 3]
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     markers: {
-      size: 0
+      size: 0,
     },
     colors: [theme.colors.primary.main, theme.colors.error.main],
     labels: [
@@ -70,13 +69,13 @@ function ResourcesAlarm() {
       '17',
       '18',
       '19',
-      '20'
+      '20',
     ],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
@@ -85,23 +84,23 @@ function ResourcesAlarm() {
         right: 8,
         left: 8,
         bottom: 5,
-        top: 5
-      }
+        top: 5,
+      },
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
 
   const chartData = [
@@ -109,16 +108,16 @@ function ResourcesAlarm() {
       name: 'Previous Period',
       data: [
         32, 32, 32, 18, 18, 18, 24, 14, 24, 28, 28, 28, 31, 31, 31, 21, 21, 21,
-        15, 15, 15
-      ]
+        15, 15, 15,
+      ],
     },
     {
       name: 'Current Period',
       data: [
         22, 40, 37, 14, 34, 13, 31, 30, 15, 29, 25, 39, 21, 26, 19, 16, 20, 36,
-        27, 18
-      ]
-    }
+        27, 18,
+      ],
+    },
   ];
 
   return (
@@ -134,7 +133,7 @@ function ResourcesAlarm() {
           <>
             {t('Server load snapshot from')}{' '}
             {formatDistance(subMinutes(new Date(), 13), new Date(), {
-              addSuffix: true
+              addSuffix: true,
             })}
           </>
         }

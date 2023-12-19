@@ -12,19 +12,19 @@ function MemoryUsage() {
       {
         bg: theme.colors.success.light,
         data: 25,
-        title: t('Free')
+        title: t('Free'),
       },
       {
         bg: theme.colors.error.light,
         data: 40,
-        title: t('Used')
+        title: t('Used'),
       },
       {
         bg: theme.colors.info.light,
         data: 35,
-        title: t('Available')
-      }
-    ]
+        title: t('Available'),
+      },
+    ],
   };
 
   const chartOptions: ApexOptions = {
@@ -32,48 +32,48 @@ function MemoryUsage() {
       background: 'transparent',
       stacked: false,
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     labels: data.series.map((chart) => chart.title),
     plotOptions: {
       radialBar: {
         track: {
-          background: theme.colors.alpha.black[10]
+          background: theme.colors.alpha.black[10],
         },
         offsetY: 0,
         startAngle: 0,
         endAngle: 270,
         hollow: {
           margin: 10,
-          size: '15%'
+          size: '15%',
         },
         dataLabels: {
           name: {
-            show: false
+            show: false,
           },
           value: {
-            show: false
-          }
-        }
-      }
+            show: false,
+          },
+        },
+      },
     },
     states: {
       normal: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       hover: {
         filter: {
-          type: 'none'
-        }
+          type: 'none',
+        },
       },
       active: {
         filter: {
-          type: 'none'
-        }
-      }
+          type: 'none',
+        },
+      },
     },
     colors: data.series.map((chart) => chart.bg),
     legend: {
@@ -84,18 +84,18 @@ function MemoryUsage() {
       offsetX: 0,
       offsetY: 25,
       labels: {
-        useSeriesColors: true
+        useSeriesColors: true,
       },
       formatter: function (seriesName, opts) {
         return seriesName + ':  ' + opts.w.globals.series[opts.seriesIndex];
       },
       itemMargin: {
-        vertical: 3
-      }
+        vertical: 3,
+      },
     },
     theme: {
-      mode: theme.palette.mode
-    }
+      mode: theme.palette.mode,
+    },
   };
 
   const chartSeries = data.series.map((item) => item.data);
@@ -104,7 +104,7 @@ function MemoryUsage() {
     <Card
       sx={{
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
       }}
     >
       <Chart

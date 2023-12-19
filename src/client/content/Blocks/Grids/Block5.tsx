@@ -5,7 +5,7 @@ import {
   CardHeader,
   Card,
   Typography,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,14 +22,14 @@ function Block5() {
       <CardHeader
         disableTypography
         sx={{
-          p: 3
+          p: 3,
         }}
         title={
           <>
             <Typography
               component="div"
               sx={{
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
               textAlign="center"
               gutterBottom
@@ -73,14 +73,14 @@ function Block5() {
             href="#"
             sx={{
               width: 84,
-              height: 84
+              height: 84,
             }}
             alt="Remy Sharp"
             src="/static/images/avatars/3.jpg"
           />
           <Typography
             sx={{
-              pt: 1
+              pt: 1,
             }}
             gutterBottom
             variant="h4"
@@ -94,7 +94,7 @@ function Block5() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 component="span"
                 variant="h5"
@@ -104,7 +104,7 @@ function Block5() {
             </Box>
             <Typography
               sx={{
-                pl: 0.5
+                pl: 0.5,
               }}
               component="span"
               variant="subtitle2"
@@ -115,7 +115,7 @@ function Block5() {
         </Box>
         <Divider
           sx={{
-            mx: 2
+            mx: 2,
           }}
           orientation="vertical"
           flexItem
@@ -133,14 +133,14 @@ function Block5() {
             href="#"
             sx={{
               width: 84,
-              height: 84
+              height: 84,
             }}
             alt="Agnes Walker"
             src="/static/images/avatars/2.jpg"
           />
           <Typography
             sx={{
-              pt: 1
+              pt: 1,
             }}
             gutterBottom
             variant="h4"
@@ -154,7 +154,7 @@ function Block5() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 component="span"
                 variant="h5"
@@ -164,7 +164,7 @@ function Block5() {
             </Box>
             <Typography
               sx={{
-                pl: 0.5
+                pl: 0.5,
               }}
               component="span"
               variant="subtitle2"
@@ -175,7 +175,7 @@ function Block5() {
         </Box>
         <Divider
           sx={{
-            mx: 2
+            mx: 2,
           }}
           orientation="vertical"
           flexItem
@@ -193,14 +193,14 @@ function Block5() {
             href="#"
             sx={{
               width: 84,
-              height: 84
+              height: 84,
             }}
             alt="Anabel Mayo"
             src="/static/images/avatars/1.jpg"
           />
           <Typography
             sx={{
-              pt: 1
+              pt: 1,
             }}
             gutterBottom
             variant="h4"
@@ -214,7 +214,7 @@ function Block5() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 component="span"
                 variant="h5"
@@ -224,7 +224,7 @@ function Block5() {
             </Box>
             <Typography
               sx={{
-                pl: 0.5
+                pl: 0.5,
               }}
               component="span"
               variant="subtitle2"
@@ -235,7 +235,7 @@ function Block5() {
         </Box>
         <Divider
           sx={{
-            mx: 2
+            mx: 2,
           }}
           orientation="vertical"
           flexItem
@@ -253,14 +253,14 @@ function Block5() {
             href="#"
             sx={{
               width: 84,
-              height: 84
+              height: 84,
             }}
             alt="Travis Howard"
             src="/static/images/avatars/4.jpg"
           />
           <Typography
             sx={{
-              pt: 1
+              pt: 1,
             }}
             gutterBottom
             variant="h4"
@@ -274,7 +274,7 @@ function Block5() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 component="span"
                 variant="h5"
@@ -284,7 +284,7 @@ function Block5() {
             </Box>
             <Typography
               sx={{
-                pl: 0.5
+                pl: 0.5,
               }}
               component="span"
               variant="subtitle2"
@@ -295,7 +295,7 @@ function Block5() {
         </Box>
         <Divider
           sx={{
-            mx: 2
+            mx: 2,
           }}
           orientation="vertical"
           flexItem
@@ -313,14 +313,14 @@ function Block5() {
             href="#"
             sx={{
               width: 84,
-              height: 84
+              height: 84,
             }}
             alt="Monique Hanna"
             src="/static/images/avatars/5.jpg"
           />
           <Typography
             sx={{
-              pt: 1
+              pt: 1,
             }}
             gutterBottom
             variant="h4"
@@ -334,7 +334,7 @@ function Block5() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 component="span"
                 variant="h5"
@@ -344,7 +344,7 @@ function Block5() {
             </Box>
             <Typography
               sx={{
-                pl: 0.5
+                pl: 0.5,
               }}
               component="span"
               variant="subtitle2"

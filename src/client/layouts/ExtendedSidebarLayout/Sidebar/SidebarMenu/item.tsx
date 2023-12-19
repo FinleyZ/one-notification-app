@@ -12,7 +12,7 @@ import {
   ListItem,
   styled,
   TooltipProps,
-  tooltipClasses
+  tooltipClasses,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import ExpandLessTwoToneIcon from '@mui/icons-material/ExpandLessTwoTone';
@@ -39,11 +39,11 @@ const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
     fontWeight: 'bold',
     borderRadius: theme.general.borderRadiusSm,
     boxShadow:
-      '0 .2rem .8rem rgba(7,9,25,.18), 0 .08rem .15rem rgba(7,9,25,.15)'
+      '0 .2rem .8rem rgba(7,9,25,.18), 0 .08rem .15rem rgba(7,9,25,.15)',
   },
   [`& .${tooltipClasses.arrow}`]: {
-    color: theme.colors.alpha.trueWhite[100]
-  }
+    color: theme.colors.alpha.trueWhite[100],
+  },
 }));
 
 const SidebarMenuItem: FC<SidebarMenuItemProps> = ({
@@ -134,12 +134,12 @@ SidebarMenuItem.propTypes = {
   badge: PropTypes.string,
   badgeTooltip: PropTypes.string,
   open: PropTypes.bool,
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
 };
 
 SidebarMenuItem.defaultProps = {
   open: false,
-  active: false
+  active: false,
 };
 
 export default SidebarMenuItem;

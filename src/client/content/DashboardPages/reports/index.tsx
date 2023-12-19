@@ -26,7 +26,7 @@ function DashboardReportsContent() {
       </PageTitleWrapper>
       <Grid
         sx={{
-          px: 4
+          px: 4,
         }}
         container
         direction="row"

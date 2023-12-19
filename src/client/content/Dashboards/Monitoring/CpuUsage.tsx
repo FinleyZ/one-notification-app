@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 // import GaugeChart from 'react-gauge-chart';
 import Text from 'src/client/components/Text';
 
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
 const GaugeChart = dynamic(() => import('react-gauge-chart'), { ssr: false });
 
 function CpuUsage() {
@@ -16,19 +16,19 @@ function CpuUsage() {
         py: 2,
         display: 'flex',
         alignItems: 'center',
-        height: '100%'
+        height: '100%',
       }}
     >
       <Box
         sx={{
-          width: '100%'
+          width: '100%',
         }}
       >
         <Typography
           align="center"
           variant="h3"
           sx={{
-            mb: 2
+            mb: 2,
           }}
         >
           {t('CPU Usage')}
@@ -49,7 +49,7 @@ function CpuUsage() {
           colors={[
             theme.colors.error.main,
             theme.colors.warning.main,
-            theme.colors.success.main
+            theme.colors.success.main,
           ]}
           needleColor={theme.colors.alpha.black[100]}
           needleBaseColor={theme.colors.alpha.black[100]}
@@ -65,7 +65,7 @@ function CpuUsage() {
           sx={{
             mx: 3,
             mt: 2,
-            mb: 4
+            mb: 4,
           }}
         />
         <Typography
@@ -85,7 +85,7 @@ function CpuUsage() {
           colors={[
             theme.colors.primary.main,
             theme.colors.primary.light,
-            theme.colors.primary.lighter
+            theme.colors.primary.lighter,
           ]}
           needleColor={theme.colors.alpha.black[100]}
           needleBaseColor={theme.colors.alpha.black[100]}

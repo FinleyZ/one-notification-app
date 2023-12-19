@@ -45,7 +45,7 @@ export const MailboxResults: FC<MailboxResultsProps> = (props) => {
 
   const handleDeselectOneMail = (mailId: string): void => {
     setSelectedMails((prevSelectedMails) =>
-      prevSelectedMails.filter((id) => id !== mailId)
+      prevSelectedMails.filter((id) => id !== mailId),
     );
   };
 
@@ -62,7 +62,7 @@ export const MailboxResults: FC<MailboxResultsProps> = (props) => {
       {mails.allIds.length === 0 && (
         <Typography
           sx={{
-            py: 5
+            py: 5,
           }}
           variant="h3"
           fontWeight="normal"

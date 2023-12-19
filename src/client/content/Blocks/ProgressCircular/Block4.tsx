@@ -5,7 +5,7 @@ import {
   Typography,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -20,7 +20,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block4() {
@@ -31,7 +31,7 @@ function Block4() {
     percentage1: 65,
     percentage2: 84,
     percentage3: 43,
-    percentage4: 71
+    percentage4: 71,
   };
 
   return (
@@ -41,7 +41,7 @@ function Block4() {
           sx={{
             px: 3,
             pt: 2,
-            pb: 1
+            pb: 1,
           }}
         >
           <Box
@@ -53,7 +53,7 @@ function Block4() {
             <Typography
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               {t('Customers')}
@@ -69,7 +69,7 @@ function Block4() {
           >
             <Box
               sx={{
-                width: '120px'
+                width: '120px',
               }}
             >
               <CircularProgressbarWithChildren
@@ -78,7 +78,7 @@ function Block4() {
                   rotation: 1 / 2.2 + 1 / 5.85,
                   trailColor: theme.colors.info.lighter,
                   pathColor: theme.colors.info.main,
-                  strokeLinecap: 'round'
+                  strokeLinecap: 'round',
                 })}
                 strokeWidth={8}
                 value={data.percentage1}
@@ -87,7 +87,7 @@ function Block4() {
                   variant="h3"
                   sx={{
                     color: `${theme.colors.info.main}`,
-                    mt: '-20px'
+                    mt: '-20px',
                   }}
                 >
                   {`${data.percentage1}%`}
@@ -96,7 +96,7 @@ function Block4() {
             </Box>
             <Box
               sx={{
-                textAlign: 'right'
+                textAlign: 'right',
               }}
             >
               <Typography variant="h1">564</Typography>
@@ -110,7 +110,7 @@ function Block4() {
           sx={{
             px: 3,
             pt: 2,
-            pb: 1
+            pb: 1,
           }}
         >
           <Box
@@ -122,7 +122,7 @@ function Block4() {
             <Typography
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               {t('Orders')}
@@ -139,7 +139,7 @@ function Block4() {
           >
             <Box
               sx={{
-                width: '102px'
+                width: '102px',
               }}
             >
               <CircularProgressbarWithChildren
@@ -147,7 +147,7 @@ function Block4() {
                 styles={buildStyles({
                   trailColor: theme.colors.primary.lighter,
                   pathColor: theme.colors.primary.main,
-                  strokeLinecap: 'round'
+                  strokeLinecap: 'round',
                 })}
                 strokeWidth={8}
                 value={data.percentage2}
@@ -156,7 +156,7 @@ function Block4() {
                   variant="h3"
                   sx={{
                     color: `${theme.colors.primary.main}`,
-                    mt: '-20px'
+                    mt: '-20px',
                   }}
                 >
                   {`${data.percentage2}%`}
@@ -165,7 +165,7 @@ function Block4() {
             </Box>
             <Box
               sx={{
-                textAlign: 'right'
+                textAlign: 'right',
               }}
             >
               <Typography variant="h1">456</Typography>
@@ -178,7 +178,7 @@ function Block4() {
         <Card
           sx={{
             position: 'relative',
-            p: 3
+            p: 3,
           }}
         >
           <CardActions>
@@ -194,7 +194,7 @@ function Block4() {
           >
             <Box
               sx={{
-                width: '105px'
+                width: '105px',
               }}
             >
               <CircularProgressbarWithChildren
@@ -202,7 +202,7 @@ function Block4() {
                 styles={buildStyles({
                   trailColor: theme.colors.error.lighter,
                   pathColor: theme.colors.error.main,
-                  strokeLinecap: 'round'
+                  strokeLinecap: 'round',
                 })}
                 strokeWidth={6}
                 value={data.percentage3}
@@ -211,7 +211,7 @@ function Block4() {
                   variant="h3"
                   sx={{
                     color: `${theme.colors.error.main}`,
-                    mt: '-20px'
+                    mt: '-20px',
                   }}
                 >
                   {`${data.percentage3}%`}
@@ -221,7 +221,7 @@ function Block4() {
             <Box
               sx={{
                 mt: 2,
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <Typography variant="subtitle2" noWrap>
@@ -236,7 +236,7 @@ function Block4() {
           sx={{
             background: `${theme.colors.gradients.blue4}`,
             position: 'relative',
-            p: 3
+            p: 3,
           }}
         >
           <CardActions>
@@ -244,8 +244,8 @@ function Block4() {
               sx={{
                 color: `${theme.colors.alpha.trueWhite[100]}`,
                 '&:hover': {
-                  background: `${theme.colors.alpha.trueWhite[10]}`
-                }
+                  background: `${theme.colors.alpha.trueWhite[10]}`,
+                },
               }}
               size="small"
               color="primary"
@@ -261,7 +261,7 @@ function Block4() {
           >
             <Box
               sx={{
-                width: '105px'
+                width: '105px',
               }}
             >
               <CircularProgressbarWithChildren
@@ -269,7 +269,7 @@ function Block4() {
                 styles={buildStyles({
                   trailColor: theme.colors.alpha.trueWhite[10],
                   pathColor: theme.colors.success.main,
-                  strokeLinecap: 'round'
+                  strokeLinecap: 'round',
                 })}
                 strokeWidth={8}
                 value={data.percentage3}
@@ -278,7 +278,7 @@ function Block4() {
                   variant="h3"
                   sx={{
                     color: `${theme.colors.success.main}`,
-                    mt: '-20px'
+                    mt: '-20px',
                   }}
                 >
                   {`${data.percentage3}%`}
@@ -288,13 +288,13 @@ function Block4() {
             <Box
               sx={{
                 mt: 2,
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <Typography
                 sx={{
                   fontWeight: 'bold',
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
                 variant="subtitle2"
                 noWrap

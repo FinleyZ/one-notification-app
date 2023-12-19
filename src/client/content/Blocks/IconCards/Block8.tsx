@@ -7,7 +7,7 @@ import {
   Avatar,
   Divider,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -28,7 +28,7 @@ const ButtonWrapper = styled(Button)(
         background: ${theme.colors.alpha.black[5]};
         color: ${theme.colors.alpha.black[100]};
     }
-  `
+  `,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -41,7 +41,7 @@ const AvatarSuccess = styled(Avatar)(
         top: -${theme.spacing(4)};
         position: absolute;
         left: ${theme.spacing(3)};
-  `
+  `,
 );
 
 const AvatarInfo = styled(Avatar)(
@@ -54,7 +54,7 @@ const AvatarInfo = styled(Avatar)(
         top: -${theme.spacing(4)};
         position: absolute;
         left: ${theme.spacing(3)};
-  `
+  `,
 );
 
 const AvatarGradient = styled(Avatar)(
@@ -67,7 +67,7 @@ const AvatarGradient = styled(Avatar)(
         top: -${theme.spacing(4)};
         position: absolute;
         left: ${theme.spacing(3)};
-  `
+  `,
 );
 
 function Block8() {
@@ -82,7 +82,7 @@ function Block8() {
             overflow: 'visible',
             position: 'relative',
             pt: 4,
-            mt: 4
+            mt: 4,
           }}
         >
           <AvatarSuccess variant="rounded">
@@ -92,7 +92,7 @@ function Block8() {
             <Typography
               variant="h3"
               sx={{
-                mb: 1
+                mb: 1,
               }}
             >
               Lightweight
@@ -100,7 +100,7 @@ function Block8() {
             <Typography
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -124,7 +124,7 @@ function Block8() {
             overflow: 'visible',
             position: 'relative',
             pt: 4,
-            mt: 4
+            mt: 4,
           }}
         >
           <AvatarInfo variant="rounded">
@@ -134,7 +134,7 @@ function Block8() {
             <Typography
               variant="h3"
               sx={{
-                mb: 1
+                mb: 1,
               }}
             >
               Starter templates
@@ -142,7 +142,7 @@ function Block8() {
             <Typography
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -166,7 +166,7 @@ function Block8() {
             overflow: 'visible',
             position: 'relative',
             pt: 4,
-            mt: 4
+            mt: 4,
           }}
         >
           <AvatarGradient variant="rounded">
@@ -176,7 +176,7 @@ function Block8() {
             <Typography
               variant="h3"
               sx={{
-                mb: 1
+                mb: 1,
               }}
             >
               Simple to use
@@ -184,7 +184,7 @@ function Block8() {
             <Typography
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               You can build unlimited layout styles using any of the 500+

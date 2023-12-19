@@ -6,7 +6,7 @@ import {
   Button,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const LabelWarning = styled(Box)(
@@ -37,7 +37,7 @@ const LabelWarning = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const LabelError = styled(Box)(
@@ -52,7 +52,7 @@ const LabelError = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const LabelSuccess = styled(Box)(
@@ -67,7 +67,7 @@ const LabelSuccess = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 function Block5() {
@@ -80,7 +80,7 @@ function Block5() {
         <Card
           sx={{
             position: 'relative',
-            p: 5
+            p: 5,
           }}
         >
           <CardActions>
@@ -93,7 +93,7 @@ function Block5() {
               width: 54,
               height: 54,
               background: `${theme.colors.info.main}`,
-              color: `${theme.palette.info.contrastText}`
+              color: `${theme.palette.info.contrastText}`,
             }}
           >
             <SubscriptionsTwoToneIcon />
@@ -102,7 +102,7 @@ function Block5() {
             variant="h3"
             sx={{
               mb: 1,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
           >
             {t('Sales statistics')}
@@ -111,7 +111,7 @@ function Block5() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included
@@ -126,7 +126,7 @@ function Block5() {
         <Card
           sx={{
             position: 'relative',
-            p: 5
+            p: 5,
           }}
         >
           <CardActions>
@@ -142,7 +142,7 @@ function Block5() {
               width: 54,
               height: 54,
               background: `${theme.colors.gradients.purple1}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             <PersonTwoToneIcon />
@@ -151,7 +151,7 @@ function Block5() {
             variant="h3"
             sx={{
               mb: 1,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
           >
             {t('Generated reports')}
@@ -160,7 +160,7 @@ function Block5() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included
@@ -175,7 +175,7 @@ function Block5() {
         <Card
           sx={{
             position: 'relative',
-            p: 5
+            p: 5,
           }}
         >
           <CardActions>
@@ -185,7 +185,7 @@ function Block5() {
                 sx={{
                   fontSize: `${theme.typography.pxToRem(10)}`,
                   textTransform: 'uppercase',
-                  fontWeight: 'bold'
+                  fontWeight: 'bold',
                 }}
               >
                 {t('Overdue')}
@@ -199,7 +199,7 @@ function Block5() {
               width: 54,
               height: 54,
               background: `${theme.colors.gradients.black2}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             <MonetizationOnTwoToneIcon />
@@ -208,7 +208,7 @@ function Block5() {
             variant="h3"
             sx={{
               mb: 1,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
           >
             {t('Pricing plans')}
@@ -217,7 +217,7 @@ function Block5() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included

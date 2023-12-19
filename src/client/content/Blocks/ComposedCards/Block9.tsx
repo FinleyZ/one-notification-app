@@ -21,7 +21,7 @@ import {
   FormControlLabel,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 
@@ -64,13 +64,13 @@ const TabsWrapper = styled(Tabs)(
                 margin-right: 0;
             }
         }
-    `
+    `,
 );
 
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -86,7 +86,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -100,7 +100,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -112,7 +112,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -126,7 +126,7 @@ const IconButtonWrapper = styled(IconButton)(
         background: transparent;
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 const DividerPrimary = styled(Divider)(
@@ -135,7 +135,7 @@ const DividerPrimary = styled(Divider)(
       background: ${theme.colors.primary.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const DividerWarning = styled(Divider)(
@@ -144,7 +144,7 @@ const DividerWarning = styled(Divider)(
       background: ${theme.colors.warning.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const DividerSuccess = styled(Divider)(
@@ -153,20 +153,20 @@ const DividerSuccess = styled(Divider)(
       background: ${theme.colors.success.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
       box-shadow: none;
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Button)(
   ({ theme }) => `
       background: ${theme.colors.alpha.white[100]};
-  `
+  `,
 );
 
 const LabelPrimary = styled(Box)(
@@ -178,7 +178,7 @@ const LabelPrimary = styled(Box)(
       font-size: ${theme.typography.pxToRem(10)};
       padding: ${theme.spacing(0.5, 1.5)};
       color: ${theme.palette.primary.contrastText};
-  `
+  `,
 );
 
 const LabelError = styled(Box)(
@@ -190,7 +190,7 @@ const LabelError = styled(Box)(
       font-size: ${theme.typography.pxToRem(10)};
       padding: ${theme.spacing(0.5, 1.5)};
       color: ${theme.palette.error.contrastText};
-  `
+  `,
 );
 
 const DividerVertialPrimary = styled(Box)(
@@ -202,7 +202,7 @@ const DividerVertialPrimary = styled(Box)(
     position: absolute;
     top: 20%;
     background: ${theme.colors.primary.main};
-  `
+  `,
 );
 
 const DividerVertialSuccess = styled(Box)(
@@ -214,7 +214,7 @@ const DividerVertialSuccess = styled(Box)(
     position: absolute;
     top: 20%;
     background: ${theme.colors.success.main};
-  `
+  `,
 );
 
 function Block9() {
@@ -226,7 +226,7 @@ function Block9() {
   const tabs = [
     { value: 'overview', label: t('Overview') },
     { value: 'signin', label: t('Sign in') },
-    { value: 'recent_activity', label: t('Recent activity') }
+    { value: 'recent_activity', label: t('Recent activity') },
   ];
 
   const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
@@ -242,20 +242,20 @@ function Block9() {
             alignItems="center"
             sx={{
               minHeight: '100%',
-              background: `${theme.colors.gradients.pink1}`
+              background: `${theme.colors.gradients.pink1}`,
             }}
           >
             <BoxComposedBg
               sx={{
                 opacity: 0.6,
-                background: `${theme.colors.gradients.blue1}`
+                background: `${theme.colors.gradients.blue1}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.4,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/1.jpg")'
+                  'url("/static/images/placeholders/covers/1.jpg")',
               }}
             />
             <BoxComposedContent px={8} pt={8} pb={4}>
@@ -266,7 +266,7 @@ function Block9() {
                     sx={{
                       px: 1,
                       fontSize: `${theme.typography.pxToRem(10)}`,
-                      textTransform: 'uppercase'
+                      textTransform: 'uppercase',
                     }}
                   >
                     {t('New release')}
@@ -279,7 +279,7 @@ function Block9() {
                 >
                   <IconButtonWrapper
                     sx={{
-                      ml: 0.5
+                      ml: 0.5,
                     }}
                   >
                     <HelpTwoToneIcon fontSize="small" />
@@ -291,7 +291,7 @@ function Block9() {
                 sx={{
                   pt: 3,
                   pb: 2,
-                  fontSize: `${theme.typography.pxToRem(32)}`
+                  fontSize: `${theme.typography.pxToRem(32)}`,
                 }}
                 variant="h1"
               >
@@ -299,14 +299,14 @@ function Block9() {
               </Typography>
               <Typography lineHeight="1.5" fontWeight="normal" variant="h4">
                 {t(
-                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                 )}
                 .
               </Typography>
               <Button
                 variant="contained"
                 sx={{
-                  mt: 5
+                  mt: 5,
                 }}
                 endIcon={<ArrowForwardTwoToneIcon />}
                 color="warning"
@@ -317,7 +317,7 @@ function Block9() {
               <Box
                 mt={5}
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <Tooltip arrow placement="top" title="Facebook">
@@ -363,27 +363,27 @@ function Block9() {
                     <Card
                       variant="outlined"
                       sx={{
-                        p: 2
+                        p: 2,
                       }}
                     >
                       <Typography
                         variant="h1"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(40)}`
+                          fontSize: `${theme.typography.pxToRem(40)}`,
                         }}
                       >
                         31
                       </Typography>
                       <DividerPrimary
                         sx={{
-                          my: 2
+                          my: 2,
                         }}
                       />
                       <Typography
                         variant="caption"
                         fontWeight="bold"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(14)}`
+                          fontSize: `${theme.typography.pxToRem(14)}`,
                         }}
                       >
                         Implemented
@@ -396,27 +396,27 @@ function Block9() {
                     <Card
                       variant="outlined"
                       sx={{
-                        p: 2
+                        p: 2,
                       }}
                     >
                       <Typography
                         variant="h1"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(40)}`
+                          fontSize: `${theme.typography.pxToRem(40)}`,
                         }}
                       >
                         68
                       </Typography>
                       <DividerSuccess
                         sx={{
-                          my: 2
+                          my: 2,
                         }}
                       />
                       <Typography
                         variant="caption"
                         fontWeight="bold"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(14)}`
+                          fontSize: `${theme.typography.pxToRem(14)}`,
                         }}
                       >
                         Unresolved
@@ -429,27 +429,27 @@ function Block9() {
                     <Card
                       variant="outlined"
                       sx={{
-                        p: 2
+                        p: 2,
                       }}
                     >
                       <Typography
                         variant="h1"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(40)}`
+                          fontSize: `${theme.typography.pxToRem(40)}`,
                         }}
                       >
                         52
                       </Typography>
                       <DividerWarning
                         sx={{
-                          my: 2
+                          my: 2,
                         }}
                       />
                       <Typography
                         variant="caption"
                         fontWeight="bold"
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(14)}`
+                          fontSize: `${theme.typography.pxToRem(14)}`,
                         }}
                       >
                         Support
@@ -462,7 +462,7 @@ function Block9() {
                     <Card
                       variant="outlined"
                       sx={{
-                        p: 2
+                        p: 2,
                       }}
                     >
                       <Text color="error">
@@ -496,12 +496,12 @@ function Block9() {
                 <CardWrapper
                   sx={{
                     p: 3,
-                    textAlign: 'center'
+                    textAlign: 'center',
                   }}
                 >
                   <Typography
                     sx={{
-                      mb: 2
+                      mb: 2,
                     }}
                     color="text.secondary"
                     variant="body2"
@@ -520,7 +520,7 @@ function Block9() {
                   <Tooltip arrow title={t('Sign in with Amplify')}>
                     <ButtonWrapper
                       sx={{
-                        mx: 1.5
+                        mx: 1.5,
                       }}
                       size="large"
                       variant="outlined"
@@ -544,7 +544,7 @@ function Block9() {
                 </CardWrapper>
                 <Typography
                   sx={{
-                    py: 3
+                    py: 3,
                   }}
                   color="text.secondary"
                   textAlign="center"
@@ -554,7 +554,7 @@ function Block9() {
                 </Typography>
                 <TextField
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                   fullWidth
                   variant="outlined"
@@ -565,12 +565,12 @@ function Block9() {
                       <InputAdornment position="start">
                         <MailTwoToneIcon />
                       </InputAdornment>
-                    )
+                    ),
                   }}
                 />
                 <TextField
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                   fullWidth
                   variant="outlined"
@@ -582,7 +582,7 @@ function Block9() {
                       <InputAdornment position="start">
                         <LockTwoToneIcon />
                       </InputAdornment>
-                    )
+                    ),
                   }}
                 />
                 <Box
@@ -607,13 +607,13 @@ function Block9() {
                 <Box
                   mt={3}
                   sx={{
-                    textAlign: 'center'
+                    textAlign: 'center',
                   }}
                 >
                   <Button
                     variant="contained"
                     sx={{
-                      fontWeight: 'bold'
+                      fontWeight: 'bold',
                     }}
                     size="large"
                   >
@@ -632,7 +632,7 @@ function Block9() {
                       sx={{
                         overflow: 'visible',
                         position: 'relative',
-                        p: 2
+                        p: 2,
                       }}
                       variant="outlined"
                     >
@@ -651,7 +651,7 @@ function Block9() {
                           <AccessTimeTwoToneIcon
                             sx={{
                               ml: 1,
-                              mr: 0.5
+                              mr: 0.5,
                             }}
                             fontSize="small"
                           />
@@ -665,7 +665,7 @@ function Block9() {
                       sx={{
                         overflow: 'visible',
                         position: 'relative',
-                        p: 2
+                        p: 2,
                       }}
                       variant="outlined"
                     >
@@ -684,7 +684,7 @@ function Block9() {
                           <AccessTimeTwoToneIcon
                             sx={{
                               ml: 1,
-                              mr: 0.5
+                              mr: 0.5,
                             }}
                             fontSize="small"
                           />
@@ -700,24 +700,24 @@ function Block9() {
                     p: 0,
                     mx: 1,
                     mt: 4,
-                    mb: 0
+                    mb: 0,
                   }}
                 >
                   <TimelineItem
                     sx={{
-                      p: 0
+                      p: 0,
                     }}
                   >
                     <TimelineSeparator
                       sx={{
-                        position: 'relative'
+                        position: 'relative',
                       }}
                     >
                       <TimelineDot
                         sx={{
                           marginTop: 0,
                           left: `-${theme.spacing(2.1)} !important`,
-                          top: `-${theme.spacing(0.5)}`
+                          top: `-${theme.spacing(0.5)}`,
                         }}
                         color="success"
                       >
@@ -728,7 +728,7 @@ function Block9() {
                     <TimelineContent
                       sx={{
                         pl: 3,
-                        pb: 4
+                        pb: 4,
                       }}
                     >
                       <Typography variant="h5" gutterBottom>
@@ -744,7 +744,7 @@ function Block9() {
                               component={Link}
                               sx={{
                                 width: 32,
-                                height: 32
+                                height: 32,
                               }}
                               href="#"
                               alt="Remy Sharp"
@@ -756,7 +756,7 @@ function Block9() {
                               component={Link}
                               sx={{
                                 width: 32,
-                                height: 32
+                                height: 32,
                               }}
                               href="#"
                               alt="Travis Howard"
@@ -768,7 +768,7 @@ function Block9() {
                               component={Link}
                               sx={{
                                 width: 32,
-                                height: 32
+                                height: 32,
                               }}
                               href="#"
                               alt="Cindy Baker"
@@ -780,7 +780,7 @@ function Block9() {
                               component={Link}
                               sx={{
                                 width: 32,
-                                height: 32
+                                height: 32,
                               }}
                               href="#"
                               alt="Cindy Baker"
@@ -792,7 +792,7 @@ function Block9() {
                               component={Link}
                               sx={{
                                 width: 32,
-                                height: 32
+                                height: 32,
                               }}
                               href="#"
                               alt="Agnes Walker"
@@ -805,19 +805,19 @@ function Block9() {
                   </TimelineItem>
                   <TimelineItem
                     sx={{
-                      p: 0
+                      p: 0,
                     }}
                   >
                     <TimelineSeparator
                       sx={{
-                        position: 'relative'
+                        position: 'relative',
                       }}
                     >
                       <TimelineDot
                         sx={{
                           marginTop: 0,
                           left: `-${theme.spacing(2.1)} !important`,
-                          top: `-${theme.spacing(0.5)}`
+                          top: `-${theme.spacing(0.5)}`,
                         }}
                         color="primary"
                       >
@@ -828,7 +828,7 @@ function Block9() {
                     <TimelineContent
                       sx={{
                         pl: 3,
-                        pb: 4
+                        pb: 4,
                       }}
                     >
                       <Typography variant="h5" gutterBottom>
@@ -841,7 +841,7 @@ function Block9() {
                       <Box display="flex" mt={2} alignItems="flex-start">
                         <Card
                           sx={{
-                            mr: 2
+                            mr: 2,
                           }}
                         >
                           <CardActionArea>
@@ -855,7 +855,7 @@ function Block9() {
                         </Card>
                         <Card
                           sx={{
-                            mr: 2
+                            mr: 2,
                           }}
                         >
                           <CardActionArea>
@@ -869,7 +869,7 @@ function Block9() {
                         </Card>
                         <Card
                           sx={{
-                            mr: 2
+                            mr: 2,
                           }}
                         >
                           <CardActionArea>
@@ -886,18 +886,18 @@ function Block9() {
                   </TimelineItem>
                   <TimelineItem
                     sx={{
-                      p: 0
+                      p: 0,
                     }}
                   >
                     <TimelineSeparator
                       sx={{
-                        position: 'relative'
+                        position: 'relative',
                       }}
                     >
                       <TimelineDot
                         sx={{
                           marginTop: 0,
-                          top: theme.spacing(1.2)
+                          top: theme.spacing(1.2),
                         }}
                         variant="outlined"
                         color="error"
@@ -907,7 +907,7 @@ function Block9() {
                     <TimelineContent
                       sx={{
                         pl: 3,
-                        pb: 4
+                        pb: 4,
                       }}
                     >
                       <Typography variant="h5" gutterBottom>

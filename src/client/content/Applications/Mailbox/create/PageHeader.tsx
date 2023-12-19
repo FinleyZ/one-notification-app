@@ -6,7 +6,7 @@ import Link from 'src/client/components/Link';
 const RootWrapper = styled(Box)(
   () => `
     flex: 1;
-`
+`,
 );
 
 function PageHeader() {
@@ -26,7 +26,8 @@ function PageHeader() {
                 Send new notification
               </Typography>
               <Typography variant="subtitle2">
-                Fill in the fields below to send a new notification with yor configuration.
+                Fill in the fields below to send a new notification with yor
+                configuration.
               </Typography>
             </Box>
           </Box>
@@ -34,7 +35,7 @@ function PageHeader() {
         <Grid item>
           <Button
             sx={{
-              mt: { xs: 2, sm: 0 }
+              mt: { xs: 2, sm: 0 },
             }}
             component={Link}
             startIcon={<ArrowBackTwoToneIcon />}

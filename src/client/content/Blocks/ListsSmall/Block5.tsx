@@ -9,7 +9,7 @@ import {
   Button,
   Typography,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -27,14 +27,14 @@ function Block5() {
       <CardHeader
         sx={{
           p: 2,
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Latest actions')}
@@ -55,7 +55,7 @@ function Block5() {
       <List disablePadding>
         <ListItem
           sx={{
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -63,7 +63,7 @@ function Block5() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -72,7 +72,7 @@ function Block5() {
                 background: `${theme.colors.alpha.black[10]}`,
                 color: `${theme.colors.primary.main}`,
                 width: 64,
-                height: 64
+                height: 64,
               }}
             >
               <ContactPhoneTwoToneIcon />
@@ -95,7 +95,7 @@ function Block5() {
         <Divider />
         <ListItem
           sx={{
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -103,7 +103,7 @@ function Block5() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -112,7 +112,7 @@ function Block5() {
                 background: `${theme.colors.alpha.black[10]}`,
                 color: `${theme.colors.primary.main}`,
                 width: 64,
-                height: 64
+                height: 64,
               }}
             >
               <EvStationTwoToneIcon />
@@ -127,7 +127,7 @@ function Block5() {
             secondary={
               <Typography variant="subtitle2">
                 {t(
-                  'Dislike men who are so beguiled and demoralized by the charms'
+                  'Dislike men who are so beguiled and demoralized by the charms',
                 )}
                 .
               </Typography>
@@ -137,7 +137,7 @@ function Block5() {
         <Divider />
         <ListItem
           sx={{
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -145,7 +145,7 @@ function Block5() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -154,7 +154,7 @@ function Block5() {
                 background: `${theme.colors.alpha.black[10]}`,
                 color: `${theme.colors.primary.main}`,
                 width: 64,
-                height: 64
+                height: 64,
               }}
             >
               <AutoAwesomeMosaicTwoToneIcon />
@@ -169,7 +169,7 @@ function Block5() {
             secondary={
               <Typography variant="subtitle2">
                 {t(
-                  'Pleasure of the moment, so blinded by desire, that they foresee'
+                  'Pleasure of the moment, so blinded by desire, that they foresee',
                 )}
                 .
               </Typography>

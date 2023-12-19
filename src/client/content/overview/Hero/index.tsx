@@ -4,22 +4,21 @@ import {
   Container,
   Grid,
   Typography,
-  styled
+  styled,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
 const TypographyH1 = styled(Typography)(
   ({ theme }) => `
     font-size: ${theme.typography.pxToRem(50)};
-`
+`,
 );
 
 const TypographyH2 = styled(Typography)(
   ({ theme }) => `
     font-size: ${theme.typography.pxToRem(17)};
-`
+`,
 );
-
 
 const LabelWrapper = styled(Box)(
   ({ theme }) => `
@@ -32,14 +31,14 @@ const LabelWrapper = styled(Box)(
     font-size: ${theme.typography.pxToRem(11)};
     padding: ${theme.spacing(0.5)} ${theme.spacing(1.5)};
     margin-bottom: ${theme.spacing(2)};
-`
+`,
 );
 
 const ListItemWrapper = styled(Box)(
   () => `
     display: flex;
     align-items: center;
-`
+`,
 );
 
 const MuiAvatar = styled(Box)(
@@ -59,7 +58,7 @@ const MuiAvatar = styled(Box)(
       height: 60%;
       display: block;
     }
-`
+`,
 );
 
 const TsAvatar = styled(Box)(
@@ -79,7 +78,7 @@ const TsAvatar = styled(Box)(
       height: 60%;
       display: block;
     }
-`
+`,
 );
 
 const NextJsAvatar = styled(Box)(
@@ -103,11 +102,10 @@ const NextJsAvatar = styled(Box)(
       height: 60%;
       display: block;
     }
-`
+`,
 );
 
 function Hero() {
-
   return (
     <Container maxWidth="lg">
       <Grid
@@ -121,7 +119,7 @@ function Hero() {
           <LabelWrapper color="success">Beta 1.0</LabelWrapper>
           <TypographyH1
             sx={{
-              mb: 2
+              mb: 2,
             }}
             variant="h1"
           >
@@ -130,15 +128,17 @@ function Hero() {
           <TypographyH2
             sx={{
               lineHeight: 1.5,
-              pb: 4
+              pb: 4,
             }}
             variant="h4"
             color="text.secondary"
             fontWeight="normal"
           >
-            An ongoing project simplifies email notification configuration and management. 
-            With an intuitive dashboard, developers can easily customize settings and trigger notifications using the powerful API or library. 
-            Monitor delivery status and track performance for seamless email communication.
+            An ongoing project simplifies email notification configuration and
+            management. With an intuitive dashboard, developers can easily
+            customize settings and trigger notifications using the powerful API
+            or library. Monitor delivery status and track performance for
+            seamless email communication.
           </TypographyH2>
           <Button
             component={Link}
@@ -167,14 +167,15 @@ function Hero() {
             <Typography variant="h6">
               <b>Built with Nest.js </b>
               <Typography component="span" variant="subtitle2">
-                - Nest.js leverages a powerful and structured framework for building scalable server-side applications.
+                - Nest.js leverages a powerful and structured framework for
+                building scalable server-side applications.
               </Typography>
             </Typography>
           </ListItemWrapper>
           <ListItemWrapper
             sx={{
               mt: 5,
-              mb: 2
+              mb: 2,
             }}
           >
             <MuiAvatar>
@@ -186,7 +187,6 @@ function Hero() {
             <Typography variant="h6">
               <b>Powered by MUI (Material-UI)</b>
               <Typography component="span" variant="subtitle2">
-
                 - A simple and customizable component library to build faster,
                 beautiful, and accessible React apps.
               </Typography>
@@ -199,8 +199,8 @@ function Hero() {
             <Typography variant="h6">
               <b>Built with Typescript</b>
               <Typography component="span" variant="subtitle2">
-                - Features a modern technology stack and is built with
-                React + Typescript.
+                - Features a modern technology stack and is built with React +
+                Typescript.
               </Typography>
             </Typography>
           </ListItemWrapper>

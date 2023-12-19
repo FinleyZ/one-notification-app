@@ -12,131 +12,131 @@ function Block4() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     grid: {
       padding: {
         right: 6,
-        left: 6
-      }
+        left: 6,
+      },
     },
     stroke: {
       colors: [theme.colors.primary.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.primary.main],
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Orders:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Daily visitors',
-      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65]
-    }
+      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   const chart2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     grid: {
       padding: {
         right: 6,
-        left: 6
-      }
+        left: 6,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.alpha.trueWhite[100]],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.alpha.trueWhite[100]],
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Revenue: $';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart2Data = [
     {
       name: 'Revenue',
-      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38, 47, 24, 65]
-    }
+      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38, 47, 24, 65],
+    },
   ];
 
   const chart3Data = [
     {
       name: 'Sales',
-      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56, 47, 24, 65]
-    }
+      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56, 47, 24, 65],
+    },
   ];
 
   const chart4Data = [
     {
       name: 'Tests',
-      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24, 38, 24, 65]
-    }
+      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24, 38, 24, 65],
+    },
   ];
 
   return (
@@ -144,7 +144,7 @@ function Block4() {
       <Grid item xs={12} md={6} lg={3}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -159,7 +159,7 @@ function Block4() {
               <Typography
                 variant="subtitle2"
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(17)}`
+                  fontSize: `${theme.typography.pxToRem(17)}`,
                 }}
               >
                 {t('Total Orders')}
@@ -172,7 +172,7 @@ function Block4() {
                 textTransform: 'uppercase',
                 fontWeight: 'bold',
                 py: 0.6,
-                fontSize: `${theme.typography.pxToRem(11)}`
+                fontSize: `${theme.typography.pxToRem(11)}`,
               }}
             >
               {t('View all')}
@@ -192,7 +192,7 @@ function Block4() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.blue4}`
+            background: `${theme.colors.gradients.blue4}`,
           }}
         >
           <Box
@@ -205,7 +205,7 @@ function Block4() {
                 gutterBottom
                 variant="h1"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 576
@@ -214,7 +214,7 @@ function Block4() {
                 variant="subtitle2"
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[70]}`,
-                  fontSize: `${theme.typography.pxToRem(17)}`
+                  fontSize: `${theme.typography.pxToRem(17)}`,
                 }}
               >
                 {t('Total Visitors')}
@@ -235,7 +235,7 @@ function Block4() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.error.main}`
+            background: `${theme.colors.error.main}`,
           }}
         >
           <Box
@@ -248,7 +248,7 @@ function Block4() {
                 gutterBottom
                 variant="h1"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 183,954
@@ -257,7 +257,7 @@ function Block4() {
                 variant="subtitle2"
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[70]}`,
-                  fontSize: `${theme.typography.pxToRem(17)}`
+                  fontSize: `${theme.typography.pxToRem(17)}`,
                 }}
               >
                 {t('Total Deliveries')}
@@ -278,7 +278,7 @@ function Block4() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.blue5}`
+            background: `${theme.colors.gradients.blue5}`,
           }}
         >
           <Box
@@ -291,7 +291,7 @@ function Block4() {
                 gutterBottom
                 variant="h1"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 $13,253
@@ -300,7 +300,7 @@ function Block4() {
                 variant="subtitle2"
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[70]}`,
-                  fontSize: `${theme.typography.pxToRem(17)}`
+                  fontSize: `${theme.typography.pxToRem(17)}`,
                 }}
               >
                 {t('Total Budget')}

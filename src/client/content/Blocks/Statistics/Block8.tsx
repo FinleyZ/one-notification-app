@@ -7,7 +7,7 @@ import {
   Typography,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,7 @@ const DividerPrimary = styled(Divider)(
       background: ${theme.colors.primary.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const DividerWarning = styled(Divider)(
@@ -28,7 +28,7 @@ const DividerWarning = styled(Divider)(
       background: ${theme.colors.warning.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const DividerSuccess = styled(Divider)(
@@ -37,7 +37,7 @@ const DividerSuccess = styled(Divider)(
       background: ${theme.colors.success.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const DividerError = styled(Divider)(
@@ -46,7 +46,7 @@ const DividerError = styled(Divider)(
       background: ${theme.colors.error.main};
       height: 6px;
       border-radius: 50px;
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
@@ -65,7 +65,7 @@ const CardWrapper = styled(Card)(
             0 0.225rem 0.8rem ${alpha(theme.colors.alpha.black[100], 0.15)};
         transform: scale(1.01);
     }
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -84,7 +84,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: 0;
           }
         }
-  `
+  `,
 );
 
 function Block5() {
@@ -100,21 +100,21 @@ function Block5() {
               p: 3,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
             }}
           >
             <Box>
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(40)}`
+                  fontSize: `${theme.typography.pxToRem(40)}`,
                 }}
               >
                 31
               </Typography>
               <DividerPrimary
                 sx={{
-                  my: 2
+                  my: 2,
                 }}
               />
               <Typography
@@ -122,7 +122,7 @@ function Block5() {
                 fontWeight="bold"
                 sx={{
                   fontSize: `${theme.typography.pxToRem(14)}`,
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
               >
                 {t('Completed tasks')}
@@ -139,21 +139,21 @@ function Block5() {
               p: 3,
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'space-between'
+              justifyContent: 'space-between',
             }}
           >
             <Box>
               <Typography
                 variant="h1"
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(40)}`
+                  fontSize: `${theme.typography.pxToRem(40)}`,
                 }}
               >
                 18
               </Typography>
               <DividerError
                 sx={{
-                  my: 2
+                  my: 2,
                 }}
               />
               <Typography
@@ -161,7 +161,7 @@ function Block5() {
                 fontWeight="bold"
                 sx={{
                   fontSize: `${theme.typography.pxToRem(14)}`,
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
               >
                 {t('Requests sent')}
@@ -175,13 +175,13 @@ function Block5() {
         <Card
           sx={{
             p: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Typography
             variant="h1"
             sx={{
-              fontSize: `${theme.typography.pxToRem(40)}`
+              fontSize: `${theme.typography.pxToRem(40)}`,
             }}
           >
             29
@@ -189,7 +189,7 @@ function Block5() {
           <DividerSuccess
             sx={{
               mx: 'auto',
-              my: 2
+              my: 2,
             }}
           />
           <Typography
@@ -197,7 +197,7 @@ function Block5() {
             fontWeight="bold"
             sx={{
               fontSize: `${theme.typography.pxToRem(14)}`,
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
             }}
           >
             {t('Bugfixes')}
@@ -208,13 +208,13 @@ function Block5() {
         <Card
           sx={{
             p: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Typography
             variant="h1"
             sx={{
-              fontSize: `${theme.typography.pxToRem(40)}`
+              fontSize: `${theme.typography.pxToRem(40)}`,
             }}
           >
             764
@@ -222,7 +222,7 @@ function Block5() {
           <DividerWarning
             sx={{
               mx: 'auto',
-              my: 2
+              my: 2,
             }}
           />
           <Typography
@@ -230,7 +230,7 @@ function Block5() {
             fontWeight="bold"
             sx={{
               fontSize: `${theme.typography.pxToRem(14)}`,
-              textTransform: 'uppercase'
+              textTransform: 'uppercase',
             }}
           >
             {t('Tickets')}

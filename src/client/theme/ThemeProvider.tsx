@@ -1,4 +1,4 @@
-import { FC, useState, createContext, useEffect, ReactNode} from 'react';
+import { FC, useState, createContext, useEffect, ReactNode } from 'react';
 import { ThemeProvider } from '@mui/material';
 import { themeCreator } from './base';
 import { StyledEngineProvider } from '@mui/material';
@@ -6,7 +6,6 @@ import { StyledEngineProvider } from '@mui/material';
 interface ThemeProviderWrapperProps {
   children: ReactNode;
 }
-
 
 export const ThemeContext = createContext((_themeName: string): void => {});
 

@@ -6,7 +6,7 @@ import {
   Typography,
   IconButton,
   Stack,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,21 +26,21 @@ function Block8() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.warning.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       gradient: {
@@ -50,17 +50,17 @@ function Block8() {
         inverseColors: false,
         opacityFrom: 0.9,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.warning.main],
       curve: 'smooth',
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -72,36 +72,36 @@ function Block8() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Sales',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
 
   return (
     <Card variant="outlined">
       <Box
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         p={2}
         display="flex"
@@ -121,7 +121,7 @@ function Block8() {
       <Divider />
       <Stack
         sx={{
-          mt: 3
+          mt: 3,
         }}
         direction="row"
         justifyContent="space-evenly"
@@ -132,7 +132,7 @@ function Block8() {
           py={1}
           px={4}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="info">
@@ -145,7 +145,7 @@ function Block8() {
           py={1}
           px={4}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="error">
@@ -160,7 +160,7 @@ function Block8() {
         sx={{
           textAlign: 'center',
           pt: 2,
-          pb: 3
+          pb: 3,
         }}
       >
         <Button
@@ -168,8 +168,8 @@ function Block8() {
           sx={{
             borderWidth: '2px',
             '&:hover': {
-              borderWidth: '2px'
-            }
+              borderWidth: '2px',
+            },
           }}
           endIcon={<ChevronRightTwoToneIcon />}
         >

@@ -1,4 +1,3 @@
-
 import { Box, Card, Container, Button, styled } from '@mui/material';
 import type { ReactElement } from 'react';
 import BaseLayout from 'src/client/layouts/BaseLayout';
@@ -16,7 +15,7 @@ const HeaderWrapper = styled(Card)(
   align-items: center;
   height: ${theme.spacing(10)};
   margin-bottom: ${theme.spacing(10)};
-`
+`,
 );
 
 const OverviewWrapper = styled(Box)(
@@ -25,11 +24,10 @@ const OverviewWrapper = styled(Box)(
     background: ${theme.palette.common.white};
     flex: 1;
     overflow-x: hidden;
-`
+`,
 );
 
 function Overview() {
-
   return (
     <OverviewWrapper>
       <Head>

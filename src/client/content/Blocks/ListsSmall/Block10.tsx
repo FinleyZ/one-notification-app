@@ -10,7 +10,7 @@ import {
   ListItemAvatar,
   Divider,
   ListSubheader,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { format, subDays } from 'date-fns';
 
@@ -35,14 +35,14 @@ function Block10() {
       <Divider />
       <Box
         sx={{
-          height: 458
+          height: 458,
         }}
       >
         <Scrollbar>
           <List disablePadding>
             <ListSubheader
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {format(subDays(new Date(), 3), 'MMMM dd yyyy')}
@@ -50,7 +50,7 @@ function Block10() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -58,17 +58,17 @@ function Block10() {
                   mr: 1,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
                   sx={{
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
+                      theme.colors.success.dark,
                     )}`,
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                 >
                   <TrendingDownTwoToneIcon />
@@ -88,7 +88,7 @@ function Block10() {
               />
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Typography variant="h4">0.234894 BTC</Typography>
@@ -100,7 +100,7 @@ function Block10() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -108,17 +108,17 @@ function Block10() {
                   mr: 1,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
                   sx={{
                     background: `${theme.colors.info.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.info.dark
+                      theme.colors.info.dark,
                     )}`,
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                 >
                   <TrendingUpTwoToneIcon />
@@ -138,7 +138,7 @@ function Block10() {
               />
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Typography variant="h4">1.398456 ETH</Typography>
@@ -150,7 +150,7 @@ function Block10() {
             <Divider />
             <ListSubheader
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {format(subDays(new Date(), 5), 'MMMM dd yyyy')}
@@ -158,7 +158,7 @@ function Block10() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -166,17 +166,17 @@ function Block10() {
                   mr: 1,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
                   sx={{
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.dark
+                      theme.colors.error.dark,
                     )}`,
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                 >
                   <TrendingFlatTwoToneIcon />
@@ -196,7 +196,7 @@ function Block10() {
               />
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Typography variant="h4">
@@ -207,7 +207,7 @@ function Block10() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -215,17 +215,17 @@ function Block10() {
                   mr: 1,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
                   sx={{
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
+                      theme.colors.success.dark,
                     )}`,
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                 >
                   <TrendingDownTwoToneIcon />
@@ -245,7 +245,7 @@ function Block10() {
               />
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Typography variant="h4">
@@ -259,7 +259,7 @@ function Block10() {
             <Divider />
             <ListSubheader
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {format(subDays(new Date(), 7), 'MMMM dd yyyy')}
@@ -267,7 +267,7 @@ function Block10() {
             <Divider />
             <ListItem
               sx={{
-                p: 2.5
+                p: 2.5,
               }}
             >
               <ListItemAvatar
@@ -275,17 +275,17 @@ function Block10() {
                   mr: 1,
                   display: 'flex',
                   alignItems: 'center',
-                  minWidth: 0
+                  minWidth: 0,
                 }}
               >
                 <Avatar
                   sx={{
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
+                      theme.colors.success.dark,
                     )}`,
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                 >
                   <TrendingDownTwoToneIcon />
@@ -305,7 +305,7 @@ function Block10() {
               />
               <Box
                 sx={{
-                  textAlign: 'right'
+                  textAlign: 'right',
                 }}
               >
                 <Typography variant="h4">0.234894 BTC</Typography>
@@ -321,13 +321,13 @@ function Block10() {
       <Box
         p={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
           sx={{
             textTransform: 'uppercase',
-            fontSize: `${theme.typography.pxToRem(12)}`
+            fontSize: `${theme.typography.pxToRem(12)}`,
           }}
           variant="contained"
           endIcon={<KeyboardArrowRightTwoToneIcon />}

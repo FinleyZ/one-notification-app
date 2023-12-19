@@ -62,7 +62,7 @@ const LabelWrapper = styled('span')(
           color: ${theme.palette.info.main}
         }
       }
-`
+`,
 );
 
 const Label: FC<LabelProps> = ({
@@ -88,8 +88,8 @@ Label.propTypes = {
     'error',
     'warning',
     'success',
-    'info'
-  ])
+    'info',
+  ]),
 };
 
 export default Label;

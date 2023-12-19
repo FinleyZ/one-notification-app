@@ -15,7 +15,7 @@ import {
   styled,
   ListItem,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -30,7 +30,7 @@ const LabelWrapper = styled(Box)(
     text-transform: uppercase;
     border-radius: ${theme.general.borderRadius};
     padding: ${theme.spacing(0.5, 1.5, 0.3)};
-  `
+  `,
 );
 
 const LinearProgressPrimary = styled(LinearProgress)(
@@ -46,7 +46,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 function Block8() {
@@ -60,7 +60,7 @@ function Block8() {
       jobtitle: 'Senior Cost Accountant',
       company: 'Trudoo',
       avatar: '/static/images/avatars/1.jpg',
-      value: 65
+      value: 65,
     },
     {
       id: 2,
@@ -68,7 +68,7 @@ function Block8() {
       jobtitle: 'Associate Professor',
       company: 'Buzzdog',
       avatar: '/static/images/avatars/2.jpg',
-      value: 76
+      value: 76,
     },
     {
       id: 3,
@@ -76,7 +76,7 @@ function Block8() {
       jobtitle: 'Pharmacist',
       company: 'Yozio',
       avatar: '/static/images/avatars/3.jpg',
-      value: 54
+      value: 54,
     },
     {
       id: 4,
@@ -84,7 +84,7 @@ function Block8() {
       jobtitle: 'VP Product Management',
       company: 'Cogibox',
       avatar: '/static/images/avatars/4.jpg',
-      value: 23
+      value: 23,
     },
     {
       id: 5,
@@ -92,8 +92,8 @@ function Block8() {
       jobtitle: 'Social Worker',
       company: 'Babbleblab',
       avatar: '/static/images/avatars/5.jpg',
-      value: 16
-    }
+      value: 16,
+    },
   ];
 
   return (
@@ -103,7 +103,7 @@ function Block8() {
         alignItems="center"
         justifyContent="space-between"
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         p={2}
       >
@@ -112,7 +112,7 @@ function Block8() {
             variant="caption"
             fontWeight="bold"
             sx={{
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
           >
             {t('Progress')}
@@ -130,20 +130,20 @@ function Block8() {
                 justifyContent: 'space-between',
                 display: { xs: 'block', sm: 'flex' },
                 py: 2,
-                px: 2.5
+                px: 2.5,
               }}
             >
               <ListItemAvatar
                 sx={{
                   minWidth: 'auto',
                   mr: 2,
-                  mb: { xs: 2, sm: 0 }
+                  mb: { xs: 2, sm: 0 },
                 }}
               >
                 <Avatar
                   sx={{
                     width: 42,
-                    height: 42
+                    height: 42,
                   }}
                   alt={item.name}
                   src={item.avatar}
@@ -153,7 +153,7 @@ function Block8() {
                 sx={{
                   flexGrow: 0,
                   maxWidth: '50%',
-                  flexBasis: '50%'
+                  flexBasis: '50%',
                 }}
                 disableTypography
                 primary={
@@ -179,20 +179,20 @@ function Block8() {
                   flex={1}
                   sx={{
                     width: '100%',
-                    pr: 3
+                    pr: 3,
                   }}
                 >
                   <LinearProgressPrimary
                     sx={{
                       minWidth: 65,
-                      width: '100%'
+                      width: '100%',
                     }}
                     variant="determinate"
                     value={item.value}
                   />
                   <Typography
                     sx={{
-                      pl: 1
+                      pl: 1,
                     }}
                     fontWeight="bold"
                     variant="body1"
@@ -212,9 +212,9 @@ function Block8() {
                     '&:hover': {
                       backgroundColor: `${theme.colors.primary.main}`,
                       color: `${theme.palette.getContrastText(
-                        theme.colors.primary.main
-                      )}`
-                    }
+                        theme.colors.primary.main,
+                      )}`,
+                    },
                   }}
                 >
                   {t('View')}

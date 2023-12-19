@@ -13,7 +13,7 @@ import {
   Grid,
   Divider,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import RefreshTwoToneIcon from '@mui/icons-material/RefreshTwoTone';
@@ -42,7 +42,7 @@ const BoxChartWrapperText = styled(Box)(
       align-items: center;
       justify-content: center;
     }
-`
+`,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -52,7 +52,7 @@ const AvatarSuccess = styled(Avatar)(
       width: ${theme.spacing(4)};
       height: ${theme.spacing(4)};
       margin-right: ${theme.spacing(1)};
-`
+`,
 );
 
 const AvatarError = styled(Avatar)(
@@ -62,7 +62,7 @@ const AvatarError = styled(Avatar)(
       width: ${theme.spacing(4)};
       height: ${theme.spacing(4)};
       margin-right: ${theme.spacing(1)};
-`
+`,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -75,7 +75,7 @@ const IconButtonWrapper = styled(IconButton)(
       background-color: ${theme.colors.secondary.lighter};
       color: ${theme.colors.alpha.black[100]};
     }
-`
+`,
 );
 
 function HealthStatus() {
@@ -87,32 +87,32 @@ function HealthStatus() {
       background: 'transparent',
       stacked: false,
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     plotOptions: {
       pie: {
         donut: {
-          size: '45%'
-        }
-      }
+          size: '45%',
+        },
+      },
     },
     states: {
       hover: {
         filter: {
           type: 'lighten',
-          value: 0.1
-        }
+          value: 0.1,
+        },
       },
       active: {
         filter: {
-          type: 'none'
-        }
-      }
+          type: 'none',
+        },
+      },
     },
     colors: [
       theme.colors.success.main,
-      alpha(theme.colors.secondary.main, 0.3)
+      alpha(theme.colors.secondary.main, 0.3),
     ],
     dataLabels: {
       enabled: true,
@@ -125,24 +125,24 @@ function HealthStatus() {
         left: 1,
         blur: 1,
         color: theme.colors.alpha.black[50],
-        opacity: 0.5
-      }
+        opacity: 0.5,
+      },
     },
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     legend: {
-      show: false
+      show: false,
     },
     stroke: {
-      width: 0
+      width: 0,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     tooltip: {
-      enabled: false
-    }
+      enabled: false,
+    },
   };
 
   const chartSeries = [82, 18];
@@ -150,7 +150,7 @@ function HealthStatus() {
   return (
     <Card
       sx={{
-        height: '100%'
+        height: '100%',
       }}
     >
       <CardHeader
@@ -159,7 +159,7 @@ function HealthStatus() {
       />
       <Box
         sx={{
-          p: 2
+          p: 2,
         }}
       >
         <Grid container spacing={6} alignItems="center">
@@ -182,7 +182,7 @@ function HealthStatus() {
           <Grid item xs={12} sm={8}>
             <Box
               sx={{
-                mt: `-${theme.spacing(2)}`
+                mt: `-${theme.spacing(2)}`,
               }}
               display="flex"
               alignItems="flex-start"
@@ -191,7 +191,7 @@ function HealthStatus() {
             >
               <Box
                 sx={{
-                  pb: 1
+                  pb: 1,
                 }}
               >
                 <Typography
@@ -201,7 +201,7 @@ function HealthStatus() {
                   sx={{
                     pr: 0.5,
                     display: 'inline-flex',
-                    fontSize: `${theme.typography.pxToRem(50)}`
+                    fontSize: `${theme.typography.pxToRem(50)}`,
                   }}
                 >
                   82
@@ -212,7 +212,7 @@ function HealthStatus() {
                   lineHeight={1}
                   sx={{
                     pr: 2,
-                    display: 'inline-flex'
+                    display: 'inline-flex',
                   }}
                 >
                   /100
@@ -221,13 +221,13 @@ function HealthStatus() {
               <List
                 disablePadding
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
               >
                 <ListItem
                   disableGutters
                   sx={{
-                    py: 0.2
+                    py: 0.2,
                   }}
                 >
                   <ListItemText
@@ -240,7 +240,7 @@ function HealthStatus() {
                     </Text>
                     <AvatarSuccess
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                     >
                       <CheckTwoToneIcon />
@@ -250,7 +250,7 @@ function HealthStatus() {
                 <ListItem
                   disableGutters
                   sx={{
-                    py: 0.2
+                    py: 0.2,
                   }}
                 >
                   <ListItemText
@@ -263,7 +263,7 @@ function HealthStatus() {
                     </Text>
                     <AvatarSuccess
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                     >
                       <CheckTwoToneIcon />
@@ -273,7 +273,7 @@ function HealthStatus() {
                 <ListItem
                   disableGutters
                   sx={{
-                    py: 0.2
+                    py: 0.2,
                   }}
                 >
                   <ListItemText
@@ -286,7 +286,7 @@ function HealthStatus() {
                     </Text>
                     <AvatarError
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                     >
                       <CloseTwoToneIcon />
@@ -302,7 +302,7 @@ function HealthStatus() {
       <Box
         py={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
@@ -315,11 +315,11 @@ function HealthStatus() {
 
             '&:hover': {
               transform: 'translateY(-2px)',
-              boxShadow: `${theme.colors.shadows.primary}`
+              boxShadow: `${theme.colors.shadows.primary}`,
             },
             '&:active': {
-              boxShadow: 'none'
-            }
+              boxShadow: 'none',
+            },
           }}
           variant="contained"
           startIcon={<RotateLeftTwoToneIcon />}

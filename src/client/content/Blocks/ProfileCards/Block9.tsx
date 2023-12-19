@@ -7,7 +7,7 @@ import {
   IconButton,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -20,7 +20,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block9() {
@@ -34,7 +34,7 @@ function Block9() {
         textAlign: 'center',
         pt: 4,
         pb: 3,
-        px: 3
+        px: 3,
       }}
     >
       <CardActions>
@@ -49,7 +49,7 @@ function Block9() {
           width: 114,
           height: 114,
           border: `${theme.colors.alpha.white[100]} solid 4px`,
-          boxShadow: `0 0 0 3px ${theme.colors.error.main}`
+          boxShadow: `0 0 0 3px ${theme.colors.error.main}`,
         }}
         src="/static/images/avatars/2.jpg"
       />
@@ -66,24 +66,24 @@ function Block9() {
       </Box>
       <Typography
         sx={{
-          px: { xs: 4, md: 8 }
+          px: { xs: 4, md: 8 },
         }}
         variant="subtitle2"
       >
         {t(
-          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
         )}
         .
       </Typography>
       <Divider
         sx={{
-          mt: 3
+          mt: 3,
         }}
       />
       <Stack
         sx={{
           mt: 2.5,
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         direction="row"
         justifyContent="space-evenly"

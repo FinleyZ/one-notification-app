@@ -7,60 +7,60 @@ const tags: Tag[] = [
     id: 'inbox',
     type: 'category_tag',
     name: 'Inbox',
-    unreadMails: 7
+    unreadMails: 7,
   },
   {
     id: 'outbox',
     type: 'category_tag',
     name: 'Outbox',
-    unreadMails: 1
+    unreadMails: 1,
   },
   {
     id: 'favourites',
     type: 'category_tag',
     name: 'Favourites',
-    unreadMails: 0
+    unreadMails: 0,
   },
   {
     id: 'drafts',
     type: 'category_tag',
     name: 'Drafts',
-    unreadMails: 0
+    unreadMails: 0,
   },
   {
     id: 'deleted',
     type: 'category_tag',
     name: 'Deleted',
-    unreadMails: 1
+    unreadMails: 1,
   },
   {
     id: 'important',
     type: 'label_tag',
     name: 'Important',
     unreadMails: 4,
-    color: '#57CA22'
+    color: '#57CA22',
   },
   {
     id: 'work',
     type: 'label_tag',
     name: 'Work',
     unreadMails: 3,
-    color: '#FFA319'
+    color: '#FFA319',
   },
   {
     id: 'tasks',
     type: 'label_tag',
     name: 'Tasks',
     unreadMails: 1,
-    color: '#33C2FF'
+    color: '#33C2FF',
   },
   {
     id: 'business',
     type: 'label_tag',
     name: 'Business',
     unreadMails: 2,
-    color: '#FF1943'
-  }
+    color: '#FF1943',
+  },
 ];
 
 const mails: Mail[] = [
@@ -88,15 +88,15 @@ const mails: Mail[] = [
       {
         name: 'Michele Rodrigues',
         email: 'michele.r@example.com',
-        avatar: '/static/images/avatars/1.jpg'
-      }
+        avatar: '/static/images/avatars/1.jpg',
+      },
     ],
     from: {
       name: 'Veer Moody',
       email: 'veer@example.com',
-      avatar: '/static/images/avatars/2.jpg'
+      avatar: '/static/images/avatars/2.jpg',
     },
-    date: subHours(new Date(), 20).getTime()
+    date: subHours(new Date(), 20).getTime(),
   },
   {
     id: '2',
@@ -122,15 +122,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/2.jpg'
-      }
+        avatar: '/static/images/avatars/2.jpg',
+      },
     ],
     from: {
       name: 'Kianna Keeling',
       email: 'kia@example.com',
-      avatar: '/static/images/avatars/5.jpg'
+      avatar: '/static/images/avatars/5.jpg',
     },
-    date: subDays(new Date(), 1).getTime()
+    date: subDays(new Date(), 1).getTime(),
   },
   {
     id: '3',
@@ -154,15 +154,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/3.jpg'
-      }
+        avatar: '/static/images/avatars/3.jpg',
+      },
     ],
     from: {
       name: 'Eileen Morgan',
       email: 'eileen@morgan.com',
-      avatar: '/static/images/avatars/4.jpg'
+      avatar: '/static/images/avatars/4.jpg',
     },
-    date: subDays(new Date(), 2).getTime()
+    date: subDays(new Date(), 2).getTime(),
   },
   {
     id: '4',
@@ -188,15 +188,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/4.jpg'
-      }
+        avatar: '/static/images/avatars/4.jpg',
+      },
     ],
     from: {
       name: 'Ferne Berry',
       email: 'ferne.s@example.com',
-      avatar: '/static/images/avatars/1.jpg'
+      avatar: '/static/images/avatars/1.jpg',
     },
-    date: subDays(new Date(), 3).getTime()
+    date: subDays(new Date(), 3).getTime(),
   },
   {
     id: '5',
@@ -222,15 +222,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/5.jpg'
-      }
+        avatar: '/static/images/avatars/5.jpg',
+      },
     ],
     from: {
       name: 'Ryley Hardin',
       email: 'ryleyhar.2@example.com',
-      avatar: '/static/images/avatars/3.jpg'
+      avatar: '/static/images/avatars/3.jpg',
     },
-    date: subDays(new Date(), 4).getTime()
+    date: subDays(new Date(), 4).getTime(),
   },
   {
     id: '6',
@@ -251,15 +251,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/1.jpg'
-      }
+        avatar: '/static/images/avatars/1.jpg',
+      },
     ],
     from: {
       name: 'Edison Finnegan',
       email: 'edisonss1@example.com',
-      avatar: '/static/images/avatars/2.jpg'
+      avatar: '/static/images/avatars/2.jpg',
     },
-    date: subDays(new Date(), 4).getTime()
+    date: subDays(new Date(), 4).getTime(),
   },
   {
     id: '7',
@@ -286,15 +286,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/2.jpg'
-      }
+        avatar: '/static/images/avatars/2.jpg',
+      },
     ],
     from: {
       name: 'Manraj Steele',
       email: 'manraj.steele@example.com',
-      avatar: '/static/images/avatars/1.jpg'
+      avatar: '/static/images/avatars/1.jpg',
     },
-    date: subDays(new Date(), 6).getTime()
+    date: subDays(new Date(), 6).getTime(),
   },
   {
     id: '8',
@@ -320,15 +320,15 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/2.jpg'
-      }
+        avatar: '/static/images/avatars/2.jpg',
+      },
     ],
     from: {
       name: 'Kianna Keeling',
       email: 'kia@example.com',
-      avatar: '/static/images/avatars/5.jpg'
+      avatar: '/static/images/avatars/5.jpg',
     },
-    date: subDays(new Date(), 7).getTime()
+    date: subDays(new Date(), 7).getTime(),
   },
   {
     id: '9',
@@ -352,16 +352,16 @@ const mails: Mail[] = [
       {
         name: 'Drew Hawes',
         email: 'drew.hawes@example.com',
-        avatar: '/static/images/avatars/3.jpg'
-      }
+        avatar: '/static/images/avatars/3.jpg',
+      },
     ],
     from: {
       name: 'Eileen Morgan',
       email: 'eileen@morgan.com',
-      avatar: '/static/images/avatars/4.jpg'
+      avatar: '/static/images/avatars/4.jpg',
     },
-    date: new Date().getTime()
-  }
+    date: new Date().getTime(),
+  },
 ];
 
 class Mailbox {

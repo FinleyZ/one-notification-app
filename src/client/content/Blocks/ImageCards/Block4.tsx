@@ -10,7 +10,7 @@ import {
   IconButton,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     bottom: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const Label = styled(Box)(
@@ -38,7 +38,7 @@ const Label = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const BgComposed = styled(Box)(
@@ -54,9 +54,9 @@ const BgComposed = styled(Box)(
     opacity: 0;
     box-shadow: inset 0 0 2.3rem 0.5rem ${darken(
       theme.colors.primary.main,
-      0.9
+      0.9,
     )};
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -76,7 +76,7 @@ const IconButtonWrapper = styled(IconButton)(
                 transform: scale(1.3);
             }
         }
-  `
+  `,
 );
 
 function Block4() {
@@ -92,7 +92,7 @@ function Block4() {
             position: 'relative',
             transition: `${theme.transitions.create([
               'box-shadow',
-              'transform'
+              'transform',
             ])}`,
             transform: 'translateY(0px)',
 
@@ -100,15 +100,15 @@ function Block4() {
               transform: `translateY(-${theme.spacing(0.5)})`,
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
                 0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
 
               '& .MuiBgComposed': {
-                opacity: 1
-              }
-            }
+                opacity: 1,
+              },
+            },
           }}
         >
           <BgComposed
@@ -122,15 +122,15 @@ function Block4() {
                 mx: 0.5,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
+                  theme.colors.primary.main,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
-                }
+                    theme.colors.primary.main,
+                  )}`,
+                },
               }}
             >
               <FacebookIcon fontSize="small" />
@@ -140,15 +140,15 @@ function Block4() {
                 mx: 0.5,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
+                  theme.colors.primary.main,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
-                }
+                    theme.colors.primary.main,
+                  )}`,
+                },
               }}
             >
               <TwitterIcon fontSize="small" />
@@ -160,7 +160,7 @@ function Block4() {
             sx={{
               borderRadius: 'inherit',
               position: 'relative',
-              zIndex: 5
+              zIndex: 5,
             }}
             image="/static/images/placeholders/covers/5.jpg"
             alt="..."
@@ -168,13 +168,13 @@ function Block4() {
           <CardActions
             sx={{
               right: 'auto',
-              left: `${theme.spacing(2)}`
+              left: `${theme.spacing(2)}`,
             }}
           >
             <Label
               sx={{
                 background: `${theme.palette.primary.main}`,
-                color: `${theme.palette.primary.contrastText}`
+                color: `${theme.palette.primary.contrastText}`,
               }}
             >
               {t('Development')}
@@ -189,7 +189,7 @@ function Block4() {
             position: 'relative',
             transition: `${theme.transitions.create([
               'box-shadow',
-              'transform'
+              'transform',
             ])}`,
             transform: 'translateY(0px)',
 
@@ -197,21 +197,21 @@ function Block4() {
               transform: `translateY(-${theme.spacing(0.5)})`,
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                         0 0.6rem 1.6rem ${alpha(
                           theme.colors.alpha.black[100],
-                          0.15
+                          0.15,
                         )}, 
                         0 0.2rem 0.2rem ${alpha(
                           theme.colors.alpha.black[100],
-                          0.1
+                          0.1,
                         )}`,
 
               '& .MuiBgComposed': {
-                opacity: 1
-              }
-            }
+                opacity: 1,
+              },
+            },
           }}
         >
           <BgComposed
@@ -226,7 +226,7 @@ function Block4() {
                 width: 62,
                 height: 62,
                 mb: 1,
-                border: `${theme.colors.alpha.trueWhite[100]} solid 3px`
+                border: `${theme.colors.alpha.trueWhite[100]} solid 3px`,
               }}
               src="/static/images/avatars/3.jpg"
             />
@@ -234,7 +234,7 @@ function Block4() {
               variant="h4"
               gutterBottom
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               Darrell Devlin
@@ -243,7 +243,7 @@ function Block4() {
               variant="subtitle2"
               sx={{
                 mb: 2,
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               Senior UX Developer, Slack.com
@@ -258,11 +258,11 @@ function Block4() {
 
                 '&:hover': {
                   transform: 'scale(1.05)',
-                  boxShadow: `${theme.colors.shadows.info}`
+                  boxShadow: `${theme.colors.shadows.info}`,
                 },
                 '&:active': {
-                  boxShadow: 'none'
-                }
+                  boxShadow: 'none',
+                },
               }}
               variant="contained"
               color="info"
@@ -277,7 +277,7 @@ function Block4() {
             sx={{
               borderRadius: 'inherit',
               position: 'relative',
-              zIndex: 5
+              zIndex: 5,
             }}
             image="/static/images/placeholders/covers/3.jpg"
             alt="..."
@@ -287,13 +287,13 @@ function Block4() {
               bottom: 'auto',
               top: `${theme.spacing(2)}`,
               right: 'auto',
-              left: `${theme.spacing(2)}`
+              left: `${theme.spacing(2)}`,
             }}
           >
             <Label
               sx={{
                 background: `${theme.palette.info.main}`,
-                color: `${theme.palette.info.contrastText}`
+                color: `${theme.palette.info.contrastText}`,
               }}
             >
               {t('Travel')}
@@ -308,7 +308,7 @@ function Block4() {
             position: 'relative',
             transition: `${theme.transitions.create([
               'box-shadow',
-              'transform'
+              'transform',
             ])}`,
             transform: 'translateY(0px)',
 
@@ -316,15 +316,15 @@ function Block4() {
               transform: `translateY(-${theme.spacing(0.5)})`,
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
                 0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
 
               '& .MuiBgComposed': {
-                opacity: 1
-              }
-            }
+                opacity: 1,
+              },
+            },
           }}
         >
           <BgComposed
@@ -344,9 +344,9 @@ function Block4() {
                 '&:hover': {
                   background: `${theme.colors.alpha.trueWhite[100]}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.alpha.trueWhite[100]
-                  )}`
-                }
+                    theme.colors.alpha.trueWhite[100],
+                  )}`,
+                },
               }}
             >
               <FacebookIcon fontSize="small" />
@@ -362,9 +362,9 @@ function Block4() {
                 '&:hover': {
                   background: `${theme.colors.alpha.trueWhite[100]}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.alpha.trueWhite[100]
-                  )}`
-                }
+                    theme.colors.alpha.trueWhite[100],
+                  )}`,
+                },
               }}
             >
               <TwitterIcon fontSize="small" />
@@ -376,7 +376,7 @@ function Block4() {
             sx={{
               borderRadius: 'inherit',
               position: 'relative',
-              zIndex: 5
+              zIndex: 5,
             }}
             image="/static/images/placeholders/covers/4.jpg"
             alt="..."
@@ -384,13 +384,13 @@ function Block4() {
           <CardActions
             sx={{
               right: 'auto',
-              left: `${theme.spacing(2)}`
+              left: `${theme.spacing(2)}`,
             }}
           >
             <Label
               sx={{
                 background: `${theme.palette.success.main}`,
-                color: `${theme.palette.success.contrastText}`
+                color: `${theme.palette.success.contrastText}`,
               }}
             >
               {t('Marketing')}

@@ -8,7 +8,7 @@ import { PrismaService } from '../prisma/prisma.service';
 
 //https://blog.iamstarcode.com/how-to-send-emails-using-nestjs-nodemailer-smtp-gmail-and-oauth2
 @Injectable()
-export class EmailApiService { 
+export class EmailApiService {
   constructor(
     private readonly configService: ConfigService,
     private readonly mailerService: MailerService,
@@ -67,7 +67,7 @@ export class EmailApiService {
       .sendMail({
         transporterName: 'gmail',
         to: dto.recipient, // receiver
-        //cc: dto.sender.email, 
+        //cc: dto.sender.email,
         from: 'robot.fin.one@gmail.com', // sender address
         subject: dto.subject, // Subject line
         text: dto.content, // plaintext body

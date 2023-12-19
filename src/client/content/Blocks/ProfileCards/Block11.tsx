@@ -14,7 +14,7 @@ import {
   LinearProgress,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -34,7 +34,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const CardActions = styled(Box)(
@@ -43,7 +43,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block11() {
@@ -54,7 +54,7 @@ function Block11() {
     <Card
       sx={{
         position: 'relative',
-        p: 3
+        p: 3,
       }}
     >
       <CardActions>
@@ -67,7 +67,7 @@ function Block11() {
           color="success"
           anchorOrigin={{
             vertical: 'top',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           badgeContent="24"
           overlap="rectangular"
@@ -78,11 +78,11 @@ function Block11() {
               fontSize: `${theme.typography.pxToRem(16)}`,
               background: `${theme.colors.alpha.black[100]}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.alpha.black[100]
+                theme.colors.alpha.black[100],
               )}`,
               borderRadius: `${theme.general.borderRadiusSm}`,
               width: 95,
-              height: 95
+              height: 95,
             }}
           >
             SS
@@ -90,7 +90,7 @@ function Block11() {
         </Badge>
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           ml={1.5}
         >
@@ -103,8 +103,8 @@ function Block11() {
               fontSize: `${theme.typography.pxToRem(17)}`,
 
               '&:hover': {
-                color: `${theme.colors.primary.main}`
-              }
+                color: `${theme.colors.primary.main}`,
+              },
             }}
             variant="h4"
           >
@@ -118,20 +118,20 @@ function Block11() {
             alignItems="center"
             flex={1}
             sx={{
-              width: '100%'
+              width: '100%',
             }}
           >
             <LinearProgressPrimary
               sx={{
                 minWidth: 65,
-                width: '100%'
+                width: '100%',
               }}
               variant="determinate"
               value={39}
             />
             <Typography
               sx={{
-                pl: 1
+                pl: 1,
               }}
               fontWeight="bold"
               variant="body1"
@@ -144,25 +144,25 @@ function Block11() {
       </Box>
       <Typography variant="subtitle2">
         {t(
-          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+          'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
         )}
         .
       </Typography>
       <Divider
         sx={{
-          mt: 3
+          mt: 3,
         }}
       />
       <List
         disablePadding
         sx={{
-          my: 1.5
+          my: 1.5,
         }}
       >
         <ListItem disableGutters>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Email') + ':'}
           />
@@ -171,7 +171,7 @@ function Block11() {
         <ListItem disableGutters>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Job Description') + ':'}
           />
@@ -180,7 +180,7 @@ function Block11() {
         <ListItem disableGutters>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Location') + ':'}
           />
@@ -189,7 +189,7 @@ function Block11() {
       </List>
       <Divider
         sx={{
-          mb: 3
+          mb: 3,
         }}
       />
       <Button
@@ -202,8 +202,10 @@ function Block11() {
           py: 1,
           '&:hover': {
             backgroundColor: `${theme.colors.primary.main}`,
-            color: `${theme.palette.getContrastText(theme.colors.primary.dark)}`
-          }
+            color: `${theme.palette.getContrastText(
+              theme.colors.primary.dark,
+            )}`,
+          },
         }}
       >
         {t('View complete profile')}

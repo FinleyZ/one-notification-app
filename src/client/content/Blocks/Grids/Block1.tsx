@@ -21,7 +21,7 @@ function Block1() {
         <Box
           p={2}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="warning">
@@ -33,7 +33,7 @@ function Block1() {
         <Box
           p={2}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="success">
@@ -45,7 +45,7 @@ function Block1() {
         <Box
           p={2}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="info">

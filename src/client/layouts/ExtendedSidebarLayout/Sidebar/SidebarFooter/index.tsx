@@ -7,7 +7,7 @@ import {
   alpha,
   tooltipClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import EventTwoToneIcon from '@mui/icons-material/EventTwoTone';
@@ -25,11 +25,11 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
     color: theme.palette.getContrastText(theme.colors.alpha.trueWhite[100]),
     boxShadow: theme.shadows[24],
     fontWeight: 'bold',
-    fontSize: theme.typography.pxToRem(12)
+    fontSize: theme.typography.pxToRem(12),
   },
   [`& .${tooltipClasses.arrow}`]: {
-    color: theme.colors.alpha.trueWhite[100]
-  }
+    color: theme.colors.alpha.trueWhite[100],
+  },
 }));
 
 function SidebarFooter() {
@@ -50,7 +50,7 @@ function SidebarFooter() {
   return (
     <Box
       sx={{
-        height: 60
+        height: 60,
       }}
       display="flex"
       alignItems="center"
@@ -65,8 +65,8 @@ function SidebarFooter() {
 
             '&:hover': {
               background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
-            }
+              color: `${theme.colors.alpha.trueWhite[100]}`,
+            },
           }}
           href="/applications/calendar"
           component={Link}
@@ -79,14 +79,14 @@ function SidebarFooter() {
           color="success"
           anchorOrigin={{
             vertical: 'top',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           sx={{
             '.MuiBadge-badge': {
               animation: 'pulse 1s infinite',
               top: '5%',
-              transition: `${theme.transitions.create(['all'])}`
-            }
+              transition: `${theme.transitions.create(['all'])}`,
+            },
           }}
           variant="dot"
           overlap="circular"
@@ -101,9 +101,9 @@ function SidebarFooter() {
 
               '&:hover': {
                 background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               },
-              mx: 1
+              mx: 1,
             }}
           >
             <SmsTwoToneIcon fontSize="small" />
@@ -119,8 +119,8 @@ function SidebarFooter() {
 
             '&:hover': {
               background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
-            }
+              color: `${theme.colors.alpha.trueWhite[100]}`,
+            },
           }}
           onClick={handleLogout}
         >

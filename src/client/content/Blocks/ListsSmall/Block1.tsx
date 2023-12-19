@@ -11,7 +11,7 @@ import {
   IconButton,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -24,7 +24,7 @@ const CardContentWrapper = styled(Box)(
   ({ theme }) => `
     background: ${theme.colors.alpha.white[100]};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -35,7 +35,7 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.9, 1.5, 0.7)};
     line-height: 1;
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -43,7 +43,7 @@ const ListWrapper = styled(List)(
     .MuiDivider-root:last-of-type {
         display: none;
     }
-  `
+  `,
 );
 
 function Block1() {
@@ -54,12 +54,12 @@ function Block1() {
     <Card
       variant="outlined"
       sx={{
-        background: `${alpha(theme.colors.alpha.black[100], 0.03)}`
+        background: `${alpha(theme.colors.alpha.black[100], 0.03)}`,
       }}
     >
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         action={
@@ -73,14 +73,14 @@ function Block1() {
         sx={{
           mx: 3,
           mb: 3,
-          height: 344
+          height: 344,
         }}
       >
         <Scrollbar>
           <ListWrapper disablePadding>
             <ListItem
               sx={{
-                p: 2
+                p: 2,
               }}
             >
               <ListItemText
@@ -96,13 +96,13 @@ function Block1() {
                         sx={{
                           mr: 1,
                           width: 28,
-                          height: 28
+                          height: 28,
                         }}
                         src="/static/images/avatars/1.jpg"
                       />
                       <Link
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(13)}`
+                          fontSize: `${theme.typography.pxToRem(13)}`,
                         }}
                         href="#"
                         variant="h6"
@@ -112,7 +112,7 @@ function Block1() {
                       <Typography
                         sx={{
                           fontSize: `${theme.typography.pxToRem(12)}`,
-                          pl: 1
+                          pl: 1,
                         }}
                         variant="subtitle2"
                       >
@@ -121,8 +121,8 @@ function Block1() {
                           subMinutes(new Date(), 43),
                           new Date(),
                           {
-                            addSuffix: true
-                          }
+                            addSuffix: true,
+                          },
                         )}
                       </Typography>
                     </Box>
@@ -134,8 +134,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.dark
-                    )}`
+                      theme.colors.error.dark,
+                    )}`,
                   }}
                 >
                   {t('Rejected')}
@@ -145,7 +145,7 @@ function Block1() {
             <Divider />
             <ListItem
               sx={{
-                p: 2
+                p: 2,
               }}
             >
               <ListItemText
@@ -161,13 +161,13 @@ function Block1() {
                         sx={{
                           mr: 1,
                           width: 28,
-                          height: 28
+                          height: 28,
                         }}
                         src="/static/images/avatars/2.jpg"
                       />
                       <Link
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(13)}`
+                          fontSize: `${theme.typography.pxToRem(13)}`,
                         }}
                         href="#"
                         variant="h6"
@@ -177,7 +177,7 @@ function Block1() {
                       <Typography
                         sx={{
                           fontSize: `${theme.typography.pxToRem(12)}`,
-                          pl: 1
+                          pl: 1,
                         }}
                         variant="subtitle2"
                       >
@@ -186,8 +186,8 @@ function Block1() {
                           subMinutes(new Date(), 76),
                           new Date(),
                           {
-                            addSuffix: true
-                          }
+                            addSuffix: true,
+                          },
                         )}
                       </Typography>
                     </Box>
@@ -199,8 +199,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
-                    )}`
+                      theme.colors.success.dark,
+                    )}`,
                   }}
                 >
                   {t('Completed')}
@@ -210,7 +210,7 @@ function Block1() {
             <Divider />
             <ListItem
               sx={{
-                p: 2
+                p: 2,
               }}
             >
               <ListItemText
@@ -226,13 +226,13 @@ function Block1() {
                         sx={{
                           mr: 1,
                           width: 28,
-                          height: 28
+                          height: 28,
                         }}
                         src="/static/images/avatars/3.jpg"
                       />
                       <Link
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(13)}`
+                          fontSize: `${theme.typography.pxToRem(13)}`,
                         }}
                         href="#"
                         variant="h6"
@@ -242,7 +242,7 @@ function Block1() {
                       <Typography
                         sx={{
                           fontSize: `${theme.typography.pxToRem(12)}`,
-                          pl: 1
+                          pl: 1,
                         }}
                         variant="subtitle2"
                       >
@@ -251,8 +251,8 @@ function Block1() {
                           subMinutes(new Date(), 90),
                           new Date(),
                           {
-                            addSuffix: true
-                          }
+                            addSuffix: true,
+                          },
                         )}
                       </Typography>
                     </Box>
@@ -264,8 +264,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.warning.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.warning.dark
-                    )}`
+                      theme.colors.warning.dark,
+                    )}`,
                   }}
                 >
                   {t('On hold')}
@@ -275,7 +275,7 @@ function Block1() {
             <Divider />
             <ListItem
               sx={{
-                p: 2
+                p: 2,
               }}
             >
               <ListItemText
@@ -291,13 +291,13 @@ function Block1() {
                         sx={{
                           mr: 1,
                           width: 28,
-                          height: 28
+                          height: 28,
                         }}
                         src="/static/images/avatars/4.jpg"
                       />
                       <Link
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(13)}`
+                          fontSize: `${theme.typography.pxToRem(13)}`,
                         }}
                         href="#"
                         variant="h6"
@@ -307,7 +307,7 @@ function Block1() {
                       <Typography
                         sx={{
                           fontSize: `${theme.typography.pxToRem(12)}`,
-                          pl: 1
+                          pl: 1,
                         }}
                         variant="subtitle2"
                       >
@@ -316,8 +316,8 @@ function Block1() {
                           subMinutes(new Date(), 47),
                           new Date(),
                           {
-                            addSuffix: true
-                          }
+                            addSuffix: true,
+                          },
                         )}
                       </Typography>
                     </Box>
@@ -329,8 +329,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.info.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.info.dark
-                    )}`
+                      theme.colors.info.dark,
+                    )}`,
                   }}
                 >
                   {t('Pending')}
@@ -340,7 +340,7 @@ function Block1() {
             <Divider />
             <ListItem
               sx={{
-                p: 2
+                p: 2,
               }}
             >
               <ListItemText
@@ -356,13 +356,13 @@ function Block1() {
                         sx={{
                           mr: 1,
                           width: 28,
-                          height: 28
+                          height: 28,
                         }}
                         src="/static/images/avatars/5.jpg"
                       />
                       <Link
                         sx={{
-                          fontSize: `${theme.typography.pxToRem(13)}`
+                          fontSize: `${theme.typography.pxToRem(13)}`,
                         }}
                         href="#"
                         variant="h6"
@@ -372,7 +372,7 @@ function Block1() {
                       <Typography
                         sx={{
                           fontSize: `${theme.typography.pxToRem(12)}`,
-                          pl: 1
+                          pl: 1,
                         }}
                         variant="subtitle2"
                       >
@@ -381,8 +381,8 @@ function Block1() {
                           subMinutes(new Date(), 47),
                           new Date(),
                           {
-                            addSuffix: true
-                          }
+                            addSuffix: true,
+                          },
                         )}
                       </Typography>
                     </Box>
@@ -394,8 +394,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.dark
-                    )}`
+                      theme.colors.error.dark,
+                    )}`,
                   }}
                 >
                   {t('Failed')}

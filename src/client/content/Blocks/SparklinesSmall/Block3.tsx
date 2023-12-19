@@ -14,219 +14,219 @@ function Block3() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.warning.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.warning.main],
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '60%'
-      }
+        columnWidth: '60%',
+      },
     },
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Customers',
-      data: [47, 38, 56, 24, 56, 24, 65]
-    }
+      data: [47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   const chart2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.error.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.error.main],
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '60%'
-      }
+        columnWidth: '60%',
+      },
     },
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart2Data = [
     {
       name: 'Orders',
-      data: [0, 10, 22, 46, 47, 26, 24, 45]
-    }
+      data: [0, 10, 22, 46, 47, 26, 24, 45],
+    },
   ];
 
   const chart3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.success.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.success.main],
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '60%'
-      }
+        columnWidth: '60%',
+      },
     },
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart3Data = [
     {
       name: 'Growth',
-      data: [0, 10, 22, 46, 47, 26, 24, 45]
-    }
+      data: [0, 10, 22, 46, 47, 26, 24, 45],
+    },
   ];
 
   const chart4Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.info.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.info.main],
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '60%'
-      }
+        columnWidth: '60%',
+      },
     },
     markers: {
-      size: 0
+      size: 0,
     },
     tooltip: {
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart4Data = [
     {
       name: 'Expenses',
-      data: [0, 7, 18, 28, 23, 24, 65, 43]
-    }
+      data: [0, 7, 18, 28, 23, 24, 65, 43],
+    },
   ];
 
   return (
@@ -237,14 +237,14 @@ function Block3() {
             overflow: 'visible',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
           }}
         >
           <Box py={1} px={2.5}>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {t('Customers')}
@@ -252,7 +252,7 @@ function Block3() {
             <Typography
               variant="h2"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               653
@@ -263,7 +263,7 @@ function Block3() {
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <span>52,12%</span>
@@ -286,14 +286,14 @@ function Block3() {
             overflow: 'visible',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
           }}
         >
           <Box py={1} px={2.5}>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {t('Orders')}
@@ -301,7 +301,7 @@ function Block3() {
             <Typography
               variant="h2"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               276
@@ -312,7 +312,7 @@ function Block3() {
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <span>67,43%</span>
@@ -335,14 +335,14 @@ function Block3() {
             overflow: 'visible',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
           }}
         >
           <Box py={1} px={2.5}>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {t('Growth')}
@@ -350,7 +350,7 @@ function Block3() {
             <Typography
               variant="h2"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               $753
@@ -360,7 +360,7 @@ function Block3() {
               sx={{
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               color="error"
             >
@@ -384,14 +384,14 @@ function Block3() {
             overflow: 'visible',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-between',
           }}
         >
           <Box py={1} px={2.5}>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               {t('Expenses')}
@@ -399,7 +399,7 @@ function Block3() {
             <Typography
               variant="h2"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               $654
@@ -409,7 +409,7 @@ function Block3() {
               sx={{
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               color="error"
             >

@@ -10,7 +10,7 @@ const ImgWrapper = styled('img')(
   ({ theme }) => `
     margin-right: ${theme.spacing(1)};
     width: 32px;
-`
+`,
 );
 
 export const RegisterAuth0: FC = (props) => {
@@ -46,7 +46,7 @@ export const RegisterAuth0: FC = (props) => {
         onClick={handleRegister}
         size="large"
         sx={{
-          py: 2
+          py: 2,
         }}
         variant="outlined"
       >

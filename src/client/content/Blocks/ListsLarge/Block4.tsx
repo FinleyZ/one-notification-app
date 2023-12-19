@@ -7,7 +7,7 @@ import {
   Button,
   Divider,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,7 @@ import ArrowForwardTwoToneIcon from '@mui/icons-material/ArrowForwardTwoTone';
 const CardWrapper = styled(Card)(
   ({ theme }) => `
           background: ${theme.colors.alpha.black[5]};
-  `
+  `,
 );
 
 function Block4() {
@@ -30,70 +30,70 @@ function Block4() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.primary.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     tooltip: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
       colors: [theme.colors.primary.light],
-      type: 'solid'
+      type: 'solid',
     },
     stroke: {
       show: true,
       colors: [theme.colors.primary.main],
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Top grossing products',
-      data: [4, 60, 30, 60, 11, 30, 10, 30, 6]
-    }
+      data: [4, 60, 30, 60, 11, 30, 10, 30, 6],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 2
+          p: 2,
         }}
         titleTypographyProps={{
           component: 'h4',
-          variant: 'h3'
+          variant: 'h3',
         }}
         action={
           <Button size="small" variant="text">
@@ -112,7 +112,7 @@ function Block4() {
       >
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -133,7 +133,7 @@ function Block4() {
         </Box>
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -163,7 +163,7 @@ function Block4() {
       >
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -184,7 +184,7 @@ function Block4() {
         </Box>
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -212,7 +212,7 @@ function Block4() {
       >
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -233,7 +233,7 @@ function Block4() {
         </Box>
         <Box
           sx={{
-            width: '100%'
+            width: '100%',
           }}
           p={3}
           display="flex"
@@ -260,7 +260,7 @@ function Block4() {
           mx: 3,
           mb: 4,
           p: 2,
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button

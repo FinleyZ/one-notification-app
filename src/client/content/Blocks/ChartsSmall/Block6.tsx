@@ -11,7 +11,7 @@ import {
   Divider,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
@@ -32,7 +32,7 @@ const IconButtonFav = styled(IconButton)(
             background: ${theme.palette.primary.main};
             color: ${theme.palette.primary.contrastText};
         }
-  `
+  `,
 );
 
 const AvatarWrapper = styled(Avatar)(
@@ -43,9 +43,9 @@ const AvatarWrapper = styled(Avatar)(
         padding: ${theme.spacing(1.8)};
         box-shadow: 0 0.180rem .3rem ${alpha(
           theme.colors.alpha.black[100],
-          0.3
+          0.3,
         )}, 0 .326rem 3rem ${alpha(theme.colors.alpha.black[100], 0.2)};
-  `
+  `,
 );
 
 function Block6() {
@@ -57,7 +57,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <IconButtonFav size="small" color="primary">
@@ -69,7 +69,7 @@ function Block6() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarWrapper
@@ -83,7 +83,7 @@ function Block6() {
               variant="h4"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
             >
               {t('Development')}
@@ -93,7 +93,7 @@ function Block6() {
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={5}
             >
@@ -101,7 +101,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -113,7 +113,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -125,7 +125,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -137,7 +137,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -148,14 +148,14 @@ function Block6() {
             </AvatarGroup>
             <Divider
               sx={{
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
             <Box
               p={2}
               sx={{
-                width: '100%'
+                width: '100%',
               }}
             >
               <Button
@@ -173,7 +173,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <IconButtonFav size="small" color="primary">
@@ -185,7 +185,7 @@ function Block6() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarWrapper
@@ -199,7 +199,7 @@ function Block6() {
               variant="h4"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
             >
               {t('Bugfixes')}
@@ -209,7 +209,7 @@ function Block6() {
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={5}
             >
@@ -217,7 +217,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -229,7 +229,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -241,7 +241,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -252,14 +252,14 @@ function Block6() {
             </AvatarGroup>
             <Divider
               sx={{
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
             <Box
               p={2}
               sx={{
-                width: '100%'
+                width: '100%',
               }}
             >
               <Button
@@ -277,7 +277,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <IconButtonFav size="small" color="primary">
@@ -289,7 +289,7 @@ function Block6() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarWrapper
@@ -303,7 +303,7 @@ function Block6() {
               variant="h4"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
             >
               {t('Marketing')}
@@ -313,7 +313,7 @@ function Block6() {
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={4}
             >
@@ -321,7 +321,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -333,7 +333,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -345,7 +345,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -357,7 +357,7 @@ function Block6() {
                 <Avatar
                   sx={{
                     width: 32,
-                    height: 32
+                    height: 32,
                   }}
                   component={Link}
                   href="#"
@@ -368,14 +368,14 @@ function Block6() {
             </AvatarGroup>
             <Divider
               sx={{
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
             <Box
               p={2}
               sx={{
-                width: '100%'
+                width: '100%',
               }}
             >
               <Button

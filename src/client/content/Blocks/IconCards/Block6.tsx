@@ -5,7 +5,7 @@ import {
   Grid,
   Button,
   Avatar,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -23,7 +23,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 4
+            p: 4,
           }}
         >
           <Avatar
@@ -32,7 +32,7 @@ function Block6() {
               width: 64,
               height: 64,
               background: `${theme.colors.primary.main}`,
-              color: `${theme.palette.primary.contrastText}`
+              color: `${theme.palette.primary.contrastText}`,
             }}
           >
             <SubscriptionsTwoToneIcon />
@@ -41,7 +41,7 @@ function Block6() {
             variant="h2"
             sx={{
               mb: 1.5,
-              fontSize: `${theme.typography.pxToRem(21)}`
+              fontSize: `${theme.typography.pxToRem(21)}`,
             }}
           >
             {t('Starter templates')}
@@ -50,7 +50,7 @@ function Block6() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included
@@ -58,7 +58,7 @@ function Block6() {
           </Typography>
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Button variant="text" endIcon={<ArrowForwardTwoToneIcon />}>
@@ -70,7 +70,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 4
+            p: 4,
           }}
         >
           <Avatar
@@ -79,7 +79,7 @@ function Block6() {
               width: 64,
               height: 64,
               background: `${theme.colors.gradients.pink2}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             <PersonTwoToneIcon />
@@ -88,7 +88,7 @@ function Block6() {
             variant="h2"
             sx={{
               mb: 1.5,
-              fontSize: `${theme.typography.pxToRem(21)}`
+              fontSize: `${theme.typography.pxToRem(21)}`,
             }}
           >
             {t('Simple to use')}
@@ -97,7 +97,7 @@ function Block6() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included
@@ -105,7 +105,7 @@ function Block6() {
           </Typography>
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Button variant="text" endIcon={<ArrowForwardTwoToneIcon />}>
@@ -117,7 +117,7 @@ function Block6() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 4
+            p: 4,
           }}
         >
           <Avatar
@@ -126,7 +126,7 @@ function Block6() {
               width: 64,
               height: 64,
               background: `${theme.colors.gradients.orange1}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             <MonetizationOnTwoToneIcon />
@@ -135,7 +135,7 @@ function Block6() {
             variant="h2"
             sx={{
               mb: 1.5,
-              fontSize: `${theme.typography.pxToRem(21)}`
+              fontSize: `${theme.typography.pxToRem(21)}`,
             }}
           >
             {t('Lightweight')}
@@ -144,7 +144,7 @@ function Block6() {
             variant="subtitle2"
             sx={{
               mb: 3,
-              fontSize: `${theme.typography.pxToRem(14)}`
+              fontSize: `${theme.typography.pxToRem(14)}`,
             }}
           >
             You can build unlimited layout styles using any of the 500+ included
@@ -152,7 +152,7 @@ function Block6() {
           </Typography>
           <Box
             sx={{
-              textAlign: 'right'
+              textAlign: 'right',
             }}
           >
             <Button variant="text" endIcon={<ArrowForwardTwoToneIcon />}>

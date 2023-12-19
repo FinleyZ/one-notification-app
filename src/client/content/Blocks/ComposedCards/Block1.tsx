@@ -13,7 +13,7 @@ import {
   Checkbox,
   TableContainer,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 import Link from 'src/client/components/Link';
@@ -28,7 +28,7 @@ import ArrowDownwardTwoToneIcon from '@mui/icons-material/ArrowDownwardTwoTone';
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -44,7 +44,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -58,7 +58,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -70,7 +70,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -79,7 +79,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const Label = styled(Box)(
@@ -93,7 +93,7 @@ const Label = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const LabelWarning = styled(Box)(
@@ -108,7 +108,7 @@ const LabelWarning = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const LabelError = styled(Box)(
@@ -123,7 +123,7 @@ const LabelError = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const LabelSuccess = styled(Box)(
@@ -138,7 +138,7 @@ const LabelSuccess = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 const BoxOverlineButton = styled(Box)(
@@ -154,13 +154,13 @@ const BoxOverlineButton = styled(Box)(
         padding: ${theme.spacing(0, 4)};
         border: 3px solid ${theme.colors.alpha.white[100]};
     }
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
-  `
+  `,
 );
 
 function Block1() {
@@ -171,7 +171,7 @@ function Block1() {
     <Card>
       <BoxComposed
         sx={{
-          background: `${theme.colors.gradients.purple3}`
+          background: `${theme.colors.gradients.purple3}`,
         }}
       >
         <CardActions>
@@ -180,20 +180,20 @@ function Block1() {
         <BoxComposedBg
           sx={{
             opacity: 0.1,
-            background: `${theme.colors.gradients.black1}`
+            background: `${theme.colors.gradients.black1}`,
           }}
         />
         <BoxComposedImage
           sx={{
             opacity: 0.1,
-            backgroundImage: 'url("/static/images/placeholders/covers/2.jpg")'
+            backgroundImage: 'url("/static/images/placeholders/covers/2.jpg")',
           }}
         />
         <BoxComposedContent pb={9} pt={7}>
           <Typography
             textAlign="center"
             sx={{
-              pb: 1
+              pb: 1,
             }}
             variant="h3"
           >
@@ -201,7 +201,7 @@ function Block1() {
           </Typography>
           <Typography textAlign="center" fontWeight="normal" variant="h4">
             {t(
-              'If you have questions regarding you order, you can send us a message'
+              'If you have questions regarding you order, you can send us a message',
             )}
           </Typography>
         </BoxComposedContent>
@@ -219,7 +219,7 @@ function Block1() {
               sx={{
                 textAlign: 'center',
                 pt: 3,
-                pb: 2.5
+                pb: 2.5,
               }}
             >
               <Text color="warning">
@@ -228,7 +228,7 @@ function Block1() {
               <Typography
                 variant="h3"
                 sx={{
-                  pt: 1
+                  pt: 1,
                 }}
               >
                 2,345
@@ -242,7 +242,7 @@ function Block1() {
               sx={{
                 textAlign: 'center',
                 pt: 3,
-                pb: 2.5
+                pb: 2.5,
               }}
             >
               <Text color="success">
@@ -251,7 +251,7 @@ function Block1() {
               <Typography
                 variant="h3"
                 sx={{
-                  pt: 1
+                  pt: 1,
                 }}
               >
                 $3,586
@@ -265,7 +265,7 @@ function Block1() {
               sx={{
                 textAlign: 'center',
                 pt: 3,
-                pb: 2.5
+                pb: 2.5,
               }}
             >
               <Text color="info">
@@ -274,7 +274,7 @@ function Block1() {
               <Typography
                 variant="h3"
                 sx={{
-                  pt: 1
+                  pt: 1,
                 }}
               >
                 $9,693
@@ -320,13 +320,13 @@ function Block1() {
                   sx={{
                     display: 'flex',
                     justifyContent: 'flex-end',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   color="text.secondary"
                 >
                   <Typography
                     sx={{
-                      pr: 0.5
+                      pr: 0.5,
                     }}
                     component="span"
                     variant="h4"
@@ -336,7 +336,7 @@ function Block1() {
                   </Typography>
                   <ArrowUpwardTwoToneIcon
                     sx={{
-                      opacity: 0.6
+                      opacity: 0.6,
                     }}
                   />
                 </Typography>
@@ -374,13 +374,13 @@ function Block1() {
                   sx={{
                     display: 'flex',
                     justifyContent: 'flex-end',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   color="text.secondary"
                 >
                   <Typography
                     sx={{
-                      pr: 0.5
+                      pr: 0.5,
                     }}
                     component="span"
                     variant="h4"
@@ -390,7 +390,7 @@ function Block1() {
                   </Typography>
                   <ArrowUpwardTwoToneIcon
                     sx={{
-                      opacity: 0.7
+                      opacity: 0.7,
                     }}
                   />
                 </Typography>
@@ -428,13 +428,13 @@ function Block1() {
                   sx={{
                     display: 'flex',
                     justifyContent: 'flex-end',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                   color="text.secondary"
                 >
                   <Typography
                     sx={{
-                      pr: 0.5
+                      pr: 0.5,
                     }}
                     component="span"
                     variant="h4"
@@ -444,7 +444,7 @@ function Block1() {
                   </Typography>
                   <ArrowDownwardTwoToneIcon
                     sx={{
-                      opacity: 0.6
+                      opacity: 0.6,
                     }}
                   />
                 </Typography>

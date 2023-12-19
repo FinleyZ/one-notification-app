@@ -12,7 +12,7 @@ const BaseLayout: FC<BaseLayoutProps> = ({ children }) => {
       sx={{
         display: 'flex',
         flex: 1,
-        height: '100%'
+        height: '100%',
       }}
     >
       {children}
@@ -21,7 +21,7 @@ const BaseLayout: FC<BaseLayoutProps> = ({ children }) => {
 };
 
 BaseLayout.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default BaseLayout;

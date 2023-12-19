@@ -12,7 +12,7 @@ import {
   alpha,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.black[100], 0.07)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.black[100],
-              0.15
+              0.15,
             )};
         }
         
@@ -37,7 +37,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.info.main};
         }
-    `
+    `,
 );
 const LinearProgressPrimary = styled(LinearProgress)(
   ({ theme }) => `
@@ -48,7 +48,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.black[100], 0.07)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.black[100],
-              0.15
+              0.15,
             )};
         }
         
@@ -56,7 +56,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 const LinearProgressSuccess = styled(LinearProgress)(
   ({ theme }) => `
@@ -67,7 +67,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.black[100], 0.07)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.black[100],
-              0.15
+              0.15,
             )};
         }
         
@@ -75,7 +75,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 const LinearProgressWarning = styled(LinearProgress)(
   ({ theme }) => `
@@ -86,7 +86,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.black[100], 0.07)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.black[100],
-              0.15
+              0.15,
             )};
         }
         
@@ -94,7 +94,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.warning.main};
         }
-    `
+    `,
 );
 const LinearProgressError = styled(LinearProgress)(
   ({ theme }) => `
@@ -105,7 +105,7 @@ const LinearProgressError = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.black[100], 0.07)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.black[100],
-              0.15
+              0.15,
             )};
         }
         
@@ -113,14 +113,14 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.02)};
       border-radius: 0;
-  `
+  `,
 );
 
 const ListWrapper = styled(List)(
@@ -128,7 +128,7 @@ const ListWrapper = styled(List)(
       .MuiListItem-root:last-of-type + .MuiDivider-root {
           display: none;
       }
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -143,7 +143,7 @@ const LabelWrapper = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadius};
-  `
+  `,
 );
 
 function Block6() {
@@ -154,7 +154,7 @@ function Block6() {
     <Card variant="outlined">
       <Box
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         p={2}
         display="flex"
@@ -172,7 +172,7 @@ function Block6() {
       <Divider />
       <Box
         sx={{
-          height: 316
+          height: 316,
         }}
       >
         <Scrollbar>
@@ -181,7 +181,7 @@ function Block6() {
               sx={{
                 display: { xs: 'block', md: 'flex' },
                 py: 1,
-                px: 2
+                px: 2,
               }}
             >
               <Box py={1} flex={1} display="flex" alignItems="center">
@@ -190,7 +190,7 @@ function Block6() {
                     <Avatar
                       sx={{
                         width: 46,
-                        height: 46
+                        height: 46,
                       }}
                       component={Link}
                       href="#"
@@ -202,14 +202,14 @@ function Block6() {
                 <Box
                   sx={{
                     width: '100%',
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <LinearProgressInfo variant="determinate" value={35} />
                 </Box>
                 <Box
                   sx={{
-                    textAlign: 'right'
+                    textAlign: 'right',
                   }}
                 >
                   <Typography variant="caption" fontWeight="bold">
@@ -224,7 +224,7 @@ function Block6() {
               sx={{
                 display: { xs: 'block', md: 'flex' },
                 py: 1,
-                px: 2
+                px: 2,
               }}
             >
               <Box py={1} flex={1} display="flex" alignItems="center">
@@ -233,7 +233,7 @@ function Block6() {
                     <Avatar
                       sx={{
                         width: 46,
-                        height: 46
+                        height: 46,
                       }}
                       component={Link}
                       href="#"
@@ -245,14 +245,14 @@ function Block6() {
                 <Box
                   sx={{
                     width: '100%',
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <LinearProgressSuccess variant="determinate" value={45} />
                 </Box>
                 <Box
                   sx={{
-                    textAlign: 'right'
+                    textAlign: 'right',
                   }}
                 >
                   <Typography variant="caption" fontWeight="bold">
@@ -267,7 +267,7 @@ function Block6() {
               sx={{
                 display: { xs: 'block', md: 'flex' },
                 py: 1,
-                px: 2
+                px: 2,
               }}
             >
               <Box py={1} flex={1} display="flex" alignItems="center">
@@ -276,7 +276,7 @@ function Block6() {
                     <Avatar
                       sx={{
                         width: 46,
-                        height: 46
+                        height: 46,
                       }}
                       component={Link}
                       href="#"
@@ -288,14 +288,14 @@ function Block6() {
                 <Box
                   sx={{
                     width: '100%',
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <LinearProgressWarning variant="determinate" value={25} />
                 </Box>
                 <Box
                   sx={{
-                    textAlign: 'right'
+                    textAlign: 'right',
                   }}
                 >
                   <Typography variant="caption" fontWeight="bold">
@@ -310,7 +310,7 @@ function Block6() {
               sx={{
                 display: { xs: 'block', md: 'flex' },
                 py: 1,
-                px: 2
+                px: 2,
               }}
             >
               <Box py={1} flex={1} display="flex" alignItems="center">
@@ -319,7 +319,7 @@ function Block6() {
                     <Avatar
                       sx={{
                         width: 46,
-                        height: 46
+                        height: 46,
                       }}
                       component={Link}
                       href="#"
@@ -331,14 +331,14 @@ function Block6() {
                 <Box
                   sx={{
                     width: '100%',
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <LinearProgressPrimary variant="determinate" value={65} />
                 </Box>
                 <Box
                   sx={{
-                    textAlign: 'right'
+                    textAlign: 'right',
                   }}
                 >
                   <Typography variant="caption" fontWeight="bold">
@@ -353,7 +353,7 @@ function Block6() {
               sx={{
                 display: { xs: 'block', md: 'flex' },
                 py: 1,
-                px: 2
+                px: 2,
               }}
             >
               <Box py={1} flex={1} display="flex" alignItems="center">
@@ -362,7 +362,7 @@ function Block6() {
                     <Avatar
                       sx={{
                         width: 46,
-                        height: 46
+                        height: 46,
                       }}
                       component={Link}
                       href="#"
@@ -374,14 +374,14 @@ function Block6() {
                 <Box
                   sx={{
                     width: '100%',
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <LinearProgressError variant="determinate" value={85} />
                 </Box>
                 <Box
                   sx={{
-                    textAlign: 'right'
+                    textAlign: 'right',
                   }}
                 >
                   <Typography variant="caption" fontWeight="bold">
@@ -400,7 +400,7 @@ function Block6() {
         elevation={0}
         sx={{
           textAlign: 'center',
-          p: 2
+          p: 2,
         }}
       >
         <Button size="large" startIcon={<AssessmentTwoToneIcon />}>

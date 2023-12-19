@@ -5,7 +5,7 @@ import {
   Typography,
   Container,
   Alert,
-  styled
+  styled,
 } from '@mui/material';
 import Head from 'next/head';
 import { useAuth } from 'src/client/hooks/useAuth';
@@ -24,7 +24,7 @@ const icons = {
   Auth0: '/static/images/logo/auth0.svg',
   FirebaseAuth: '/static/images/logo/firebase.svg',
   JWT: '/static/images/logo/jwt.svg',
-  Amplify: '/static/images/logo/amplify.svg'
+  Amplify: '/static/images/logo/amplify.svg',
 };
 
 const CardImg = styled(Card)(
@@ -43,7 +43,7 @@ const CardImg = styled(Card)(
     &:hover {
       border-color: ${theme.colors.primary.main};
     }
-`
+`,
 );
 
 const BottomWrapper = styled(Box)(
@@ -52,7 +52,7 @@ const BottomWrapper = styled(Box)(
     display: flex;
     align-items: center;
     justify-content: center;
-`
+`,
 );
 
 const MainContent = styled(Box)(
@@ -61,7 +61,7 @@ const MainContent = styled(Box)(
     display: flex;
     flex: 1;
     flex-direction: column;
-`
+`,
 );
 
 const TopWrapper = styled(Box)(
@@ -70,7 +70,7 @@ const TopWrapper = styled(Box)(
   width: 100%;
   flex: 1;
   padding: 20px;
-`
+`,
 );
 
 function LoginBasic() {
@@ -92,14 +92,14 @@ function LoginBasic() {
                 mt: 3,
                 px: 4,
                 pt: 5,
-                pb: 3
+                pb: 3,
               }}
             >
               <Box>
                 <Typography
                   variant="h2"
                   sx={{
-                    mb: 1
+                    mb: 1,
                   }}
                 >
                   {'Sign in'}
@@ -109,7 +109,7 @@ function LoginBasic() {
                   color="text.secondary"
                   fontWeight="normal"
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   {'Fill in the fields below to sign into your account.'}
@@ -172,7 +172,8 @@ function LoginBasic() {
             </BottomWrapper>
 
             <Alert severity="error">
-                'Learn how to switch between auth methods by reading the section we’ve prepared in the documentation.'
+              'Learn how to switch between auth methods by reading the section
+              we’ve prepared in the documentation.'
             </Alert>
           </Container>
         </TopWrapper>

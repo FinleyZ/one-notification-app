@@ -6,7 +6,7 @@ import {
   IconButton,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const DotLegend = styled('span')(
       height: 10px;
       display: inline-block;
       margin-right: ${theme.spacing(0.5)};
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -30,7 +30,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const LabelError = styled(Box)(
@@ -43,7 +43,7 @@ const LabelError = styled(Box)(
     font-weight: bold;
     padding: ${theme.spacing(1, 2)};
     border-radius: 80px;
-  `
+  `,
 );
 
 function Block1() {
@@ -53,7 +53,7 @@ function Block1() {
   const data = {
     percentage1: 63,
     percentage2: 87,
-    percentage3: 75
+    percentage3: 75,
   };
 
   return (
@@ -61,13 +61,13 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <Typography
             sx={{
               py: 3,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
             variant="h4"
             textAlign="center"
@@ -82,7 +82,7 @@ function Block1() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '170px'
+              maxWidth: '170px',
             }}
           >
             <CircularProgressbarWithChildren
@@ -91,7 +91,7 @@ function Block1() {
                 rotation: 1 / 2 + 1 / 4,
                 trailColor: theme.colors.warning.main,
                 pathColor: theme.colors.primary.main,
-                strokeLinecap: 'round'
+                strokeLinecap: 'round',
               })}
               strokeWidth={9}
               value={data.percentage1}
@@ -99,7 +99,7 @@ function Block1() {
               <Typography
                 color="primary"
                 sx={{
-                  mt: -2
+                  mt: -2,
                 }}
                 variant="h1"
               >
@@ -121,13 +121,13 @@ function Block1() {
             >
               <DotLegend
                 style={{
-                  background: `${theme.colors.primary.main}`
+                  background: `${theme.colors.primary.main}`,
                 }}
               />
               <Typography
                 sx={{
                   fontWeight: 'bold',
-                  lineHeight: 1
+                  lineHeight: 1,
                 }}
                 variant="subtitle2"
                 color="text.primary"
@@ -143,13 +143,13 @@ function Block1() {
             >
               <DotLegend
                 style={{
-                  background: `${theme.colors.warning.main}`
+                  background: `${theme.colors.warning.main}`,
                 }}
               />
               <Typography
                 sx={{
                   fontWeight: 'bold',
-                  lineHeight: 1
+                  lineHeight: 1,
                 }}
                 variant="subtitle2"
                 color="text.primary"
@@ -171,9 +171,9 @@ function Block1() {
                 '&:hover': {
                   backgroundColor: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
             >
               {t('Increase storage')}
@@ -184,13 +184,13 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <Typography
             sx={{
               py: 3,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
             variant="h4"
             textAlign="center"
@@ -205,7 +205,7 @@ function Block1() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '163px'
+              maxWidth: '163px',
             }}
           >
             <CircularProgressbarWithChildren
@@ -214,14 +214,14 @@ function Block1() {
                 rotation: 1 / 2.2 + 1 / 5.85,
                 trailColor: theme.colors.error.lighter,
                 pathColor: theme.colors.error.main,
-                strokeLinecap: 'round'
+                strokeLinecap: 'round',
               })}
               strokeWidth={6}
               value={data.percentage2}
             >
               <LabelError
                 sx={{
-                  mt: '-20px'
+                  mt: '-20px',
                 }}
               >
                 765
@@ -246,9 +246,9 @@ function Block1() {
                 '&:hover': {
                   backgroundColor: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
             >
               {t('View all issues')}
@@ -259,13 +259,13 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            position: 'relative'
+            position: 'relative',
           }}
         >
           <Typography
             sx={{
               py: 3,
-              fontSize: `${theme.typography.pxToRem(18)}`
+              fontSize: `${theme.typography.pxToRem(18)}`,
             }}
             variant="h4"
             textAlign="center"
@@ -280,7 +280,7 @@ function Block1() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '132px'
+              maxWidth: '132px',
             }}
           >
             <CircularProgressbarWithChildren
@@ -289,7 +289,7 @@ function Block1() {
                 rotation: 1 / 2 + 1 / 5.7,
                 trailColor: theme.colors.alpha.black[10],
                 pathColor: theme.colors.warning.main,
-                strokeLinecap: 'round'
+                strokeLinecap: 'round',
               })}
               strokeWidth={4}
               value={data.percentage3}
@@ -297,7 +297,7 @@ function Block1() {
               <Typography
                 color="warning"
                 sx={{
-                  mt: '-15px'
+                  mt: '-15px',
                 }}
                 variant="h2"
               >
@@ -307,7 +307,7 @@ function Block1() {
           </Box>
           <Box
             sx={{
-              mx: { xs: 3, md: 10 }
+              mx: { xs: 3, md: 10 },
             }}
           >
             <Grid container spacing={2} mt={1} mb={2}>
@@ -315,12 +315,12 @@ function Block1() {
                 <Box display="flex" alignItems="center">
                   <DotLegend
                     style={{
-                      background: `${theme.colors.success.main}`
+                      background: `${theme.colors.success.main}`,
                     }}
                   />
                   <Typography
                     sx={{
-                      lineHeight: 1
+                      lineHeight: 1,
                     }}
                     variant="body1"
                     color="text.secondary"
@@ -333,12 +333,12 @@ function Block1() {
                 <Box display="flex" alignItems="center">
                   <DotLegend
                     style={{
-                      background: `${theme.colors.error.main}`
+                      background: `${theme.colors.error.main}`,
                     }}
                   />
                   <Typography
                     sx={{
-                      lineHeight: 1
+                      lineHeight: 1,
                     }}
                     variant="body1"
                     color="text.secondary"
@@ -351,12 +351,12 @@ function Block1() {
                 <Box display="flex" alignItems="center">
                   <DotLegend
                     style={{
-                      background: `${theme.colors.warning.main}`
+                      background: `${theme.colors.warning.main}`,
                     }}
                   />
                   <Typography
                     sx={{
-                      lineHeight: 1
+                      lineHeight: 1,
                     }}
                     variant="body1"
                     color="text.secondary"
@@ -369,12 +369,12 @@ function Block1() {
                 <Box display="flex" alignItems="center">
                   <DotLegend
                     style={{
-                      background: `${theme.colors.info.main}`
+                      background: `${theme.colors.info.main}`,
                     }}
                   />
                   <Typography
                     sx={{
-                      lineHeight: 1
+                      lineHeight: 1,
                     }}
                     variant="body1"
                     color="text.secondary"
@@ -398,9 +398,9 @@ function Block1() {
                 '&:hover': {
                   backgroundColor: `${theme.colors.secondary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.secondary.main
-                  )}`
-                }
+                    theme.colors.secondary.main,
+                  )}`,
+                },
               }}
             >
               {t('Generate report')}

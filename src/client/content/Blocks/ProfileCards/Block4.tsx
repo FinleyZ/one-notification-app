@@ -9,7 +9,7 @@ import {
   alpha,
   Avatar,
   IconButton,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -30,7 +30,7 @@ function Block4() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
           variant="outlined"
         >
@@ -44,11 +44,11 @@ function Block4() {
                 sx={{
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
                   width: 50,
                   height: 50,
-                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                 }}
               >
                 SW
@@ -62,8 +62,8 @@ function Block4() {
                     transition: `${theme.transitions.create(['color'])}`,
 
                     '&:hover': {
-                      color: `${theme.colors.primary.main}`
-                    }
+                      color: `${theme.colors.primary.main}`,
+                    },
                   }}
                   variant="h5"
                 >
@@ -81,12 +81,12 @@ function Block4() {
                   width: 32,
                   height: 32,
                   background: `${alpha(theme.colors.success.main, 0.1)}`,
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
               >
                 <CheckTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
@@ -94,7 +94,7 @@ function Block4() {
                 variant="body1"
                 sx={{
                   fontSize: `${theme.typography.pxToRem(12)}`,
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
               >
                 {t('Profile Verified')}
@@ -103,7 +103,7 @@ function Block4() {
           </Box>
           <Divider
             sx={{
-              mt: 2.5
+              mt: 2.5,
             }}
           />
           <Box display="flex" justifyContent="center" py={2}>
@@ -111,7 +111,7 @@ function Block4() {
               <IconButton color="primary">
                 <VisibilityTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -119,13 +119,13 @@ function Block4() {
             <Tooltip arrow placement="top" title={t('Add to favourites')}>
               <IconButton
                 sx={{
-                  mx: 1
+                  mx: 1,
                 }}
                 color="primary"
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -134,7 +134,7 @@ function Block4() {
               <IconButton color="primary">
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -144,7 +144,7 @@ function Block4() {
           <Stack
             sx={{
               mt: 2.5,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             direction="row"
             justifyContent="space-evenly"
@@ -175,7 +175,7 @@ function Block4() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
           variant="outlined"
         >
@@ -189,7 +189,7 @@ function Block4() {
                 sx={{
                   width: 50,
                   height: 50,
-                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                 }}
                 src="/static/images/avatars/3.jpg"
               />
@@ -202,8 +202,8 @@ function Block4() {
                     transition: `${theme.transitions.create(['color'])}`,
 
                     '&:hover': {
-                      color: `${theme.colors.primary.main}`
-                    }
+                      color: `${theme.colors.primary.main}`,
+                    },
                   }}
                   variant="h5"
                 >
@@ -221,12 +221,12 @@ function Block4() {
                   width: 32,
                   height: 32,
                   background: `${alpha(theme.colors.warning.main, 0.1)}`,
-                  color: `${theme.colors.warning.main}`
+                  color: `${theme.colors.warning.main}`,
                 }}
               >
                 <HourglassTopTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
@@ -234,7 +234,7 @@ function Block4() {
                 variant="body1"
                 sx={{
                   fontSize: `${theme.typography.pxToRem(12)}`,
-                  color: `${theme.colors.warning.main}`
+                  color: `${theme.colors.warning.main}`,
                 }}
               >
                 {t('Review pending')}
@@ -243,7 +243,7 @@ function Block4() {
           </Box>
           <Divider
             sx={{
-              mt: 2.5
+              mt: 2.5,
             }}
           />
           <Box display="flex" justifyContent="center" py={2}>
@@ -251,7 +251,7 @@ function Block4() {
               <IconButton color="success">
                 <VisibilityTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -259,13 +259,13 @@ function Block4() {
             <Tooltip arrow placement="top" title={t('Add to favourites')}>
               <IconButton
                 sx={{
-                  mx: 1
+                  mx: 1,
                 }}
                 color="success"
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -274,7 +274,7 @@ function Block4() {
               <IconButton color="success">
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -284,7 +284,7 @@ function Block4() {
           <Stack
             sx={{
               mt: 2.5,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             direction="row"
             justifyContent="space-evenly"
@@ -315,7 +315,7 @@ function Block4() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 2.5
+            p: 2.5,
           }}
           variant="outlined"
         >
@@ -329,7 +329,7 @@ function Block4() {
                 sx={{
                   width: 50,
                   height: 50,
-                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                  boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                 }}
                 src="/static/images/avatars/2.jpg"
               />
@@ -342,8 +342,8 @@ function Block4() {
                     transition: `${theme.transitions.create(['color'])}`,
 
                     '&:hover': {
-                      color: `${theme.colors.primary.main}`
-                    }
+                      color: `${theme.colors.primary.main}`,
+                    },
                   }}
                   variant="h5"
                 >
@@ -361,12 +361,12 @@ function Block4() {
                   width: 32,
                   height: 32,
                   background: `${alpha(theme.colors.error.main, 0.1)}`,
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
               >
                 <CloseTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 />
               </Avatar>
@@ -374,7 +374,7 @@ function Block4() {
                 variant="body1"
                 sx={{
                   fontSize: `${theme.typography.pxToRem(12)}`,
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
               >
                 {t('Rejected')}
@@ -383,34 +383,34 @@ function Block4() {
           </Box>
           <Divider
             sx={{
-              mt: 2.5
+              mt: 2.5,
             }}
           />
           <Box display="flex" justifyContent="center" py={2}>
             <IconButton disabled color="error">
               <VisibilityTwoToneIcon
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(18)}`
+                  fontSize: `${theme.typography.pxToRem(18)}`,
                 }}
               />
             </IconButton>
             <IconButton
               disabled
               sx={{
-                mx: 1
+                mx: 1,
               }}
               color="error"
             >
               <FavoriteTwoToneIcon
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(18)}`
+                  fontSize: `${theme.typography.pxToRem(18)}`,
                 }}
               />
             </IconButton>
             <IconButton disabled color="error">
               <PersonSearchTwoToneIcon
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(18)}`
+                  fontSize: `${theme.typography.pxToRem(18)}`,
                 }}
               />
             </IconButton>
@@ -420,7 +420,7 @@ function Block4() {
             sx={{
               mt: 2.5,
               opacity: 0.7,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             direction="row"
             justifyContent="space-evenly"

@@ -10,7 +10,7 @@ import Text from 'src/client/components/Text';
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 function Block6() {
@@ -24,7 +24,7 @@ function Block6() {
           sx={{
             borderBottomColor: `${theme.colors.success.main}`,
             py: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="success">
@@ -45,7 +45,7 @@ function Block6() {
           sx={{
             borderBottomColor: `${theme.colors.warning.main}`,
             py: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="warning">
@@ -66,7 +66,7 @@ function Block6() {
           sx={{
             borderBottomColor: `${theme.colors.primary.main}`,
             py: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="primary">
@@ -87,7 +87,7 @@ function Block6() {
           sx={{
             borderBottomColor: `${theme.colors.error.main}`,
             py: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Text color="error">

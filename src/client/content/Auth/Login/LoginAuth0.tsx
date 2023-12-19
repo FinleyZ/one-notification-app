@@ -8,7 +8,7 @@ const ImgWrapper = styled('img')(
   ({ theme }) => `
     margin-right: ${theme.spacing(1)};
     width: 32px;
-`
+`,
 );
 
 export const LoginAuth0: FC = (props) => {
@@ -22,7 +22,8 @@ export const LoginAuth0: FC = (props) => {
       await loginWithPopup();
 
       if (isMountedRef()) {
-        const backTo = (router.query.backTo as string) || '/dashboards/monitoring';
+        const backTo =
+          (router.query.backTo as string) || '/dashboards/monitoring';
         router.push(backTo);
       }
     } catch (err) {
@@ -42,7 +43,7 @@ export const LoginAuth0: FC = (props) => {
         onClick={handleLogin}
         size="large"
         sx={{
-          py: 2
+          py: 2,
         }}
         variant="outlined"
       >

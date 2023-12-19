@@ -8,7 +8,7 @@ import {
   linearProgressClasses,
   LinearProgress,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const LinearProgress1 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.success.main, 0.06)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.success.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -32,7 +32,7 @@ const LinearProgress1 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.green2};
         }
-    `
+    `,
 );
 
 const LinearProgress2 = styled(LinearProgress)(
@@ -51,7 +51,7 @@ const LinearProgress2 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.orange2};
         }
-    `
+    `,
 );
 
 const LinearProgress3 = styled(LinearProgress)(
@@ -63,7 +63,7 @@ const LinearProgress3 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.06)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -73,7 +73,7 @@ const LinearProgress3 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.purple3};
         }
-    `
+    `,
 );
 
 function Block8() {
@@ -84,7 +84,7 @@ function Block8() {
     <Card>
       <Stack
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         direction="row"
         divider={<Divider orientation="vertical" flexItem />}
@@ -96,7 +96,7 @@ function Block8() {
           <Typography variant="h3">76%</Typography>
           <LinearProgress1
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={76}
@@ -108,7 +108,7 @@ function Block8() {
         <Box p={3} flexGrow={1}>
           <Typography
             sx={{
-              color: `${theme.colors.error.main}`
+              color: `${theme.colors.error.main}`,
             }}
             variant="h3"
           >
@@ -116,7 +116,7 @@ function Block8() {
           </Typography>
           <LinearProgress2
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={43}
@@ -129,7 +129,7 @@ function Block8() {
           <Typography variant="h3">59%</Typography>
           <LinearProgress3
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={59}

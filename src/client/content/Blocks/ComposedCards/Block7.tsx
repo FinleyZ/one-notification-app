@@ -12,7 +12,7 @@ import {
   IconButton,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const CardWrapper = styled(Card)(
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
       box-shadow: none;
       border-radius: 0;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -37,7 +37,7 @@ const IconButtonWrapper = styled(IconButton)(
         &:hover {
             background-color: ${alpha(theme.colors.primary.main, 0.9)};
         }
-  `
+  `,
 );
 
 const LinearProgressPrimary = styled(LinearProgress)(
@@ -53,7 +53,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -69,7 +69,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -85,7 +85,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 function Block7() {
@@ -96,14 +96,14 @@ function Block7() {
     <Card variant="outlined">
       <CardWrapper
         sx={{
-          p: 2
+          p: 2,
         }}
       >
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Typography
             variant="h3"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
             fontWeight="normal"
           >
@@ -111,7 +111,7 @@ function Block7() {
               fontWeight="normal"
               sx={{
                 pr: 1,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
               component="span"
@@ -124,7 +124,7 @@ function Block7() {
           <Box display="flex" alignItems="center">
             <AvatarGroup
               sx={{
-                mr: 1
+                mr: 1,
               }}
               max={4}
             >
@@ -173,7 +173,7 @@ function Block7() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Grid container spacing={6}>
@@ -211,14 +211,14 @@ function Block7() {
       <Divider />
       <CardWrapper
         sx={{
-          p: 2
+          p: 2,
         }}
       >
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Typography
             variant="h3"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
             fontWeight="normal"
           >
@@ -226,7 +226,7 @@ function Block7() {
               fontWeight="normal"
               sx={{
                 pr: 1,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
               component="span"
@@ -240,7 +240,7 @@ function Block7() {
             <Tooltip arrow title="Agnes Walker">
               <Avatar
                 sx={{
-                  mr: 1
+                  mr: 1,
                 }}
                 component={Link}
                 href="#"
@@ -260,7 +260,7 @@ function Block7() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Grid container spacing={6}>
@@ -296,14 +296,14 @@ function Block7() {
       <Divider />
       <CardWrapper
         sx={{
-          p: 2
+          p: 2,
         }}
       >
         <Box display="flex" alignItems="center" justifyContent="space-between">
           <Typography
             variant="h3"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
             fontWeight="normal"
           >
@@ -311,7 +311,7 @@ function Block7() {
               fontWeight="normal"
               sx={{
                 pr: 1,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
               component="span"
@@ -324,7 +324,7 @@ function Block7() {
           <Box display="flex" alignItems="center">
             <AvatarGroup
               sx={{
-                mr: 1
+                mr: 1,
               }}
               max={2}
             >
@@ -376,7 +376,7 @@ function Block7() {
             <Typography variant="h2">45%</Typography>
             <LinearProgressError
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={45}
@@ -389,7 +389,7 @@ function Block7() {
             <Typography variant="h2">87%</Typography>
             <LinearProgressSuccess
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={87}

@@ -11,7 +11,7 @@ import {
   Button,
   styled,
   linearProgressClasses,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { Chart } from 'src/client/components/Chart';
 import type { ApexOptions } from 'apexcharts';
@@ -31,7 +31,7 @@ const LinearProgressError = styled(LinearProgress)(
         border-radius: ${theme.general.borderRadiusLg};
         background-color: ${theme.colors.error.main};
     }
-`
+`,
 );
 
 function Block3() {
@@ -44,32 +44,32 @@ function Block3() {
       colors: [
         theme.colors.primary.main,
         theme.colors.alpha.black[70],
-        theme.colors.warning.main
+        theme.colors.warning.main,
       ],
-      width: 3
+      width: 3,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     colors: [
       theme.colors.primary.main,
       theme.colors.alpha.black[70],
-      theme.colors.warning.main
+      theme.colors.warning.main,
     ],
     fill: {
       opacity: [0.5, 0.3, 1],
       colors: [
         theme.colors.primary.main,
         theme.colors.alpha.black[50],
-        theme.colors.warning.main
+        theme.colors.warning.main,
       ],
-      type: 'solid'
+      type: 'solid',
     },
     labels: [
       'Jan',
@@ -83,46 +83,46 @@ function Block3() {
       'Sep',
       'Oct',
       'Nov',
-      'Dec'
+      'Dec',
     ],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     legend: {
-      show: false
+      show: false,
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
 
   const chart3Data = [
     {
       name: 'Total Loss',
       type: 'area',
-      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879]
+      data: [1008, 940, 1010, 821, 1035, 1030, 957, 926, 993, 1021, 997, 879],
     },
     {
       name: 'Net Profit',
       type: 'area',
-      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731]
+      data: [648, 745, 897, 743, 635, 842, 811, 696, 878, 987, 747, 731],
     },
     {
       name: 'Gross Profit',
       type: 'line',
-      data: [1030, 897, 463, 856, 285, 764, 426, 635, 1030, 1021, 1008, 821]
-    }
+      data: [1030, 897, 463, 856, 285, 764, 426, 635, 1030, 1021, 1008, 821],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         action={
           <Button
@@ -183,7 +183,7 @@ function Block3() {
               color="text.secondary"
               variant="h4"
               sx={{
-                pb: 1
+                pb: 1,
               }}
             >
               {t('Sales Target')}
@@ -191,20 +191,20 @@ function Block3() {
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
             >
               <Box
                 sx={{
                   width: '100%',
-                  mr: 1.5
+                  mr: 1.5,
                 }}
               >
                 <LinearProgressError variant="determinate" value={67.5} />
               </Box>
               <Box
                 sx={{
-                  minWidth: 35
+                  minWidth: 35,
                 }}
               >
                 <Typography variant="h5">67.5%</Typography>

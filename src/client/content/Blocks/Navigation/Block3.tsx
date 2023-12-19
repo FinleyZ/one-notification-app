@@ -13,7 +13,7 @@ import {
   ListItemAvatar,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -44,7 +44,7 @@ const DotLegend = styled('span')(
           left: ${theme.spacing(0.5)};
           background: ${theme.colors.alpha.white[100]};
       }
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -53,7 +53,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 function Block3() {
@@ -63,7 +63,7 @@ function Block3() {
   return (
     <Card
       sx={{
-        position: 'relative'
+        position: 'relative',
       }}
     >
       <CardActions>
@@ -73,7 +73,7 @@ function Block3() {
         <Badge
           anchorOrigin={{
             vertical: 'top',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           overlap="rectangular"
           badgeContent={
@@ -84,7 +84,7 @@ function Block3() {
                 t('Offline since') +
                 ' ' +
                 formatDistance(subMinutes(new Date(), 12), new Date(), {
-                  addSuffix: true
+                  addSuffix: true,
                 })
               }
             >
@@ -99,7 +99,7 @@ function Block3() {
               height: 104,
               fontSize: `${theme.typography.pxToRem(18)}`,
               background: `${theme.colors.primary.lighter}`,
-              color: `${theme.colors.primary.main}`
+              color: `${theme.colors.primary.main}`,
             }}
           >
             KA
@@ -111,7 +111,7 @@ function Block3() {
           </Link>
           <Typography
             sx={{
-              mb: 1
+              mb: 1,
             }}
             variant="subtitle2"
           >
@@ -132,9 +132,9 @@ function Block3() {
               '&:hover': {
                 background: `${theme.colors.success.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.success.dark
-                )}`
-              }
+                  theme.colors.success.dark,
+                )}`,
+              },
             }}
           >
             {t('View')}
@@ -146,7 +146,7 @@ function Block3() {
         <MenuItem
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -155,17 +155,17 @@ function Block3() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
               sx={{
                 background: `${theme.colors.success.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.success.dark
+                  theme.colors.success.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <AccountBalanceWalletTwoToneIcon fontSize="small" />
@@ -182,14 +182,14 @@ function Block3() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
         <MenuItem
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -198,17 +198,17 @@ function Block3() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
               sx={{
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
+                  theme.colors.error.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <SpeakerTwoToneIcon fontSize="small" />
@@ -225,14 +225,14 @@ function Block3() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
         <MenuItem
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -241,17 +241,17 @@ function Block3() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
               sx={{
                 background: `${theme.colors.warning.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.warning.dark
+                  theme.colors.warning.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <VerifiedTwoToneIcon fontSize="small" />
@@ -268,7 +268,7 @@ function Block3() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>

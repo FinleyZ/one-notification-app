@@ -9,7 +9,7 @@ import {
   CardActionArea,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -25,7 +25,7 @@ const CardActions = styled(Box)(
     top: ${theme.spacing(2)};
     z-index: 7;
     display: flex;
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -39,7 +39,7 @@ const LabelWrapper = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -62,7 +62,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .1;
         }
     }
-  `
+  `,
 );
 
 const CardContentWrapper = styled(Box)(
@@ -78,7 +78,7 @@ const CardContentWrapper = styled(Box)(
     display: flex;
     align-items: flex-end;
     background: linear-gradient(180deg, rgba(7,9,25,0.1) 0%, rgba(7,9,25,0.1) 40%, rgba(7,9,25,0.85) 100%);
-  `
+  `,
 );
 
 function Block3() {
@@ -100,7 +100,7 @@ function Block3() {
               <LabelWrapper
                 sx={{
                   background: `${theme.colors.gradients.orange1}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 {t('New')}
@@ -110,7 +110,7 @@ function Block3() {
               <Typography
                 lineHeight={1.5}
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
                 variant="h2"
               >
@@ -121,7 +121,7 @@ function Block3() {
           <Box
             sx={{
               position: 'relative',
-              p: 3
+              p: 3,
             }}
           >
             <Box
@@ -133,7 +133,7 @@ function Block3() {
                 <Avatar
                   sx={{
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                   src="/static/images/avatars/3.jpg"
                 />
@@ -151,14 +151,14 @@ function Block3() {
                 variant="subtitle1"
                 sx={{
                   display: 'flex',
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
               >
                 <AccessTimeTwoToneIcon
                   fontSize="small"
                   sx={{
                     opacity: 0.7,
-                    mr: 0.5
+                    mr: 0.5,
                   }}
                 />
                 {format(subDays(new Date(), 5), 'MMMM dd yyyy')}
@@ -169,17 +169,17 @@ function Block3() {
               color="text.secondary"
               fontWeight="normal"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
             <Divider
               sx={{
-                mb: 2
+                mb: 2,
               }}
             />
             <Button
@@ -188,7 +188,7 @@ function Block3() {
               endIcon={<ArrowForwardTwoToneIcon />}
               sx={{
                 borderRadius: 10,
-                px: 3
+                px: 3,
               }}
             >
               {t('Learn more')}
@@ -199,14 +199,14 @@ function Block3() {
       <Grid item xs={12} md={6}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <CardActionAreaWrapper
             sx={{
               overflow: 'hidden',
               borderRadius: `${theme.general.borderRadius}`,
-              mb: 3
+              mb: 3,
             }}
           >
             <CardMedia
@@ -220,8 +220,8 @@ function Block3() {
                 sx={{
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
-                  )}`
+                    theme.colors.error.main,
+                  )}`,
                 }}
               >
                 {t('Updated')}
@@ -232,7 +232,7 @@ function Block3() {
                 lineHeight={1.5}
                 textAlign="center"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
                 variant="h2"
               >
@@ -243,7 +243,7 @@ function Block3() {
           <Box
             sx={{
               textAlign: 'center',
-              position: 'relative'
+              position: 'relative',
             }}
           >
             <Box
@@ -256,7 +256,7 @@ function Block3() {
                 sx={{
                   width: 74,
                   height: 74,
-                  mb: 1
+                  mb: 1,
                 }}
                 src="/static/images/avatars/5.jpg"
               />
@@ -274,11 +274,11 @@ function Block3() {
               color="text.primary"
               fontWeight="normal"
               sx={{
-                py: 3
+                py: 3,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -288,7 +288,7 @@ function Block3() {
               endIcon={<ArrowForwardTwoToneIcon />}
               sx={{
                 borderRadius: 10,
-                px: 3
+                px: 3,
               }}
             >
               {t('Learn more')}

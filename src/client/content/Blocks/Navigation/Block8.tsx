@@ -9,7 +9,7 @@ import {
   MenuList,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,7 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(1, 1.5, 0.8)};
     line-height: 1;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -38,7 +38,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const MenuListWrapperRounded = styled(MenuList)(
@@ -61,7 +61,7 @@ const MenuListWrapperRounded = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 function Block8() {
@@ -72,7 +72,7 @@ function Block8() {
     <Card
       sx={{
         position: 'relative',
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <CardActions>
@@ -87,9 +87,9 @@ function Block8() {
               '&:hover': {
                 backgroundColor: `${theme.colors.warning.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.warning.dark
-                )}`
-              }
+                  theme.colors.warning.dark,
+                )}`,
+              },
             }}
           >
             <EmailTwoToneIcon fontSize="small" />
@@ -101,14 +101,14 @@ function Block8() {
           sx={{
             mx: 'auto',
             width: 123,
-            height: 123
+            height: 123,
           }}
           src="/static/images/avatars/4.jpg"
         />
         <Typography
           sx={{
             pb: 1,
-            pt: 2
+            pt: 2,
           }}
           variant="h2"
         >
@@ -117,7 +117,7 @@ function Block8() {
         <Label color="warning">
           {t('Idle for')}{' '}
           {formatDistance(subMinutes(new Date(), 12), new Date(), {
-            addSuffix: true
+            addSuffix: true,
           })}
         </Label>
 
@@ -127,7 +127,7 @@ function Block8() {
             background: `${theme.colors.gradients.blue4}`,
             textAlign: 'center',
             p: 3,
-            mt: 3
+            mt: 3,
           }}
         >
           <Tooltip arrow placement="top" title="Facebook">
@@ -138,8 +138,8 @@ function Block8() {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
                 '&:hover': {
                   background: `${theme.colors.alpha.trueWhite[30]}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               color="primary"
               size="large"
@@ -156,8 +156,8 @@ function Block8() {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
                 '&:hover': {
                   background: `${theme.colors.alpha.trueWhite[30]}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               color="primary"
               size="large"
@@ -173,8 +173,8 @@ function Block8() {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
                 '&:hover': {
                   background: `${theme.colors.alpha.trueWhite[30]}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               color="primary"
               size="large"
@@ -190,27 +190,27 @@ function Block8() {
         sx={{
           textAlign: 'left',
           mb: 3,
-          mx: 3
+          mx: 3,
         }}
       >
         <MenuItem selected>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Analytics')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
         <MenuItem>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Server Status')}
           />
@@ -220,8 +220,8 @@ function Block8() {
               sx={{
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.dark
-                )}`
+                  theme.colors.primary.dark,
+                )}`,
               }}
             >
               {t('Hot')}
@@ -230,7 +230,7 @@ function Block8() {
               sx={{
                 ml: 1,
                 color: `${theme.colors.alpha.black[30]}`,
-                opacity: 0.8
+                opacity: 0.8,
               }}
             />
           </Box>
@@ -238,28 +238,28 @@ function Block8() {
         <MenuItem disabled>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Reports Management')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
         <MenuItem>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Real Estate')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>

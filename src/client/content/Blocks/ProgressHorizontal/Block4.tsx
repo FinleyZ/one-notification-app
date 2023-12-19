@@ -8,7 +8,7 @@ import {
   Avatar,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -33,7 +33,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -45,7 +45,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.success.main, 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.success.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -53,7 +53,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -70,7 +70,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 function Block4() {
@@ -83,7 +83,7 @@ function Block4() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -99,14 +99,14 @@ function Block4() {
                 height: 44,
                 p: 0,
                 background: `${theme.colors.primary.lighter}`,
-                color: `${theme.colors.primary.main}`
+                color: `${theme.colors.primary.main}`,
               }}
             >
               <ShowChartTwoToneIcon fontSize="small" />
             </Avatar>
             <Box
               sx={{
-                textAlign: 'right'
+                textAlign: 'right',
               }}
             >
               <Typography color="text.primary" variant="h3">
@@ -120,7 +120,7 @@ function Block4() {
           <Box
             display="flex"
             sx={{
-              mb: 0.6
+              mb: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
@@ -130,7 +130,7 @@ function Block4() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.primary.main}`
+                color: `${theme.colors.primary.main}`,
               }}
               variant="h4"
             >
@@ -144,7 +144,7 @@ function Block4() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -160,14 +160,14 @@ function Block4() {
                 height: 44,
                 p: 0,
                 background: `${theme.colors.success.lighter}`,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <BugReportTwoToneIcon fontSize="small" />
             </Avatar>
             <Box
               sx={{
-                textAlign: 'right'
+                textAlign: 'right',
               }}
             >
               <Typography color="text.primary" variant="h3">
@@ -181,7 +181,7 @@ function Block4() {
           <Box
             display="flex"
             sx={{
-              mb: 0.6
+              mb: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
@@ -191,7 +191,7 @@ function Block4() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
               variant="h4"
             >
@@ -205,7 +205,7 @@ function Block4() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -221,14 +221,14 @@ function Block4() {
                 height: 44,
                 p: 0,
                 background: `${theme.colors.error.lighter}`,
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               <PeopleAltTwoToneIcon fontSize="small" />
             </Avatar>
             <Box
               sx={{
-                textAlign: 'right'
+                textAlign: 'right',
               }}
             >
               <Typography color="text.primary" variant="h3">
@@ -242,7 +242,7 @@ function Block4() {
           <Box
             display="flex"
             sx={{
-              mb: 0.6
+              mb: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
@@ -252,7 +252,7 @@ function Block4() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
               variant="h4"
             >

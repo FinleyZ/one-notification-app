@@ -14,7 +14,7 @@ import {
   alpha,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -45,7 +45,7 @@ const DotLegend = styled('span')(
           left: ${theme.spacing(0.5)};
           background: ${theme.colors.alpha.white[100]};
       }
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -54,7 +54,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -72,7 +72,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .1;
           }
         }
-  `
+  `,
 );
 
 function Block6() {
@@ -82,7 +82,7 @@ function Block6() {
   return (
     <Card
       sx={{
-        position: 'relative'
+        position: 'relative',
       }}
     >
       <CardActions>
@@ -92,7 +92,7 @@ function Block6() {
         <Badge
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'left'
+            horizontal: 'left',
           }}
           overlap="rectangular"
           badgeContent={
@@ -103,7 +103,7 @@ function Block6() {
                 t('Idle since') +
                 ' ' +
                 formatDistance(subMinutes(new Date(), 42), new Date(), {
-                  addSuffix: true
+                  addSuffix: true,
                 })
               }
             >
@@ -117,7 +117,7 @@ function Block6() {
             variant="rounded"
             sx={{
               width: 104,
-              height: 104
+              height: 104,
             }}
             src="/static/images/avatars/4.jpg"
           />
@@ -128,7 +128,7 @@ function Block6() {
           </Link>
           <Typography
             sx={{
-              mb: 1
+              mb: 1,
             }}
             variant="subtitle2"
           >
@@ -149,9 +149,9 @@ function Block6() {
               '&:hover': {
                 background: `${theme.colors.success.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.success.dark
-                )}`
-              }
+                  theme.colors.success.dark,
+                )}`,
+              },
             }}
           >
             {t('View')}
@@ -162,14 +162,14 @@ function Block6() {
         elevation={0}
         sx={{
           mx: 3,
-          background: `${alpha(theme.colors.alpha.black[100], 0.1)}`
+          background: `${alpha(theme.colors.alpha.black[100], 0.1)}`,
         }}
       >
         <List dense>
           <ListItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('Email') + ':'}
             />
@@ -178,7 +178,7 @@ function Block6() {
           <ListItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('Job Description') + ':'}
             />
@@ -187,7 +187,7 @@ function Block6() {
           <ListItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('Location') + ':'}
             />
@@ -202,18 +202,18 @@ function Block6() {
               variant="outlined"
               sx={{
                 background: `${theme.colors.gradients.blue3}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <Text color="warning">
                   <AccountTreeTwoToneIcon
                     sx={{
-                      mb: 1
+                      mb: 1,
                     }}
                   />
                 </Text>
@@ -223,7 +223,7 @@ function Block6() {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[70]}`
+                    color: `${theme.colors.alpha.trueWhite[70]}`,
                   }}
                   noWrap
                 >
@@ -237,18 +237,18 @@ function Block6() {
               variant="outlined"
               sx={{
                 background: `${theme.colors.gradients.blue4}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <Text color="success">
                   <ContactSupportTwoToneIcon
                     sx={{
-                      mb: 1
+                      mb: 1,
                     }}
                   />
                 </Text>
@@ -258,7 +258,7 @@ function Block6() {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[70]}`
+                    color: `${theme.colors.alpha.trueWhite[70]}`,
                   }}
                   noWrap
                 >
@@ -272,17 +272,17 @@ function Block6() {
               variant="outlined"
               sx={{
                 background: `${theme.colors.gradients.purple3}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <DashboardCustomizeTwoToneIcon
                   sx={{
-                    mb: 1
+                    mb: 1,
                   }}
                 />
                 <Typography gutterBottom variant="h4">
@@ -291,7 +291,7 @@ function Block6() {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[70]}`
+                    color: `${theme.colors.alpha.trueWhite[70]}`,
                   }}
                   noWrap
                 >
@@ -305,18 +305,18 @@ function Block6() {
               variant="outlined"
               sx={{
                 background: `${theme.colors.gradients.black2}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <Text color="info">
                   <PeopleOutlineTwoToneIcon
                     sx={{
-                      mb: 1
+                      mb: 1,
                     }}
                   />
                 </Text>
@@ -326,7 +326,7 @@ function Block6() {
                 <Typography
                   variant="subtitle2"
                   sx={{
-                    color: `${theme.colors.alpha.trueWhite[70]}`
+                    color: `${theme.colors.alpha.trueWhite[70]}`,
                   }}
                   noWrap
                 >

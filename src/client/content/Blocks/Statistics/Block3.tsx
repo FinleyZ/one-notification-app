@@ -5,7 +5,7 @@ import {
   Card,
   Grid,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const AvatarWrapper = styled(Avatar)(
       color:  ${theme.colors.alpha.trueWhite[100]};
       width: ${theme.spacing(5.5)};
       height: ${theme.spacing(5.5)};
-`
+`,
 );
 
 function Block3() {
@@ -35,13 +35,13 @@ function Block3() {
           sx={{
             px: 3,
             pb: 6,
-            pt: 3
+            pt: 3,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.blue4}`
+                background: `${theme.colors.gradients.blue4}`,
               }}
             >
               <ReceiptTwoToneIcon fontSize="small" />
@@ -50,7 +50,7 @@ function Block3() {
               sx={{
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -65,18 +65,18 @@ function Block3() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowDownwardTwoToneIcon
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
               variant="h1"
             >
@@ -99,13 +99,13 @@ function Block3() {
           sx={{
             px: 3,
             pb: 6,
-            pt: 3
+            pt: 3,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.orange3}`
+                background: `${theme.colors.gradients.orange3}`,
               }}
             >
               <SupportTwoToneIcon fontSize="small" />
@@ -114,7 +114,7 @@ function Block3() {
               sx={{
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -129,18 +129,18 @@ function Block3() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowUpwardTwoToneIcon
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
               variant="h1"
             >
@@ -163,13 +163,13 @@ function Block3() {
           sx={{
             px: 3,
             pb: 6,
-            pt: 3
+            pt: 3,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.success.main}`
+                background: `${theme.colors.success.main}`,
               }}
             >
               <YardTwoToneIcon fontSize="small" />
@@ -178,7 +178,7 @@ function Block3() {
               sx={{
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -193,18 +193,18 @@ function Block3() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowUpwardTwoToneIcon
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
               variant="h1"
             >
@@ -227,13 +227,13 @@ function Block3() {
           sx={{
             px: 3,
             pb: 6,
-            pt: 3
+            pt: 3,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.primary.main}`
+                background: `${theme.colors.primary.main}`,
               }}
             >
               <SnowmobileTwoToneIcon fontSize="small" />
@@ -242,7 +242,7 @@ function Block3() {
               sx={{
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -257,18 +257,18 @@ function Block3() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowDownwardTwoToneIcon
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
               variant="h1"
             >

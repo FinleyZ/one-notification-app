@@ -14,7 +14,7 @@ import {
   Tooltip,
   Switch,
   alpha,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import Label from 'src/client/components/Label';
@@ -32,7 +32,7 @@ const DotError = styled('span')(
     height: ${theme.spacing(1.1)};
     display: inline-block;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 const DotSuccess = styled('span')(
@@ -43,7 +43,7 @@ const DotSuccess = styled('span')(
     height: ${theme.spacing(1.1)};
     display: inline-block;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 const SwitchSuccess = styled(Switch)(
@@ -60,31 +60,31 @@ const SwitchSuccess = styled(Switch)(
     .MuiSwitch-colorPrimary.Mui-checked:hover {
       background-color: ${alpha(theme.colors.success.main, 0.1)};
     }
-`
+`,
 );
 
 function VirtualServers() {
   const { t }: { t: any } = useTranslation();
 
   const [state1, setState1] = useState({
-    server: true
+    server: true,
   });
 
   const [state2, setState2] = useState({
-    server: false
+    server: false,
   });
 
   const serverActivate1 = (event: ChangeEvent<HTMLInputElement>) => {
     setState1({
       ...state1,
-      [event.target.name]: event.target.checked
+      [event.target.name]: event.target.checked,
     });
   };
 
   const serverActivate2 = (event: ChangeEvent<HTMLInputElement>) => {
     setState2({
       ...state2,
-      [event.target.name]: event.target.checked
+      [event.target.name]: event.target.checked,
     });
   };
 
@@ -93,7 +93,7 @@ function VirtualServers() {
       <Typography
         variant="h3"
         sx={{
-          pb: 3
+          pb: 3,
         }}
       >
         {t('Virtual Servers')}
@@ -118,7 +118,7 @@ function VirtualServers() {
             <Box
               sx={{
                 px: 2,
-                pb: 2
+                pb: 2,
               }}
             >
               <List disablePadding>
@@ -126,7 +126,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <RouterTwoToneIcon />
@@ -138,7 +138,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <DnsTwoToneIcon />
@@ -150,7 +150,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <MemoryTwoToneIcon />
@@ -173,7 +173,7 @@ function VirtualServers() {
                   <Tooltip arrow title={t('Share')}>
                     <IconButton
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                       size="small"
                       color="primary"
@@ -184,7 +184,7 @@ function VirtualServers() {
                   <Tooltip arrow title={t('Refresh')}>
                     <IconButton
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                       size="small"
                       color="primary"
@@ -194,7 +194,7 @@ function VirtualServers() {
                   </Tooltip>
                   <Divider
                     sx={{
-                      mx: 2
+                      mx: 2,
                     }}
                     orientation="vertical"
                     flexItem
@@ -229,7 +229,7 @@ function VirtualServers() {
             <Box
               sx={{
                 px: 2,
-                pb: 2
+                pb: 2,
               }}
             >
               <List disablePadding>
@@ -237,7 +237,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <RouterTwoToneIcon />
@@ -249,7 +249,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <DnsTwoToneIcon />
@@ -261,7 +261,7 @@ function VirtualServers() {
                 <ListItem>
                   <ListItemAvatar
                     sx={{
-                      minWidth: 36
+                      minWidth: 36,
                     }}
                   >
                     <MemoryTwoToneIcon />
@@ -284,7 +284,7 @@ function VirtualServers() {
                   <Tooltip arrow title={t('Share')}>
                     <IconButton
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                       size="small"
                       color="primary"
@@ -295,7 +295,7 @@ function VirtualServers() {
                   <Tooltip arrow title={t('Refresh')}>
                     <IconButton
                       sx={{
-                        ml: 1
+                        ml: 1,
                       }}
                       size="small"
                       color="primary"
@@ -305,7 +305,7 @@ function VirtualServers() {
                   </Tooltip>
                   <Divider
                     sx={{
-                      mx: 2
+                      mx: 2,
                     }}
                     orientation="vertical"
                     flexItem

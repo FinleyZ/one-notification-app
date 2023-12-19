@@ -7,7 +7,7 @@ import {
   Avatar,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import DirectionsCarTwoToneIcon from '@mui/icons-material/DirectionsCarTwoTone';
@@ -22,7 +22,7 @@ const CardHover = styled(Card)(
     &:hover {
         transform: scale(1.1);
     }
-  `
+  `,
 );
 
 function Block2() {
@@ -34,7 +34,9 @@ function Block2() {
         <Card
           sx={{
             background: `${theme.colors.gradients.blue4}`,
-            color: `${theme.palette.getContrastText(theme.colors.primary.main)}`
+            color: `${theme.palette.getContrastText(
+              theme.colors.primary.main,
+            )}`,
           }}
         >
           <CardActionArea
@@ -42,7 +44,7 @@ function Block2() {
               display: 'flex',
               alignItems: 'flex-start',
               px: 3,
-              py: 5
+              py: 5,
             }}
           >
             <Avatar
@@ -53,13 +55,13 @@ function Block2() {
                 height: 62,
                 color: `${theme.colors.warning.main}`,
                 background: `${theme.palette.getContrastText(
-                  theme.colors.warning.main
-                )}`
+                  theme.colors.warning.main,
+                )}`,
               }}
             >
               <DirectionsCarTwoToneIcon
                 sx={{
-                  fontSize: `${theme.typography.pxToRem(30)}`
+                  fontSize: `${theme.typography.pxToRem(30)}`,
                 }}
               />
             </Avatar>
@@ -68,8 +70,8 @@ function Block2() {
                 sx={{
                   pb: 1.5,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
+                    theme.colors.primary.main,
+                  )}`,
                 }}
                 variant="h3"
               >
@@ -81,8 +83,8 @@ function Block2() {
                   lineHeight: 1.8,
                   color: `${alpha(
                     theme.palette.getContrastText(theme.colors.primary.main),
-                    0.8
-                  )}`
+                    0.8,
+                  )}`,
                 }}
               >
                 You can build unlimited layout styles using any of the 500+
@@ -104,8 +106,8 @@ function Block2() {
                 ? theme.colors.alpha.white[30]
                 : theme.colors.alpha.black[100],
             color: `${theme.palette.getContrastText(
-              theme.colors.alpha.black[100]
-            )}`
+              theme.colors.alpha.black[100],
+            )}`,
           }}
         >
           <Avatar
@@ -116,13 +118,13 @@ function Block2() {
               height: 62,
               color: `${theme.colors.alpha.black[100]}`,
               background: `${theme.palette.getContrastText(
-                theme.colors.alpha.black[100]
-              )}`
+                theme.colors.alpha.black[100],
+              )}`,
             }}
           >
             <AlarmTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(30)}`
+                fontSize: `${theme.typography.pxToRem(30)}`,
               }}
             />
           </Avatar>
@@ -131,8 +133,8 @@ function Block2() {
               sx={{
                 pb: 1.5,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
-                )}`
+                  theme.colors.primary.main,
+                )}`,
               }}
               variant="h3"
             >
@@ -144,8 +146,8 @@ function Block2() {
                 lineHeight: 1.8,
                 color: `${alpha(
                   theme.palette.getContrastText(theme.colors.primary.main),
-                  0.8
-                )}`
+                  0.8,
+                )}`,
               }}
             >
               You can build unlimited layout styles using any of the 500+
@@ -162,7 +164,9 @@ function Block2() {
             px: 3,
             py: 5,
             background: `${theme.colors.primary.main}`,
-            color: `${theme.palette.getContrastText(theme.colors.primary.main)}`
+            color: `${theme.palette.getContrastText(
+              theme.colors.primary.main,
+            )}`,
           }}
         >
           <Avatar
@@ -173,13 +177,13 @@ function Block2() {
               height: 62,
               color: `${theme.colors.primary.main}`,
               background: `${theme.palette.getContrastText(
-                theme.colors.primary.main
-              )}`
+                theme.colors.primary.main,
+              )}`,
             }}
           >
             <BalconyTwoToneIcon
               sx={{
-                fontSize: `${theme.typography.pxToRem(30)}`
+                fontSize: `${theme.typography.pxToRem(30)}`,
               }}
             />
           </Avatar>
@@ -188,8 +192,8 @@ function Block2() {
               sx={{
                 pb: 1.5,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
-                )}`
+                  theme.colors.primary.main,
+                )}`,
               }}
               variant="h3"
             >
@@ -201,8 +205,8 @@ function Block2() {
                 lineHeight: 1.8,
                 color: `${alpha(
                   theme.palette.getContrastText(theme.colors.primary.main),
-                  0.8
-                )}`
+                  0.8,
+                )}`,
               }}
             >
               You can build unlimited layout styles using any of the 500+

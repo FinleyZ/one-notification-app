@@ -9,7 +9,7 @@ import {
   IconButton,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     bottom: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const Label = styled(Box)(
@@ -36,7 +36,7 @@ const Label = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const BgComposed = styled(Box)(
@@ -53,9 +53,9 @@ const BgComposed = styled(Box)(
     opacity: 0;
     box-shadow: inset 0 0 2.3rem 0.5rem ${darken(
       theme.colors.primary.main,
-      0.9
+      0.9,
     )};
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -75,7 +75,7 @@ const IconButtonWrapper = styled(IconButton)(
                 transform: scale(1.3);
             }
         }
-  `
+  `,
 );
 
 function Block3() {
@@ -87,7 +87,7 @@ function Block3() {
       sx={{
         pt: 2,
         overflow: 'visible',
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <Box
@@ -97,7 +97,7 @@ function Block3() {
           transition: `${theme.transitions.create([
             'box-shadow',
             'transform',
-            'border-radius'
+            'border-radius',
           ])}`,
           transform: 'translateY(0px)',
           borderRadius: 'inherit',
@@ -106,15 +106,15 @@ function Block3() {
             transform: `translateY(-${theme.spacing(4)})`,
             boxShadow: `0 2rem 8rem 0 ${alpha(
               theme.colors.alpha.black[100],
-              0.05
+              0.05,
             )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
                 0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
 
             '& .MuiBgComposed': {
-              opacity: 1
-            }
-          }
+              opacity: 1,
+            },
+          },
         }}
       >
         <BgComposed
@@ -128,15 +128,15 @@ function Block3() {
               mx: 0.5,
               background: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
+                theme.colors.primary.main,
               )}`,
 
               '&:hover': {
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
-                )}`
-              }
+                  theme.colors.primary.main,
+                )}`,
+              },
             }}
           >
             <FacebookIcon fontSize="small" />
@@ -146,15 +146,15 @@ function Block3() {
               mx: 0.5,
               background: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
+                theme.colors.primary.main,
               )}`,
 
               '&:hover': {
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
-                )}`
-              }
+                  theme.colors.primary.main,
+                )}`,
+              },
             }}
           >
             <TwitterIcon fontSize="small" />
@@ -166,7 +166,7 @@ function Block3() {
           sx={{
             borderRadius: 'inherit',
             position: 'relative',
-            zIndex: 5
+            zIndex: 5,
           }}
           image="/static/images/placeholders/covers/1.jpg"
           alt="..."
@@ -174,13 +174,13 @@ function Block3() {
         <CardActions
           sx={{
             bottom: 'auto',
-            top: `${theme.spacing(2)}`
+            top: `${theme.spacing(2)}`,
           }}
         >
           <Label
             sx={{
               background: `${theme.palette.error.main}`,
-              color: `${theme.palette.error.contrastText}`
+              color: `${theme.palette.error.contrastText}`,
             }}
           >
             {t('Updated')}
@@ -194,13 +194,13 @@ function Block3() {
             height: `${theme.spacing(14)}`,
             mt: `-${theme.spacing(10)}`,
             mx: 'auto',
-            boxShadow: `0 0 0 4px ${theme.colors.alpha.white[100]}`
+            boxShadow: `0 0 0 4px ${theme.colors.alpha.white[100]}`,
           }}
           src="/static/images/avatars/3.jpg"
         />
         <Typography
           sx={{
-            py: 2
+            py: 2,
           }}
           variant="h3"
         >
@@ -208,13 +208,13 @@ function Block3() {
         </Typography>
         <Typography
           sx={{
-            px: 3
+            px: 3,
           }}
           variant="subtitle2"
           textAlign="center"
         >
           {t(
-            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
           )}
           .
         </Typography>

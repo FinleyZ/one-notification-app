@@ -9,7 +9,7 @@ import {
   ListItemIcon,
   IconButton,
   Typography,
-  styled
+  styled,
 } from '@mui/material';
 import Head from 'next/head';
 import { Guest } from 'src/client/components/Guest';
@@ -38,7 +38,7 @@ const icons = {
   Auth0: '/static/images/logo/auth0.svg',
   FirebaseAuth: '/static/images/logo/firebase.svg',
   JWT: '/static/images/logo/jwt.svg',
-  Amplify: '/static/images/logo/amplify.svg'
+  Amplify: '/static/images/logo/amplify.svg',
 };
 
 const Content = styled(Box)(
@@ -46,7 +46,7 @@ const Content = styled(Box)(
     display: flex;
     flex: 1;
     width: 100%;
-`
+`,
 );
 
 const MainContent = styled(Box)(
@@ -57,7 +57,7 @@ const MainContent = styled(Box)(
     width: 100%;
     display: flex;
     align-items: center;
-`
+`,
 );
 
 const SidebarWrapper = styled(Box)(
@@ -68,7 +68,7 @@ const SidebarWrapper = styled(Box)(
   height: 100%;
   width: 500px;
   background: ${theme.colors.gradients.blue3};
-`
+`,
 );
 
 const SidebarContent = styled(Box)(
@@ -76,7 +76,7 @@ const SidebarContent = styled(Box)(
   display: flex;
   flex-direction: column;
   padding: ${theme.spacing(6)};
-`
+`,
 );
 
 const CardImg = styled(Card)(
@@ -91,7 +91,7 @@ const CardImg = styled(Card)(
     width: ${theme.spacing(16)};
     height: ${theme.spacing(16)};
     margin-bottom: ${theme.spacing(3)};
-`
+`,
 );
 
 const SwipeIndicator = styled(IconButton)(
@@ -106,7 +106,7 @@ const SwipeIndicator = styled(IconButton)(
           color: ${theme.colors.alpha.trueWhite[100]};
           background: ${theme.colors.alpha.trueWhite[10]};
         }
-`
+`,
 );
 
 const LogoWrapper = styled(Box)(
@@ -114,37 +114,37 @@ const LogoWrapper = styled(Box)(
     position: fixed;
     left: ${theme.spacing(4)};
     top: ${theme.spacing(4)};
-`
+`,
 );
 
 const TypographyPrimary = styled(Typography)(
   ({ theme }) => `
       color: ${theme.colors.alpha.trueWhite[100]};
-`
+`,
 );
 
 const TypographySecondary = styled(Typography)(
   ({ theme }) => `
       color: ${theme.colors.alpha.trueWhite[70]};
-`
+`,
 );
 
 const DividerWrapper = styled(Divider)(
   ({ theme }) => `
       background: ${theme.colors.alpha.trueWhite[10]};
-`
+`,
 );
 
 const ListItemTextWrapper = styled(ListItemText)(
   ({ theme }) => `
       color: ${theme.colors.alpha.trueWhite[70]};
-`
+`,
 );
 const ListItemIconWrapper = styled(ListItemIcon)(
   ({ theme }) => `
       color: ${theme.colors.success.main};
       min-width: 32px;
-`
+`,
 );
 
 const SwiperWrapper = styled(Box)(
@@ -162,7 +162,7 @@ const SwiperWrapper = styled(Box)(
           }
         }
       }
-`
+`,
 );
 
 function RegisterCover() {
@@ -180,7 +180,7 @@ function RegisterCover() {
       <Content>
         <SidebarWrapper
           sx={{
-            display: { xs: 'none', md: 'inline-block' }
+            display: { xs: 'none', md: 'inline-block' },
           }}
         >
           <Scrollbar>
@@ -198,7 +198,7 @@ function RegisterCover() {
                 variant="h3"
                 sx={{
                   mb: 4,
-                  px: 8
+                  px: 8,
                 }}
               >
                 {t('Multiple authentication methods available')}
@@ -210,13 +210,13 @@ function RegisterCover() {
                   loop
                   navigation={{
                     nextEl: '.MuiSwipe-right',
-                    prevEl: '.MuiSwipe-left'
+                    prevEl: '.MuiSwipe-left',
                   }}
                   // @ts-ignore
                   modules={[Navigation, Pagination]}
                   pagination={{
                     clickable: true,
-                    dynamicBullets: true
+                    dynamicBullets: true,
                   }}
                 >
                   <SwiperSlide>
@@ -232,7 +232,7 @@ function RegisterCover() {
                         align="center"
                         variant="h3"
                         sx={{
-                          mb: 2
+                          mb: 2,
                         }}
                       >
                         Auth0
@@ -241,7 +241,7 @@ function RegisterCover() {
                         align="center"
                         variant="subtitle2"
                         sx={{
-                          mb: 5
+                          mb: 5,
                         }}
                       >
                         Auth0 is an easy to implement, adaptable authentication
@@ -262,7 +262,7 @@ function RegisterCover() {
                         align="center"
                         variant="h3"
                         sx={{
-                          mb: 2
+                          mb: 2,
                         }}
                       >
                         AWS Amplify
@@ -271,7 +271,7 @@ function RegisterCover() {
                         align="center"
                         variant="subtitle2"
                         sx={{
-                          mb: 5
+                          mb: 5,
                         }}
                       >
                         Build scalable mobile and web apps fast, with endless
@@ -292,7 +292,7 @@ function RegisterCover() {
                         align="center"
                         variant="h3"
                         sx={{
-                          mb: 2
+                          mb: 2,
                         }}
                       >
                         JSON Web Token
@@ -301,7 +301,7 @@ function RegisterCover() {
                         align="center"
                         variant="subtitle2"
                         sx={{
-                          mb: 5
+                          mb: 5,
                         }}
                       >
                         JSON Web Tokens are an open method for representing
@@ -322,7 +322,7 @@ function RegisterCover() {
                         align="center"
                         variant="h3"
                         sx={{
-                          mb: 2
+                          mb: 2,
                         }}
                       >
                         Firebase
@@ -331,7 +331,7 @@ function RegisterCover() {
                         align="center"
                         variant="subtitle2"
                         sx={{
-                          mb: 5
+                          mb: 5,
                         }}
                       >
                         Firebase helps teams from startups to global enterprises
@@ -345,14 +345,14 @@ function RegisterCover() {
               <DividerWrapper
                 sx={{
                   mt: 3,
-                  mb: 4
+                  mb: 4,
                 }}
               />
               <Box>
                 <TypographyPrimary
                   variant="h3"
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   {t('Start your free trial today')}
@@ -361,7 +361,7 @@ function RegisterCover() {
                 <List
                   dense
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   <ListItem disableGutters>
@@ -399,7 +399,7 @@ function RegisterCover() {
         <MainContent>
           <LogoWrapper
             sx={{
-              display: { xs: 'none', sm: 'inline-block' }
+              display: { xs: 'none', sm: 'inline-block' },
             }}
           >
             <Logo />
@@ -408,14 +408,14 @@ function RegisterCover() {
             <Card
               sx={{
                 p: 4,
-                my: 4
+                my: 4,
               }}
             >
               <Box textAlign="center">
                 <Typography
                   variant="h2"
                   sx={{
-                    mb: 1
+                    mb: 1,
                   }}
                 >
                   {t('Create account')}
@@ -425,7 +425,7 @@ function RegisterCover() {
                   color="text.secondary"
                   fontWeight="normal"
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   {t('Fill in the fields below to sign up for an account.')}

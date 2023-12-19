@@ -18,9 +18,12 @@ function Block1() {
                     0 0.94rem 1.4rem ${alpha(theme.colors.success.main, 0.04)}, 
                     0 0.25rem 0.54rem ${alpha(
                       theme.colors.success.main,
-                      0.06
+                      0.06,
                     )}, 
-                    0 0.13rem 0.19rem ${alpha(theme.colors.success.main, 0.04)}`
+                    0 0.13rem 0.19rem ${alpha(
+                      theme.colors.success.main,
+                      0.04,
+                    )}`,
           }}
         >
           <Typography variant="subtitle2">{t('Expenses')}</Typography>
@@ -33,7 +36,7 @@ function Block1() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <CountUp
@@ -51,7 +54,7 @@ function Block1() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               +35.2%
@@ -68,9 +71,12 @@ function Block1() {
                     0 0.94rem 1.4rem ${alpha(theme.colors.warning.main, 0.04)}, 
                     0 0.25rem 0.54rem ${alpha(
                       theme.colors.warning.main,
-                      0.06
+                      0.06,
                     )}, 
-                    0 0.13rem 0.19rem ${alpha(theme.colors.warning.main, 0.04)}`
+                    0 0.13rem 0.19rem ${alpha(
+                      theme.colors.warning.main,
+                      0.04,
+                    )}`,
           }}
         >
           <Typography variant="subtitle2">{t('Expenses')}</Typography>
@@ -83,7 +89,7 @@ function Block1() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <CountUp
@@ -101,7 +107,7 @@ function Block1() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               +3.25%
@@ -117,7 +123,7 @@ function Block1() {
                     0 0.47rem 2.2rem ${alpha(theme.colors.info.main, 0.04)}, 
                     0 0.94rem 1.4rem ${alpha(theme.colors.info.main, 0.04)}, 
                     0 0.25rem 0.54rem ${alpha(theme.colors.info.main, 0.06)}, 
-                    0 0.13rem 0.19rem ${alpha(theme.colors.info.main, 0.04)}`
+                    0 0.13rem 0.19rem ${alpha(theme.colors.info.main, 0.04)}`,
           }}
         >
           <Typography variant="subtitle2">{t('Income')}</Typography>
@@ -130,7 +136,7 @@ function Block1() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             >
               <CountUp
@@ -148,7 +154,7 @@ function Block1() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             >
               +75.25%
@@ -164,7 +170,7 @@ function Block1() {
                     0 0.47rem 2.2rem ${alpha(theme.colors.error.main, 0.04)}, 
                     0 0.94rem 1.4rem ${alpha(theme.colors.error.main, 0.04)}, 
                     0 0.25rem 0.54rem ${alpha(theme.colors.error.main, 0.06)}, 
-                    0 0.13rem 0.19rem ${alpha(theme.colors.error.main, 0.04)}`
+                    0 0.13rem 0.19rem ${alpha(theme.colors.error.main, 0.04)}`,
           }}
         >
           <Typography variant="subtitle2">{t('Visitors')}</Typography>
@@ -177,7 +183,7 @@ function Block1() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               <CountUp
@@ -195,7 +201,7 @@ function Block1() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               +65.35%

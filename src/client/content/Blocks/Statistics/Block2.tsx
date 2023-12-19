@@ -13,13 +13,13 @@ function Block2() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.blue1}`
+            background: `${theme.colors.gradients.blue1}`,
           }}
         >
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             {t('Income')}
@@ -33,7 +33,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CountUp
@@ -51,7 +51,7 @@ function Block2() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               +35.2%
@@ -63,13 +63,13 @@ function Block2() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.purple3}`
+            background: `${theme.colors.gradients.purple3}`,
           }}
         >
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             {t('Spendings')}
@@ -83,7 +83,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CountUp
@@ -101,7 +101,7 @@ function Block2() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               +3.25%
@@ -113,13 +113,13 @@ function Block2() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.green2}`
+            background: `${theme.colors.gradients.green2}`,
           }}
         >
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             {t('Earnings')}
@@ -133,7 +133,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CountUp
@@ -151,7 +151,7 @@ function Block2() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               +75.25%
@@ -163,13 +163,13 @@ function Block2() {
         <Card
           sx={{
             p: 3,
-            background: `${theme.colors.gradients.pink2}`
+            background: `${theme.colors.gradients.pink2}`,
           }}
         >
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             {t('Losses')}
@@ -183,7 +183,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CountUp
@@ -201,7 +201,7 @@ function Block2() {
             <Typography
               variant="h5"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               +65.35%

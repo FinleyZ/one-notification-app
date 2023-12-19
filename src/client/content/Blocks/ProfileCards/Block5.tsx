@@ -8,7 +8,7 @@ import {
   Tooltip,
   Divider,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,7 @@ import VisibilityTwoToneIcon from '@mui/icons-material/VisibilityTwoTone';
 const CardBorderTop = styled(Card)(
   () => `
         border-top: transparent 5px solid;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -39,7 +39,7 @@ const IconButtonWrapper = styled(IconButton)(
                 transform: scale(1.3);
             }
         }
-  `
+  `,
 );
 
 function Block5() {
@@ -52,7 +52,7 @@ function Block5() {
         <Card
           sx={{
             p: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Avatar
@@ -62,7 +62,7 @@ function Block5() {
               mb: 2,
               mx: 'auto',
               border: `${theme.colors.alpha.white[100]} solid 3px`,
-              boxShadow: `0 0 0 3px ${theme.colors.primary.main}`
+              boxShadow: `0 0 0 3px ${theme.colors.primary.main}`,
             }}
             src="/static/images/avatars/2.jpg"
           />
@@ -72,20 +72,20 @@ function Block5() {
           <Typography variant="subtitle2">Lead React Developer</Typography>
           <Divider
             sx={{
-              my: 2
+              my: 2,
             }}
           />
           <Box display="flex" justifyContent="center">
             <Tooltip arrow placement="top" title={t('View details')}>
               <IconButton
                 sx={{
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -95,12 +95,12 @@ function Block5() {
                 size="large"
                 sx={{
                   borderRadius: 50,
-                  mx: 1
+                  mx: 1,
                 }}
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -108,13 +108,13 @@ function Block5() {
             <Tooltip arrow placement="top" title={t('View user profile')}>
               <IconButton
                 sx={{
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -127,7 +127,7 @@ function Block5() {
           sx={{
             p: 3,
             textAlign: 'center',
-            borderTopColor: `${theme.colors.error.main}`
+            borderTopColor: `${theme.colors.error.main}`,
           }}
         >
           <Avatar
@@ -137,7 +137,7 @@ function Block5() {
               mb: 2,
               mx: 'auto',
               border: `${theme.colors.alpha.white[100]} solid 3px`,
-              boxShadow: `0 0 0 3px ${theme.colors.warning.main}`
+              boxShadow: `0 0 0 3px ${theme.colors.warning.main}`,
             }}
             src="/static/images/avatars/1.jpg"
           />
@@ -147,7 +147,7 @@ function Block5() {
           <Typography variant="subtitle2">Junior Project Manager</Typography>
           <Divider
             sx={{
-              my: 2
+              my: 2,
             }}
           />
           <Box display="flex" justifyContent="center">
@@ -157,22 +157,22 @@ function Block5() {
                   boxShadow: `${theme.colors.shadows.primary}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
+                    theme.colors.primary.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.main
-                    )}`
+                      theme.colors.primary.main,
+                    )}`,
                   },
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButtonWrapper>
@@ -184,22 +184,22 @@ function Block5() {
                   boxShadow: `${theme.colors.shadows.primary}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
+                    theme.colors.primary.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.main
-                    )}`
+                      theme.colors.primary.main,
+                    )}`,
                   },
                   borderRadius: 50,
-                  mx: 1
+                  mx: 1,
                 }}
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButtonWrapper>
@@ -210,22 +210,22 @@ function Block5() {
                   boxShadow: `${theme.colors.shadows.primary}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
+                    theme.colors.primary.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.main
-                    )}`
+                      theme.colors.primary.main,
+                    )}`,
                   },
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButtonWrapper>
@@ -238,7 +238,7 @@ function Block5() {
           sx={{
             background: `${theme.colors.gradients.blue1}`,
             p: 3,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Avatar
@@ -248,13 +248,13 @@ function Block5() {
               mb: 2,
               mx: 'auto',
               boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
-              border: `${theme.colors.alpha.white[100]} solid 3px`
+              border: `${theme.colors.alpha.white[100]} solid 3px`,
             }}
             src="/static/images/avatars/3.jpg"
           />
           <Typography
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
             gutterBottom
             variant="h3"
@@ -263,7 +263,7 @@ function Block5() {
           </Typography>
           <Typography
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
             variant="subtitle2"
           >
@@ -272,7 +272,7 @@ function Block5() {
           <Divider
             sx={{
               background: `${theme.colors.alpha.trueWhite[10]}`,
-              my: 2
+              my: 2,
             }}
           />
           <Box display="flex" justifyContent="center">
@@ -281,15 +281,15 @@ function Block5() {
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[100]}`,
                   '&:hover': {
-                    background: `${theme.colors.alpha.trueWhite[10]}`
+                    background: `${theme.colors.alpha.trueWhite[10]}`,
                   },
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -300,15 +300,15 @@ function Block5() {
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[100]}`,
                   '&:hover': {
-                    background: `${theme.colors.alpha.trueWhite[10]}`
+                    background: `${theme.colors.alpha.trueWhite[10]}`,
                   },
                   borderRadius: 50,
-                  mx: 1
+                  mx: 1,
                 }}
               >
                 <FavoriteTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>
@@ -318,15 +318,15 @@ function Block5() {
                 sx={{
                   color: `${theme.colors.alpha.trueWhite[100]}`,
                   '&:hover': {
-                    background: `${theme.colors.alpha.trueWhite[10]}`
+                    background: `${theme.colors.alpha.trueWhite[10]}`,
                   },
-                  borderRadius: 50
+                  borderRadius: 50,
                 }}
                 size="large"
               >
                 <PersonSearchTwoToneIcon
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(18)}`
+                    fontSize: `${theme.typography.pxToRem(18)}`,
                   }}
                 />
               </IconButton>

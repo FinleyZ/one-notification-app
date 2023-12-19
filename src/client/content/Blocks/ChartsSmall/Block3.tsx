@@ -7,7 +7,7 @@ import {
   Divider,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const AvatarError = styled(Avatar)(
         width: ${theme.spacing(9)};
         height: ${theme.spacing(9)};
         box-shadow: ${theme.colors.shadows.error};
-  `
+  `,
 );
 
 const AvatarPrimary = styled(Avatar)(
@@ -32,7 +32,7 @@ const AvatarPrimary = styled(Avatar)(
         width: ${theme.spacing(9)};
         height: ${theme.spacing(9)};
         box-shadow: ${theme.colors.shadows.primary};
-  `
+  `,
 );
 
 const AvatarInfo = styled(Avatar)(
@@ -42,7 +42,7 @@ const AvatarInfo = styled(Avatar)(
         width: ${theme.spacing(9)};
         height: ${theme.spacing(9)};
         box-shadow: ${theme.colors.shadows.info};
-  `
+  `,
 );
 
 function Block3() {
@@ -56,7 +56,7 @@ function Block3() {
           sx={{
             px: 3,
             pb: 3,
-            pt: 4
+            pt: 4,
           }}
         >
           <Box
@@ -64,7 +64,7 @@ function Block3() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarError>
@@ -74,7 +74,7 @@ function Block3() {
               variant="h1"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
             >
               86.453
@@ -83,7 +83,7 @@ function Block3() {
               variant="subtitle2"
               fontWeight="bold"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t('Laptops sales')}
@@ -91,7 +91,7 @@ function Block3() {
             <Divider
               flexItem
               sx={{
-                my: 3
+                my: 3,
               }}
             />
             <Button color="error" variant="outlined">
@@ -105,7 +105,7 @@ function Block3() {
           sx={{
             px: 3,
             pb: 3,
-            pt: 4
+            pt: 4,
           }}
         >
           <Box
@@ -113,7 +113,7 @@ function Block3() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarPrimary>
@@ -123,7 +123,7 @@ function Block3() {
               variant="h1"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
             >
               285.483
@@ -132,7 +132,7 @@ function Block3() {
               variant="subtitle2"
               fontWeight="bold"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t('Total sales')}
@@ -140,7 +140,7 @@ function Block3() {
             <Divider
               flexItem
               sx={{
-                my: 3
+                my: 3,
               }}
             />
             <Button color="primary" variant="outlined">
@@ -154,7 +154,7 @@ function Block3() {
           sx={{
             px: 3,
             pb: 3,
-            pt: 4
+            pt: 4,
           }}
         >
           <Box
@@ -162,7 +162,7 @@ function Block3() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarInfo>
@@ -172,7 +172,7 @@ function Block3() {
               variant="h1"
               sx={{
                 pt: 3,
-                fontSize: `${theme.typography.pxToRem(35)}`
+                fontSize: `${theme.typography.pxToRem(35)}`,
               }}
             >
               5843
@@ -181,7 +181,7 @@ function Block3() {
               variant="subtitle2"
               fontWeight="bold"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t('New accounts')}
@@ -189,7 +189,7 @@ function Block3() {
             <Divider
               flexItem
               sx={{
-                my: 3
+                my: 3,
               }}
             />
             <Button color="info" variant="outlined">

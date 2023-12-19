@@ -10,7 +10,7 @@ import {
   Typography,
   MenuList,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -36,7 +36,7 @@ const MenuListWrapperRounded = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 const MenuListWrapperSquare = styled(MenuList)(
@@ -59,7 +59,7 @@ const MenuListWrapperSquare = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 const MenuListWrapperLine = styled(MenuList)(
@@ -106,7 +106,7 @@ const MenuListWrapperLine = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -116,7 +116,7 @@ const LabelWrapper = styled(Box)(
     text-transform: uppercase;
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.5, 1, 0.4)};
-  `
+  `,
 );
 
 function Block5() {
@@ -136,7 +136,7 @@ function Block5() {
             <Box>
               <Box
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
                 py={5}
                 px={2}
@@ -149,21 +149,21 @@ function Block5() {
                     width: 'auto',
                     height: 36,
                     '& img': {
-                      objectFit: 'contain'
-                    }
+                      objectFit: 'contain',
+                    },
                   }}
                   src="/static/images/placeholders/logo/coinbase.svg"
                 />
                 <Rating defaultValue={4} precision={0.5} />
                 <Typography
                   sx={{
-                    pt: 1
+                    pt: 1,
                   }}
                   variant="subtitle2"
                   textAlign="center"
                 >
                   {t(
-                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                   )}
                   .
                 </Typography>
@@ -172,27 +172,27 @@ function Block5() {
                 disablePadding
                 sx={{
                   mb: 3,
-                  mx: 3
+                  mx: 3,
                 }}
               >
                 <MenuItem selected>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Analytics')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Server Status')}
                   />
@@ -202,8 +202,8 @@ function Block5() {
                       sx={{
                         background: `${theme.colors.primary.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.primary.dark
-                        )}`
+                          theme.colors.primary.dark,
+                        )}`,
                       }}
                     >
                       {t('Hot')}
@@ -212,7 +212,7 @@ function Block5() {
                       sx={{
                         ml: 1,
                         color: `${theme.colors.alpha.black[30]}`,
-                        opacity: 0.8
+                        opacity: 0.8,
                       }}
                     />
                   </Box>
@@ -220,28 +220,28 @@ function Block5() {
                 <MenuItem disabled>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Reports Management')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Real Estate')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
@@ -261,7 +261,7 @@ function Block5() {
             <Box>
               <Box
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
                 py={5}
                 px={2}
@@ -274,21 +274,21 @@ function Block5() {
                     width: 'auto',
                     height: 36,
                     '& img': {
-                      objectFit: 'contain'
-                    }
+                      objectFit: 'contain',
+                    },
                   }}
                   src="/static/images/placeholders/logo/netflix.svg"
                 />
                 <Rating defaultValue={3.5} precision={0.5} />
                 <Typography
                   sx={{
-                    pt: 1
+                    pt: 1,
                   }}
                   variant="subtitle2"
                   textAlign="center"
                 >
                   {t(
-                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                   )}
                   .
                 </Typography>
@@ -297,27 +297,27 @@ function Block5() {
                 disablePadding
                 sx={{
                   mb: 3,
-                  mr: 3
+                  mr: 3,
                 }}
               >
                 <MenuItem selected>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Analytics')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Server Status')}
                   />
@@ -328,8 +328,8 @@ function Block5() {
                         borderRadius: 50,
                         background: `${theme.colors.alpha.black[100]}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.alpha.black[100]
-                        )}`
+                          theme.colors.alpha.black[100],
+                        )}`,
                       }}
                     >
                       {t('New')}
@@ -338,7 +338,7 @@ function Block5() {
                       sx={{
                         ml: 1,
                         color: `${theme.colors.alpha.black[30]}`,
-                        opacity: 0.8
+                        opacity: 0.8,
                       }}
                     />
                   </Box>
@@ -346,28 +346,28 @@ function Block5() {
                 <MenuItem disabled>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Reports Management')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Real Estate')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
@@ -387,7 +387,7 @@ function Block5() {
             <Box>
               <Box
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
                 py={5}
                 px={2}
@@ -400,21 +400,21 @@ function Block5() {
                     width: 'auto',
                     height: 36,
                     '& img': {
-                      objectFit: 'contain'
-                    }
+                      objectFit: 'contain',
+                    },
                   }}
                   src="/static/images/placeholders/logo/slack-big.svg"
                 />
                 <Rating defaultValue={5} precision={0.5} />
                 <Typography
                   sx={{
-                    pt: 1
+                    pt: 1,
                   }}
                   variant="subtitle2"
                   textAlign="center"
                 >
                   {t(
-                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                    'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                   )}
                   .
                 </Typography>
@@ -423,27 +423,27 @@ function Block5() {
                 disablePadding
                 sx={{
                   mb: 3,
-                  mx: 3
+                  mx: 3,
                 }}
               >
                 <MenuItem selected>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Analytics')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Server Status')}
                   />
@@ -453,8 +453,8 @@ function Block5() {
                       sx={{
                         background: `${theme.colors.success.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.success.dark
-                        )}`
+                          theme.colors.success.dark,
+                        )}`,
                       }}
                     >
                       654
@@ -463,7 +463,7 @@ function Block5() {
                       sx={{
                         ml: 1,
                         color: `${theme.colors.alpha.black[30]}`,
-                        opacity: 0.8
+                        opacity: 0.8,
                       }}
                     />
                   </Box>
@@ -471,28 +471,28 @@ function Block5() {
                 <MenuItem disabled>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Reports Management')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>
                 <MenuItem>
                   <ListItemText
                     primaryTypographyProps={{
-                      variant: 'h5'
+                      variant: 'h5',
                     }}
                     primary={t('Real Estate')}
                   />
                   <ChevronRightTwoToneIcon
                     sx={{
                       color: `${theme.colors.alpha.black[30]}`,
-                      opacity: 0.8
+                      opacity: 0.8,
                     }}
                   />
                 </MenuItem>

@@ -17,8 +17,8 @@ const users = [
     posts: '27',
     coverImg: '/static/images/placeholders/covers/5.jpg',
     followers: '6513',
-    description: 'Curabitur at ipsum ac tellus semper interdum.'
-  }
+    description: 'Curabitur at ipsum ac tellus semper interdum.',
+  },
 ];
 
 class AuthApi {
@@ -35,7 +35,7 @@ class AuthApi {
         }
 
         const accessToken = sign({ userId: user.id }, JWT_SECRET, {
-          expiresIn: JWT_EXPIRES_IN
+          expiresIn: JWT_EXPIRES_IN,
         });
 
         resolve(accessToken);
@@ -71,13 +71,13 @@ class AuthApi {
           posts: null,
           coverImg: null,
           followers: null,
-          description: null
+          description: null,
         };
 
         users.push(user);
 
         const accessToken = sign({ userId: user.id }, JWT_SECRET, {
-          expiresIn: JWT_EXPIRES_IN
+          expiresIn: JWT_EXPIRES_IN,
         });
 
         resolve(accessToken);
@@ -112,7 +112,7 @@ class AuthApi {
           posts: user.posts,
           coverImg: user.coverImg,
           followers: user.followers,
-          description: user.description
+          description: user.description,
         });
       } catch (err) {
         console.error(err);

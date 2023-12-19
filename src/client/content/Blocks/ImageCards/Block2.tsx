@@ -8,7 +8,7 @@ import {
   Typography,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -24,7 +24,7 @@ const CardActions = styled(Box)(
     bottom: ${theme.spacing(2)};
     z-index: 7;
     display: flex;
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -38,7 +38,7 @@ const LabelWrapper = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const AvatarWrapper = styled(Avatar)(
@@ -49,7 +49,7 @@ const AvatarWrapper = styled(Avatar)(
         top: -${theme.spacing(5)};
         position: absolute;
         border: ${theme.colors.alpha.white[100]} solid 3px;
-  `
+  `,
 );
 
 function Block2() {
@@ -64,7 +64,7 @@ function Block2() {
             transition: `${theme.transitions.create([
               'box-shadow',
               'transform',
-              'border-radius'
+              'border-radius',
             ])}`,
             transform: 'translateY(0px)',
 
@@ -72,22 +72,22 @@ function Block2() {
               transform: `translateY(-${theme.spacing(1)})`,
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                     0 0.6rem 1.6rem ${alpha(
                       theme.colors.alpha.black[100],
-                      0.15
+                      0.15,
                     )}, 
                     0 0.2rem 0.2rem ${alpha(
                       theme.colors.alpha.black[100],
-                      0.1
-                    )}`
-            }
+                      0.1,
+                    )}`,
+            },
           }}
         >
           <Box
             sx={{
-              position: 'relative'
+              position: 'relative',
             }}
           >
             <CardMedia
@@ -100,7 +100,7 @@ function Block2() {
               <LabelWrapper
                 sx={{
                   background: `${theme.colors.gradients.pink2}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 {t('Updated')}
@@ -112,7 +112,7 @@ function Block2() {
               position: 'relative',
               px: 3,
               pt: 8,
-              pb: 3
+              pb: 3,
             }}
           >
             <AvatarWrapper src="/static/images/avatars/1.jpg" />
@@ -124,8 +124,8 @@ function Block2() {
                 color: `${theme.colors.alpha.black[100]}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="text.primary"
               variant="h3"
@@ -138,14 +138,14 @@ function Block2() {
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                pt: 1
+                pt: 1,
               }}
             >
               <AccessTimeTwoToneIcon
                 fontSize="small"
                 sx={{
                   opacity: 0.7,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
               />
               {format(subDays(new Date(), 1), 'MMMM dd yyyy')}
@@ -153,11 +153,11 @@ function Block2() {
             <Typography
               variant="subtitle2"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -167,8 +167,8 @@ function Block2() {
               sx={{
                 borderWidth: '2px',
                 '&:hover': {
-                  borderWidth: '2px'
-                }
+                  borderWidth: '2px',
+                },
               }}
             >
               {t('Read more')}
@@ -182,7 +182,7 @@ function Block2() {
             transition: `${theme.transitions.create([
               'box-shadow',
               'transform',
-              'border-radius'
+              'border-radius',
             ])}`,
             transform: 'translateY(0px)',
 
@@ -190,22 +190,22 @@ function Block2() {
               transform: `translateY(-${theme.spacing(1)})`,
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                     0 0.6rem 1.6rem ${alpha(
                       theme.colors.alpha.black[100],
-                      0.15
+                      0.15,
                     )}, 
                     0 0.2rem 0.2rem ${alpha(
                       theme.colors.alpha.black[100],
-                      0.1
-                    )}`
-            }
+                      0.1,
+                    )}`,
+            },
           }}
         >
           <Box
             sx={{
-              position: 'relative'
+              position: 'relative',
             }}
           >
             <CardMedia
@@ -219,13 +219,13 @@ function Block2() {
                 bottom: 'auto',
                 top: `${theme.spacing(2)}`,
                 right: 'auto',
-                left: `${theme.spacing(2)}`
+                left: `${theme.spacing(2)}`,
               }}
             >
               <LabelWrapper
                 sx={{
                   background: `${theme.colors.gradients.blue1}`,
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 {t('New & Hot')}
@@ -237,14 +237,14 @@ function Block2() {
               position: 'relative',
               px: 3,
               pt: 8,
-              pb: 3
+              pb: 3,
             }}
           >
             <AvatarWrapper
               variant="rounded"
               sx={{
                 boxShadow: 'none',
-                borderWidth: 5
+                borderWidth: 5,
               }}
               src="/static/images/avatars/2.jpg"
             />
@@ -256,8 +256,8 @@ function Block2() {
                 color: `${theme.colors.alpha.black[100]}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="text.primary"
               variant="h3"
@@ -270,28 +270,28 @@ function Block2() {
               sx={{
                 display: 'flex',
                 alignItems: 'center',
-                pt: 1
+                pt: 1,
               }}
             >
               <AccessTimeTwoToneIcon
                 fontSize="small"
                 sx={{
                   opacity: 0.7,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
               />
               {formatDistance(subMinutes(new Date(), 12), new Date(), {
-                addSuffix: true
+                addSuffix: true,
               })}
             </Typography>
             <Typography
               variant="subtitle2"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -301,8 +301,8 @@ function Block2() {
               sx={{
                 borderWidth: '2px',
                 '&:hover': {
-                  borderWidth: '2px'
-                }
+                  borderWidth: '2px',
+                },
               }}
             >
               {t('Read more')}

@@ -9,7 +9,7 @@ import {
   CardActionArea,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -28,7 +28,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(1.5)};
     top: ${theme.spacing(1.5)};
     z-index: 7;
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -39,13 +39,13 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.9, 1.5, 0.7)};
     line-height: 1;
-  `
+  `,
 );
 
 const CardWrapper = styled(Box)(
   ({ theme }) => `
       background: ${alpha(theme.colors.primary.main, 0.05)};
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -66,7 +66,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .05;
           }
         }
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -86,7 +86,7 @@ const IconButtonWrapper = styled(IconButton)(
                 transform: scale(1.3);
             }
         }
-  `
+  `,
 );
 
 function Block6() {
@@ -105,7 +105,7 @@ function Block6() {
           position: 'relative',
           pt: 3,
           px: 3,
-          pb: 7
+          pb: 7,
         }}
       >
         <CardActions>
@@ -121,16 +121,16 @@ function Block6() {
             border: `${theme.colors.alpha.white[100]} solid 4px`,
             boxShadow: `0 2rem 8rem 0 ${alpha(
               theme.colors.alpha.black[100],
-              0.05
+              0.05,
             )}, 
                             0 0.6rem 1.6rem ${alpha(
                               theme.colors.alpha.black[100],
-                              0.15
+                              0.15,
                             )}, 
                             0 0.2rem 0.2rem ${alpha(
                               theme.colors.alpha.black[100],
-                              0.1
-                            )}`
+                              0.1,
+                            )}`,
           }}
           src="/static/images/avatars/3.jpg"
         />
@@ -143,8 +143,8 @@ function Block6() {
             fontSize: `${theme.typography.pxToRem(17)}`,
 
             '&:hover': {
-              color: `${theme.colors.primary.main}`
-            }
+              color: `${theme.colors.primary.main}`,
+            },
           }}
           variant="h4"
         >
@@ -154,7 +154,9 @@ function Block6() {
           <LabelWrapper
             sx={{
               background: `${theme.colors.error.main}`,
-              color: `${theme.palette.getContrastText(theme.colors.error.dark)}`
+              color: `${theme.palette.getContrastText(
+                theme.colors.error.dark,
+              )}`,
             }}
           >
             {t('Offline')}
@@ -162,7 +164,7 @@ function Block6() {
         </Box>
         <Typography variant="subtitle2">
           {t(
-            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
           )}
           .
         </Typography>
@@ -172,7 +174,7 @@ function Block6() {
           sx={{
             textAlign: 'center',
             mt: `-${theme.spacing(7)}`,
-            mb: 3
+            mb: 3,
           }}
         >
           <Tooltip arrow placement="top" title="Facebook">
@@ -181,18 +183,18 @@ function Block6() {
                 boxShadow: `${theme.colors.shadows.primary}`,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
+                  theme.colors.primary.main,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
+                    theme.colors.primary.main,
+                  )}`,
                 },
                 borderRadius: 50,
                 width: theme.spacing(8),
-                height: theme.spacing(8)
+                height: theme.spacing(8),
               }}
               color="primary"
               size="large"
@@ -206,19 +208,19 @@ function Block6() {
                 boxShadow: `${theme.colors.shadows.primary}`,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
+                  theme.colors.primary.main,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
+                    theme.colors.primary.main,
+                  )}`,
                 },
                 borderRadius: 50,
                 mx: 1.5,
                 width: theme.spacing(8),
-                height: theme.spacing(8)
+                height: theme.spacing(8),
               }}
               color="primary"
               size="large"
@@ -232,18 +234,18 @@ function Block6() {
                 boxShadow: `${theme.colors.shadows.primary}`,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
+                  theme.colors.primary.main,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
-                  )}`
+                    theme.colors.primary.main,
+                  )}`,
                 },
                 borderRadius: 50,
                 width: theme.spacing(8),
-                height: theme.spacing(8)
+                height: theme.spacing(8),
               }}
               color="primary"
               size="large"
@@ -258,13 +260,13 @@ function Block6() {
               <Card variant="outlined">
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="warning">
                     <AccountTreeTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>
@@ -279,13 +281,13 @@ function Block6() {
               <Card variant="outlined">
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="success">
                     <ContactSupportTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>

@@ -9,7 +9,7 @@ import {
   Avatar,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ const LinearProgressWrapper = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -35,7 +35,7 @@ const LinearProgressWrapper = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.orange1};
         }
-    `
+    `,
 );
 
 const LinearProgressWhite = styled(LinearProgress)(
@@ -47,7 +47,7 @@ const LinearProgressWhite = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.trueWhite[100], 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.trueWhite[100],
-              0.2
+              0.2,
             )};
         }
         
@@ -55,7 +55,7 @@ const LinearProgressWhite = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.alpha.trueWhite[100]};
         }
-    `
+    `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -72,7 +72,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const AvatarError = styled(Avatar)(
@@ -82,7 +82,7 @@ const AvatarError = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.error};
-  `
+  `,
 );
 
 const AvatarPrimary = styled(Avatar)(
@@ -92,7 +92,7 @@ const AvatarPrimary = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.primary};
-  `
+  `,
 );
 
 const AvatarWarning = styled(Avatar)(
@@ -102,7 +102,7 @@ const AvatarWarning = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.warning};
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Button)(
@@ -111,7 +111,7 @@ const ButtonWrapper = styled(Button)(
     border-radius: 50px;
     box-shadow: 0 .113rem .4rem ${alpha(
       theme.colors.alpha.black[100],
-      0.1
+      0.1,
     )}, 0 .126rem .225rem ${alpha(theme.colors.alpha.black[100], 0.08)};
     transition: ${theme.transitions.create(['transform', 'box-shadow'])};
     font-weight: normal;
@@ -120,7 +120,7 @@ const ButtonWrapper = styled(Button)(
         transform: translateY(-2px);
         box-shadow: 0 .413rem .6rem ${alpha(
           theme.colors.alpha.black[100],
-          0.2
+          0.2,
         )}, 0 .126rem .2rem ${alpha(theme.colors.alpha.black[100], 0.08)};
     }
     
@@ -128,7 +128,7 @@ const ButtonWrapper = styled(Button)(
         transform: translateY(-2px);
         box-shadow: none;
     }
-  `
+  `,
 );
 
 function Block10() {
@@ -140,7 +140,7 @@ function Block10() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -158,7 +158,7 @@ function Block10() {
           <Typography
             sx={{
               mt: 3,
-              mb: 2
+              mb: 2,
             }}
             variant="h3"
           >
@@ -166,13 +166,13 @@ function Block10() {
           </Typography>
           <Typography variant="subtitle2">
             {t(
-              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
             )}
             .
           </Typography>
           <LinearProgressWrapper
             sx={{
-              my: 3
+              my: 3,
             }}
             variant="determinate"
             value={67.5}
@@ -186,15 +186,15 @@ function Block10() {
               sx={{
                 background: `${theme.colors.warning.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.warning.dark
+                  theme.colors.warning.dark,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.warning.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.warning.dark
-                  )}`
-                }
+                    theme.colors.warning.dark,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -203,7 +203,7 @@ function Block10() {
             </ButtonWrapper>
             <Typography
               sx={{
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
               variant="subtitle2"
             >
@@ -215,7 +215,7 @@ function Block10() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -233,7 +233,7 @@ function Block10() {
           <Typography
             sx={{
               mt: 3,
-              mb: 2
+              mb: 2,
             }}
             variant="h3"
           >
@@ -241,13 +241,13 @@ function Block10() {
           </Typography>
           <Typography variant="subtitle2">
             {t(
-              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
             )}
             .
           </Typography>
           <LinearProgressError
             sx={{
-              my: 3
+              my: 3,
             }}
             variant="determinate"
             value={67.5}
@@ -261,15 +261,15 @@ function Block10() {
               sx={{
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
+                  theme.colors.error.dark,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.dark
-                  )}`
-                }
+                    theme.colors.error.dark,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -278,7 +278,7 @@ function Block10() {
             </ButtonWrapper>
             <Typography
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
               variant="subtitle2"
             >
@@ -291,7 +291,7 @@ function Block10() {
         <Card
           sx={{
             background: `${theme.colors.gradients.blue2}`,
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -310,7 +310,7 @@ function Block10() {
             sx={{
               color: `${theme.colors.alpha.trueWhite[100]}`,
               mt: 3,
-              mb: 2
+              mb: 2,
             }}
             variant="h3"
           >
@@ -318,18 +318,18 @@ function Block10() {
           </Typography>
           <Typography
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
             variant="subtitle2"
           >
             {t(
-              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+              'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
             )}
             .
           </Typography>
           <LinearProgressWhite
             sx={{
-              my: 3
+              my: 3,
             }}
             variant="determinate"
             value={34.5}
@@ -343,15 +343,15 @@ function Block10() {
               sx={{
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.dark
+                  theme.colors.primary.dark,
                 )}`,
 
                 '&:hover': {
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.dark
-                  )}`
-                }
+                    theme.colors.primary.dark,
+                  )}`,
+                },
               }}
               size="small"
               variant="contained"
@@ -360,7 +360,7 @@ function Block10() {
             </ButtonWrapper>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
               variant="subtitle2"
             >

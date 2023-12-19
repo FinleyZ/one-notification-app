@@ -9,7 +9,7 @@ import {
   alpha,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ const LinearProgress1 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.success.main, 0.06)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.success.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -36,7 +36,7 @@ const LinearProgress1 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.green2};
         }
-    `
+    `,
 );
 
 const LinearProgress2 = styled(LinearProgress)(
@@ -55,7 +55,7 @@ const LinearProgress2 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.orange2};
         }
-    `
+    `,
 );
 
 const LinearProgress3 = styled(LinearProgress)(
@@ -67,7 +67,7 @@ const LinearProgress3 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.06)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -77,7 +77,7 @@ const LinearProgress3 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.purple3};
         }
-    `
+    `,
 );
 
 function Block5() {
@@ -88,14 +88,14 @@ function Block5() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -108,47 +108,47 @@ function Block5() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     stroke: {
       colors: [theme.colors.primary.main],
       curve: 'smooth',
-      width: 4
+      width: 4,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       y: {
         title: {
           formatter: function () {
             return 'Sales:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.primary.main]
+    colors: [theme.colors.primary.main],
   };
   const Box1Data = [
     {
       name: 'Sales',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
+      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348],
+    },
   ];
 
   return (
@@ -175,7 +175,7 @@ function Block5() {
       <Box
         p={3}
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
       >
         <Chart
@@ -189,7 +189,7 @@ function Block5() {
       <Box py={2}>
         <Stack
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
           direction="row"
           divider={<Divider orientation="vertical" flexItem />}
@@ -201,7 +201,7 @@ function Block5() {
             <Typography variant="h3">76%</Typography>
             <LinearProgress1
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={76}
@@ -213,7 +213,7 @@ function Block5() {
           <Box p={3} flexGrow={1}>
             <Typography
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
               variant="h3"
             >
@@ -221,7 +221,7 @@ function Block5() {
             </Typography>
             <LinearProgress2
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={43}
@@ -234,7 +234,7 @@ function Block5() {
             <Typography variant="h3">59%</Typography>
             <LinearProgress3
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={59}

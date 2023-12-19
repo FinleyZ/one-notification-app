@@ -9,7 +9,7 @@ import {
   IconButton,
   Tooltip,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 import { SidebarContext } from 'src/client/contexts/SidebarContext';
@@ -36,7 +36,7 @@ const HeaderWrapper = styled(Box)(
             left: ${theme.sidebar.width};
             width: auto;
         }
-`
+`,
 );
 
 function Header() {
@@ -52,15 +52,15 @@ function Header() {
           theme.palette.mode === 'dark'
             ? `0 1px 0 ${alpha(
                 lighten(theme.colors.primary.main, 0.7),
-                0.15
+                0.15,
               )}, 0px 2px 8px -3px rgba(0, 0, 0, 0.2), 0px 5px 22px -4px rgba(0, 0, 0, .1)`
             : `0px 2px 8px -3px ${alpha(
                 theme.colors.alpha.black[100],
-                0.2
+                0.2,
               )}, 0px 5px 22px -4px ${alpha(
                 theme.colors.alpha.black[100],
-                0.1
-              )}`
+                0.1,
+              )}`,
       }}
     >
       <Stack
@@ -79,7 +79,7 @@ function Header() {
           component="span"
           sx={{
             ml: 2,
-            display: { lg: 'none', xs: 'inline-block' }
+            display: { lg: 'none', xs: 'inline-block' },
           }}
         >
           <Tooltip arrow title="Toggle Menu">

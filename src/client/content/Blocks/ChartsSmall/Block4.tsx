@@ -8,7 +8,7 @@ import {
   Divider,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 
@@ -23,14 +23,14 @@ const DotLegend = styled('span')(
       height: ${theme.spacing(2)};
       display: inline-block;
       border: ${theme.colors.alpha.white[100]} solid 3px;
-  `
+  `,
 );
 
 const AvatarWrapper = styled(Avatar)(
   ({ theme }) => `
       width: ${theme.spacing(6)};
       height: ${theme.spacing(6)};
-  `
+  `,
 );
 
 function Block4() {
@@ -41,14 +41,14 @@ function Block4() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -61,34 +61,34 @@ function Block4() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     stroke: {
       colors: [theme.colors.error.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
-    colors: [theme.colors.error.main]
+    colors: [theme.colors.error.main],
   };
   const Box1Data = [
     {
       name: 'Revenue',
-      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38]
-    }
+      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38],
+    },
   ];
 
   const Box2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -101,34 +101,34 @@ function Block4() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     stroke: {
       colors: [theme.colors.success.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
-    colors: [theme.colors.success.main]
+    colors: [theme.colors.success.main],
   };
   const Box2Data = [
     {
       name: 'Blog Posts',
-      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56]
-    }
+      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56],
+    },
   ];
 
   const Box3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -141,20 +141,20 @@ function Block4() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     stroke: {
       colors: [theme.colors.primary.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
-    colors: [theme.colors.primary.main]
+    colors: [theme.colors.primary.main],
   };
   const Box3Data = [
     {
       name: 'Tests',
-      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24]
-    }
+      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24],
+    },
   ];
 
   return (
@@ -165,7 +165,7 @@ function Block4() {
             <Badge
               anchorOrigin={{
                 vertical: 'bottom',
-                horizontal: 'right'
+                horizontal: 'right',
               }}
               overlap="circular"
               badgeContent={
@@ -219,7 +219,7 @@ function Block4() {
             <AvatarWrapper
               sx={{
                 fontSize: `${theme.typography.pxToRem(16)}`,
-                background: `${theme.colors.gradients.blue2}`
+                background: `${theme.colors.gradients.blue2}`,
               }}
             >
               EJ

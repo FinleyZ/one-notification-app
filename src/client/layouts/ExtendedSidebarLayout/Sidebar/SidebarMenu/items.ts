@@ -31,26 +31,25 @@ const menuItems: MenuItems[] = [
       {
         name: 'Templates',
         icon: SupportTwoToneIcon,
-        link: '/applications/mailbox'
+        link: '/applications/mailbox',
       },
       {
         name: 'Automations',
         icon: PrecisionManufacturingIcon,
-        link: '/'
+        link: '/',
       },
       {
         name: 'Integrations',
         icon: AutoAwesomeMotionIcon,
-        link: '/'
+        link: '/',
       },
       {
         name: 'Logs',
         icon: BrandingWatermarkIcon,
-        link: '/'
-      }
-    ]
+        link: '/',
+      },
+    ],
   },
-  
 ];
 
 export default menuItems;

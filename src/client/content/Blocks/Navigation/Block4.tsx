@@ -13,7 +13,7 @@ import {
   ListItemAvatar,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,7 @@ const DotLegend = styled('span')(
       width: ${theme.spacing(1.8)};
       height: ${theme.spacing(1.8)};
       display: inline-block;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -38,7 +38,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const MenuItemWrapper = styled(MenuItem)(
@@ -62,7 +62,7 @@ const MenuItemWrapper = styled(MenuItem)(
     .MuiTouchRipple-root {
         opacity: .05;
     }
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Button)(
@@ -80,7 +80,7 @@ const ButtonWrapper = styled(Button)(
         transform: translateY(-2px);
         box-shadow: none;
     }
-  `
+  `,
 );
 
 function Block4() {
@@ -93,7 +93,7 @@ function Block4() {
       sx={{
         position: 'relative',
         background: `${theme.colors.gradients.blue1}`,
-        color: `${theme.colors.alpha.trueWhite[100]}`
+        color: `${theme.colors.alpha.trueWhite[100]}`,
       }}
     >
       <CardActions>
@@ -101,8 +101,8 @@ function Block4() {
           sx={{
             color: `${theme.colors.alpha.trueWhite[100]}`,
             '&.Mui-checked': {
-              color: `${theme.colors.alpha.trueWhite[100]}`
-            }
+              color: `${theme.colors.alpha.trueWhite[100]}`,
+            },
           }}
         />
       </CardActions>
@@ -110,7 +110,7 @@ function Block4() {
         <Badge
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'left'
+            horizontal: 'left',
           }}
           overlap="rectangular"
           badgeContent={
@@ -121,7 +121,7 @@ function Block4() {
                 t('Online since') +
                 ' ' +
                 formatDistance(subMinutes(new Date(), 65), new Date(), {
-                  addSuffix: true
+                  addSuffix: true,
                 })
               }
             >
@@ -139,7 +139,7 @@ function Block4() {
               boxShadow: `0 .313rem .8rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)`,
               fontSize: `${theme.typography.pxToRem(18)}`,
               background: `${theme.colors.primary.lighter}`,
-              color: `${theme.colors.primary.main}`
+              color: `${theme.colors.primary.main}`,
             }}
             src="/static/images/avatars/5.jpg"
           />
@@ -151,7 +151,7 @@ function Block4() {
           <Typography
             sx={{
               mb: 1,
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
             variant="subtitle2"
           >
@@ -161,15 +161,15 @@ function Block4() {
             sx={{
               background: `${theme.colors.alpha.trueWhite[100]}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.alpha.trueWhite[100]
+                theme.colors.alpha.trueWhite[100],
               )}`,
 
               '&:hover': {
                 background: `${theme.colors.alpha.trueWhite[100]}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.alpha.trueWhite[100]
-                )}`
-              }
+                  theme.colors.alpha.trueWhite[100],
+                )}`,
+              },
             }}
             size="small"
             variant="contained"
@@ -187,9 +187,9 @@ function Block4() {
               '&:hover': {
                 background: `${theme.colors.info.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.info.dark
-                )}`
-              }
+                  theme.colors.info.dark,
+                )}`,
+              },
             }}
           >
             {t('View')}
@@ -198,14 +198,14 @@ function Block4() {
       </Box>
       <Divider
         sx={{
-          background: `${theme.colors.alpha.trueWhite[10]}`
+          background: `${theme.colors.alpha.trueWhite[10]}`,
         }}
       />
       <MenuList disablePadding>
         <MenuItemWrapper
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -214,7 +214,7 @@ function Block4() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -222,10 +222,10 @@ function Block4() {
               sx={{
                 background: `${theme.colors.info.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.info.dark
+                  theme.colors.info.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <AccountBalanceWalletTwoToneIcon fontSize="small" />
@@ -240,7 +240,7 @@ function Block4() {
             secondary={
               <Typography
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 15.4% {t('increase')}
@@ -250,14 +250,14 @@ function Block4() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.trueWhite[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItemWrapper>
         <MenuItemWrapper
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -266,7 +266,7 @@ function Block4() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -274,10 +274,10 @@ function Block4() {
               sx={{
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
+                  theme.colors.error.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <SpeakerTwoToneIcon fontSize="small" />
@@ -292,7 +292,7 @@ function Block4() {
             secondary={
               <Typography
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 -4.75% {t('decrease')}
@@ -302,14 +302,14 @@ function Block4() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.trueWhite[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItemWrapper>
         <MenuItemWrapper
           sx={{
             p: 2.5,
-            borderRadius: 0
+            borderRadius: 0,
           }}
           divider
         >
@@ -318,7 +318,7 @@ function Block4() {
               mr: 1.5,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <Avatar
@@ -326,10 +326,10 @@ function Block4() {
               sx={{
                 background: `${theme.colors.warning.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.warning.dark
+                  theme.colors.warning.dark,
                 )}`,
                 width: 44,
-                height: 44
+                height: 44,
               }}
             >
               <VerifiedTwoToneIcon fontSize="small" />
@@ -344,7 +344,7 @@ function Block4() {
             secondary={
               <Typography
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 62.5% {t('down')}
@@ -354,7 +354,7 @@ function Block4() {
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.trueWhite[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItemWrapper>

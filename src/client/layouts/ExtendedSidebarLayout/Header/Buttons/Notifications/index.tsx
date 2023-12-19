@@ -18,7 +18,7 @@ import {
   useTheme,
   styled,
   Tooltip,
-  Typography
+  Typography,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 import Scrollbar from 'src/client/components/Scrollbar';
@@ -44,7 +44,7 @@ import type { ApexOptions } from 'apexcharts';
 const BoxComposed = styled(Box)(
   () => `
   position: relative;
-`
+`,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -60,7 +60,7 @@ const BoxComposedContent = styled(Box)(
       }
   }
   
-`
+`,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -74,7 +74,7 @@ const BoxComposedImage = styled(Box)(
   height: 100%;
   width: 100%;
   border-radius: inherit;
-`
+`,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -86,7 +86,7 @@ const BoxComposedBg = styled(Box)(
   height: 100%;
   width: 100%;
   border-radius: inherit;
-`
+`,
 );
 
 const TabsWrapper = styled(Tabs)(
@@ -105,7 +105,7 @@ const TabsWrapper = styled(Tabs)(
             margin-right: 0;
           }
       }
-  `
+  `,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -119,7 +119,7 @@ const AvatarSuccess = styled(Avatar)(
       .MuiSvgIcon-root {
         font-size: ${theme.typography.pxToRem(42)};
       }
-`
+`,
 );
 
 const LabelPrimary = styled(Box)(
@@ -131,7 +131,7 @@ const LabelPrimary = styled(Box)(
     font-size: ${theme.typography.pxToRem(10)};
     padding: ${theme.spacing(0.5, 1.5)};
     color: ${theme.palette.primary.contrastText};
-`
+`,
 );
 
 const DividerVertialPrimary = styled(Box)(
@@ -143,7 +143,7 @@ const DividerVertialPrimary = styled(Box)(
   position: absolute;
   top: 20%;
   background: ${theme.colors.primary.main};
-`
+`,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -151,7 +151,7 @@ const IconButtonWrapper = styled(IconButton)(
   width: ${theme.spacing(4)};
   height: ${theme.spacing(4)};
   border-radius: ${theme.general.borderRadiusLg};
-`
+`,
 );
 
 function HeaderNotifications() {
@@ -165,7 +165,7 @@ function HeaderNotifications() {
   const tabs = [
     { value: 'timeline', label: t('Timeline') },
     { value: 'tasks', label: t('Tasks') },
-    { value: 'reports', label: t('Reports') }
+    { value: 'reports', label: t('Reports') },
   ];
 
   const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
@@ -184,37 +184,37 @@ function HeaderNotifications() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
+        enabled: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
-      stacked: true
+      stacked: true,
     },
     dataLabels: {
-      enabled: true
+      enabled: true,
     },
     plotOptions: {
       bar: {
         borderRadius: 8,
         horizontal: false,
-        columnWidth: '65%'
-      }
+        columnWidth: '65%',
+      },
     },
     stroke: {
       show: false,
       width: 0,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     colors: [theme.colors.secondary.light, theme.colors.secondary.dark],
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     labels: [
       'Monday',
@@ -227,32 +227,32 @@ function HeaderNotifications() {
       'Last week',
       'Last month',
       'Last year',
-      'Last quarter'
+      'Last quarter',
     ],
     legend: {
-      show: false
+      show: false,
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       marker: {
-        show: true
-      }
-    }
+        show: true,
+      },
+    },
   };
   const chartData = [
     {
       name: 'Net Profit',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2]
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2],
     },
     {
       name: 'Net Loss',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2]
-    }
+      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2],
+    },
   ];
 
   return (
@@ -262,14 +262,14 @@ function HeaderNotifications() {
           variant="dot"
           anchorOrigin={{
             vertical: 'top',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           sx={{
             '.MuiBadge-badge': {
               background: theme.colors.success.main,
               animation: 'pulse 1s infinite',
-              transition: `${theme.transitions.create(['all'])}`
-            }
+              transition: `${theme.transitions.create(['all'])}`,
+            },
           }}
         >
           <IconButtonWrapper
@@ -279,8 +279,8 @@ function HeaderNotifications() {
               color: theme.colors.primary.main,
 
               '&:hover': {
-                background: alpha(theme.colors.primary.main, 0.2)
-              }
+                background: alpha(theme.colors.primary.main, 0.2),
+              },
             }}
             color="primary"
             ref={ref}
@@ -297,11 +297,11 @@ function HeaderNotifications() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
       >
         <Box minWidth={440} maxWidth={440} p={2}>
@@ -309,27 +309,27 @@ function HeaderNotifications() {
             mb={2}
             sx={{
               borderRadius: `${theme.general.borderRadius}`,
-              background: `${theme.colors.gradients.black1}`
+              background: `${theme.colors.gradients.black1}`,
             }}
           >
             <BoxComposedBg
               sx={{
                 opacity: 0.3,
-                background: `${theme.colors.gradients.green2}`
+                background: `${theme.colors.gradients.green2}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.2,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/1.jpg")'
+                  'url("/static/images/placeholders/covers/1.jpg")',
               }}
             />
             <BoxComposedContent py={3}>
               <Typography
                 textAlign="center"
                 sx={{
-                  pb: 0.5
+                  pb: 0.5,
                 }}
                 variant="h4"
               >
@@ -361,7 +361,7 @@ function HeaderNotifications() {
         {currentTab === 'timeline' && (
           <Box
             sx={{
-              height: 220
+              height: 220,
             }}
           >
             <Scrollbar>
@@ -369,24 +369,24 @@ function HeaderNotifications() {
                 sx={{
                   px: 2,
                   py: 1,
-                  m: 2
+                  m: 2,
                 }}
               >
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
                         left: `-${theme.spacing(2.1)} !important`,
-                        top: `-${theme.spacing(0.5)}`
+                        top: `-${theme.spacing(0.5)}`,
                       }}
                       color="success"
                     >
@@ -397,7 +397,7 @@ function HeaderNotifications() {
                   <TimelineContent
                     sx={{
                       pl: 3,
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h5" gutterBottom>
@@ -413,7 +413,7 @@ function HeaderNotifications() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Remy Sharp"
@@ -425,7 +425,7 @@ function HeaderNotifications() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Travis Howard"
@@ -437,7 +437,7 @@ function HeaderNotifications() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Cindy Baker"
@@ -449,7 +449,7 @@ function HeaderNotifications() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Cindy Baker"
@@ -461,7 +461,7 @@ function HeaderNotifications() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Agnes Walker"
@@ -474,19 +474,19 @@ function HeaderNotifications() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
                         left: `-${theme.spacing(2.1)} !important`,
-                        top: `-${theme.spacing(0.5)}`
+                        top: `-${theme.spacing(0.5)}`,
                       }}
                       color="primary"
                     >
@@ -497,7 +497,7 @@ function HeaderNotifications() {
                   <TimelineContent
                     sx={{
                       pl: 3,
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h5" gutterBottom>
@@ -510,7 +510,7 @@ function HeaderNotifications() {
                     <Box display="flex" mt={2} alignItems="flex-start">
                       <Card
                         sx={{
-                          mr: 2
+                          mr: 2,
                         }}
                       >
                         <CardActionArea>
@@ -524,7 +524,7 @@ function HeaderNotifications() {
                       </Card>
                       <Card
                         sx={{
-                          mr: 2
+                          mr: 2,
                         }}
                       >
                         <CardActionArea>
@@ -538,7 +538,7 @@ function HeaderNotifications() {
                       </Card>
                       <Card
                         sx={{
-                          mr: 2
+                          mr: 2,
                         }}
                       >
                         <CardActionArea>
@@ -555,18 +555,18 @@ function HeaderNotifications() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="error"
@@ -576,7 +576,7 @@ function HeaderNotifications() {
                   <TimelineContent
                     sx={{
                       pl: 3,
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h5" gutterBottom>
@@ -599,14 +599,14 @@ function HeaderNotifications() {
         {currentTab === 'tasks' && (
           <Box
             sx={{
-              height: 220
+              height: 220,
             }}
           >
             <Scrollbar>
               <Box p={3}>
                 <Typography
                   sx={{
-                    pb: 1
+                    pb: 1,
                   }}
                   component="div"
                   variant="caption"
@@ -618,7 +618,7 @@ function HeaderNotifications() {
                   sx={{
                     overflow: 'visible',
                     position: 'relative',
-                    p: 2
+                    p: 2,
                   }}
                   variant="outlined"
                 >
@@ -637,7 +637,7 @@ function HeaderNotifications() {
                       <AccessTimeTwoToneIcon
                         sx={{
                           ml: 1,
-                          mr: 0.5
+                          mr: 0.5,
                         }}
                         fontSize="small"
                       />
@@ -648,7 +648,7 @@ function HeaderNotifications() {
                 <Typography
                   sx={{
                     pt: 3,
-                    pb: 2
+                    pb: 2,
                   }}
                   component="div"
                   variant="caption"
@@ -658,7 +658,7 @@ function HeaderNotifications() {
                 </Typography>
                 <Box
                   sx={{
-                    textAlign: 'center'
+                    textAlign: 'center',
                   }}
                 >
                   <AvatarSuccess>
@@ -678,13 +678,13 @@ function HeaderNotifications() {
         {currentTab === 'reports' && (
           <Box
             sx={{
-              height: 220
+              height: 220,
             }}
           >
             <Box p={3}>
               <Box
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <Typography gutterBottom variant="h4">
@@ -707,7 +707,7 @@ function HeaderNotifications() {
         <Box
           p={2}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Button
@@ -723,26 +723,26 @@ function HeaderNotifications() {
 
               '.MuiSvgIcon-root': {
                 color: `${theme.colors.primary.main}`,
-                transition: `${theme.transitions.create(['color'])}`
+                transition: `${theme.transitions.create(['color'])}`,
               },
 
               '&:hover': {
                 px: 3,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.dark
+                  theme.colors.primary.dark,
                 )}`,
                 boxShadow: `${theme.colors.shadows.primary}`,
 
                 '.MuiSvgIcon-root': {
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.dark
-                  )}`
-                }
+                    theme.colors.primary.dark,
+                  )}`,
+                },
               },
               '&:active': {
-                boxShadow: 'none'
-              }
+                boxShadow: 'none',
+              },
             }}
             variant="contained"
             endIcon={<ArrowForwardTwoToneIcon />}

@@ -5,7 +5,7 @@ import {
   Card,
   Typography,
   IconButton,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,21 +24,21 @@ function Block9() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.success.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       gradient: {
@@ -48,16 +48,16 @@ function Block9() {
         inverseColors: false,
         opacityFrom: 0.9,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.success.main],
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -69,40 +69,40 @@ function Block9() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
   const Box3Data = [
     {
       name: 'Total Sales',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6]
-    }
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6],
+    },
   ];
 
   return (
     <Card
       sx={{
-        overflow: 'visible'
+        overflow: 'visible',
       }}
       variant="outlined"
     >
       <Box
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         p={2}
         display="flex"
@@ -132,7 +132,7 @@ function Block9() {
             fontWeight="bold"
             gutterBottom
             sx={{
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
             component="h6"
             variant="caption"
@@ -142,7 +142,7 @@ function Block9() {
           <Typography
             gutterBottom
             sx={{
-              py: 0.5
+              py: 0.5,
             }}
             variant="h2"
           >
@@ -154,7 +154,7 @@ function Block9() {
             </Text>
             <Typography
               sx={{
-                pl: 0.2
+                pl: 0.2,
               }}
               variant="subtitle2"
             >
@@ -167,7 +167,9 @@ function Block9() {
             width: 54,
             height: 54,
             background: `${theme.colors.primary.main}`,
-            color: `${theme.palette.getContrastText(theme.colors.primary.dark)}`
+            color: `${theme.palette.getContrastText(
+              theme.colors.primary.dark,
+            )}`,
           }}
         >
           <EmojiObjectsTwoToneIcon />

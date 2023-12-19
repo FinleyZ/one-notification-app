@@ -12,7 +12,7 @@ import {
   alpha,
   Badge,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ import Label from 'src/client/components/Label';
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -33,7 +33,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -49,7 +49,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -63,7 +63,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -75,7 +75,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -89,7 +89,7 @@ const IconButtonWrapper = styled(IconButton)(
         background: transparent;
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Button)(
@@ -104,7 +104,7 @@ const ButtonWrapper = styled(Button)(
         border-color: ${theme.colors.alpha.trueWhite[30]};
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 function Block6() {
@@ -120,7 +120,7 @@ function Block6() {
           lg={5}
           sx={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
           }}
         >
           <Box
@@ -133,7 +133,7 @@ function Block6() {
             px={5}
             sx={{
               position: 'relative',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Box>
@@ -144,7 +144,7 @@ function Block6() {
                   width: 94,
                   height: 94,
                   border: `${theme.colors.alpha.white[100]} solid 3px`,
-                  boxShadow: `0 0 0 3px ${theme.colors.primary.main}`
+                  boxShadow: `0 0 0 3px ${theme.colors.primary.main}`,
                 }}
                 src="/static/images/avatars/5.jpg"
               />
@@ -165,12 +165,12 @@ function Block6() {
               </Typography>
               <Divider
                 sx={{
-                  mt: 3
+                  mt: 3,
                 }}
               />
               <Stack
                 sx={{
-                  my: 3
+                  my: 3,
                 }}
                 direction="row"
                 justifyContent="space-evenly"
@@ -227,7 +227,7 @@ function Block6() {
                 <Typography
                   fontWeight="bold"
                   sx={{
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
                   }}
                   textAlign="center"
                   variant="subtitle2"
@@ -240,13 +240,13 @@ function Block6() {
                     sx={{
                       background: `${theme.colors.warning.main}`,
                       color: `${theme.palette.getContrastText(
-                        theme.colors.warning.main
+                        theme.colors.warning.main,
                       )}`,
                       borderRadius: `${theme.general.borderRadiusSm}`,
                       width: 44,
                       height: 44,
                       mr: 1,
-                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                     }}
                   >
                     JK
@@ -256,7 +256,7 @@ function Block6() {
                       color="success"
                       anchorOrigin={{
                         vertical: 'bottom',
-                        horizontal: 'right'
+                        horizontal: 'right',
                       }}
                       variant="dot"
                       overlap="rectangular"
@@ -266,12 +266,12 @@ function Block6() {
                         sx={{
                           background: `${theme.colors.primary.main}`,
                           color: `${theme.palette.getContrastText(
-                            theme.colors.primary.dark
+                            theme.colors.primary.dark,
                           )}`,
                           borderRadius: `${theme.general.borderRadiusSm}`,
                           width: 44,
                           height: 44,
-                          boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                          boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                         }}
                       >
                         HA
@@ -285,7 +285,7 @@ function Block6() {
                       width: 44,
                       mr: 1,
                       height: 44,
-                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                     }}
                     alt="Cindy Baker"
                     src="/static/images/avatars/3.jpg"
@@ -296,7 +296,7 @@ function Block6() {
                       borderRadius: `${theme.general.borderRadiusSm}`,
                       width: 44,
                       height: 44,
-                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`
+                      boxShadow: `0 .113rem .5rem ${theme.colors.alpha.black[10]}, 0 .126rem .225rem ${theme.colors.alpha.black[30]}`,
                     }}
                     alt="Agnes Walker"
                     src="/static/images/avatars/4.jpg"
@@ -306,14 +306,14 @@ function Block6() {
               <Divider />
               <Box
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <Button
                   disableRipple={false}
                   variant="outlined"
                   sx={{
-                    mt: 5
+                    mt: 5,
                   }}
                   startIcon={<AccountBoxTwoToneIcon />}
                   size="large"
@@ -330,7 +330,7 @@ function Block6() {
           xs={12}
           lg={7}
           sx={{
-            display: 'flex'
+            display: 'flex',
           }}
         >
           <BoxComposed
@@ -339,7 +339,7 @@ function Block6() {
             sx={{
               position: 'relative',
               minHeight: '100%',
-              background: `${theme.colors.gradients.black2}`
+              background: `${theme.colors.gradients.black2}`,
             }}
           >
             <CardActions display="flex" alignItems="center">
@@ -349,7 +349,7 @@ function Block6() {
                   sx={{
                     px: 1,
                     fontSize: `${theme.typography.pxToRem(10)}`,
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
                   }}
                 >
                   {t('New release')}
@@ -362,7 +362,7 @@ function Block6() {
               >
                 <IconButtonWrapper
                   sx={{
-                    ml: 0.5
+                    ml: 0.5,
                   }}
                 >
                   <HelpTwoToneIcon fontSize="small" />
@@ -372,14 +372,14 @@ function Block6() {
             <BoxComposedBg
               sx={{
                 opacity: 0.5,
-                background: `${theme.colors.gradients.blue1}`
+                background: `${theme.colors.gradients.blue1}`,
               }}
             />
             <BoxComposedImage
               sx={{
                 opacity: 0.5,
                 backgroundImage:
-                  'url("/static/images/placeholders/covers/5.jpg")'
+                  'url("/static/images/placeholders/covers/5.jpg")',
               }}
             />
             <BoxComposedContent
@@ -388,7 +388,7 @@ function Block6() {
               alignItems="center"
               flexDirection="column"
               sx={{
-                textAlign: 'center'
+                textAlign: 'center',
               }}
               p={{ xs: 4, xl: 8 }}
             >
@@ -397,7 +397,7 @@ function Block6() {
                 sx={{
                   pt: 3,
                   pb: 2,
-                  fontSize: `${theme.typography.pxToRem(32)}`
+                  fontSize: `${theme.typography.pxToRem(32)}`,
                 }}
                 variant="h1"
               >
@@ -405,7 +405,7 @@ function Block6() {
               </Typography>
               <Typography lineHeight="1.5" fontWeight="normal" variant="h4">
                 {t(
-                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                  'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
                 )}
                 .
               </Typography>
@@ -414,7 +414,7 @@ function Block6() {
                   disableRipple={false}
                   variant="outlined"
                   sx={{
-                    mt: 5
+                    mt: 5,
                   }}
                   endIcon={<ArrowForwardTwoToneIcon />}
                   size="large"

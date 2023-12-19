@@ -14,7 +14,7 @@ import {
   alpha,
   Popover,
   Stack,
-  styled
+  styled,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -34,7 +34,7 @@ const LabelWrapper = styled(Box)(
   text-transform: uppercase;
   border-radius: ${theme.general.borderRadiusSm};
   padding: ${theme.spacing(0.5, 1, 0.4)};
-`
+`,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -52,7 +52,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
           opacity: .05;
         }
       }
-`
+`,
 );
 
 const MenuListWrapperSecondary = styled(MenuList)(
@@ -78,7 +78,7 @@ const MenuListWrapperSecondary = styled(MenuList)(
           margin-bottom: 0;
       }
     }
-`
+`,
 );
 
 const MenuListWrapperSuccess = styled(MenuList)(
@@ -104,7 +104,7 @@ const MenuListWrapperSuccess = styled(MenuList)(
           margin-bottom: 0;
       }
     }
-`
+`,
 );
 
 const MenuListWrapperError = styled(MenuList)(
@@ -130,7 +130,7 @@ const MenuListWrapperError = styled(MenuList)(
           margin-bottom: 0;
       }
     }
-`
+`,
 );
 
 const DotLegend = styled('span')(
@@ -140,7 +140,7 @@ const DotLegend = styled('span')(
     height: ${theme.spacing(1.45)};
     display: inline-block;
     border: ${theme.colors.alpha.white[100]} solid 2px;
-`
+`,
 );
 
 function HeaderMenu() {
@@ -173,7 +173,7 @@ function HeaderMenu() {
     <>
       <Box
         sx={{
-          display: { xs: 'none', md: 'inline-flex' }
+          display: { xs: 'none', md: 'inline-flex' },
         }}
       >
         <Button
@@ -190,21 +190,21 @@ function HeaderMenu() {
 
             '.MuiSvgIcon-root': {
               color: `${theme.colors.secondary.dark}`,
-              transition: `${theme.transitions.create(['color'])}`
+              transition: `${theme.transitions.create(['color'])}`,
             },
 
             '&:hover': {
               backgroundColor: `${theme.colors.secondary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.secondary.main
+                theme.colors.secondary.main,
               )}`,
 
               '.MuiSvgIcon-root': {
                 color: `${theme.palette.getContrastText(
-                  theme.colors.secondary.main
-                )}`
-              }
-            }
+                  theme.colors.secondary.main,
+                )}`,
+              },
+            },
           }}
         >
           {t('Mega menu')}
@@ -222,21 +222,21 @@ function HeaderMenu() {
 
             '.MuiSvgIcon-root': {
               color: `${theme.colors.secondary.dark}`,
-              transition: `${theme.transitions.create(['color'])}`
+              transition: `${theme.transitions.create(['color'])}`,
             },
 
             '&:hover': {
               backgroundColor: `${theme.colors.secondary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.secondary.main
+                theme.colors.secondary.main,
               )}`,
 
               '.MuiSvgIcon-root': {
                 color: `${theme.palette.getContrastText(
-                  theme.colors.secondary.main
-                )}`
-              }
-            }
+                  theme.colors.secondary.main,
+                )}`,
+              },
+            },
           }}
         >
           {t('Dashboards')}
@@ -249,17 +249,17 @@ function HeaderMenu() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'left'
+          horizontal: 'left',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'left'
+          horizontal: 'left',
         }}
       >
         <Box
           sx={{
             p: 2,
-            background: alpha(theme.colors.alpha.black[100], 0.06)
+            background: alpha(theme.colors.alpha.black[100], 0.06),
           }}
           display="flex"
           alignItems="center"
@@ -268,7 +268,7 @@ function HeaderMenu() {
           <Box>
             <Typography
               sx={{
-                pb: 0.5
+                pb: 0.5,
               }}
               variant="h4"
             >
@@ -283,7 +283,7 @@ function HeaderMenu() {
             variant="subtitle2"
             sx={{
               textTransform: 'none',
-              display: { xs: 'none', lg: 'inline-block' }
+              display: { xs: 'none', lg: 'inline-block' },
             }}
           >
             {t('View all')}
@@ -301,35 +301,35 @@ function HeaderMenu() {
             <MenuItem selected>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Automation')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Analytics')}
               />
               <Box display="flex" alignItems="center">
                 <DotLegend
                   style={{
-                    background: `${theme.colors.success.main}`
+                    background: `${theme.colors.success.main}`,
                   }}
                 />
                 <ChevronRightTwoToneIcon
                   sx={{
                     ml: 1,
                     color: `${theme.colors.alpha.black[30]}`,
-                    opacity: 0.8
+                    opacity: 0.8,
                   }}
                 />
               </Box>
@@ -337,42 +337,42 @@ function HeaderMenu() {
             <MenuItem disabled>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Banking')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Commerce')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Crypto')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
@@ -381,21 +381,21 @@ function HeaderMenu() {
             <MenuItem selected>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Finance')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Fitness')}
               />
@@ -405,8 +405,8 @@ function HeaderMenu() {
                   sx={{
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.dark
-                    )}`
+                      theme.colors.primary.dark,
+                    )}`,
                   }}
                 >
                   {t('Hot')}
@@ -415,7 +415,7 @@ function HeaderMenu() {
                   sx={{
                     ml: 1,
                     color: `${theme.colors.alpha.black[30]}`,
-                    opacity: 0.8
+                    opacity: 0.8,
                   }}
                 />
               </Box>
@@ -423,42 +423,42 @@ function HeaderMenu() {
             <MenuItem disabled>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Healthcare')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Helpdesk')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Learning')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
@@ -467,21 +467,21 @@ function HeaderMenu() {
             <MenuItem selected>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Calendar')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('File Manager')}
               />
@@ -489,41 +489,41 @@ function HeaderMenu() {
                 sx={{
                   ml: 1,
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem disabled>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Jobs Platform')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Messenger')}
               />
               <Box display="flex" alignItems="center">
                 <DotLegend
                   style={{
-                    background: `${theme.colors.primary.main}`
+                    background: `${theme.colors.primary.main}`,
                   }}
                 />
                 <ChevronRightTwoToneIcon
                   sx={{
                     color: `${theme.colors.alpha.black[30]}`,
-                    opacity: 0.8
+                    opacity: 0.8,
                   }}
                 />
               </Box>
@@ -531,14 +531,14 @@ function HeaderMenu() {
             <MenuItem>
               <ListItemText
                 primaryTypographyProps={{
-                  variant: 'h5'
+                  variant: 'h5',
                 }}
                 primary={t('Projects Board')}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </MenuItem>
@@ -548,7 +548,7 @@ function HeaderMenu() {
         <Box
           sx={{
             m: 2,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Button size="small" color="primary">
@@ -563,21 +563,21 @@ function HeaderMenu() {
         open={isOpen2}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'left'
+          horizontal: 'left',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'left'
+          horizontal: 'left',
         }}
         sx={{
           '.MuiPopover-paper': {
-            background: theme.colors.gradients.blue3
-          }
+            background: theme.colors.gradients.blue3,
+          },
         }}
       >
         <Box
           sx={{
-            maxWidth: 400
+            maxWidth: 400,
           }}
           p={3}
         >
@@ -587,7 +587,7 @@ function HeaderMenu() {
             textAlign="center"
             sx={{
               color: theme.colors.alpha.trueWhite[100],
-              fontSize: theme.typography.pxToRem(18)
+              fontSize: theme.typography.pxToRem(18),
             }}
           >
             {t('Dashboards')}
@@ -596,7 +596,7 @@ function HeaderMenu() {
             variant="subtitle2"
             textAlign="center"
             sx={{
-              color: theme.colors.alpha.trueWhite[70]
+              color: theme.colors.alpha.trueWhite[70],
             }}
           >
             {t("This is just a menu example we've created")}
@@ -606,13 +606,13 @@ function HeaderMenu() {
               <Card>
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="warning">
                     <AccountTreeTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>
@@ -624,13 +624,13 @@ function HeaderMenu() {
               <Card>
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="success">
                     <ContactSupportTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>
@@ -642,13 +642,13 @@ function HeaderMenu() {
               <Card>
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="primary">
                     <DashboardCustomizeTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>
@@ -660,13 +660,13 @@ function HeaderMenu() {
               <Card>
                 <CardActionAreaWrapper
                   sx={{
-                    p: 2
+                    p: 2,
                   }}
                 >
                   <Text color="error">
                     <PeopleOutlineTwoToneIcon
                       sx={{
-                        mb: 1
+                        mb: 1,
                       }}
                     />
                   </Text>

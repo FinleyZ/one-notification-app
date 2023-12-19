@@ -10,7 +10,7 @@ import {
   Badge,
   Divider,
   Button,
-  styled
+  styled,
 } from '@mui/material';
 import AddCircleTwoToneIcon from '@mui/icons-material/AddCircleTwoTone';
 import { useAuth } from 'src/client/hooks/useAuth';
@@ -27,7 +27,7 @@ const DividerWrapper = styled(Divider)(
           height: 40px !important;
           margin: 0 ${theme.spacing(2)};
           align-self: center;
-  `
+  `,
 );
 
 const CardWrapperPrimary = styled(Card)(
@@ -39,7 +39,7 @@ const CardWrapperPrimary = styled(Card)(
         border-top-right-radius: ${theme.general.borderRadius};
         max-width: 380px;
         display: inline-flex;
-  `
+  `,
 );
 
 const CardWrapperSecondary = styled(Card)(
@@ -51,7 +51,7 @@ const CardWrapperSecondary = styled(Card)(
         border-top-left-radius: ${theme.general.borderRadius};
         max-width: 380px;
         display: inline-flex;
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
@@ -59,7 +59,7 @@ const CardWrapper = styled(Card)(
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
       box-shadow: none;
       border-radius: 0;
-  `
+  `,
 );
 
 function Block5() {
@@ -77,7 +77,7 @@ function Block5() {
         <Box>
           <Typography
             sx={{
-              pb: 1
+              pb: 1,
             }}
             variant="caption"
             fontWeight="bold"
@@ -93,7 +93,7 @@ function Block5() {
       <Divider />
       <Box
         sx={{
-          height: 487
+          height: 487,
         }}
       >
         <Scrollbar>
@@ -108,7 +108,7 @@ function Block5() {
                 variant="rounded"
                 sx={{
                   width: 50,
-                  height: 50
+                  height: 50,
                 }}
                 alt="Zain Baptista"
                 src="/static/images/avatars/1.jpg"
@@ -128,17 +128,17 @@ function Block5() {
                   sx={{
                     pt: 1,
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <ScheduleTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
                   {formatDistance(subHours(new Date(), 115), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -166,17 +166,17 @@ function Block5() {
                   sx={{
                     pt: 1,
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <ScheduleTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
                   {formatDistance(subHours(new Date(), 125), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -184,7 +184,7 @@ function Block5() {
                 variant="rounded"
                 sx={{
                   width: 50,
-                  height: 50
+                  height: 50,
                 }}
                 alt={user.name}
                 src={user.avatar}
@@ -207,7 +207,7 @@ function Block5() {
                 <CardWrapperPrimary>Hey! Are you there?</CardWrapperPrimary>
                 <CardWrapperPrimary
                   sx={{
-                    mt: 2
+                    mt: 2,
                   }}
                 >
                   Heeeelloooo????
@@ -217,17 +217,17 @@ function Block5() {
                   sx={{
                     pt: 1,
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <ScheduleTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
                   {formatDistance(subHours(new Date(), 60), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -235,7 +235,7 @@ function Block5() {
                 variant="rounded"
                 sx={{
                   width: 50,
-                  height: 50
+                  height: 50,
                 }}
                 alt={user.name}
                 src={user.avatar}
@@ -251,7 +251,7 @@ function Block5() {
                 variant="rounded"
                 sx={{
                   width: 50,
-                  height: 50
+                  height: 50,
                 }}
                 alt="Zain Baptista"
                 src="/static/images/avatars/1.jpg"
@@ -266,7 +266,7 @@ function Block5() {
                 <CardWrapperSecondary>Hey there!</CardWrapperSecondary>
                 <CardWrapperSecondary
                   sx={{
-                    mt: 1
+                    mt: 1,
                   }}
                 >
                   How are you? Is it ok if I call you?
@@ -276,17 +276,17 @@ function Block5() {
                   sx={{
                     pt: 1,
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <ScheduleTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
                   {formatDistance(subMinutes(new Date(), 6), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -310,7 +310,7 @@ function Block5() {
                 </CardWrapperPrimary>
                 <CardWrapperPrimary
                   sx={{
-                    mt: 1
+                    mt: 1,
                   }}
                 >
                   Can you confirm?
@@ -320,17 +320,17 @@ function Block5() {
                   sx={{
                     pt: 1,
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
                   }}
                 >
                   <ScheduleTwoToneIcon
                     sx={{
-                      mr: 0.5
+                      mr: 0.5,
                     }}
                     fontSize="small"
                   />
                   {formatDistance(subMinutes(new Date(), 8), new Date(), {
-                    addSuffix: true
+                    addSuffix: true,
                   })}
                 </Typography>
               </Box>
@@ -338,7 +338,7 @@ function Block5() {
                 variant="rounded"
                 sx={{
                   width: 50,
-                  height: 50
+                  height: 50,
                 }}
                 alt={user.name}
                 src={user.avatar}
@@ -353,7 +353,7 @@ function Block5() {
           p: 2,
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
         }}
       >
         <Box>
@@ -361,7 +361,7 @@ function Block5() {
             variant="outlined"
             color="secondary"
             sx={{
-              mr: 1
+              mr: 1,
             }}
             size="small"
           >
@@ -385,7 +385,7 @@ function Block5() {
         <Box
           sx={{
             flex: 1,
-            mr: 2
+            mr: 2,
           }}
         >
           <TextField
@@ -406,7 +406,7 @@ function Block5() {
           color="warning"
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'left'
+            horizontal: 'left',
           }}
           variant="dot"
         >

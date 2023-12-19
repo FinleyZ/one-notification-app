@@ -8,7 +8,7 @@ import {
   ListItemText,
   Typography,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,14 +26,14 @@ function Block3() {
     <Card variant="outlined">
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Latest issues')}
@@ -43,13 +43,13 @@ function Block3() {
       <Divider />
       <List
         sx={{
-          py: 0
+          py: 0,
         }}
       >
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -57,13 +57,13 @@ function Block3() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <ContactPhoneTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             />
           </ListItemAvatar>
@@ -85,7 +85,7 @@ function Block3() {
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -93,13 +93,13 @@ function Block3() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <EvStationTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             />
           </ListItemAvatar>
@@ -121,7 +121,7 @@ function Block3() {
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -129,13 +129,13 @@ function Block3() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <AutoAwesomeMosaicTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
           </ListItemAvatar>
@@ -157,7 +157,7 @@ function Block3() {
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -165,13 +165,13 @@ function Block3() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <CardTravelTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.primary.main}`
+                color: `${theme.colors.primary.main}`,
               }}
             />
           </ListItemAvatar>

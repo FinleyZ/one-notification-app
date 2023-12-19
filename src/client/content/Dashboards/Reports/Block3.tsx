@@ -10,7 +10,7 @@ import {
   IconButton,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -33,7 +33,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -49,7 +49,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 const LinearProgressWarning = styled(LinearProgress)(
@@ -65,7 +65,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.warning.main};
         }
-    `
+    `,
 );
 
 function Block3() {
@@ -76,21 +76,21 @@ function Block3() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.warning.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       gradient: {
@@ -100,17 +100,17 @@ function Block3() {
         inverseColors: false,
         opacityFrom: 0.9,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     stroke: {
       show: true,
       colors: [theme.colors.warning.main],
       curve: 'smooth',
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -122,29 +122,29 @@ function Block3() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box1Data = [
     {
       name: 'Sales',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
 
   return (
@@ -160,7 +160,7 @@ function Block3() {
           <Typography
             gutterBottom
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
             variant="h4"
           >
@@ -181,7 +181,7 @@ function Block3() {
           fontWeight="bold"
           sx={{
             mb: 4,
-            fontSize: `${theme.typography.pxToRem(45)}`
+            fontSize: `${theme.typography.pxToRem(45)}`,
           }}
         >
           <CountUp
@@ -202,7 +202,7 @@ function Block3() {
             <Typography variant="h3">14%</Typography>
             <LinearProgressError
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={12}
@@ -215,7 +215,7 @@ function Block3() {
             <Typography variant="h3">46%</Typography>
             <LinearProgressSuccess
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={46}
@@ -228,7 +228,7 @@ function Block3() {
             <Typography variant="h3">40%</Typography>
             <LinearProgressWarning
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={40}
@@ -243,7 +243,7 @@ function Block3() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button variant="outlined" endIcon={<ArrowForwardTwoToneIcon />}>

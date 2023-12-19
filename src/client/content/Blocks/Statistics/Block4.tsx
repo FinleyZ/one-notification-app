@@ -5,7 +5,7 @@ import {
   Card,
   Grid,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const AvatarWrapper = styled(Avatar)(
       color:  ${theme.colors.alpha.trueWhite[100]};
       width: ${theme.spacing(5.5)};
       height: ${theme.spacing(5.5)};
-`
+`,
 );
 
 function Block4() {
@@ -36,13 +36,13 @@ function Block4() {
             px: 3,
             pb: 6,
             pt: 3,
-            background: `${theme.colors.gradients.blue4}`
+            background: `${theme.colors.gradients.blue4}`,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.blue2}`
+                background: `${theme.colors.gradients.blue2}`,
               }}
             >
               <ReceiptTwoToneIcon fontSize="small" />
@@ -52,7 +52,7 @@ function Block4() {
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
                 color: `${theme.colors.alpha.trueWhite[70]}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -67,19 +67,19 @@ function Block4() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowDownwardTwoToneIcon
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
                 fontSize: `${theme.typography.pxToRem(35)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
               variant="h1"
             >
@@ -90,7 +90,7 @@ function Block4() {
             align="center"
             variant="body2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[50]}`
+              color: `${theme.colors.alpha.trueWhite[50]}`,
             }}
             component="div"
           >
@@ -104,13 +104,13 @@ function Block4() {
             px: 3,
             pb: 6,
             pt: 3,
-            background: `${theme.colors.gradients.blue3}`
+            background: `${theme.colors.gradients.blue3}`,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.orange1}`
+                background: `${theme.colors.gradients.orange1}`,
               }}
             >
               <SupportTwoToneIcon fontSize="small" />
@@ -120,7 +120,7 @@ function Block4() {
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
                 color: `${theme.colors.alpha.trueWhite[70]}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -135,19 +135,19 @@ function Block4() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowUpwardTwoToneIcon
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
                 fontSize: `${theme.typography.pxToRem(35)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
               variant="h1"
             >
@@ -158,7 +158,7 @@ function Block4() {
             align="center"
             variant="body2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[50]}`
+              color: `${theme.colors.alpha.trueWhite[50]}`,
             }}
             component="div"
           >
@@ -172,13 +172,13 @@ function Block4() {
             px: 3,
             pb: 6,
             pt: 3,
-            background: `${theme.colors.gradients.purple3}`
+            background: `${theme.colors.gradients.purple3}`,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.green1}`
+                background: `${theme.colors.gradients.green1}`,
               }}
             >
               <YardTwoToneIcon fontSize="small" />
@@ -188,7 +188,7 @@ function Block4() {
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
                 color: `${theme.colors.alpha.trueWhite[70]}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -203,19 +203,19 @@ function Block4() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowUpwardTwoToneIcon
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
                 fontSize: `${theme.typography.pxToRem(35)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
               variant="h1"
             >
@@ -226,7 +226,7 @@ function Block4() {
             align="center"
             variant="body2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[50]}`
+              color: `${theme.colors.alpha.trueWhite[50]}`,
             }}
             component="div"
           >
@@ -240,13 +240,13 @@ function Block4() {
             px: 3,
             pb: 6,
             pt: 3,
-            background: `${theme.colors.gradients.black2}`
+            background: `${theme.colors.gradients.black2}`,
           }}
         >
           <Box display="flex" alignItems="center">
             <AvatarWrapper
               sx={{
-                background: `${theme.colors.gradients.blue1}`
+                background: `${theme.colors.gradients.blue1}`,
               }}
             >
               <SnowmobileTwoToneIcon fontSize="small" />
@@ -256,7 +256,7 @@ function Block4() {
                 ml: 1.5,
                 fontSize: `${theme.typography.pxToRem(15)}`,
                 color: `${theme.colors.alpha.trueWhite[70]}`,
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
               variant="subtitle2"
               component="div"
@@ -271,19 +271,19 @@ function Block4() {
               ml: -2,
               pt: 2,
               pb: 1.5,
-              justifyContent: 'center'
+              justifyContent: 'center',
             }}
           >
             <ArrowDownwardTwoToneIcon
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             />
             <Typography
               sx={{
                 pl: 1,
                 fontSize: `${theme.typography.pxToRem(35)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
               variant="h1"
             >
@@ -294,7 +294,7 @@ function Block4() {
             align="center"
             variant="body2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[50]}`
+              color: `${theme.colors.alpha.trueWhite[50]}`,
             }}
             component="div"
           >

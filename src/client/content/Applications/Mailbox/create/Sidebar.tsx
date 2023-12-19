@@ -18,7 +18,7 @@ import {
   Alert,
   Card,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useDropzone } from 'react-dropzone';
 
@@ -35,7 +35,7 @@ const DotLegend = styled('span')(
     height: ${theme.spacing(1.5)};
     display: inline-block;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 const BoxUploadWrapper = styled(Box)(
@@ -55,7 +55,7 @@ const BoxUploadWrapper = styled(Box)(
       background: ${theme.colors.alpha.white[50]};
       border-color: ${theme.colors.primary.main};
     }
-`
+`,
 );
 
 const AvatarWrapper = styled(Avatar)(
@@ -64,7 +64,7 @@ const AvatarWrapper = styled(Avatar)(
     color: ${theme.colors.primary.main};
     width: ${theme.spacing(7)};
     height: ${theme.spacing(7)};
-`
+`,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -72,7 +72,7 @@ const AvatarSuccess = styled(Avatar)(
     background: ${theme.colors.success.light};
     width: ${theme.spacing(7)};
     height: ${theme.spacing(7)};
-`
+`,
 );
 
 const AvatarDanger = styled(Avatar)(
@@ -80,7 +80,7 @@ const AvatarDanger = styled(Avatar)(
     background: ${theme.colors.error.light};
     width: ${theme.spacing(7)};
     height: ${theme.spacing(7)};
-`
+`,
 );
 
 interface ProductTags {
@@ -98,12 +98,12 @@ function Sidebar() {
     isDragAccept,
     isDragReject,
     getRootProps,
-    getInputProps
+    getInputProps,
   } = useDropzone({
     accept: {
       'image/png': ['.png'],
-      'image/jpeg': ['.jpg']
-    }
+      'image/jpeg': ['.jpg'],
+    },
   });
 
   const files = acceptedFiles.map((file, index) => (
@@ -133,14 +133,14 @@ function Sidebar() {
     { key: 1, label: 'fresh' },
     { key: 2, label: 'electronics' },
     { key: 3, label: 'computer' },
-    { key: 4, label: 'software' }
+    { key: 4, label: 'software' },
   ]);
 
   const handleDelete = (productTagToDelete: ProductTags) => () => {
     setProductTags((productTags) =>
       productTags.filter(
-        (productTag) => productTag.key !== productTagToDelete.key
-      )
+        (productTag) => productTag.key !== productTagToDelete.key,
+      ),
     );
   };
 
@@ -149,7 +149,7 @@ function Sidebar() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        ml: 3
+        ml: 3,
       }}
     >
       <FormControlLabel
@@ -167,7 +167,7 @@ function Sidebar() {
     <Box>
       <Card
         sx={{
-          m: 3
+          m: 3,
         }}
       >
         <CardHeader
@@ -193,14 +193,14 @@ function Sidebar() {
         <List
           dense
           sx={{
-            p: 2
+            p: 2,
           }}
         >
           <ListItem disableGutters>
             <ListItemText
               sx={{
                 width: 110,
-                flex: 'initial'
+                flex: 'initial',
               }}
               primary={t('Status')}
             />
@@ -210,7 +210,7 @@ function Sidebar() {
             <ListItemText
               sx={{
                 width: 110,
-                flex: 'initial'
+                flex: 'initial',
               }}
               primary={t('Visibility')}
             />
@@ -220,7 +220,7 @@ function Sidebar() {
             <ListItemText
               sx={{
                 width: 110,
-                flex: 'initial'
+                flex: 'initial',
               }}
               primary={
                 <>
@@ -229,7 +229,7 @@ function Sidebar() {
                     sx={{
                       pt: 0.5,
                       display: 'flex',
-                      alignItems: 'center'
+                      alignItems: 'center',
                     }}
                   >
                     <DotLegend
@@ -271,7 +271,7 @@ function Sidebar() {
       </Card>
       <Card
         sx={{
-          m: 3
+          m: 3,
         }}
       >
         <CardHeader
@@ -305,7 +305,7 @@ function Sidebar() {
       </Card>
       <Card
         sx={{
-          m: 3
+          m: 3,
         }}
       >
         <CardHeader title={t('Product Images')} />
@@ -320,7 +320,7 @@ function Sidebar() {
                 </AvatarSuccess>
                 <Typography
                   sx={{
-                    mt: 2
+                    mt: 2,
                   }}
                 >
                   {t('Drop the files to start uploading')}
@@ -334,7 +334,7 @@ function Sidebar() {
                 </AvatarDanger>
                 <Typography
                   sx={{
-                    mt: 2
+                    mt: 2,
                   }}
                 >
                   {t('You cannot upload these file types')}
@@ -348,7 +348,7 @@ function Sidebar() {
                 </AvatarWrapper>
                 <Typography
                   sx={{
-                    mt: 2
+                    mt: 2,
                   }}
                 >
                   {t('Drag & drop files here')}
@@ -364,7 +364,7 @@ function Sidebar() {
             <Box p={2}>
               <Alert
                 sx={{
-                  py: 0
+                  py: 0,
                 }}
                 severity="success"
               >
@@ -373,7 +373,7 @@ function Sidebar() {
               <List
                 disablePadding
                 sx={{
-                  mt: 2
+                  mt: 2,
                 }}
                 component="div"
               >
@@ -385,7 +385,7 @@ function Sidebar() {
       </Card>
       <Card
         sx={{
-          m: 3
+          m: 3,
         }}
       >
         <CardHeader title={t('Product Tags')} />
@@ -395,7 +395,7 @@ function Sidebar() {
             return (
               <Chip
                 sx={{
-                  m: 1
+                  m: 1,
                 }}
                 key={data.key}
                 variant="outlined"
@@ -407,7 +407,7 @@ function Sidebar() {
           {productTags.length === 0 && (
             <Typography
               sx={{
-                py: 2
+                py: 2,
               }}
               variant="subtitle2"
               textAlign="center"

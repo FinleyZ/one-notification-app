@@ -11,7 +11,7 @@ import {
   Hidden,
   useTheme,
   IconButton,
-  styled
+  styled,
 } from '@mui/material';
 import Scrollbar from 'src/client/components/Scrollbar';
 
@@ -35,7 +35,7 @@ const DrawerWrapper = styled(Drawer)(
         z-index: 3;
         background: ${theme.colors.alpha.white[10]};
     }
-`
+`,
 );
 
 const DrawerWrapperMobile = styled(Drawer)(
@@ -48,20 +48,20 @@ const DrawerWrapperMobile = styled(Drawer)(
         z-index: 3;
         background: ${theme.colors.alpha.white[30]};
   }
-`
+`,
 );
 
 const MainContentWrapper = styled(Box)(
   () => `
   flex-grow: 1;
-`
+`,
 );
 
 const IconButtonToggle = styled(IconButton)(
   ({ theme }) => `
   width: ${theme.spacing(6)};
   height: ${theme.spacing(6)};
-`
+`,
 );
 
 function ManagementProductCreate() {

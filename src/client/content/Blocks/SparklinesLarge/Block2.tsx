@@ -5,7 +5,7 @@ import {
   Card,
   Typography,
   Button,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,14 +25,14 @@ function Block2() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -45,47 +45,47 @@ function Block2() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       colors: [theme.colors.success.main],
       curve: 'smooth',
-      width: 4
+      width: 4,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       y: {
         title: {
           formatter: function () {
             return 'Revenue: $';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.success.main]
+    colors: [theme.colors.success.main],
   };
   const Box1Data = [
     {
       name: 'Revenue',
-      data: [36, 24, 43, 67, 44, 28, 43, 27, 59, 31, 38]
-    }
+      data: [36, 24, 43, 67, 44, 28, 43, 27, 59, 31, 38],
+    },
   ];
 
   return (
@@ -126,7 +126,7 @@ function Block2() {
         p={3}
         sx={{
           textAlign: 'center',
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
       >
         <Button

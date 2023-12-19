@@ -5,7 +5,7 @@ import {
   Card,
   Typography,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,7 @@ import ChevronRightTwoToneIcon from '@mui/icons-material/ChevronRightTwoTone';
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -38,7 +38,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .05;
         }
     }
-  `
+  `,
 );
 
 function Block7() {
@@ -49,7 +49,7 @@ function Block7() {
     <Card
       sx={{
         p: 5,
-        background: `${theme.colors.gradients.blue4}`
+        background: `${theme.colors.gradients.blue4}`,
       }}
     >
       <Grid container spacing={4}>
@@ -57,7 +57,7 @@ function Block7() {
           <CardBorderBottom
             sx={{
               boxShadow: `${theme.colors.shadows.success}`,
-              borderBottomColor: `${theme.colors.success.main}`
+              borderBottomColor: `${theme.colors.success.main}`,
             }}
           >
             <CardActionAreaWrapper>
@@ -79,7 +79,7 @@ function Block7() {
                 color="text.secondary"
                 sx={{
                   opacity: 0.5,
-                  display: 'flex'
+                  display: 'flex',
                 }}
               >
                 <ChevronRightTwoToneIcon />
@@ -91,7 +91,7 @@ function Block7() {
           <CardBorderBottom
             sx={{
               boxShadow: `${theme.colors.shadows.warning}`,
-              borderBottomColor: `${theme.colors.warning.main}`
+              borderBottomColor: `${theme.colors.warning.main}`,
             }}
           >
             <CardActionAreaWrapper>
@@ -113,7 +113,7 @@ function Block7() {
                 color="text.secondary"
                 sx={{
                   opacity: 0.5,
-                  display: 'flex'
+                  display: 'flex',
                 }}
               >
                 <ChevronRightTwoToneIcon />
@@ -125,7 +125,7 @@ function Block7() {
           <CardBorderBottom
             sx={{
               boxShadow: `${theme.colors.shadows.primary}`,
-              borderBottomColor: `${theme.colors.primary.main}`
+              borderBottomColor: `${theme.colors.primary.main}`,
             }}
           >
             <CardActionAreaWrapper>
@@ -147,7 +147,7 @@ function Block7() {
                 color="text.secondary"
                 sx={{
                   opacity: 0.5,
-                  display: 'flex'
+                  display: 'flex',
                 }}
               >
                 <ChevronRightTwoToneIcon />
@@ -159,7 +159,7 @@ function Block7() {
           <CardBorderBottom
             sx={{
               boxShadow: `${theme.colors.shadows.error}`,
-              borderBottomColor: `${theme.colors.error.main}`
+              borderBottomColor: `${theme.colors.error.main}`,
             }}
           >
             <CardActionAreaWrapper>
@@ -181,7 +181,7 @@ function Block7() {
                 color="text.secondary"
                 sx={{
                   opacity: 0.5,
-                  display: 'flex'
+                  display: 'flex',
                 }}
               >
                 <ChevronRightTwoToneIcon />

@@ -8,7 +8,7 @@ import {
   ListItemText,
   Typography,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,14 +24,14 @@ function Block12() {
     <Card variant="outlined">
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         title={
           <Typography
             variant="h4"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Latest issues')}
@@ -41,13 +41,13 @@ function Block12() {
       <Divider />
       <List
         sx={{
-          py: 0
+          py: 0,
         }}
       >
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -55,13 +55,13 @@ function Block12() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <ContactPhoneTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             />
           </ListItemAvatar>
@@ -83,7 +83,7 @@ function Block12() {
         <ListItem
           sx={{
             alignItems: 'flex-start',
-            p: 2
+            p: 2,
           }}
         >
           <ListItemAvatar
@@ -91,13 +91,13 @@ function Block12() {
               mr: 2,
               display: 'flex',
               alignItems: 'center',
-              minWidth: 0
+              minWidth: 0,
             }}
           >
             <EvStationTwoToneIcon
               sx={{
                 fontSize: `${theme.typography.pxToRem(23)}`,
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             />
           </ListItemAvatar>

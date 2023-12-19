@@ -8,14 +8,14 @@ import {
   TooltipProps,
   tooltipClasses,
   useTheme,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import {
   ComposableMap,
   Geographies,
   Geography,
-  Marker
+  Marker,
 } from 'react-simple-maps';
 
 const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
@@ -28,11 +28,11 @@ const TooltipWrapper = styled(({ className, ...props }: TooltipProps) => (
     fontWeight: 'bold',
     borderRadius: theme.general.borderRadiusSm,
     boxShadow:
-      '0 .2rem .8rem rgba(7,9,25,.18), 0 .08rem .15rem rgba(7,9,25,.15)'
+      '0 .2rem .8rem rgba(7,9,25,.18), 0 .08rem .15rem rgba(7,9,25,.15)',
   },
   [`& .${tooltipClasses.arrow}`]: {
-    color: theme.colors.alpha.trueWhite[100]
-  }
+    color: theme.colors.alpha.trueWhite[100],
+  },
 }));
 
 const DotLegend = styled('span')(
@@ -42,7 +42,7 @@ const DotLegend = styled('span')(
     height: ${theme.spacing(1.5)};
     display: inline-block;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 function DataCenters() {
@@ -56,7 +56,7 @@ function DataCenters() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100%'
+        height: '100%',
       }}
     >
       <CardHeader title={t('Europe Data Centers')} />
@@ -65,7 +65,7 @@ function DataCenters() {
         projection="geoAzimuthalEqualArea"
         projectionConfig={{
           rotate: [-10.0, -48.5, 0],
-          scale: 1350
+          scale: 1350,
         }}
       >
         <Geographies geography={geoUrl}>
@@ -143,7 +143,7 @@ function DataCenters() {
           sx={{
             mx: 1,
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
         >
           <DotLegend style={{ background: theme.colors.error.main }} />
@@ -155,7 +155,7 @@ function DataCenters() {
           sx={{
             mx: 1,
             display: 'flex',
-            alignItems: 'center'
+            alignItems: 'center',
           }}
         >
           <DotLegend style={{ background: theme.colors.success.main }} />

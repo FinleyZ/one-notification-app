@@ -8,7 +8,7 @@ import {
   Avatar,
   MenuItem,
   Menu,
-  styled
+  styled,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import DocumentScannerTwoToneIcon from '@mui/icons-material/DocumentScannerTwoTone';
@@ -36,7 +36,7 @@ const AvatarPageTitle = styled(Avatar)(
             ', 0px 5px 16px -4px ' +
             alpha(theme.colors.alpha.black[100], 0.2)
       };
-`
+`,
 );
 
 function PageHeader() {
@@ -45,20 +45,20 @@ function PageHeader() {
   const periods = [
     {
       value: 'today',
-      text: t('Today')
+      text: t('Today'),
     },
     {
       value: 'yesterday',
-      text: t('Yesterday')
+      text: t('Yesterday'),
     },
     {
       value: 'last_month',
-      text: t('Last month')
+      text: t('Last month'),
     },
     {
       value: 'last_year',
-      text: t('Last year')
-    }
+      text: t('Last year'),
+    },
   ];
 
   const [openPeriod, setOpenMenuPeriod] = useState<boolean>(false);
@@ -91,7 +91,7 @@ function PageHeader() {
           ref={actionRef1}
           onClick={() => setOpenMenuPeriod(true)}
           sx={{
-            mr: 1
+            mr: 1,
           }}
           endIcon={<KeyboardArrowDownTwoToneIcon fontSize="small" />}
         >
@@ -104,11 +104,11 @@ function PageHeader() {
           open={openPeriod}
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           transformOrigin={{
             vertical: 'top',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
         >
           {periods.map((_period) => (

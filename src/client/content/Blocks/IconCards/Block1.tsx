@@ -6,7 +6,7 @@ import {
   Button,
   Divider,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ const ButtonWrapper = styled(Button)(
         background: ${theme.colors.alpha.black[5]};
         color: ${theme.colors.alpha.black[100]};
     }
-  `
+  `,
 );
 
 function Block1() {
@@ -45,7 +45,7 @@ function Block1() {
               <Typography
                 sx={{
                   pb: 1,
-                  fontSize: `${theme.typography.pxToRem(16)}`
+                  fontSize: `${theme.typography.pxToRem(16)}`,
                 }}
                 variant="h4"
               >
@@ -53,7 +53,7 @@ function Block1() {
               </Typography>
               <Typography variant="subtitle2">
                 {t(
-                  'Acccess this page in order to manage and customize all aspects of your profile data and accounts'
+                  'Acccess this page in order to manage and customize all aspects of your profile data and accounts',
                 )}
                 .
               </Typography>
@@ -77,7 +77,7 @@ function Block1() {
               <Typography
                 sx={{
                   pb: 1,
-                  fontSize: `${theme.typography.pxToRem(16)}`
+                  fontSize: `${theme.typography.pxToRem(16)}`,
                 }}
                 variant="h4"
               >
@@ -85,7 +85,7 @@ function Block1() {
               </Typography>
               <Typography variant="subtitle2">
                 {t(
-                  'Control everything related to your profile and trading accounts as shown in this page'
+                  'Control everything related to your profile and trading accounts as shown in this page',
                 )}
                 .
               </Typography>
@@ -109,7 +109,7 @@ function Block1() {
               <Typography
                 sx={{
                   pb: 1,
-                  fontSize: `${theme.typography.pxToRem(16)}`
+                  fontSize: `${theme.typography.pxToRem(16)}`,
                 }}
                 variant="h4"
               >
@@ -117,7 +117,7 @@ function Block1() {
               </Typography>
               <Typography variant="subtitle2">
                 {t(
-                  'You can view, manage and customize your wallets and balances from this wallets page'
+                  'You can view, manage and customize your wallets and balances from this wallets page',
                 )}
                 .
               </Typography>
@@ -141,7 +141,7 @@ function Block1() {
               <Typography
                 sx={{
                   pb: 1,
-                  fontSize: `${theme.typography.pxToRem(16)}`
+                  fontSize: `${theme.typography.pxToRem(16)}`,
                 }}
                 variant="h4"
               >
@@ -149,7 +149,7 @@ function Block1() {
               </Typography>
               <Typography variant="subtitle2">
                 {t(
-                  'Complete your profile verifications to take full advantage of your account right away'
+                  'Complete your profile verifications to take full advantage of your account right away',
                 )}
                 .
               </Typography>

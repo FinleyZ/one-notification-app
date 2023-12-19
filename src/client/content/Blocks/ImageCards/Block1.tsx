@@ -8,7 +8,7 @@ import {
   Typography,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const CardActions = styled(Box)(
     bottom: ${theme.spacing(2)};
     z-index: 7;
     display: flex;
-  `
+  `,
 );
 
 const LabelWrapper = styled(Box)(
@@ -35,7 +35,7 @@ const LabelWrapper = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -54,7 +54,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .05;
         }
     }
-  `
+  `,
 );
 
 function Block1() {
@@ -70,7 +70,7 @@ function Block1() {
               textAlign: 'center',
               transition: `${theme.transitions.create([
                 'box-shadow',
-                'transform'
+                'transform',
               ])}`,
               transform: 'translateY(0px)',
 
@@ -78,17 +78,17 @@ function Block1() {
                 transform: 'translateY(-10px)',
                 boxShadow: `0 2rem 8rem 0 ${alpha(
                   theme.colors.alpha.black[100],
-                  0.1
+                  0.1,
                 )}, 
                                 0 0.6rem 1.6rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.2
+                                  0.2,
                                 )}, 
                                 0 0.2rem 0.2rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.15
-                                )}`
-              }
+                                  0.15,
+                                )}`,
+              },
             }}
           >
             <CardActionAreaWrapper>
@@ -107,7 +107,7 @@ function Block1() {
             sx={{
               px: { md: 2, lg: 1.5, xl: 3 },
               pt: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Link
@@ -118,8 +118,8 @@ function Block1() {
                 color: `${theme.colors.alpha.black[100]}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="text.primary"
               variant="h3"
@@ -130,11 +130,11 @@ function Block1() {
             <Typography
               variant="subtitle2"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -143,8 +143,8 @@ function Block1() {
               sx={{
                 borderWidth: '2px',
                 '&:hover': {
-                  borderWidth: '2px'
-                }
+                  borderWidth: '2px',
+                },
               }}
             >
               {t('View details')}
@@ -159,7 +159,7 @@ function Block1() {
               textAlign: 'center',
               transition: `${theme.transitions.create([
                 'box-shadow',
-                'transform'
+                'transform',
               ])}`,
               transform: 'translateY(0px)',
 
@@ -167,17 +167,17 @@ function Block1() {
                 transform: 'translateY(-10px)',
                 boxShadow: `0 2rem 8rem 0 ${alpha(
                   theme.colors.alpha.black[100],
-                  0.1
+                  0.1,
                 )}, 
                                 0 0.6rem 1.6rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.2
+                                  0.2,
                                 )}, 
                                 0 0.2rem 0.2rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.15
-                                )}`
-              }
+                                  0.15,
+                                )}`,
+              },
             }}
           >
             <CardActionAreaWrapper>
@@ -190,7 +190,7 @@ function Block1() {
               <CardActions
                 sx={{
                   bottom: 'auto',
-                  top: `${theme.spacing(2)}`
+                  top: `${theme.spacing(2)}`,
                 }}
               >
                 <LabelWrapper
@@ -198,8 +198,8 @@ function Block1() {
                     mr: 1,
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.dark
-                    )}`
+                      theme.colors.primary.dark,
+                    )}`,
                   }}
                 >
                   {t('Hot')}
@@ -208,8 +208,8 @@ function Block1() {
                   sx={{
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.dark
-                    )}`
+                      theme.colors.error.dark,
+                    )}`,
                   }}
                 >
                   {t('New')}
@@ -221,7 +221,7 @@ function Block1() {
             sx={{
               px: { md: 2, lg: 1.5, xl: 3 },
               pt: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Link
@@ -232,8 +232,8 @@ function Block1() {
                 color: `${theme.colors.alpha.black[100]}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="text.primary"
               variant="h3"
@@ -244,11 +244,11 @@ function Block1() {
             <Typography
               variant="subtitle2"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -257,8 +257,8 @@ function Block1() {
               sx={{
                 borderWidth: '2px',
                 '&:hover': {
-                  borderWidth: '2px'
-                }
+                  borderWidth: '2px',
+                },
               }}
             >
               {t('View details')}
@@ -273,7 +273,7 @@ function Block1() {
               textAlign: 'center',
               transition: `${theme.transitions.create([
                 'box-shadow',
-                'transform'
+                'transform',
               ])}`,
               transform: 'translateY(0px)',
 
@@ -281,17 +281,17 @@ function Block1() {
                 transform: 'translateY(-10px)',
                 boxShadow: `0 2rem 8rem 0 ${alpha(
                   theme.colors.alpha.black[100],
-                  0.1
+                  0.1,
                 )}, 
                                 0 0.6rem 1.6rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.2
+                                  0.2,
                                 )}, 
                                 0 0.2rem 0.2rem ${alpha(
                                   theme.colors.alpha.black[100],
-                                  0.15
-                                )}`
-              }
+                                  0.15,
+                                )}`,
+              },
             }}
           >
             <CardActionAreaWrapper>
@@ -304,13 +304,13 @@ function Block1() {
               <CardActions
                 sx={{
                   right: 'auto',
-                  left: `${theme.spacing(2)}`
+                  left: `${theme.spacing(2)}`,
                 }}
               >
                 <LabelWrapper
                   sx={{
                     background: `${theme.colors.gradients.blue1}`,
-                    color: `${theme.colors.alpha.trueWhite[100]}`
+                    color: `${theme.colors.alpha.trueWhite[100]}`,
                   }}
                 >
                   {t('New')}
@@ -322,7 +322,7 @@ function Block1() {
             sx={{
               px: { md: 2, lg: 1.5, xl: 3 },
               pt: 3,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Link
@@ -333,8 +333,8 @@ function Block1() {
                 color: `${theme.colors.alpha.black[100]}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="text.primary"
               variant="h3"
@@ -345,11 +345,11 @@ function Block1() {
             <Typography
               variant="subtitle2"
               sx={{
-                py: 2
+                py: 2,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
@@ -358,8 +358,8 @@ function Block1() {
               sx={{
                 borderWidth: '2px',
                 '&:hover': {
-                  borderWidth: '2px'
-                }
+                  borderWidth: '2px',
+                },
               }}
             >
               {t('View details')}

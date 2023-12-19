@@ -10,7 +10,7 @@ import {
   Divider,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -25,7 +25,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     z-index: 7;
     display: flex;
-  `
+  `,
 );
 
 const Label = styled(Box)(
@@ -39,7 +39,7 @@ const Label = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 1.2)};
     border-radius: 50px;
-  `
+  `,
 );
 
 const BgComposed = styled(Box)(
@@ -48,7 +48,7 @@ const BgComposed = styled(Box)(
     z-index: 6;
     background: ${darken(alpha(theme.colors.secondary.main, 0.7), 0.8)};
     box-shadow: inset 0 0 4rem 1rem ${darken(theme.colors.secondary.main, 0.9)};
-  `
+  `,
 );
 
 function Block5() {
@@ -67,16 +67,16 @@ function Block5() {
             '&:hover': {
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
-                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`
-            }
+                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
+            },
           }}
         >
           <BgComposed
             sx={{
-              p: { xs: 3, md: 5, lg: 10 }
+              p: { xs: 3, md: 5, lg: 10 },
             }}
           >
             <Link
@@ -88,8 +88,8 @@ function Block5() {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
 
                 '&:hover': {
-                  color: `${alpha(theme.colors.alpha.trueWhite[100], 0.9)}`
-                }
+                  color: `${alpha(theme.colors.alpha.trueWhite[100], 0.9)}`,
+                },
               }}
             >
               {t('The Ultimate UI Design System at your fingertips!')}
@@ -99,18 +99,18 @@ function Block5() {
               sx={{
                 mt: 2,
                 fontSize: `${theme.typography.pxToRem(16)}`,
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
             <Divider
               sx={{
                 my: 3,
-                background: `${theme.colors.alpha.trueWhite[10]}`
+                background: `${theme.colors.alpha.trueWhite[10]}`,
               }}
             />
             <Avatar
@@ -118,14 +118,14 @@ function Block5() {
                 width: 72,
                 height: 72,
                 mx: 'auto',
-                mb: 1
+                mb: 1,
               }}
               src="/static/images/avatars/1.jpg"
             />
             <Typography
               variant="h4"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               Dalia Finney
@@ -133,7 +133,7 @@ function Block5() {
             <Divider
               sx={{
                 my: 3,
-                background: `${theme.colors.alpha.trueWhite[10]}`
+                background: `${theme.colors.alpha.trueWhite[10]}`,
               }}
             />
             <Button
@@ -147,11 +147,11 @@ function Block5() {
 
                 '&:hover': {
                   transform: 'scale(1.05)',
-                  boxShadow: `${theme.colors.shadows.error}`
+                  boxShadow: `${theme.colors.shadows.error}`,
                 },
                 '&:active': {
-                  boxShadow: 'none'
-                }
+                  boxShadow: 'none',
+                },
               }}
               variant="contained"
               color="error"
@@ -170,7 +170,7 @@ function Block5() {
               left: 0,
               top: 0,
               borderRadius: 'inherit',
-              zIndex: 5
+              zIndex: 5,
             }}
             image="/static/images/placeholders/covers/5.jpg"
             alt="..."
@@ -180,7 +180,7 @@ function Block5() {
               sx={{
                 mr: 1,
                 background: `${theme.palette.info.main}`,
-                color: `${theme.palette.info.contrastText}`
+                color: `${theme.palette.info.contrastText}`,
               }}
             >
               {t('Marketing')}
@@ -188,7 +188,7 @@ function Block5() {
             <Label
               sx={{
                 background: `${theme.palette.warning.main}`,
-                color: `${theme.palette.warning.contrastText}`
+                color: `${theme.palette.warning.contrastText}`,
               }}
             >
               {t('Development')}
@@ -205,16 +205,16 @@ function Block5() {
             '&:hover': {
               boxShadow: `0 2rem 8rem 0 ${alpha(
                 theme.colors.alpha.black[100],
-                0.05
+                0.05,
               )}, 
                 0 0.6rem 1.6rem ${alpha(theme.colors.alpha.black[100], 0.15)}, 
-                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`
-            }
+                0 0.2rem 0.2rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
+            },
           }}
         >
           <BgComposed
             sx={{
-              p: { xs: 3, md: 5, lg: 8 }
+              p: { xs: 3, md: 5, lg: 8 },
             }}
           >
             <Box
@@ -226,7 +226,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 44,
-                    height: 44
+                    height: 44,
                   }}
                   src="/static/images/avatars/3.jpg"
                 />
@@ -237,7 +237,7 @@ function Block5() {
                     variant="h4"
                     gutterBottom
                     sx={{
-                      color: `${theme.colors.alpha.trueWhite[100]}`
+                      color: `${theme.colors.alpha.trueWhite[100]}`,
                     }}
                   >
                     Shanelle Wynn
@@ -245,7 +245,7 @@ function Block5() {
                   <Typography
                     variant="subtitle2"
                     sx={{
-                      color: `${theme.colors.alpha.trueWhite[70]}`
+                      color: `${theme.colors.alpha.trueWhite[70]}`,
                     }}
                   >
                     UI Engineer, Apple Inc.
@@ -258,7 +258,7 @@ function Block5() {
                     mr: 1,
                     borderRadius: `${theme.general.borderRadiusSm}`,
                     background: `${theme.palette.error.main}`,
-                    color: `${theme.palette.error.contrastText}`
+                    color: `${theme.palette.error.contrastText}`,
                   }}
                 >
                   {t('Sales')}
@@ -267,7 +267,7 @@ function Block5() {
                   sx={{
                     borderRadius: `${theme.general.borderRadiusSm}`,
                     background: `${theme.palette.success.main}`,
-                    color: `${theme.palette.success.contrastText}`
+                    color: `${theme.palette.success.contrastText}`,
                   }}
                 >
                   {t('Deploys')}
@@ -277,7 +277,7 @@ function Block5() {
             <Divider
               sx={{
                 my: 3,
-                background: `${theme.colors.alpha.trueWhite[10]}`
+                background: `${theme.colors.alpha.trueWhite[10]}`,
               }}
             />
             <Link
@@ -289,8 +289,8 @@ function Block5() {
                 color: `${theme.colors.alpha.trueWhite[100]}`,
 
                 '&:hover': {
-                  color: `${alpha(theme.colors.alpha.trueWhite[100], 0.9)}`
-                }
+                  color: `${alpha(theme.colors.alpha.trueWhite[100], 0.9)}`,
+                },
               }}
             >
               {t('The Ultimate UI Design System at your fingertips!')}
@@ -300,18 +300,18 @@ function Block5() {
               sx={{
                 mt: 2,
                 fontSize: `${theme.typography.pxToRem(16)}`,
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t(
-                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+                'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
               )}
               .
             </Typography>
             <Divider
               sx={{
                 my: 3,
-                background: `${theme.colors.alpha.trueWhite[10]}`
+                background: `${theme.colors.alpha.trueWhite[10]}`,
               }}
             />
             <Box
@@ -324,14 +324,14 @@ function Block5() {
                 sx={{
                   display: 'flex',
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 <AccessTimeTwoToneIcon
                   fontSize="small"
                   sx={{
                     opacity: 0.7,
-                    mr: 0.5
+                    mr: 0.5,
                   }}
                 />
                 {format(subDays(new Date(), 2), 'MMMM dd yyyy')}
@@ -352,7 +352,7 @@ function Block5() {
               left: 0,
               top: 0,
               borderRadius: 'inherit',
-              zIndex: 5
+              zIndex: 5,
             }}
             image="/static/images/placeholders/covers/3.jpg"
             alt="..."

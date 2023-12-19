@@ -12,7 +12,7 @@ import {
   Typography,
   styled,
   ListItem,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ import Scrollbar from 'src/client/components/Scrollbar';
 const DividerWrapper = styled(Divider)(
   ({ theme }) => `
     background: ${theme.colors.alpha.trueWhite[10]};
-  `
+  `,
 );
 
 const ListItemWrapper = styled(ListItem)(
@@ -43,7 +43,7 @@ const ListItemWrapper = styled(ListItem)(
     &:last-of-type {
         margin-bottom: 0;
     }
-  `
+  `,
 );
 
 function Block11() {
@@ -54,35 +54,35 @@ function Block11() {
     {
       id: 1,
       name: 'feb2020_reports.xls',
-      size: '386 KB'
+      size: '386 KB',
     },
     {
       id: 2,
       name: 'feb2020_pres_8.doc',
-      size: '1.34 MB'
+      size: '1.34 MB',
     },
     {
       id: 3,
       name: 'PhotosArchive.zip',
-      size: '34.2 GB'
+      size: '34.2 GB',
     },
     {
       id: 4,
       name: 'homepage_new_12.tsx',
-      size: '27 KB'
+      size: '27 KB',
     },
     {
       id: 5,
       name: 'latest_comps_2022.sketch',
-      size: '548.21 MB'
-    }
+      size: '548.21 MB',
+    },
   ];
 
   return (
     <Card
       sx={{
         background: `${theme.colors.gradients.black2}`,
-        color: `${theme.colors.alpha.trueWhite[100]}`
+        color: `${theme.colors.alpha.trueWhite[100]}`,
       }}
     >
       <Box
@@ -90,7 +90,7 @@ function Block11() {
         alignItems="center"
         justifyContent="space-between"
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         p={2}
       >
@@ -100,7 +100,7 @@ function Block11() {
             fontWeight="bold"
             sx={{
               color: `${theme.colors.alpha.trueWhite[70]}`,
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
           >
             {t('Storage')}
@@ -119,10 +119,10 @@ function Block11() {
             '&:hover': {
               backgroundColor: `${alpha(
                 theme.colors.alpha.trueWhite[100],
-                0.2
+                0.2,
               )}`,
-              color: `${theme.colors.alpha.trueWhite[100]}`
-            }
+              color: `${theme.colors.alpha.trueWhite[100]}`,
+            },
           }}
         >
           <MoreVertTwoToneIcon />
@@ -131,13 +131,13 @@ function Block11() {
       <DividerWrapper />
       <Box
         sx={{
-          height: 384
+          height: 384,
         }}
       >
         <Scrollbar>
           <List
             sx={{
-              p: 2
+              p: 2,
             }}
           >
             {items.map((item) => (
@@ -151,17 +151,17 @@ function Block11() {
                         fontWeight: 'normal',
                         backgroundColor: `${alpha(
                           theme.colors.alpha.trueWhite[100],
-                          0
+                          0,
                         )}`,
                         color: `${theme.colors.alpha.trueWhite[70]}`,
 
                         '&:hover': {
                           backgroundColor: `${alpha(
                             theme.colors.alpha.trueWhite[100],
-                            0.2
+                            0.2,
                           )}`,
-                          color: `${theme.colors.alpha.trueWhite[100]}`
-                        }
+                          color: `${theme.colors.alpha.trueWhite[100]}`,
+                        },
                       }}
                     >
                       <MoreHorizTwoToneIcon />
@@ -172,7 +172,7 @@ function Block11() {
                     sx={{
                       color: `${theme.colors.alpha.trueWhite[50]}`,
                       minWidth: 0,
-                      mr: 2
+                      mr: 2,
                     }}
                   >
                     <InsertDriveFileTwoToneIcon fontSize="large" />
@@ -181,7 +181,7 @@ function Block11() {
                     sx={{
                       flexGrow: 0,
                       maxWidth: '50%',
-                      flexBasis: '50%'
+                      flexBasis: '50%',
                     }}
                     disableTypography
                     primary={
@@ -189,7 +189,7 @@ function Block11() {
                         noWrap
                         gutterBottom
                         sx={{
-                          color: `${theme.colors.alpha.trueWhite[100]}`
+                          color: `${theme.colors.alpha.trueWhite[100]}`,
                         }}
                         variant="h4"
                       >
@@ -200,7 +200,7 @@ function Block11() {
                       <>
                         <Typography
                           sx={{
-                            color: `${theme.colors.alpha.trueWhite[70]}`
+                            color: `${theme.colors.alpha.trueWhite[70]}`,
                           }}
                           variant="body1"
                         >

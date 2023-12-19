@@ -7,7 +7,7 @@ import {
   Avatar,
   styled,
   Divider,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ const AvatarError = styled(Avatar)(
         position: absolute;
         left: 50%;
         margin-left: -${theme.spacing(4.5)};
-  `
+  `,
 );
 
 const AvatarPrimary = styled(Avatar)(
@@ -40,7 +40,7 @@ const AvatarPrimary = styled(Avatar)(
         position: absolute;
         left: 50%;
         margin-left: -${theme.spacing(4.5)};
-  `
+  `,
 );
 
 const AvatarWarning = styled(Avatar)(
@@ -54,7 +54,7 @@ const AvatarWarning = styled(Avatar)(
         position: absolute;
         left: 50%;
         margin-left: -${theme.spacing(4.5)};
-  `
+  `,
 );
 
 function Block7() {
@@ -70,7 +70,7 @@ function Block7() {
             position: 'relative',
             pt: 4.5,
             pb: 2,
-            mt: 4.5
+            mt: 4.5,
           }}
         >
           <AvatarError variant="rounded">
@@ -82,7 +82,7 @@ function Block7() {
               variant="h1"
               sx={{
                 mb: 1,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
             >
               $4,745
@@ -92,25 +92,25 @@ function Block7() {
               variant="subtitle2"
               sx={{
                 mb: 3,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               {t("Today's Sales")}
             </Typography>
             <Divider
               sx={{
-                mb: 2
+                mb: 2,
               }}
             />
             <Box
               sx={{
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <Button
                 sx={{
                   textTransform: 'uppercase',
-                  fontSize: `${theme.typography.pxToRem(12)}`
+                  fontSize: `${theme.typography.pxToRem(12)}`,
                 }}
                 variant="text"
                 color="error"
@@ -128,7 +128,7 @@ function Block7() {
             position: 'relative',
             pt: 4.5,
             pb: 2,
-            mt: 4.5
+            mt: 4.5,
           }}
         >
           <AvatarPrimary variant="rounded">
@@ -140,7 +140,7 @@ function Block7() {
               variant="h1"
               sx={{
                 mb: 1,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
             >
               $8,348
@@ -150,25 +150,25 @@ function Block7() {
               variant="subtitle2"
               sx={{
                 mb: 3,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               {t('Monthly Income')}
             </Typography>
             <Divider
               sx={{
-                mb: 2
+                mb: 2,
               }}
             />
             <Box
               sx={{
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <Button
                 sx={{
                   textTransform: 'uppercase',
-                  fontSize: `${theme.typography.pxToRem(12)}`
+                  fontSize: `${theme.typography.pxToRem(12)}`,
                 }}
                 variant="text"
                 color="primary"
@@ -186,7 +186,7 @@ function Block7() {
             position: 'relative',
             pt: 4.5,
             pb: 2,
-            mt: 4.5
+            mt: 4.5,
           }}
         >
           <AvatarWarning variant="rounded">
@@ -198,7 +198,7 @@ function Block7() {
               variant="h1"
               sx={{
                 mb: 1,
-                fontSize: `${theme.typography.pxToRem(40)}`
+                fontSize: `${theme.typography.pxToRem(40)}`,
               }}
             >
               889
@@ -208,25 +208,25 @@ function Block7() {
               variant="subtitle2"
               sx={{
                 mb: 3,
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
             >
               {t('Total Sales')}
             </Typography>
             <Divider
               sx={{
-                mb: 2
+                mb: 2,
               }}
             />
             <Box
               sx={{
-                textAlign: 'center'
+                textAlign: 'center',
               }}
             >
               <Button
                 sx={{
                   textTransform: 'uppercase',
-                  fontSize: `${theme.typography.pxToRem(12)}`
+                  fontSize: `${theme.typography.pxToRem(12)}`,
                 }}
                 variant="text"
                 color="warning"

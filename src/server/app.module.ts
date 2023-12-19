@@ -38,11 +38,11 @@ import { resolve } from 'path';
       }),
       {
         passthrough404: true,
-        viewsDir: null
-      }
+        viewsDir: null,
+      },
     ),
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}

@@ -5,7 +5,7 @@ import { EmailDto } from './dto';
 @Controller('email-api')
 export class EmailApiController {
   constructor(private emailApiService: EmailApiService) {}
-  
+
   //mocking the send email
   @Post('send-email')
   public async sendEmail(@Body() dto: EmailDto) {

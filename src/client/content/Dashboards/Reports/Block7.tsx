@@ -14,7 +14,7 @@ import {
   Table,
   TableContainer,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -31,7 +31,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const LabelInfo = styled(Box)(
@@ -46,7 +46,7 @@ const LabelInfo = styled(Box)(
     height: 22px;
     padding: ${theme.spacing(0, 2)};
     border-radius: ${theme.general.borderRadiusSm};
-  `
+  `,
 );
 
 const TableHeadWrapper = styled(TableHead)(
@@ -62,7 +62,7 @@ const TableHeadWrapper = styled(TableHead)(
       .MuiTableRow-root {
           background: transparent;
       }
-  `
+  `,
 );
 
 const TableWrapper = styled(Table)(
@@ -70,7 +70,7 @@ const TableWrapper = styled(Table)(
     .MuiTableCell-root {
         border-bottom: 0;
     }
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -82,7 +82,7 @@ const IconButtonWrapper = styled(IconButton)(
     &:hover {
         transform: scale(1.1);
     }
-  `
+  `,
 );
 
 const DotLegend = styled('span')(
@@ -92,7 +92,7 @@ const DotLegend = styled('span')(
       height: 10px;
       display: inline-block;
       margin-right: ${theme.spacing(0.5)};
-  `
+  `,
 );
 
 function Block7() {
@@ -103,7 +103,7 @@ function Block7() {
     <Card>
       <Box
         sx={{
-          position: 'relative'
+          position: 'relative',
         }}
       >
         <CardMedia
@@ -115,7 +115,7 @@ function Block7() {
         <CardActions>
           <LabelInfo
             sx={{
-              borderRadius: 50
+              borderRadius: 50,
             }}
           >
             {t('Live transations')}
@@ -141,7 +141,7 @@ function Block7() {
                         background: `${lighten(theme.colors.error.main, 0.8)}`,
                         color: `${theme.colors.error.main}`,
                         width: 40,
-                        height: 40
+                        height: 40,
                       }}
                     >
                       <TrendingUpTwoToneIcon fontSize="small" />
@@ -166,13 +166,13 @@ function Block7() {
                   >
                     <DotLegend
                       style={{
-                        background: `${theme.colors.error.main}`
+                        background: `${theme.colors.error.main}`,
                       }}
                     />
                     <Typography
                       sx={{
                         fontSize: `${theme.typography.pxToRem(12)}`,
-                        lineHeight: 1
+                        lineHeight: 1,
                       }}
                       variant="body1"
                     >
@@ -200,7 +200,7 @@ function Block7() {
                         background: `${lighten(theme.colors.info.main, 0.8)}`,
                         color: `${theme.colors.info.main}`,
                         width: 40,
-                        height: 40
+                        height: 40,
                       }}
                     >
                       <TrendingDownTwoToneIcon fontSize="small" />
@@ -225,13 +225,13 @@ function Block7() {
                   >
                     <DotLegend
                       style={{
-                        background: `${theme.colors.info.main}`
+                        background: `${theme.colors.info.main}`,
                       }}
                     />
                     <Typography
                       sx={{
                         fontSize: `${theme.typography.pxToRem(12)}`,
-                        lineHeight: 1
+                        lineHeight: 1,
                       }}
                       variant="body1"
                     >
@@ -258,11 +258,11 @@ function Block7() {
                       sx={{
                         background: `${lighten(
                           theme.colors.warning.main,
-                          0.8
+                          0.8,
                         )}`,
                         color: `${theme.colors.warning.main}`,
                         width: 40,
-                        height: 40
+                        height: 40,
                       }}
                     >
                       <TrendingFlatTwoToneIcon fontSize="small" />
@@ -287,13 +287,13 @@ function Block7() {
                   >
                     <DotLegend
                       style={{
-                        background: `${theme.colors.warning.main}`
+                        background: `${theme.colors.warning.main}`,
                       }}
                     />
                     <Typography
                       sx={{
                         fontSize: `${theme.typography.pxToRem(12)}`,
-                        lineHeight: 1
+                        lineHeight: 1,
                       }}
                       variant="body1"
                     >
@@ -320,11 +320,11 @@ function Block7() {
                       sx={{
                         background: `${lighten(
                           theme.colors.success.main,
-                          0.8
+                          0.8,
                         )}`,
                         color: `${theme.colors.success.main}`,
                         width: 40,
-                        height: 40
+                        height: 40,
                       }}
                     >
                       <TrendingUpTwoToneIcon fontSize="small" />
@@ -349,13 +349,13 @@ function Block7() {
                   >
                     <DotLegend
                       style={{
-                        background: `${theme.colors.success.main}`
+                        background: `${theme.colors.success.main}`,
                       }}
                     />
                     <Typography
                       sx={{
                         fontSize: `${theme.typography.pxToRem(12)}`,
-                        lineHeight: 1
+                        lineHeight: 1,
                       }}
                       variant="body1"
                     >

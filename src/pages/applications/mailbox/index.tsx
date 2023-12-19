@@ -14,7 +14,7 @@ import {
   IconButton,
   styled,
   useTheme,
-  Drawer
+  Drawer,
 } from '@mui/material';
 import { MailboxResults } from 'src/client/content/Applications/Mailbox/Results';
 import { MailboxSingle } from 'src/client/content/Applications/Mailbox/Single';
@@ -23,20 +23,19 @@ import { getTags, openSidebar, closeSidebar } from 'src/client/slices/mailbox';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 // import MessageDrawer from '@/content/Applications/Mailbox/MessageDrawer';
 
-
 const MainContentWrapper = styled(Box)(
   ({ theme }) => `
   flex-grow: 1;
   min-height: 100%;
   background: ${theme.colors.alpha.white[100]};
-`
+`,
 );
 
 const IconButtonToggle = styled(IconButton)(
   ({ theme }) => `
   width: ${theme.spacing(6)};
   height: ${theme.spacing(6)};
-`
+`,
 );
 
 const ApplicationsMailbox: NextPage = () => {
@@ -53,7 +52,7 @@ const ApplicationsMailbox: NextPage = () => {
   const [drawer, setDrawer] = useState<any>({
     isDrawerOpen: false,
     eId: undefined,
-    range: undefined
+    range: undefined,
   });
 
   useEffect(() => {
@@ -75,13 +74,13 @@ const ApplicationsMailbox: NextPage = () => {
   const handleMessageClick = (): void => {
     console.log('handleMessageClick');
     setDrawer({
-      isDrawerOpen: true
+      isDrawerOpen: true,
     });
   };
 
   const closeDrawer = (): void => {
     setDrawer({
-      isDrawerOpen: false
+      isDrawerOpen: false,
     });
   };
 
@@ -97,7 +96,7 @@ const ApplicationsMailbox: NextPage = () => {
         ref={pageRef}
         className="Mui-FixedWrapper"
         sx={{
-          minHeight: `calc(100vh - ${theme.header.height} )`
+          minHeight: `calc(100vh - ${theme.header.height} )`,
         }}
         display="flex"
       >
@@ -120,7 +119,7 @@ const ApplicationsMailbox: NextPage = () => {
               item
               xs={12}
               sx={{
-                display: { lg: 'none', xs: 'inline-block' }
+                display: { lg: 'none', xs: 'inline-block' },
               }}
             >
               <Box
@@ -161,8 +160,6 @@ const ApplicationsMailbox: NextPage = () => {
         open={drawer.isDrawerOpen}
         elevation={9}
       >
-
-
         {/* {drawer.isDrawerOpen && (
           <MessageDrawer
             // event={eventChosen}
@@ -183,7 +180,5 @@ ApplicationsMailbox.getLayout = (page) => (
     <ExtendedSidebarLayout>{page}</ExtendedSidebarLayout>
   </Authenticated>
 );
-
-
 
 export default ApplicationsMailbox;

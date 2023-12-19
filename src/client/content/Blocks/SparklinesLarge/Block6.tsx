@@ -9,7 +9,7 @@ import {
   alpha,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ const IconButtonWrapper = styled(IconButton)(
         background: ${alpha(theme.colors.alpha.trueWhite[100], 0.2)};
         color: ${theme.colors.alpha.trueWhite[100]};
       }
-  `
+  `,
 );
 
 const LinearProgress1 = styled(LinearProgress)(
@@ -43,7 +43,7 @@ const LinearProgress1 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.green2};
         }
-    `
+    `,
 );
 
 const LinearProgress2 = styled(LinearProgress)(
@@ -59,7 +59,7 @@ const LinearProgress2 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.orange2};
         }
-    `
+    `,
 );
 
 const LinearProgress3 = styled(LinearProgress)(
@@ -75,7 +75,7 @@ const LinearProgress3 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.orange3};
         }
-    `
+    `,
 );
 
 function Block6() {
@@ -86,14 +86,14 @@ function Block6() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -106,53 +106,53 @@ function Block6() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     theme: {
-      mode: 'dark'
+      mode: 'dark',
     },
     stroke: {
       colors: [theme.colors.alpha.trueWhite[100]],
       curve: 'smooth',
-      width: 4
+      width: 4,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       y: {
         title: {
           formatter: function () {
             return 'Sales:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.success.main]
+    colors: [theme.colors.success.main],
   };
   const Box1Data = [
     {
       name: 'Sales',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
+      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348],
+    },
   ];
 
   return (
     <Card
       sx={{
-        background: `${theme.colors.gradients.blue1}`
+        background: `${theme.colors.gradients.blue1}`,
       }}
     >
       <Box
@@ -166,7 +166,7 @@ function Block6() {
             gutterBottom
             variant="h4"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             {t('Event Tickets')}
@@ -174,7 +174,7 @@ function Block6() {
           <Typography
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('See tickets sales progression')}
@@ -186,13 +186,13 @@ function Block6() {
       </Box>
       <Divider
         sx={{
-          background: `${theme.colors.alpha.trueWhite[10]}`
+          background: `${theme.colors.alpha.trueWhite[10]}`,
         }}
       />
       <Box
         p={3}
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
       >
         <Chart
@@ -204,13 +204,13 @@ function Block6() {
       </Box>
       <Divider
         sx={{
-          background: `${theme.colors.alpha.trueWhite[10]}`
+          background: `${theme.colors.alpha.trueWhite[10]}`,
         }}
       />
       <Box py={2}>
         <Stack
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
           direction="row"
           divider={<Divider orientation="vertical" flexItem />}
@@ -222,14 +222,14 @@ function Block6() {
             <Typography
               variant="h3"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               76%
             </Typography>
             <LinearProgress1
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={76}
@@ -238,7 +238,7 @@ function Block6() {
               gutterBottom
               variant="subtitle2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('Sales')}
@@ -247,7 +247,7 @@ function Block6() {
           <Box p={3} flexGrow={1}>
             <Typography
               sx={{
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
               variant="h3"
             >
@@ -255,7 +255,7 @@ function Block6() {
             </Typography>
             <LinearProgress2
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={43}
@@ -264,7 +264,7 @@ function Block6() {
               gutterBottom
               variant="subtitle2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('Profiles')}
@@ -274,14 +274,14 @@ function Block6() {
             <Typography
               variant="h3"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               59%
             </Typography>
             <LinearProgress3
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={59}
@@ -290,7 +290,7 @@ function Block6() {
               gutterBottom
               variant="subtitle2"
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('Tickets')}

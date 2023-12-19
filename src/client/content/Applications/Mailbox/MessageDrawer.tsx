@@ -19,7 +19,7 @@ import {
   Checkbox,
   CircularProgress,
   Typography,
-  Zoom
+  Zoom,
 } from '@mui/material';
 import { DateTimePicker } from '@mui/lab';
 import type { Message } from 'src/client/models/message';
@@ -43,7 +43,7 @@ const CardActionsWrapper = styled(Card)(
      background: ${theme.colors.alpha.black[5]};
      box-shadow: none;
      margin: 0 ${theme.spacing(3)};
-`
+`,
 );
 
 interface AddEditEventModalProps {
@@ -57,7 +57,7 @@ interface AddEditEventModalProps {
 
 const getInitialValues = (
   message?: Message,
-  range?: { start: number; end: number }
+  range?: { start: number; end: number },
 ) => {
   if (message) {
     return _.merge(
@@ -69,9 +69,9 @@ const getInitialValues = (
         end: setHours(setMinutes(subDays(new Date(), 3), 30), 10),
         start: setHours(setMinutes(subDays(new Date(), 3), 60), 8),
         title: '',
-        submit: null
+        submit: null,
       },
-      message
+      message,
     );
   }
 
@@ -85,9 +85,9 @@ const getInitialValues = (
         end: new Date(range.end),
         start: new Date(range.start),
         title: '',
-        submit: null
+        submit: null,
       },
-      message
+      message,
     );
   }
 
@@ -98,7 +98,7 @@ const getInitialValues = (
     end: setHours(setMinutes(subDays(new Date(), 1), 35), 20),
     start: setHours(setMinutes(subDays(new Date(), 1), 25), 17),
     title: '',
-    submit: null
+    submit: null,
   };
 };
 
@@ -107,7 +107,7 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
   onAddComplete,
   onCancel,
   onEditComplete,
-  range
+  range,
 }) => {
   const dispatch = useDispatch();
   const { enqueueSnackbar } = useSnackbar();
@@ -126,14 +126,14 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
           'start',
           (start: Date, schema: any) =>
             start &&
-            schema.min(start, t('The end date should be after start date'))
+            schema.min(start, t('The end date should be after start date')),
         ),
         start: Yup.date(),
-        title: Yup.string().max(255).required(t('The title field is required'))
+        title: Yup.string().max(255).required(t('The title field is required')),
       })}
       onSubmit={async (
         values,
-        { resetForm, setErrors, setStatus, setSubmitting }
+        { resetForm, setErrors, setStatus, setSubmitting },
       ) => {
         try {
           const data = {
@@ -141,7 +141,7 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
             description: values.description,
             end: values.end,
             start: values.start,
-            title: values.title
+            title: values.title,
           };
 
           if (message) {
@@ -157,9 +157,9 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
             variant: 'success',
             anchorOrigin: {
               vertical: 'bottom',
-              horizontal: 'center'
+              horizontal: 'center',
             },
-            TransitionComponent: Zoom
+            TransitionComponent: Zoom,
           });
 
           if (isCreating) {
@@ -183,24 +183,22 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
         isSubmitting,
         setFieldValue,
         touched,
-        values
+        values,
       }) => (
         <form onSubmit={handleSubmit}>
           <Box p={3}>
-            <Typography variant="h4">
-              Creating a new email message
-            </Typography>
+            <Typography variant="h4">Creating a new email message</Typography>
           </Box>
           <Divider />
           <Box px={3} py={2}>
-{/* From OAuth: should have a OAuth button here and show email after OAuthed*/}
+            {/* From OAuth: should have a OAuth button here and show email after OAuthed*/}
 
-{/* To*/}
+            {/* To*/}
             <TextField
               error={Boolean(touched.title && errors.title)}
               fullWidth
               helperText={touched.title && errors.title}
-              label={"To"}
+              label={'To'}
               name="title"
               margin="normal"
               onBlur={handleBlur}
@@ -221,7 +219,7 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
               value={values.title}
               variant="outlined"
             />
-{/* A message text box here */}
+            {/* A message text box here */}
             <TextField
               error={Boolean(touched.description && errors.description)}
               fullWidth
@@ -237,7 +235,7 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
               value={values.description}
               variant="outlined"
             />
-{/* A schedule send checkbox here */}
+            {/* A schedule send checkbox here */}
             <FormControlLabel
               control={
                 <Checkbox
@@ -288,7 +286,7 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
               <Alert
                 sx={{
                   mt: 2,
-                  mb: 1
+                  mb: 1,
                 }}
                 severity="error"
               >
@@ -301,14 +299,14 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              p: 2
+              p: 2,
             }}
           >
             <Box>
               <Button
                 variant="outlined"
                 sx={{
-                  mr: 1
+                  mr: 1,
                 }}
                 color="secondary"
                 onClick={onCancel}
@@ -344,14 +342,14 @@ MessageDrawer.propTypes = {
   onAddComplete: PropTypes.func,
   onCancel: PropTypes.func,
   onDeleteComplete: PropTypes.func,
-  onEditComplete: PropTypes.func
+  onEditComplete: PropTypes.func,
 };
 
 MessageDrawer.defaultProps = {
   onAddComplete: () => {},
   onCancel: () => {},
   onDeleteComplete: () => {},
-  onEditComplete: () => {}
+  onEditComplete: () => {},
 };
 
 export default MessageDrawer;

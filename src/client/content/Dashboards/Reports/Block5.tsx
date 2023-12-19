@@ -8,7 +8,7 @@ import {
   LinearProgress,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ const LinearProgressPrimary = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.primary.main};
         }
-    `
+    `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -42,7 +42,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 function Block5() {
@@ -76,7 +76,7 @@ function Block5() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               23,594
@@ -86,14 +86,14 @@ function Block5() {
           <Box
             display="flex"
             sx={{
-              mt: 0.6
+              mt: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
           >
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -101,7 +101,7 @@ function Block5() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -127,7 +127,7 @@ function Block5() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               $12,346
@@ -137,14 +137,14 @@ function Block5() {
           <Box
             display="flex"
             sx={{
-              mt: 0.6
+              mt: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
           >
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -152,7 +152,7 @@ function Block5() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >

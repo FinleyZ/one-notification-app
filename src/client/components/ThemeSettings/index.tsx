@@ -9,7 +9,7 @@ import {
   Stack,
   Divider,
   Box,
-  Tooltip
+  Tooltip,
 } from '@mui/material';
 import { ThemeContext } from 'src/client/theme/ThemeProvider';
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
@@ -43,14 +43,14 @@ const ThemeSettingsButton = styled(Box)(
             animation: pulse 1s infinite;
             transition: ${theme.transitions.create(['all'])};
           }
-  `
+  `,
 );
 
 const ThemeToggleWrapper = styled(Box)(
   ({ theme }) => `
           padding: ${theme.spacing(2)};
           min-width: 220px;
-  `
+  `,
 );
 
 const ButtonWrapper = styled(Box)(
@@ -76,7 +76,7 @@ const ButtonWrapper = styled(Box)(
                 opacity: .6;
             }
         }
-  `
+  `,
 );
 
 const ColorSchemeWrapper = styled(Box)(
@@ -169,7 +169,7 @@ const ColorSchemeWrapper = styled(Box)(
         }
     }
 
-  `
+  `,
 );
 
 const CheckSelected = styled(Box)(
@@ -193,7 +193,7 @@ const CheckSelected = styled(Box)(
         width: 16px;
     }
 
-  `
+  `,
 );
 
 const ThemeSettings: FC = () => {
@@ -249,11 +249,11 @@ const ThemeSettings: FC = () => {
           open={isOpen}
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'left'
+            horizontal: 'left',
           }}
           transformOrigin={{
             vertical: 'bottom',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
         >
           <Stack
@@ -267,7 +267,7 @@ const ThemeSettings: FC = () => {
                   mb: 3,
                   textAlign: 'center',
                   fontWeight: 'bold',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
                 variant="body1"
               >
@@ -337,7 +337,7 @@ const ThemeSettings: FC = () => {
                   mb: 3,
                   textAlign: 'center',
                   fontWeight: 'bold',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
                 }}
                 variant="body1"
               >

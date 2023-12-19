@@ -24,7 +24,7 @@ const MenuWrapper = styled(Box)(
       padding: ${theme.spacing(0, 2.5)};
       line-height: 1.4;
     }
-`
+`,
 );
 
 const SubMenuWrapper = styled(Box)(
@@ -122,7 +122,7 @@ const SubMenuWrapper = styled(Box)(
                 opacity: 0;
                 transition: ${theme.transitions.create([
                   'transform',
-                  'opacity'
+                  'opacity',
                 ])};
                 width: 6px;
                 height: 6px;
@@ -145,12 +145,12 @@ const SubMenuWrapper = styled(Box)(
         }
       }
     }
-`
+`,
 );
 
 const renderSidebarMenuItems = ({
   items,
-  path
+  path,
 }: {
   items: MenuItem[];
   path: string;
@@ -165,7 +165,7 @@ const renderSidebarMenuItems = ({
 const reduceChildRoutes = ({
   ev,
   path,
-  item
+  item,
 }: {
   ev: JSX.Element[];
   path: string;
@@ -189,9 +189,9 @@ const reduceChildRoutes = ({
       >
         {renderSidebarMenuItems({
           path,
-          items: item.items
+          items: item.items,
         })}
-      </SidebarMenuItem>
+      </SidebarMenuItem>,
     );
   } else {
     ev.push(
@@ -203,7 +203,7 @@ const reduceChildRoutes = ({
         badge={item.badge}
         badgeTooltip={item.badgeTooltip}
         icon={item.icon}
-      />
+      />,
     );
   }
 
@@ -236,7 +236,7 @@ function SidebarMenu() {
           >
             {renderSidebarMenuItems({
               items: section.items,
-              path: router.asPath
+              path: router.asPath,
             })}
           </List>
         </MenuWrapper>

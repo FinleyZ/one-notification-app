@@ -20,7 +20,7 @@ function Block12() {
             >
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -41,7 +41,7 @@ function Block12() {
               </Box>
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -62,7 +62,7 @@ function Block12() {
               </Box>
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -92,7 +92,7 @@ function Block12() {
             >
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -113,7 +113,7 @@ function Block12() {
               </Box>
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -134,7 +134,7 @@ function Block12() {
               </Box>
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -167,7 +167,7 @@ function Block12() {
             >
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"
@@ -188,7 +188,7 @@ function Block12() {
               </Box>
               <Box
                 sx={{
-                  width: '100%'
+                  width: '100%',
                 }}
                 p={3}
                 display="flex"

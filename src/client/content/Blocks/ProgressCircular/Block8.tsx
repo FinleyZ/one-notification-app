@@ -9,7 +9,7 @@ import {
   Divider,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,7 @@ const LabelErrorAlt = styled(Box)(
     font-weight: bold;
     padding: ${theme.spacing(0.5, 1)};
     border-radius: ${theme.general.borderRadiusSm};
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
@@ -46,7 +46,7 @@ const CardWrapper = styled(Card)(
             0 0.35rem 1rem ${alpha(theme.colors.alpha.black[100], 0.1)},
             0 0.225rem 0.8rem ${alpha(theme.colors.alpha.black[100], 0.15)};
     }
-  `
+  `,
 );
 
 function Block7() {
@@ -74,7 +74,7 @@ function Block7() {
       <Grid item xs={12} md={4}>
         <CardWrapper
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -85,7 +85,7 @@ function Block7() {
           >
             <Typography
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
             >
@@ -98,7 +98,7 @@ function Block7() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '340px'
+              maxWidth: '340px',
             }}
           >
             <GaugeChart
@@ -122,7 +122,7 @@ function Block7() {
                 height: 28,
                 p: 0,
                 background: `${theme.colors.success.lighter}`,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <KeyboardArrowDownTwoToneIcon />
@@ -140,7 +140,7 @@ function Block7() {
       <Grid item xs={12} md={4}>
         <CardWrapper
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -151,7 +151,7 @@ function Block7() {
           >
             <Typography
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
             >
@@ -164,7 +164,7 @@ function Block7() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '340px'
+              maxWidth: '340px',
             }}
           >
             <GaugeChart
@@ -188,7 +188,7 @@ function Block7() {
                 height: 28,
                 p: 0,
                 background: `${theme.colors.warning.lighter}`,
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <KeyboardArrowDownTwoToneIcon />
@@ -206,7 +206,7 @@ function Block7() {
       <Grid item xs={12} md={4}>
         <CardWrapper
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -217,7 +217,7 @@ function Block7() {
           >
             <Typography
               sx={{
-                fontSize: `${theme.typography.pxToRem(16)}`
+                fontSize: `${theme.typography.pxToRem(16)}`,
               }}
               variant="h3"
             >
@@ -230,7 +230,7 @@ function Block7() {
           <Box
             sx={{
               mx: 'auto',
-              maxWidth: '340px'
+              maxWidth: '340px',
             }}
           >
             <GaugeChart
@@ -255,8 +255,8 @@ function Block7() {
                 p: 0,
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
-                )}`
+                  theme.colors.error.dark,
+                )}`,
               }}
             >
               <KeyboardArrowUpTwoToneIcon />

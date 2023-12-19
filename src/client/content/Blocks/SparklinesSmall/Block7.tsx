@@ -13,54 +13,54 @@ function Block7() {
       background: 'transparent',
       type: 'bar',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '70%'
-      }
+        columnWidth: '70%',
+      },
     },
     colors: [
       theme.colors.error.main,
       alpha(theme.colors.error.main, 0.5),
-      alpha(theme.colors.error.main, 0.3)
+      alpha(theme.colors.error.main, 0.3),
     ],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       width: 3,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       categories: [
         'Feb',
@@ -71,50 +71,50 @@ function Block7() {
         'Jul',
         'Aug',
         'Sep',
-        'Oct'
-      ]
+        'Oct',
+      ],
     },
     yaxis: {
       show: false,
       title: {
-        text: '$ (thousands)'
+        text: '$ (thousands)',
       },
-      min: 0
+      min: 0,
     },
     tooltip: {
       x: {
-        show: false
+        show: false,
       },
       marker: {
-        show: false
+        show: false,
       },
       y: {
         formatter: function (val) {
           return '$ ' + val + 'k';
-        }
+        },
       },
-      theme: 'dark'
-    }
+      theme: 'dark',
+    },
   };
   const chartData = [
     {
       name: 'Net Profit',
-      data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+      data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
     },
     {
       name: 'Revenue',
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+      data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
     },
     {
       name: 'Free Cash Flow',
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-    }
+      data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
+    },
   ];
 
   return (
     <Card
       sx={{
-        overflow: 'visible'
+        overflow: 'visible',
       }}
     >
       <Box
@@ -131,7 +131,7 @@ function Block7() {
           <Typography
             variant="subtitle2"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Reports for what we sold this week')}
@@ -145,9 +145,9 @@ function Block7() {
             '&:hover': {
               background: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
-              )}`
-            }
+                theme.colors.primary.main,
+              )}`,
+            },
           }}
           size="small"
           variant="contained"

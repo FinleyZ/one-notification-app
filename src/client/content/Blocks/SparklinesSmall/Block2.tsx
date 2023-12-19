@@ -12,227 +12,227 @@ function Block2() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.warning.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.warning.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Bitcoin',
-      data: [47, 38, 56, 24, 56, 24, 65]
-    }
+      data: [47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   const chart2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.error.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.error.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart2Data = [
     {
       name: 'Cardano',
-      data: [38, 44, 56, 47, 26, 24, 45]
-    }
+      data: [38, 44, 56, 47, 26, 24, 45],
+    },
   ];
 
   const chart3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.success.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.success.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart3Data = [
     {
       name: 'Ethereum',
-      data: [38, 43, 24, 56, 35, 56, 65]
-    }
+      data: [38, 43, 24, 56, 35, 56, 65],
+    },
   ];
 
   const chart4Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.info.main],
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.info.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return '$';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: false
-      }
+        show: false,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart4Data = [
     {
       name: 'Ripple',
-      data: [33, 56, 24, 23, 24, 65, 43]
-    }
+      data: [33, 56, 24, 23, 24, 65, 43],
+    },
   ];
 
   return (
@@ -243,14 +243,14 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            p: 2.5
+            p: 2.5,
           }}
         >
           <Box>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               Bitcoin
@@ -263,7 +263,7 @@ function Block2() {
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <span>54%</span>
@@ -287,14 +287,14 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            p: 2.5
+            p: 2.5,
           }}
         >
           <Box>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               Cardano
@@ -307,7 +307,7 @@ function Block2() {
                 lineHeight: 1,
                 display: 'flex',
                 alignItems: 'center',
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <span>21,59%</span>
@@ -331,14 +331,14 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            p: 2.5
+            p: 2.5,
           }}
         >
           <Box>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               Ethereum
@@ -350,7 +350,7 @@ function Block2() {
                 pt: 0.5,
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               color="error"
             >
@@ -375,14 +375,14 @@ function Block2() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            p: 2.5
+            p: 2.5,
           }}
         >
           <Box>
             <Typography
               variant="caption"
               sx={{
-                fontWeight: 'bold'
+                fontWeight: 'bold',
               }}
             >
               Ripple
@@ -394,7 +394,7 @@ function Block2() {
                 pt: 0.5,
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               color="error"
             >

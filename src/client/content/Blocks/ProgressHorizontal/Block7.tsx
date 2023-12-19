@@ -8,7 +8,7 @@ import {
   linearProgressClasses,
   LinearProgress,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ const LinearProgressWrapper = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.primary.main, 0.1)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.primary.dark,
-              0.2
+              0.2,
             )};
         }
         
@@ -30,7 +30,7 @@ const LinearProgressWrapper = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.purple1};
         }
-    `
+    `,
 );
 
 function Block7() {
@@ -53,7 +53,7 @@ function Block7() {
           <Stack
             sx={{
               mt: 2.5,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             direction="row"
             divider={<Divider orientation="vertical" flexItem />}
@@ -73,7 +73,7 @@ function Block7() {
               </Typography>
               <Typography
                 sx={{
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
                 variant="h3"
               >
@@ -95,7 +95,7 @@ function Block7() {
           <Box
             display="flex"
             sx={{
-              pt: 2.5
+              pt: 2.5,
             }}
             alignItems="center"
             justifyContent="space-between"
@@ -111,7 +111,7 @@ function Block7() {
           </Box>
           <LinearProgressWrapper
             sx={{
-              my: 0.5
+              my: 0.5,
             }}
             variant="determinate"
             value={67.5}

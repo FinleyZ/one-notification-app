@@ -8,7 +8,7 @@ import {
   Stack,
   Divider,
   useTheme,
-  Card
+  Card,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import QueryStatsTwoToneIcon from '@mui/icons-material/QueryStatsTwoTone';
@@ -34,7 +34,7 @@ const AvatarPageTitle = styled(Avatar)(
             ', 0px 5px 16px -4px ' +
             alpha(theme.colors.alpha.black[100], 0.2)
       };
-`
+`,
 );
 
 const DotLegend = styled('span')(
@@ -45,7 +45,7 @@ const DotLegend = styled('span')(
     display: inline-block;
     margin-right: ${theme.spacing(0.8)};
     border: ${theme.colors.alpha.white[100]} solid 2px;
-`
+`,
 );
 
 function PageHeader() {
@@ -69,14 +69,14 @@ function PageHeader() {
           </Typography>
           <Typography variant="subtitle2">
             {t(
-              'Take advantage of these extensive, easy to customize statistics component blocks'
+              'Take advantage of these extensive, easy to customize statistics component blocks',
             )}
           </Typography>
         </Box>
       </Box>
       <Card
         sx={{
-          mt: { xs: 3, lg: 0 }
+          mt: { xs: 3, lg: 0 },
         }}
       >
         <Stack
@@ -84,7 +84,7 @@ function PageHeader() {
           divider={
             <Divider
               sx={{
-                background: `${theme.colors.alpha.black[10]}`
+                background: `${theme.colors.alpha.black[10]}`,
               }}
               orientation="vertical"
               flexItem
@@ -115,7 +115,7 @@ function PageHeader() {
               <DotLegend
                 style={{
                   animation: `pulse 1s infinite`,
-                  background: `${theme.colors.success.main}`
+                  background: `${theme.colors.success.main}`,
                 }}
               />
               <Typography color="text.primary" variant="h4">

@@ -14,7 +14,7 @@ import {
   IconButton,
   styled,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ const CardWrapper = styled(Card)(
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
       box-shadow: none;
       border-radius: 0;
-  `
+  `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -43,7 +43,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -59,7 +59,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 function Block3() {
@@ -70,7 +70,7 @@ function Block3() {
 
   const handleViewOrientation = (
     _event: MouseEvent<HTMLElement>,
-    newValue: string | null
+    newValue: string | null,
   ) => {
     setTab(newValue);
   };
@@ -79,31 +79,31 @@ function Block3() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.warning.main, theme.colors.primary.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     fill: {
       opacity: 1,
-      colors: [theme.colors.warning.main, theme.colors.primary.main]
+      colors: [theme.colors.warning.main, theme.colors.primary.main],
     },
     stroke: {
       show: true,
       colors: [theme.colors.warning.main, theme.colors.primary.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -115,46 +115,46 @@ function Block3() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       axisBorder: {
-        show: false
+        show: false,
       },
       labels: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: true,
       labels: {
-        show: true
-      }
+        show: true,
+      },
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.colors.alpha.black[10]
-    }
+      borderColor: theme.colors.alpha.black[10],
+    },
   };
   const Box3Data = [
     {
       name: 'Net Profit',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6]
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6],
     },
     {
       name: 'Net Loss',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6]
-    }
+      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         action={
@@ -172,7 +172,7 @@ function Block3() {
       <CardContent
         sx={{
           py: 0,
-          pl: 1
+          pl: 1,
         }}
       >
         <Chart
@@ -185,7 +185,7 @@ function Block3() {
       <CardWrapper
         sx={{
           p: 3,
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <ToggleButtonGroup
@@ -197,7 +197,7 @@ function Block3() {
             sx={{
               textTransform: 'none',
               py: 0.6,
-              px: 1.8
+              px: 1.8,
             }}
             disableRipple
             value="watch_list_columns"
@@ -208,7 +208,7 @@ function Block3() {
             sx={{
               textTransform: 'none',
               py: 0.6,
-              px: 1.8
+              px: 1.8,
             }}
             disableRipple
             value="watch_list_rows"
@@ -219,7 +219,7 @@ function Block3() {
       </CardWrapper>
       <CardContent
         sx={{
-          p: 3
+          p: 3,
         }}
       >
         <Typography variant="h4" gutterBottom>
@@ -232,7 +232,7 @@ function Block3() {
       <Divider />
       <CardContent
         sx={{
-          p: 3
+          p: 3,
         }}
       >
         <Grid container spacing={6}>
@@ -249,7 +249,7 @@ function Block3() {
             </Box>
             <LinearProgressError
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={34}
@@ -280,7 +280,7 @@ function Block3() {
             </Box>
             <LinearProgressSuccess
               sx={{
-                my: 1
+                my: 1,
               }}
               variant="determinate"
               value={78}

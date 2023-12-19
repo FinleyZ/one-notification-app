@@ -14,7 +14,7 @@ import {
   Button,
   Avatar,
   IconButton,
-  styled
+  styled,
 } from '@mui/material';
 import Head from 'next/head';
 import type { ReactElement } from 'react';
@@ -32,7 +32,7 @@ import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & { children: ReactElement<any, any> },
-  ref: Ref<unknown>
+  ref: Ref<unknown>,
 ) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
@@ -45,7 +45,7 @@ const MainContent = styled(Box)(
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`
+`,
 );
 
 const DialogWrapper = styled(Dialog)(
@@ -53,7 +53,7 @@ const DialogWrapper = styled(Dialog)(
       .MuiDialog-paper {
         overflow: visible;
       }
-`
+`,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -71,7 +71,7 @@ const AvatarSuccess = styled(Avatar)(
       .MuiSvgIcon-root {
         font-size: ${theme.typography.pxToRem(45)};
       }
-`
+`,
 );
 
 function RecoverPasswordBasic() {
@@ -103,14 +103,14 @@ function RecoverPasswordBasic() {
           <Card
             sx={{
               mt: 3,
-              p: 4
+              p: 4,
             }}
           >
             <Box>
               <Typography
                 variant="h2"
                 sx={{
-                  mb: 1
+                  mb: 1,
                 }}
               >
                 {t('Recover Password')}
@@ -120,11 +120,11 @@ function RecoverPasswordBasic() {
                 color="text.secondary"
                 fontWeight="normal"
                 sx={{
-                  mb: 3
+                  mb: 3,
                 }}
               >
                 {t(
-                  'Enter the email used for registration to reset your password.'
+                  'Enter the email used for registration to reset your password.',
                 )}
               </Typography>
             </Box>
@@ -132,19 +132,19 @@ function RecoverPasswordBasic() {
             <Formik
               initialValues={{
                 email: 'demo@example.com',
-                submit: null
+                submit: null,
               }}
               validationSchema={Yup.object().shape({
                 email: Yup.string()
                   .email(
-                    t('The email provided should be a valid email address')
+                    t('The email provided should be a valid email address'),
                   )
                   .max(255)
-                  .required(t('The email field is required'))
+                  .required(t('The email field is required')),
               })}
               onSubmit={async (
                 _values,
-                { setErrors, setStatus, setSubmitting }
+                { setErrors, setStatus, setSubmitting },
               ) => {
                 try {
                   if (isMountedRef()) {
@@ -167,7 +167,7 @@ function RecoverPasswordBasic() {
                 handleChange,
                 handleSubmit,
                 touched,
-                values
+                values,
               }) => (
                 <form noValidate onSubmit={handleSubmit}>
                   <TextField
@@ -186,7 +186,7 @@ function RecoverPasswordBasic() {
 
                   <Button
                     sx={{
-                      mt: 3
+                      mt: 3,
                     }}
                     color="primary"
                     disabled={Boolean(touched.email && errors.email)}
@@ -234,7 +234,7 @@ function RecoverPasswordBasic() {
           sx={{
             px: 4,
             pb: 4,
-            pt: 10
+            pt: 10,
           }}
         >
           <AvatarSuccess>
@@ -258,7 +258,7 @@ function RecoverPasswordBasic() {
               severity="info"
             >
               {t(
-                'The password reset instructions have been sent to your email'
+                'The password reset instructions have been sent to your email',
               )}
             </Alert>
           </Collapse>
@@ -267,7 +267,7 @@ function RecoverPasswordBasic() {
             align="center"
             sx={{
               py: 4,
-              px: 10
+              px: 10,
             }}
             variant="h3"
           >

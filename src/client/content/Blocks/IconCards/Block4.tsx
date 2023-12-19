@@ -6,7 +6,7 @@ import {
   Avatar,
   Typography,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -32,7 +32,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .02;
         }
     }
-  `
+  `,
 );
 
 function Block4() {
@@ -50,7 +50,7 @@ function Block4() {
                   width: 64,
                   height: 64,
                   background: `${theme.colors.success.main}`,
-                  color: `${theme.palette.success.contrastText}`
+                  color: `${theme.palette.success.contrastText}`,
                 }}
               >
                 <PersonTwoToneIcon />
@@ -60,14 +60,14 @@ function Block4() {
                   gutterBottom
                   variant="subtitle2"
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 >
                   {t('Project management')}
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(14)}`
+                    fontSize: `${theme.typography.pxToRem(14)}`,
                   }}
                 >
                   <Text color="success">+5,46%</Text>
@@ -79,7 +79,7 @@ function Block4() {
               color="text.secondary"
               sx={{
                 opacity: 0.7,
-                display: 'flex'
+                display: 'flex',
               }}
             >
               <ArrowForwardTwoToneIcon />
@@ -96,7 +96,7 @@ function Block4() {
                   width: 64,
                   height: 64,
                   background: `${theme.colors.warning.main}`,
-                  color: `${theme.palette.warning.contrastText}`
+                  color: `${theme.palette.warning.contrastText}`,
                 }}
               >
                 <SubscriptionsTwoToneIcon />
@@ -106,14 +106,14 @@ function Block4() {
                   gutterBottom
                   variant="subtitle2"
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 >
                   {t('Analytics statistics')}
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(14)}`
+                    fontSize: `${theme.typography.pxToRem(14)}`,
                   }}
                 >
                   <Text color="warning">487 {t('new users')}</Text>
@@ -125,7 +125,7 @@ function Block4() {
               color="text.secondary"
               sx={{
                 opacity: 0.7,
-                display: 'flex'
+                display: 'flex',
               }}
             >
               <ArrowForwardTwoToneIcon />
@@ -142,7 +142,7 @@ function Block4() {
                   width: 64,
                   height: 64,
                   background: `${theme.colors.primary.lighter}`,
-                  color: `${theme.colors.primary.main}`
+                  color: `${theme.colors.primary.main}`,
                 }}
               >
                 <SubscriptionsTwoToneIcon />
@@ -152,14 +152,14 @@ function Block4() {
                   gutterBottom
                   variant="subtitle2"
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(16)}`
+                    fontSize: `${theme.typography.pxToRem(16)}`,
                   }}
                 >
                   {t('Tasks overview')}
                 </Typography>
                 <Typography
                   sx={{
-                    fontSize: `${theme.typography.pxToRem(14)}`
+                    fontSize: `${theme.typography.pxToRem(14)}`,
                   }}
                 >
                   <Label color="error">
@@ -168,7 +168,7 @@ function Block4() {
                       sx={{
                         fontSize: `${theme.typography.pxToRem(11)}`,
                         textTransform: 'uppercase',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
                       }}
                     >
                       23 {t('tasks')}
@@ -185,7 +185,7 @@ function Block4() {
               color="text.secondary"
               sx={{
                 opacity: 0.7,
-                display: 'flex'
+                display: 'flex',
               }}
             >
               <ArrowForwardTwoToneIcon />

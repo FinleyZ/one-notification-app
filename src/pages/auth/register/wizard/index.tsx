@@ -14,7 +14,7 @@ import {
   Alert,
   Avatar,
   IconButton,
-  styled
+  styled,
 } from '@mui/material';
 import type { ReactElement } from 'react';
 import BaseLayout from 'src/layouts/BaseLayout';
@@ -35,13 +35,13 @@ const MainContent = styled(Box)(
     height: 100%;
     overflow: auto;
     flex: 1;
-`
+`,
 );
 
 const BoxActions = styled(Box)(
   ({ theme }) => `
     background: ${theme.colors.alpha.black[5]}
-`
+`,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -57,7 +57,7 @@ const AvatarSuccess = styled(Avatar)(
       .MuiSvgIcon-root {
         font-size: ${theme.typography.pxToRem(45)};
       }
-`
+`,
 );
 
 const sleep = (time: number) => new Promise((acc) => setTimeout(acc, time));
@@ -74,7 +74,7 @@ function RegisterWizard() {
       <MainContent>
         <Container
           sx={{
-            my: 4
+            my: 4,
           }}
           maxWidth="md"
         >
@@ -82,14 +82,14 @@ function RegisterWizard() {
           <Card
             sx={{
               mt: 3,
-              pt: 4
+              pt: 4,
             }}
           >
             <Box px={4}>
               <Typography
                 variant="h2"
                 sx={{
-                  mb: 1
+                  mb: 1,
                 }}
               >
                 {t('Create account')}
@@ -99,7 +99,7 @@ function RegisterWizard() {
                 color="text.secondary"
                 fontWeight="normal"
                 sx={{
-                  mb: 3
+                  mb: 3,
                 }}
               >
                 {t('Fill in the fields below to sign up for an account.')}
@@ -118,7 +118,7 @@ function RegisterWizard() {
                 phone: '',
                 company_name: '',
                 company_size: '',
-                company_role: ''
+                company_role: '',
               }}
               onSubmit={async (_values) => {
                 await sleep(3000);
@@ -128,7 +128,7 @@ function RegisterWizard() {
                 validationSchema={Yup.object().shape({
                   email: Yup.string()
                     .email(
-                      t('The email provided should be a valid email address')
+                      t('The email provided should be a valid email address'),
                     )
                     .max(255)
                     .required(t('The email field is required')),
@@ -145,9 +145,9 @@ function RegisterWizard() {
                   password_confirm: Yup.string()
                     .oneOf(
                       [Yup.ref('password')],
-                      t('Both password fields need to be the same')
+                      t('Both password fields need to be the same'),
                     )
-                    .required(t('This field is required'))
+                    .required(t('This field is required')),
                 })}
                 label={t('Personal Informations')}
               >
@@ -217,8 +217,8 @@ function RegisterWizard() {
                         component={CheckboxWithLabel}
                         Label={{
                           label: t(
-                            'Yes, I want to receive monthly promotional materials.'
-                          )
+                            'Yes, I want to receive monthly promotional materials.',
+                          ),
                         }}
                       />
                       <br />
@@ -232,7 +232,7 @@ function RegisterWizard() {
                               {t('I accept the')}{' '}
                               <Link href="#">{t('terms and conditions')}</Link>.
                             </Typography>
-                          )
+                          ),
                         }}
                       />
                     </Grid>
@@ -249,7 +249,7 @@ function RegisterWizard() {
                     .required(t('The first name field is required')),
                   company_role: Yup.string()
                     .max(255)
-                    .required(t('The first name field is required'))
+                    .required(t('The first name field is required')),
                 })}
                 label={t('Company Details')}
               >
@@ -292,7 +292,7 @@ function RegisterWizard() {
                     <Collapse in={openAlert}>
                       <Alert
                         sx={{
-                          mt: 5
+                          mt: 5,
                         }}
                         action={
                           <IconButton
@@ -309,7 +309,7 @@ function RegisterWizard() {
                         severity="info"
                       >
                         {t(
-                          'A confirmation has been sent to your email address'
+                          'A confirmation has been sent to your email address',
                         )}
                       </Alert>
                     </Collapse>
@@ -320,12 +320,12 @@ function RegisterWizard() {
                         pt: 5,
                         pb: 4,
                         lineHeight: 1.5,
-                        px: 10
+                        px: 10,
                       }}
                       variant="h2"
                     >
                       {t(
-                        'Check your email to confirm your email and start using your account'
+                        'Check your email to confirm your email and start using your account',
                       )}
                     </Typography>
 
@@ -357,7 +357,7 @@ export function FormikStepper({
   ...props
 }: FormikConfig<FormikValues>) {
   const childrenArray = Children.toArray(
-    children
+    children,
   ) as ReactElement<FormikStepProps>[];
   const [step, setStep] = useState(0);
   const currentChild = childrenArray[step];

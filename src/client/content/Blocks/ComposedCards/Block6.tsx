@@ -10,7 +10,7 @@ import {
   linearProgressClasses,
   Grid,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ import LoopTwoToneIcon from '@mui/icons-material/LoopTwoTone';
 const CardWrapper = styled(Card)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.05)};
-  `
+  `,
 );
 
 const LinearProgressError = styled(LinearProgress)(
@@ -42,7 +42,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.error.main};
         }
-    `
+    `,
 );
 
 const LinearProgressInfo = styled(LinearProgress)(
@@ -58,7 +58,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.info.main};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -74,7 +74,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.success.main};
         }
-    `
+    `,
 );
 
 function Block6() {
@@ -85,29 +85,29 @@ function Block6() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.primary.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.primary.main],
-      width: 3
+      width: 3,
     },
     legend: {
-      show: false
+      show: false,
     },
     fill: {
       gradient: {
@@ -117,8 +117,8 @@ function Block6() {
         inverseColors: false,
         opacityFrom: 0.9,
         opacityTo: 0,
-        stops: [0, 100]
-      }
+        stops: [0, 100],
+      },
     },
     labels: [
       'Monday',
@@ -130,28 +130,28 @@ function Block6() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
-      show: false
-    }
+      show: false,
+    },
   };
   const Box1Data = [
     {
       name: 'Total Sales',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6]
-    }
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6],
+    },
   ];
 
   return (
@@ -161,7 +161,7 @@ function Block6() {
           variant="h4"
           textAlign="center"
           sx={{
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
           }}
         >
           {t('Inventory')}
@@ -173,7 +173,7 @@ function Block6() {
           textAlign: 'center',
           p: 3,
           mx: 5,
-          my: 4
+          my: 4,
         }}
       >
         <Grid container spacing={6}>
@@ -184,7 +184,7 @@ function Block6() {
             <Typography
               variant="h3"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               2,345
@@ -198,7 +198,7 @@ function Block6() {
             <Typography
               variant="h3"
               sx={{
-                pt: 1
+                pt: 1,
               }}
             >
               $3,586
@@ -212,7 +212,7 @@ function Block6() {
           variant="h4"
           textAlign="center"
           sx={{
-            textTransform: 'uppercase'
+            textTransform: 'uppercase',
           }}
         >
           {t('Activity')}
@@ -224,7 +224,7 @@ function Block6() {
             <Avatar
               sx={{
                 width: 46,
-                height: 46
+                height: 46,
               }}
               component={Link}
               href="#"
@@ -236,7 +236,7 @@ function Block6() {
         <Box
           sx={{
             width: '100%',
-            px: 2
+            px: 2,
           }}
         >
           <LinearProgressError variant="determinate" value={34} />
@@ -245,7 +245,7 @@ function Block6() {
           <Typography
             variant="h4"
             sx={{
-              color: `${theme.colors.error.main}`
+              color: `${theme.colors.error.main}`,
             }}
           >
             $2,835
@@ -259,7 +259,7 @@ function Block6() {
               component={Link}
               sx={{
                 width: 46,
-                height: 46
+                height: 46,
               }}
               href="#"
               alt="Cindy Baker"
@@ -270,7 +270,7 @@ function Block6() {
         <Box
           sx={{
             width: '100%',
-            px: 2
+            px: 2,
           }}
         >
           <LinearProgressSuccess variant="determinate" value={34} />
@@ -279,7 +279,7 @@ function Block6() {
           <Typography
             variant="h4"
             sx={{
-              color: `${theme.colors.success.main}`
+              color: `${theme.colors.success.main}`,
             }}
           >
             $5,542
@@ -292,7 +292,7 @@ function Block6() {
             <Avatar
               sx={{
                 width: 46,
-                height: 46
+                height: 46,
               }}
               component={Link}
               href="#"
@@ -304,7 +304,7 @@ function Block6() {
         <Box
           sx={{
             width: '100%',
-            px: 2
+            px: 2,
           }}
         >
           <LinearProgressInfo variant="determinate" value={72} />
@@ -313,7 +313,7 @@ function Block6() {
           <Typography
             variant="h4"
             sx={{
-              color: `${theme.colors.info.main}`
+              color: `${theme.colors.info.main}`,
             }}
           >
             $1,375
@@ -324,7 +324,7 @@ function Block6() {
       <Box
         p={1}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Tooltip placement="top" arrow title={t('Refresh view')}>

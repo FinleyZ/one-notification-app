@@ -8,7 +8,7 @@ import {
   linearProgressClasses,
   LinearProgress,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,7 +21,7 @@ const LinearProgress1 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.trueWhite[100], 0.12)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.trueWhite[100],
-              0.08
+              0.08,
             )};
         }
         
@@ -29,7 +29,7 @@ const LinearProgress1 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.green1};
         }
-    `
+    `,
 );
 
 const LinearProgress2 = styled(LinearProgress)(
@@ -40,7 +40,7 @@ const LinearProgress2 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.trueWhite[100], 0.12)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.trueWhite[100],
-              0.08
+              0.08,
             )};
         }
         
@@ -48,7 +48,7 @@ const LinearProgress2 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.orange3};
         }
-    `
+    `,
 );
 
 const LinearProgress3 = styled(LinearProgress)(
@@ -59,7 +59,7 @@ const LinearProgress3 = styled(LinearProgress)(
             background-color: ${alpha(theme.colors.alpha.trueWhite[100], 0.12)};
             box-shadow: inset 0 1px 2px ${alpha(
               theme.colors.alpha.trueWhite[100],
-              0.08
+              0.08,
             )};
         }
         
@@ -67,7 +67,7 @@ const LinearProgress3 = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusSm};
             background: ${theme.colors.gradients.orange1};
         }
-    `
+    `,
 );
 
 function Block9() {
@@ -77,12 +77,12 @@ function Block9() {
   return (
     <Card
       sx={{
-        background: `${theme.colors.gradients.black2}`
+        background: `${theme.colors.gradients.black2}`,
       }}
     >
       <Stack
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         direction="row"
         divider={<Divider orientation="vertical" flexItem />}
@@ -94,14 +94,14 @@ function Block9() {
           <Typography
             variant="h3"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             76%
           </Typography>
           <LinearProgress1
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={76}
@@ -111,7 +111,7 @@ function Block9() {
             gutterBottom
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('Sales')}
@@ -120,7 +120,7 @@ function Block9() {
         <Box p={3} flexGrow={1}>
           <Typography
             sx={{
-              color: `${theme.colors.warning.main}`
+              color: `${theme.colors.warning.main}`,
             }}
             variant="h3"
           >
@@ -128,7 +128,7 @@ function Block9() {
           </Typography>
           <LinearProgress2
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={43}
@@ -138,7 +138,7 @@ function Block9() {
             gutterBottom
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('Profiles')}
@@ -148,14 +148,14 @@ function Block9() {
           <Typography
             variant="h3"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[100]}`
+              color: `${theme.colors.alpha.trueWhite[100]}`,
             }}
           >
             59%
           </Typography>
           <LinearProgress3
             sx={{
-              my: 1
+              my: 1,
             }}
             variant="determinate"
             value={59}
@@ -165,7 +165,7 @@ function Block9() {
             gutterBottom
             variant="subtitle2"
             sx={{
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('Tickets')}

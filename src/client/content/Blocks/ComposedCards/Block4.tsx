@@ -16,7 +16,7 @@ import {
   Badge,
   Button,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 
@@ -40,7 +40,7 @@ import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 const BoxComposed = styled(Box)(
   () => `
     position: relative;
-  `
+  `,
 );
 
 const AvatarSuccess = styled(Avatar)(
@@ -50,7 +50,7 @@ const AvatarSuccess = styled(Avatar)(
         width: ${theme.spacing(14)};
         height: ${theme.spacing(14)};
         margin-right: ${theme.spacing(1)};
-  `
+  `,
 );
 
 const BoxComposedContent = styled(Box)(
@@ -66,7 +66,7 @@ const BoxComposedContent = styled(Box)(
         }
     }
     
-  `
+  `,
 );
 
 const BoxComposedImage = styled(Box)(
@@ -80,7 +80,7 @@ const BoxComposedImage = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const BoxComposedBg = styled(Box)(
@@ -92,7 +92,7 @@ const BoxComposedBg = styled(Box)(
     height: 100%;
     width: 100%;
     border-radius: inherit;
-  `
+  `,
 );
 
 const TabsWrapper = styled(Tabs)(
@@ -102,7 +102,7 @@ const TabsWrapper = styled(Tabs)(
         .MuiTabs-scroller {
             overflow: visible !important;
         }
-    `
+    `,
 );
 
 function Block4() {
@@ -114,7 +114,7 @@ function Block4() {
   const tabs = [
     { value: 'timeline', label: t('Timeline') },
     { value: 'tasks', label: t('Tasks') },
-    { value: 'reports', label: t('Reports') }
+    { value: 'reports', label: t('Reports') },
   ];
 
   const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
@@ -124,34 +124,34 @@ function Block4() {
   const chart1Options: ApexOptions = {
     chart: {
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
-      stacked: true
+      stacked: true,
     },
     dataLabels: {
-      enabled: true
+      enabled: true,
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '65%'
-      }
+        columnWidth: '65%',
+      },
     },
     stroke: {
       show: false,
       width: 0,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     colors: [theme.colors.secondary.dark, theme.colors.secondary.light],
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     labels: [
       'Monday',
@@ -164,28 +164,28 @@ function Block4() {
       'Last week',
       'Last month',
       'Last year',
-      'Last quarter'
+      'Last quarter',
     ],
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Net Profit',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2]
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2],
     },
     {
       name: 'Net Loss',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2]
-    }
+      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 3
+          p: 3,
         }}
         disableTypography
         action={
@@ -205,26 +205,26 @@ function Block4() {
       />
       <BoxComposed
         sx={{
-          background: `${theme.colors.gradients.pink2}`
+          background: `${theme.colors.gradients.pink2}`,
         }}
       >
         <BoxComposedBg
           sx={{
             opacity: 0.1,
-            background: `${theme.colors.gradients.black2}`
+            background: `${theme.colors.gradients.black2}`,
           }}
         />
         <BoxComposedImage
           sx={{
             opacity: 0.1,
-            backgroundImage: 'url("/static/images/placeholders/covers/2.jpg")'
+            backgroundImage: 'url("/static/images/placeholders/covers/2.jpg")',
           }}
         />
         <BoxComposedContent py={4}>
           <Typography
             textAlign="center"
             sx={{
-              pb: 1
+              pb: 1,
             }}
             variant="h3"
           >
@@ -256,24 +256,24 @@ function Block4() {
       {currentTab === 'timeline' && (
         <Box
           sx={{
-            height: 300
+            height: 300,
           }}
         >
           <Scrollbar>
             <Timeline
               sx={{
-                m: 0
+                m: 0,
               }}
             >
               <TimelineItem
                 sx={{
-                  p: 0
+                  p: 0,
                 }}
               >
                 <TimelineOppositeContent
                   sx={{
                     width: '120px',
-                    flex: 'none'
+                    flex: 'none',
                   }}
                   color="text.secondary"
                 >
@@ -281,13 +281,13 @@ function Block4() {
                 </TimelineOppositeContent>
                 <TimelineSeparator
                   sx={{
-                    position: 'relative'
+                    position: 'relative',
                   }}
                 >
                   <TimelineDot
                     sx={{
                       marginTop: 0,
-                      top: theme.spacing(1.2)
+                      top: theme.spacing(1.2),
                     }}
                     variant="outlined"
                     color="primary"
@@ -296,7 +296,7 @@ function Block4() {
                 </TimelineSeparator>
                 <TimelineContent
                   sx={{
-                    pb: 4
+                    pb: 4,
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
@@ -309,13 +309,13 @@ function Block4() {
               </TimelineItem>
               <TimelineItem
                 sx={{
-                  p: 0
+                  p: 0,
                 }}
               >
                 <TimelineOppositeContent
                   sx={{
                     width: '120px',
-                    flex: 'none'
+                    flex: 'none',
                   }}
                   color="text.secondary"
                 >
@@ -323,13 +323,13 @@ function Block4() {
                 </TimelineOppositeContent>
                 <TimelineSeparator
                   sx={{
-                    position: 'relative'
+                    position: 'relative',
                   }}
                 >
                   <TimelineDot
                     sx={{
                       marginTop: 0,
-                      top: theme.spacing(1.2)
+                      top: theme.spacing(1.2),
                     }}
                     variant="outlined"
                     color="primary"
@@ -338,7 +338,7 @@ function Block4() {
                 </TimelineSeparator>
                 <TimelineContent
                   sx={{
-                    pb: 4
+                    pb: 4,
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
@@ -354,7 +354,7 @@ function Block4() {
                           component={Link}
                           sx={{
                             width: 32,
-                            height: 32
+                            height: 32,
                           }}
                           href="#"
                           alt="Remy Sharp"
@@ -366,7 +366,7 @@ function Block4() {
                           component={Link}
                           sx={{
                             width: 32,
-                            height: 32
+                            height: 32,
                           }}
                           href="#"
                           alt="Travis Howard"
@@ -378,7 +378,7 @@ function Block4() {
                           component={Link}
                           sx={{
                             width: 32,
-                            height: 32
+                            height: 32,
                           }}
                           href="#"
                           alt="Cindy Baker"
@@ -390,7 +390,7 @@ function Block4() {
                           component={Link}
                           sx={{
                             width: 32,
-                            height: 32
+                            height: 32,
                           }}
                           href="#"
                           alt="Cindy Baker"
@@ -402,7 +402,7 @@ function Block4() {
                           component={Link}
                           sx={{
                             width: 32,
-                            height: 32
+                            height: 32,
                           }}
                           href="#"
                           alt="Agnes Walker"
@@ -415,13 +415,13 @@ function Block4() {
               </TimelineItem>
               <TimelineItem
                 sx={{
-                  p: 0
+                  p: 0,
                 }}
               >
                 <TimelineOppositeContent
                   sx={{
                     width: '120px',
-                    flex: 'none'
+                    flex: 'none',
                   }}
                   color="text.secondary"
                 >
@@ -429,13 +429,13 @@ function Block4() {
                 </TimelineOppositeContent>
                 <TimelineSeparator
                   sx={{
-                    position: 'relative'
+                    position: 'relative',
                   }}
                 >
                   <TimelineDot
                     sx={{
                       marginTop: 0,
-                      top: theme.spacing(1.2)
+                      top: theme.spacing(1.2),
                     }}
                     variant="outlined"
                     color="primary"
@@ -444,7 +444,7 @@ function Block4() {
                 </TimelineSeparator>
                 <TimelineContent
                   sx={{
-                    pb: 4
+                    pb: 4,
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
@@ -457,7 +457,7 @@ function Block4() {
                   <Box display="flex" mt={2} alignItems="flex-start">
                     <Card
                       sx={{
-                        mr: 2
+                        mr: 2,
                       }}
                     >
                       <CardActionArea>
@@ -471,7 +471,7 @@ function Block4() {
                     </Card>
                     <Card
                       sx={{
-                        mr: 2
+                        mr: 2,
                       }}
                     >
                       <CardActionArea>
@@ -485,7 +485,7 @@ function Block4() {
                     </Card>
                     <Card
                       sx={{
-                        mr: 2
+                        mr: 2,
                       }}
                     >
                       <CardActionArea>
@@ -502,13 +502,13 @@ function Block4() {
               </TimelineItem>
               <TimelineItem
                 sx={{
-                  p: 0
+                  p: 0,
                 }}
               >
                 <TimelineOppositeContent
                   sx={{
                     width: '120px',
-                    flex: 'none'
+                    flex: 'none',
                   }}
                   color="text.secondary"
                 >
@@ -516,13 +516,13 @@ function Block4() {
                 </TimelineOppositeContent>
                 <TimelineSeparator
                   sx={{
-                    position: 'relative'
+                    position: 'relative',
                   }}
                 >
                   <TimelineDot
                     sx={{
                       marginTop: 0,
-                      top: theme.spacing(1.2)
+                      top: theme.spacing(1.2),
                     }}
                     variant="outlined"
                     color="primary"
@@ -531,7 +531,7 @@ function Block4() {
                 </TimelineSeparator>
                 <TimelineContent
                   sx={{
-                    pb: 4
+                    pb: 4,
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
@@ -549,13 +549,13 @@ function Block4() {
               </TimelineItem>
               <TimelineItem
                 sx={{
-                  p: 0
+                  p: 0,
                 }}
               >
                 <TimelineOppositeContent
                   sx={{
                     width: '120px',
-                    flex: 'none'
+                    flex: 'none',
                   }}
                   color="text.secondary"
                 >
@@ -563,13 +563,13 @@ function Block4() {
                 </TimelineOppositeContent>
                 <TimelineSeparator
                   sx={{
-                    position: 'relative'
+                    position: 'relative',
                   }}
                 >
                   <TimelineDot
                     sx={{
                       marginTop: 0,
-                      top: theme.spacing(1.2)
+                      top: theme.spacing(1.2),
                     }}
                     variant="outlined"
                     color="primary"
@@ -578,7 +578,7 @@ function Block4() {
                 </TimelineSeparator>
                 <TimelineContent
                   sx={{
-                    pb: 4
+                    pb: 4,
                   }}
                 >
                   <Typography variant="h4" gutterBottom>
@@ -597,7 +597,7 @@ function Block4() {
         <>
           <Box
             sx={{
-              height: 300
+              height: 300,
             }}
           >
             <Scrollbar>
@@ -607,12 +607,12 @@ function Block4() {
                 flexDirection="column"
                 alignItems="center"
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <AvatarSuccess
                   sx={{
-                    mb: 3
+                    mb: 3,
                   }}
                 >
                   <CheckTwoToneIcon fontSize="large" />
@@ -632,7 +632,7 @@ function Block4() {
         <>
           <Box
             sx={{
-              height: 300
+              height: 300,
             }}
           >
             <Scrollbar>
@@ -641,13 +641,13 @@ function Block4() {
                 flexDirection="column"
                 alignItems="center"
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <ButtonGroup
                   sx={{
                     mt: 1,
-                    mb: 2
+                    mb: 2,
                   }}
                   size="small"
                   variant="outlined"
@@ -664,7 +664,7 @@ function Block4() {
 
                 <Box
                   sx={{
-                    width: '100%'
+                    width: '100%',
                   }}
                 >
                   <Chart
@@ -682,7 +682,7 @@ function Block4() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Badge color="success" variant="dot">

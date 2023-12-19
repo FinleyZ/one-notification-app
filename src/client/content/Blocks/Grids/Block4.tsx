@@ -7,7 +7,7 @@ import {
   Tooltip,
   styled,
   useTheme,
-  IconButton
+  IconButton,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,7 @@ const IconButtonWrapper = styled(IconButton)(
     transition: ${theme.transitions.create([
       'color',
       'transform',
-      'background'
+      'background',
     ])};
     
     .MuiSvgIcon-root {
@@ -45,7 +45,7 @@ const IconButtonWrapper = styled(IconButton)(
             transform: scale(1.2);
         }
     }
-  `
+  `,
 );
 
 function Block4() {
@@ -70,7 +70,7 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="warning">
@@ -82,7 +82,7 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="success">
@@ -101,7 +101,7 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="black">
@@ -113,7 +113,7 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="error">
@@ -121,7 +121,7 @@ function Block4() {
             </Text>
             <Typography
               sx={{
-                minWidth: 100
+                minWidth: 100,
               }}
               variant="h3"
             >
@@ -158,14 +158,14 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Tooltip arrow title={t('Tooltip for this icon button')}>
               <IconButtonWrapper
                 sx={{
                   background: `${theme.colors.primary.main}`,
-                  '&:hover': { background: `${theme.colors.primary.light}` }
+                  '&:hover': { background: `${theme.colors.primary.light}` },
                 }}
               >
                 <AddCircleTwoToneIcon />
@@ -176,7 +176,7 @@ function Block4() {
                 sx={{
                   mx: 2,
                   background: `${theme.colors.success.main}`,
-                  '&:hover': { background: `${theme.colors.success.light}` }
+                  '&:hover': { background: `${theme.colors.success.light}` },
                 }}
               >
                 <AddLocationTwoToneIcon />
@@ -186,7 +186,7 @@ function Block4() {
               <IconButtonWrapper
                 sx={{
                   background: `${theme.colors.warning.main}`,
-                  '&:hover': { background: `${theme.colors.warning.light}` }
+                  '&:hover': { background: `${theme.colors.warning.light}` },
                 }}
               >
                 <AddBusinessTwoToneIcon />
@@ -203,14 +203,14 @@ function Block4() {
           <Box
             p={3}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Tooltip arrow title={t('Tooltip for this icon button')}>
               <IconButtonWrapper
                 sx={{
                   background: `${theme.colors.gradients.blue1}`,
-                  '&:hover': { background: `${theme.colors.gradients.blue1}` }
+                  '&:hover': { background: `${theme.colors.gradients.blue1}` },
                 }}
               >
                 <AddCircleTwoToneIcon />
@@ -221,7 +221,9 @@ function Block4() {
                 sx={{
                   mx: 2,
                   background: `${theme.colors.gradients.purple3}`,
-                  '&:hover': { background: `${theme.colors.gradients.purple3}` }
+                  '&:hover': {
+                    background: `${theme.colors.gradients.purple3}`,
+                  },
                 }}
               >
                 <AddLocationTwoToneIcon />
@@ -231,7 +233,9 @@ function Block4() {
               <IconButtonWrapper
                 sx={{
                   background: `${theme.colors.gradients.orange2}`,
-                  '&:hover': { background: `${theme.colors.gradients.orange2}` }
+                  '&:hover': {
+                    background: `${theme.colors.gradients.orange2}`,
+                  },
                 }}
               >
                 <AddBusinessTwoToneIcon />

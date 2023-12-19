@@ -17,7 +17,7 @@ function Block5() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -38,8 +38,8 @@ function Block5() {
                 height: `${theme.spacing(5.5)}`,
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
-                )}`
+                  theme.colors.error.dark,
+                )}`,
               }}
             >
               <AccountBoxTwoToneIcon />
@@ -52,13 +52,13 @@ function Block5() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <ArrowUpwardTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>16.5%</span>
@@ -72,7 +72,7 @@ function Block5() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -93,8 +93,8 @@ function Block5() {
                 height: `${theme.spacing(5.5)}`,
                 background: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.dark
-                )}`
+                  theme.colors.primary.dark,
+                )}`,
               }}
             >
               <AddAlertTwoToneIcon />
@@ -107,13 +107,13 @@ function Block5() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <CompareArrowsTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>0.5%</span>
@@ -127,7 +127,7 @@ function Block5() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            p: 3
+            p: 3,
           }}
         >
           <Box
@@ -148,8 +148,8 @@ function Block5() {
                 height: `${theme.spacing(5.5)}`,
                 background: `${theme.colors.warning.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.warning.dark
-                )}`
+                  theme.colors.warning.dark,
+                )}`,
               }}
             >
               <ThumbUpTwoToneIcon />
@@ -162,13 +162,13 @@ function Block5() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               <ArrowDownwardTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>8.25%</span>

@@ -12,7 +12,7 @@ import {
   Checkbox,
   Typography,
   FormControlLabel,
-  CircularProgress
+  CircularProgress,
 } from '@mui/material';
 import { useAuth } from 'src/client/hooks/useAuth';
 import { useRefMounted } from 'src/client/hooks/useRefMounted';
@@ -27,7 +27,7 @@ export const LoginJWT: FC = (props) => {
       email: 'demo@example.com',
       password: 'TokyoPass1@',
       terms: true,
-      submit: null
+      submit: null,
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -39,8 +39,8 @@ export const LoginJWT: FC = (props) => {
         .required('The password field is required'),
       terms: Yup.boolean().oneOf(
         [true],
-        'You must agree to our terms and conditions'
-      )
+        'You must agree to our terms and conditions',
+      ),
     }),
     onSubmit: async (values, helpers): Promise<void> => {
       try {
@@ -59,7 +59,7 @@ export const LoginJWT: FC = (props) => {
           helpers.setSubmitting(false);
         }
       }
-    }
+    },
   });
 
   return (
@@ -70,7 +70,7 @@ export const LoginJWT: FC = (props) => {
         margin="normal"
         autoFocus
         helperText={formik.touched.email && formik.errors.email}
-        label='Email address'
+        label="Email address"
         name="email"
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
@@ -83,7 +83,7 @@ export const LoginJWT: FC = (props) => {
         fullWidth
         margin="normal"
         helperText={formik.touched.password && formik.errors.password}
-        label='Password'
+        label="Password"
         name="password"
         onBlur={formik.handleBlur}
         onChange={formik.handleChange}
@@ -127,7 +127,7 @@ export const LoginJWT: FC = (props) => {
 
       <Button
         sx={{
-          mt: 3
+          mt: 3,
         }}
         color="primary"
         startIcon={

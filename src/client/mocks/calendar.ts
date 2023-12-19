@@ -11,7 +11,7 @@ let events: Event[] = [
     description: '',
     end: setHours(setMinutes(subDays(new Date(), 1), 14), 6).getTime(),
     start: setHours(setMinutes(subDays(new Date(), 1), 8), 6).getTime(),
-    title: 'Investors Meeting'
+    title: 'Investors Meeting',
   },
   {
     id: '2',
@@ -20,7 +20,7 @@ let events: Event[] = [
     description: '',
     end: setHours(setMinutes(addDays(new Date(), 2), 5), 4).getTime(),
     start: setHours(setMinutes(addDays(new Date(), 2), 7), 3).getTime(),
-    title: 'UX Design Gathering'
+    title: 'UX Design Gathering',
   },
   {
     id: '3',
@@ -29,7 +29,7 @@ let events: Event[] = [
     description: '',
     end: setHours(setMinutes(subDays(new Date(), 3), 3), 1).getTime(),
     start: setHours(setMinutes(subDays(new Date(), 4), 3), 2).getTime(),
-    title: 'Set up a board meeting'
+    title: 'Set up a board meeting',
   },
   {
     id: '4',
@@ -38,8 +38,8 @@ let events: Event[] = [
     description: '',
     end: setHours(setMinutes(addDays(new Date(), 5), 1), 4).getTime(),
     start: setHours(setMinutes(addDays(new Date(), 5), 1), 4).getTime(),
-    title: 'Call all developers'
-  }
+    title: 'Call all developers',
+  },
 ];
 
 class CalendarApi {
@@ -60,7 +60,7 @@ class CalendarApi {
           description,
           end,
           start,
-          title
+          title,
         };
 
         clonedEvents.push(event);

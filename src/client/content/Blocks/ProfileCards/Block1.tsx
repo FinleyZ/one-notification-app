@@ -9,7 +9,7 @@ import {
   Divider,
   Grid,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -22,13 +22,13 @@ import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
 const CardBorderBottom = styled(Card)(
   () => `
         border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 const CardBorderTop = styled(Card)(
   () => `
         border-top: transparent 5px solid;
-  `
+  `,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -48,7 +48,7 @@ const IconButtonWrapper = styled(IconButton)(
                 transform: scale(1.3);
             }
         }
-  `
+  `,
 );
 
 function Block1() {
@@ -60,7 +60,7 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <CardBorderBottom
           sx={{
-            borderBottomColor: `${theme.colors.primary.main}`
+            borderBottomColor: `${theme.colors.primary.main}`,
           }}
         >
           <Box p={2}>
@@ -73,8 +73,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               variant="h3"
             >
@@ -88,12 +88,12 @@ function Block1() {
                   fontWeight: 'normal',
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
                   borderRadius: `${theme.general.borderRadiusSm}`,
                   width: 34,
                   height: 34,
-                  mr: 0.5
+                  mr: 0.5,
                 }}
               >
                 JK
@@ -103,7 +103,7 @@ function Block1() {
                   color="success"
                   anchorOrigin={{
                     vertical: 'bottom',
-                    horizontal: 'right'
+                    horizontal: 'right',
                   }}
                   variant="dot"
                   overlap="rectangular"
@@ -115,11 +115,11 @@ function Block1() {
                       fontWeight: 'normal',
                       background: `${theme.colors.alpha.black[100]}`,
                       color: `${theme.palette.getContrastText(
-                        theme.colors.alpha.black[100]
+                        theme.colors.alpha.black[100],
                       )}`,
                       borderRadius: `${theme.general.borderRadiusSm}`,
                       width: 34,
-                      height: 34
+                      height: 34,
                     }}
                   >
                     HA
@@ -132,7 +132,7 @@ function Block1() {
                   borderRadius: `${theme.general.borderRadiusSm}`,
                   width: 34,
                   mr: 0.5,
-                  height: 34
+                  height: 34,
                 }}
                 alt="Cindy Baker"
                 src="/static/images/avatars/3.jpg"
@@ -143,7 +143,7 @@ function Block1() {
                   borderRadius: `${theme.general.borderRadiusSm}`,
                   width: 34,
                   mr: 0.5,
-                  height: 34
+                  height: 34,
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/4.jpg"
@@ -157,7 +157,7 @@ function Block1() {
             justifyContent="space-between"
             p={2}
             sx={{
-              background: `${theme.colors.alpha.black[5]}`
+              background: `${theme.colors.alpha.black[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -168,15 +168,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.primary}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
+                    theme.colors.primary.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.main
-                    )}`
-                  }
+                      theme.colors.primary.main,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -185,13 +185,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -201,13 +201,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -217,13 +217,13 @@ function Block1() {
             <Typography
               sx={{
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />
@@ -236,7 +236,7 @@ function Block1() {
         <CardBorderTop
           sx={{
             textAlign: 'center',
-            borderTopColor: `${theme.colors.success.main}`
+            borderTopColor: `${theme.colors.success.main}`,
           }}
         >
           <Box p={2}>
@@ -249,8 +249,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               variant="h3"
             >
@@ -259,13 +259,13 @@ function Block1() {
             <AvatarGroup
               sx={{
                 mt: 1.5,
-                justifyContent: 'center'
+                justifyContent: 'center',
               }}
             >
               <Avatar
                 sx={{
                   width: 44,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Cindy Baker"
                 src="/static/images/avatars/1.jpg"
@@ -273,7 +273,7 @@ function Block1() {
               <Avatar
                 sx={{
                   width: 44,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Shelly Hays"
                 src="/static/images/avatars/2.jpg"
@@ -281,7 +281,7 @@ function Block1() {
               <Avatar
                 sx={{
                   width: 44,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/5.jpg"
@@ -295,7 +295,7 @@ function Block1() {
             justifyContent="space-between"
             p={1.16}
             sx={{
-              background: `${theme.colors.alpha.black[5]}`
+              background: `${theme.colors.alpha.black[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -306,15 +306,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.success}`,
                   background: `${theme.colors.success.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.success.dark
+                    theme.colors.success.dark,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
-                    )}`
-                  }
+                      theme.colors.success.dark,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -323,13 +323,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -339,13 +339,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -355,13 +355,13 @@ function Block1() {
             <Typography
               sx={{
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />
@@ -373,7 +373,7 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <CardBorderBottom
           sx={{
-            borderBottomColor: `${theme.colors.error.main}`
+            borderBottomColor: `${theme.colors.error.main}`,
           }}
         >
           <Box p={2}>
@@ -386,8 +386,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               variant="h3"
             >
@@ -399,7 +399,7 @@ function Block1() {
                   color="primary"
                   anchorOrigin={{
                     vertical: 'top',
-                    horizontal: 'right'
+                    horizontal: 'right',
                   }}
                   overlap="circular"
                   badgeContent="7"
@@ -407,7 +407,7 @@ function Block1() {
                   <Avatar
                     sx={{
                       width: 44,
-                      height: 44
+                      height: 44,
                     }}
                     alt="Cindy Baker"
                     src="/static/images/avatars/1.jpg"
@@ -418,7 +418,7 @@ function Block1() {
                 sx={{
                   width: 44,
                   mr: 0.5,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Travis Howard"
                 src="/static/images/avatars/2.jpg"
@@ -427,7 +427,7 @@ function Block1() {
                 sx={{
                   width: 44,
                   mr: 0.5,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Remy Sharp"
                 src="/static/images/avatars/3.jpg"
@@ -436,7 +436,7 @@ function Block1() {
                 sx={{
                   width: 44,
                   mr: 0.5,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Shelly Hays"
                 src="/static/images/avatars/4.jpg"
@@ -445,7 +445,7 @@ function Block1() {
                 sx={{
                   width: 44,
                   mr: 0.5,
-                  height: 44
+                  height: 44,
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/5.jpg"
@@ -459,7 +459,7 @@ function Block1() {
             justifyContent="space-between"
             p={1.5}
             sx={{
-              background: `${theme.colors.alpha.black[5]}`
+              background: `${theme.colors.alpha.black[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -470,15 +470,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.error}`,
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.main
-                    )}`
-                  }
+                      theme.colors.error.main,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -487,13 +487,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -503,13 +503,13 @@ function Block1() {
                 sx={{
                   display: 'flex',
                   mr: 1.5,
-                  alignItems: 'center'
+                  alignItems: 'center',
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -519,13 +519,13 @@ function Block1() {
             <Typography
               sx={{
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />
@@ -537,7 +537,7 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            background: `${theme.colors.gradients.blue3}`
+            background: `${theme.colors.gradients.blue3}`,
           }}
           variant="outlined"
         >
@@ -550,8 +550,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               variant="h3"
             >
@@ -565,14 +565,14 @@ function Block1() {
                   fontWeight: 'normal',
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
                   borderRadius: `${theme.general.borderRadiusSm}`,
                   width: 34,
                   height: 34,
                   mr: 0.5,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
               >
                 JK
@@ -582,7 +582,7 @@ function Block1() {
                   color="success"
                   anchorOrigin={{
                     vertical: 'bottom',
-                    horizontal: 'right'
+                    horizontal: 'right',
                   }}
                   variant="dot"
                   overlap="rectangular"
@@ -594,13 +594,13 @@ function Block1() {
                       fontWeight: 'normal',
                       background: `${theme.colors.primary.main}`,
                       color: `${theme.palette.getContrastText(
-                        theme.colors.primary.dark
+                        theme.colors.primary.dark,
                       )}`,
                       borderRadius: `${theme.general.borderRadiusSm}`,
                       width: 34,
                       height: 34,
                       boxShadow:
-                        '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                        '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                     }}
                   >
                     HA
@@ -615,7 +615,7 @@ function Block1() {
                   mr: 0.5,
                   height: 34,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Cindy Baker"
                 src="/static/images/avatars/3.jpg"
@@ -628,7 +628,7 @@ function Block1() {
                   mr: 0.5,
                   height: 34,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/4.jpg"
@@ -637,7 +637,7 @@ function Block1() {
           </Box>
           <Divider
             sx={{
-              background: `${theme.colors.alpha.trueWhite[10]}`
+              background: `${theme.colors.alpha.trueWhite[10]}`,
             }}
           />
           <Box
@@ -646,7 +646,7 @@ function Block1() {
             justifyContent="space-between"
             p={2}
             sx={{
-              background: `${theme.colors.alpha.trueWhite[5]}`
+              background: `${theme.colors.alpha.trueWhite[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -657,15 +657,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.primary}`,
                   background: `${theme.colors.primary.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.primary.main
+                    theme.colors.primary.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.primary.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.primary.main
-                    )}`
-                  }
+                      theme.colors.primary.main,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -675,13 +675,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -692,13 +692,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -709,13 +709,13 @@ function Block1() {
               sx={{
                 color: `${theme.colors.alpha.trueWhite[70]}`,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />
@@ -728,7 +728,7 @@ function Block1() {
         <Card
           sx={{
             background: `${theme.colors.gradients.black2}`,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
           variant="outlined"
         >
@@ -741,8 +741,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               variant="h3"
             >
@@ -754,7 +754,7 @@ function Block1() {
                   width: 44,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Cindy Baker"
                 src="/static/images/avatars/1.jpg"
@@ -765,7 +765,7 @@ function Block1() {
                   height: 44,
                   mx: 1,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Shelly Hays"
                 src="/static/images/avatars/2.jpg"
@@ -775,7 +775,7 @@ function Block1() {
                   width: 44,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/5.jpg"
@@ -784,7 +784,7 @@ function Block1() {
           </Box>
           <Divider
             sx={{
-              background: `${theme.colors.alpha.trueWhite[10]}`
+              background: `${theme.colors.alpha.trueWhite[10]}`,
             }}
           />
           <Box
@@ -793,7 +793,7 @@ function Block1() {
             justifyContent="space-between"
             p={1.5}
             sx={{
-              background: `${theme.colors.alpha.trueWhite[5]}`
+              background: `${theme.colors.alpha.trueWhite[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -804,15 +804,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.success}`,
                   background: `${theme.colors.success.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.success.dark
+                    theme.colors.success.dark,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.success.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.success.dark
-                    )}`
-                  }
+                      theme.colors.success.dark,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -822,13 +822,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -839,13 +839,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -856,13 +856,13 @@ function Block1() {
               sx={{
                 color: `${theme.colors.alpha.trueWhite[70]}`,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />
@@ -874,7 +874,7 @@ function Block1() {
       <Grid item xs={12} md={4}>
         <Card
           sx={{
-            background: `${theme.colors.gradients.black1}`
+            background: `${theme.colors.gradients.black1}`,
           }}
           variant="outlined"
         >
@@ -887,8 +887,8 @@ function Block1() {
                 fontSize: `${theme.typography.pxToRem(17)}`,
 
                 '&:hover': {
-                  color: `${theme.colors.alpha.trueWhite[100]}`
-                }
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
+                },
               }}
               variant="h3"
             >
@@ -900,7 +900,7 @@ function Block1() {
                   color="primary"
                   anchorOrigin={{
                     vertical: 'top',
-                    horizontal: 'right'
+                    horizontal: 'right',
                   }}
                   overlap="circular"
                   badgeContent="7"
@@ -910,7 +910,7 @@ function Block1() {
                       width: 44,
                       height: 44,
                       boxShadow:
-                        '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                        '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                     }}
                     alt="Cindy Baker"
                     src="/static/images/avatars/1.jpg"
@@ -923,7 +923,7 @@ function Block1() {
                   mr: 0.5,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Travis Howard"
                 src="/static/images/avatars/2.jpg"
@@ -934,7 +934,7 @@ function Block1() {
                   mr: 0.5,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Remy Sharp"
                 src="/static/images/avatars/3.jpg"
@@ -945,7 +945,7 @@ function Block1() {
                   mr: 0.5,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Shelly Hays"
                 src="/static/images/avatars/4.jpg"
@@ -956,7 +956,7 @@ function Block1() {
                   mr: 0.5,
                   height: 44,
                   boxShadow:
-                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)'
+                    '0 .113rem .5rem rgba(7,9,25,.3), 0 .126rem .225rem rgba(7,9,25,.1)',
                 }}
                 alt="Agnes Walker"
                 src="/static/images/avatars/5.jpg"
@@ -965,7 +965,7 @@ function Block1() {
           </Box>
           <Divider
             sx={{
-              background: `${theme.colors.alpha.trueWhite[10]}`
+              background: `${theme.colors.alpha.trueWhite[10]}`,
             }}
           />
           <Box
@@ -974,7 +974,7 @@ function Block1() {
             justifyContent="space-between"
             p={1.5}
             sx={{
-              background: `${theme.colors.alpha.trueWhite[5]}`
+              background: `${theme.colors.alpha.trueWhite[5]}`,
             }}
           >
             <Box display="flex" alignItems="center">
@@ -985,15 +985,15 @@ function Block1() {
                   boxShadow: `${theme.colors.shadows.error}`,
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
 
                   '&:hover': {
                     background: `${theme.colors.error.main}`,
                     color: `${theme.palette.getContrastText(
-                      theme.colors.error.main
-                    )}`
-                  }
+                      theme.colors.error.main,
+                    )}`,
+                  },
                 }}
               >
                 <AddTwoToneIcon fontSize="small" />
@@ -1003,13 +1003,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <LinkTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -1020,13 +1020,13 @@ function Block1() {
                   display: 'flex',
                   mr: 1.5,
                   alignItems: 'center',
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
                 variant="subtitle1"
               >
                 <VisibilityTwoToneIcon
                   sx={{
-                    mr: 0.4
+                    mr: 0.4,
                   }}
                   fontSize="small"
                 />
@@ -1037,13 +1037,13 @@ function Block1() {
               sx={{
                 color: `${theme.colors.alpha.trueWhite[70]}`,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="subtitle1"
             >
               <ScheduleTwoToneIcon
                 sx={{
-                  mr: 0.4
+                  mr: 0.4,
                 }}
                 fontSize="small"
               />

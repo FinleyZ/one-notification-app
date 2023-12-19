@@ -25,7 +25,7 @@ export const Authenticated: FC<AuthenticatedProps> = (props) => {
     if (!auth.isAuthenticated) {
       router.push({
         pathname: '/auth/login/cover',
-        query: { backTo: router.asPath }
+        query: { backTo: router.asPath },
       });
     } else {
       setVerified(true);
@@ -34,10 +34,10 @@ export const Authenticated: FC<AuthenticatedProps> = (props) => {
         variant: 'success',
         anchorOrigin: {
           vertical: 'bottom',
-          horizontal: 'right'
+          horizontal: 'right',
         },
         autoHideDuration: 2000,
-        TransitionComponent: Slide
+        TransitionComponent: Slide,
       });
     }
   }, [router.isReady]);
@@ -50,5 +50,5 @@ export const Authenticated: FC<AuthenticatedProps> = (props) => {
 };
 
 Authenticated.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };

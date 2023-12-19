@@ -14,7 +14,7 @@ import {
   styled,
   ListItemButton,
   useTheme,
-  linearProgressClasses
+  linearProgressClasses,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -34,7 +34,7 @@ const LinearProgressError = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.purple3};
         }
-    `
+    `,
 );
 
 const LinearProgressWarning = styled(LinearProgress)(
@@ -50,7 +50,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.orange1};
         }
-    `
+    `,
 );
 
 const LinearProgressSuccess = styled(LinearProgress)(
@@ -66,7 +66,7 @@ const LinearProgressSuccess = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background: ${theme.colors.gradients.green1};
         }
-    `
+    `,
 );
 
 const ListItemButtonWrapper = styled(ListItemButton)(
@@ -88,7 +88,7 @@ const ListItemButtonWrapper = styled(ListItemButton)(
             0 0.225rem 0.8rem ${alpha(theme.colors.alpha.black[100], 0.15)};
         transform: scale(1.08);
     }
-  `
+  `,
 );
 
 function Block9() {
@@ -98,7 +98,7 @@ function Block9() {
   return (
     <Card
       sx={{
-        overflow: 'visible'
+        overflow: 'visible',
       }}
     >
       <Box
@@ -112,7 +112,7 @@ function Block9() {
             variant="caption"
             fontWeight="bold"
             sx={{
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
           >
             {t('Status')}
@@ -130,9 +130,9 @@ function Block9() {
             '&:hover': {
               backgroundColor: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
-              )}`
-            }
+                theme.colors.primary.main,
+              )}`,
+            },
           }}
         >
           <MoreVertTwoToneIcon fontSize="small" />
@@ -144,14 +144,14 @@ function Block9() {
           sx={{
             display: { xs: 'block', sm: 'flex' },
             py: 2,
-            px: 2.5
+            px: 2.5,
           }}
         >
           <ListItemAvatar
             sx={{
               minWidth: 'auto',
               mr: 2,
-              mb: { xs: 2, sm: 0 }
+              mb: { xs: 2, sm: 0 },
             }}
           >
             <Tooltip
@@ -164,10 +164,10 @@ function Block9() {
                   fontSize: `${theme.typography.pxToRem(15)}`,
                   background: `${theme.colors.warning.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.warning.dark
+                    theme.colors.warning.dark,
                   )}`,
                   width: 56,
-                  height: 56
+                  height: 56,
                 }}
               >
                 GA
@@ -186,7 +186,7 @@ function Block9() {
                 <LinearProgressSuccess
                   sx={{
                     mt: 1,
-                    mb: 0.5
+                    mb: 0.5,
                   }}
                   variant="determinate"
                   value={73}
@@ -198,7 +198,7 @@ function Block9() {
                 >
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -206,7 +206,7 @@ function Block9() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -221,14 +221,14 @@ function Block9() {
           sx={{
             display: { xs: 'block', sm: 'flex' },
             py: 2,
-            px: 2.5
+            px: 2.5,
           }}
         >
           <ListItemAvatar
             sx={{
               minWidth: 'auto',
               mr: 2,
-              mb: { xs: 2, sm: 0 }
+              mb: { xs: 2, sm: 0 },
             }}
           >
             <Tooltip
@@ -241,10 +241,10 @@ function Block9() {
                   fontSize: `${theme.typography.pxToRem(15)}`,
                   background: `${theme.colors.gradients.blue1}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.warning.dark
+                    theme.colors.warning.dark,
                   )}`,
                   width: 56,
-                  height: 56
+                  height: 56,
                 }}
               >
                 TH
@@ -263,7 +263,7 @@ function Block9() {
                 <LinearProgressSuccess
                   sx={{
                     mt: 1,
-                    mb: 0.5
+                    mb: 0.5,
                   }}
                   variant="determinate"
                   value={29}
@@ -275,7 +275,7 @@ function Block9() {
                 >
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -283,7 +283,7 @@ function Block9() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -298,14 +298,14 @@ function Block9() {
           sx={{
             display: { xs: 'block', sm: 'flex' },
             py: 2,
-            px: 2.5
+            px: 2.5,
           }}
         >
           <ListItemAvatar
             sx={{
               minWidth: 'auto',
               mr: 2,
-              mb: { xs: 2, sm: 0 }
+              mb: { xs: 2, sm: 0 },
             }}
           >
             <Tooltip
@@ -318,10 +318,10 @@ function Block9() {
                   fontSize: `${theme.typography.pxToRem(15)}`,
                   background: `${theme.colors.error.main}`,
                   color: `${theme.palette.getContrastText(
-                    theme.colors.error.main
+                    theme.colors.error.main,
                   )}`,
                   width: 56,
-                  height: 56
+                  height: 56,
                 }}
               >
                 EA
@@ -340,7 +340,7 @@ function Block9() {
                 <LinearProgressError
                   sx={{
                     mt: 1,
-                    mb: 0.5
+                    mb: 0.5,
                   }}
                   variant="determinate"
                   value={87}
@@ -352,7 +352,7 @@ function Block9() {
                 >
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -360,7 +360,7 @@ function Block9() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -375,14 +375,14 @@ function Block9() {
           sx={{
             display: { xs: 'block', sm: 'flex' },
             py: 2,
-            px: 2.5
+            px: 2.5,
           }}
         >
           <ListItemAvatar
             sx={{
               minWidth: 'auto',
               mr: 2,
-              mb: { xs: 2, sm: 0 }
+              mb: { xs: 2, sm: 0 },
             }}
           >
             <Tooltip
@@ -396,7 +396,7 @@ function Block9() {
                   background: `${theme.colors.gradients.black2}`,
                   color: `${theme.colors.alpha.trueWhite[100]}`,
                   width: 56,
-                  height: 56
+                  height: 56,
                 }}
               >
                 HS
@@ -415,7 +415,7 @@ function Block9() {
                 <LinearProgressWarning
                   sx={{
                     mt: 1,
-                    mb: 0.5
+                    mb: 0.5,
                   }}
                   variant="determinate"
                   value={54}
@@ -427,7 +427,7 @@ function Block9() {
                 >
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >
@@ -435,7 +435,7 @@ function Block9() {
                   </Typography>
                   <Typography
                     sx={{
-                      fontSize: `${theme.typography.pxToRem(12)}`
+                      fontSize: `${theme.typography.pxToRem(12)}`,
                     }}
                     variant="subtitle2"
                   >

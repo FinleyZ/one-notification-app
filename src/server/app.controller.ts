@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   @Render('index')
-  page()  {
+  page() {
     return {};
   }
   getHello(): string {

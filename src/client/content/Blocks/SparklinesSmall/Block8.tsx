@@ -13,33 +13,33 @@ function Block8() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     colors: [theme.colors.primary.main],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     fill: {
-      opacity: 1
+      opacity: 1,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       colors: [theme.colors.primary.main],
       curve: 'smooth',
-      width: 2
+      width: 2,
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -51,38 +51,38 @@ function Block8() {
       'Sunday',
       'Last Week',
       'Last Month',
-      'Last Year'
+      'Last Year',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
+      min: 0,
     },
     tooltip: {
       fixed: {
         enabled: true,
         position: 'BottomRight',
         offsetX: -20,
-        offsetY: 3
+        offsetY: 3,
       },
-      theme: 'dark'
-    }
+      theme: 'dark',
+    },
   };
   const Box1Data = [
     {
       name: 'New accounts',
-      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62]
-    }
+      data: [32, 52, 45, 32, 54, 56, 28, 25, 36, 62],
+    },
   ];
 
   return (
@@ -101,7 +101,7 @@ function Block8() {
           <Typography
             variant="subtitle2"
             sx={{
-              fontSize: `${theme.typography.pxToRem(16)}`
+              fontSize: `${theme.typography.pxToRem(16)}`,
             }}
           >
             {t('Since your last visit there were ')}{' '}
@@ -119,9 +119,9 @@ function Block8() {
             '&:hover': {
               background: `${theme.colors.primary.main}`,
               color: `${theme.palette.getContrastText(
-                theme.colors.primary.main
-              )}`
-            }
+                theme.colors.primary.main,
+              )}`,
+            },
           }}
           size="small"
           variant="contained"

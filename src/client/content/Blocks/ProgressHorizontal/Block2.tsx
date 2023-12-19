@@ -7,7 +7,7 @@ import {
   LinearProgress,
   linearProgressClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const LinearProgressWarning = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.warning.main};
         }
-    `
+    `,
 );
 
 const LinearProgressBlack = styled(LinearProgress)(
@@ -41,7 +41,7 @@ const LinearProgressBlack = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.alpha.black[100]};
         }
-    `
+    `,
 );
 
 const LinearProgressInfo = styled(LinearProgress)(
@@ -57,7 +57,7 @@ const LinearProgressInfo = styled(LinearProgress)(
             border-radius: ${theme.general.borderRadiusLg};
             background-color: ${theme.colors.info.main};
         }
-    `
+    `,
 );
 
 function Block2() {
@@ -70,7 +70,7 @@ function Block2() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -90,7 +90,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.alpha.black[100]}`
+                color: `${theme.colors.alpha.black[100]}`,
               }}
             >
               23,594
@@ -100,14 +100,14 @@ function Block2() {
           <Box
             display="flex"
             sx={{
-              mt: 0.6
+              mt: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
           >
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -115,7 +115,7 @@ function Block2() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -128,7 +128,7 @@ function Block2() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -148,7 +148,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             >
               $12,346
@@ -158,14 +158,14 @@ function Block2() {
           <Box
             display="flex"
             sx={{
-              mt: 0.6
+              mt: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
           >
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -173,7 +173,7 @@ function Block2() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -186,7 +186,7 @@ function Block2() {
         <Card
           sx={{
             p: 2.5,
-            flexGrow: 1
+            flexGrow: 1,
           }}
         >
           <Box
@@ -206,7 +206,7 @@ function Block2() {
             <Typography
               variant="h2"
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               $2.31M
@@ -216,14 +216,14 @@ function Block2() {
           <Box
             display="flex"
             sx={{
-              mt: 0.6
+              mt: 0.6,
             }}
             alignItems="center"
             justifyContent="space-between"
           >
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >
@@ -231,7 +231,7 @@ function Block2() {
             </Typography>
             <Typography
               sx={{
-                color: `${theme.colors.alpha.black[50]}`
+                color: `${theme.colors.alpha.black[50]}`,
               }}
               variant="subtitle2"
             >

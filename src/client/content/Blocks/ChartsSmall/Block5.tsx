@@ -9,7 +9,7 @@ import {
   AvatarGroup,
   Divider,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import CameraAltTwoToneIcon from '@mui/icons-material/CameraAltTwoTone';
@@ -27,7 +27,7 @@ const AvatarGradient1 = styled(Avatar)(
         color: ${theme.palette.getContrastText(theme.colors.primary.dark)};
         width: ${theme.spacing(7)};
         height: ${theme.spacing(7)};
-  `
+  `,
 );
 
 const AvatarGradient2 = styled(Avatar)(
@@ -36,7 +36,7 @@ const AvatarGradient2 = styled(Avatar)(
         color: ${theme.palette.getContrastText(theme.colors.primary.dark)};
         width: ${theme.spacing(7)};
         height: ${theme.spacing(7)};
-  `
+  `,
 );
 
 const AvatarGradient3 = styled(Avatar)(
@@ -45,7 +45,7 @@ const AvatarGradient3 = styled(Avatar)(
         color: ${theme.palette.getContrastText(theme.colors.primary.dark)};
         width: ${theme.spacing(7)};
         height: ${theme.spacing(7)};
-  `
+  `,
 );
 
 function Block5() {
@@ -62,7 +62,7 @@ function Block5() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarGradient1>
@@ -72,7 +72,7 @@ function Block5() {
               noWrap
               variant="h3"
               sx={{
-                pt: 3
+                pt: 3,
               }}
             >
               {t('Recent Visitors')}
@@ -81,14 +81,14 @@ function Block5() {
               noWrap
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t("Today's analytics")}
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={5}
             >
@@ -96,7 +96,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -108,7 +108,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -120,7 +120,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -132,7 +132,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -145,7 +145,7 @@ function Block5() {
               sx={{
                 width: '60%',
                 alignSelf: 'center',
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
@@ -163,7 +163,7 @@ function Block5() {
               <Tooltip title={t('Add to favourites')}>
                 <IconButton
                   sx={{
-                    mx: 1
+                    mx: 1,
                   }}
                   color="secondary"
                 >
@@ -187,7 +187,7 @@ function Block5() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarGradient2>
@@ -197,7 +197,7 @@ function Block5() {
               noWrap
               variant="h3"
               sx={{
-                pt: 3
+                pt: 3,
               }}
             >
               {t('New Customers')}
@@ -206,14 +206,14 @@ function Block5() {
               noWrap
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t('Latest statistics')}
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={5}
             >
@@ -221,7 +221,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -233,7 +233,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -245,7 +245,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -258,7 +258,7 @@ function Block5() {
               sx={{
                 width: '60%',
                 alignSelf: 'center',
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
@@ -276,7 +276,7 @@ function Block5() {
               <Tooltip title={t('Add to favourites')}>
                 <IconButton
                   sx={{
-                    mx: 1
+                    mx: 1,
                   }}
                   color="secondary"
                 >
@@ -300,7 +300,7 @@ function Block5() {
               display: 'flex',
               flexDirection: 'column',
               justifyContent: 'center',
-              alignItems: 'center'
+              alignItems: 'center',
             }}
           >
             <AvatarGradient3>
@@ -310,7 +310,7 @@ function Block5() {
               noWrap
               variant="h3"
               sx={{
-                pt: 3
+                pt: 3,
               }}
             >
               {t("Today's Revenue")}
@@ -319,14 +319,14 @@ function Block5() {
               noWrap
               variant="subtitle2"
               sx={{
-                fontSize: `${theme.typography.pxToRem(15)}`
+                fontSize: `${theme.typography.pxToRem(15)}`,
               }}
             >
               {t('Successful orders')}
             </Typography>
             <AvatarGroup
               sx={{
-                mt: 2
+                mt: 2,
               }}
               max={4}
             >
@@ -334,7 +334,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -346,7 +346,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -358,7 +358,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -370,7 +370,7 @@ function Block5() {
                 <Avatar
                   sx={{
                     width: 46,
-                    height: 46
+                    height: 46,
                   }}
                   component={Link}
                   href="#"
@@ -383,7 +383,7 @@ function Block5() {
               sx={{
                 width: '60%',
                 alignSelf: 'center',
-                mt: 3
+                mt: 3,
               }}
               flexItem
             />
@@ -401,7 +401,7 @@ function Block5() {
               <Tooltip title={t('Add to favourites')}>
                 <IconButton
                   sx={{
-                    mx: 1
+                    mx: 1,
                   }}
                   color="secondary"
                 >

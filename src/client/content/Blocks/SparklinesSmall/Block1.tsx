@@ -5,7 +5,7 @@ import {
   Typography,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -21,13 +21,13 @@ import MoreHorizTwoToneIcon from '@mui/icons-material/MoreHorizTwoTone';
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 const CardBorderTop = styled(Card)(
   () => `
     border-top: transparent 5px solid;
-  `
+  `,
 );
 
 function Block1() {
@@ -38,231 +38,231 @@ function Block1() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.warning.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.warning.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Users:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
     yaxis: {
-      show: false
+      show: false,
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart1Data = [
     {
       name: 'Daily visitors',
-      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65]
-    }
+      data: [47, 38, 56, 24, 45, 54, 38, 47, 38, 56, 24, 56, 24, 65],
+    },
   ];
 
   const chart2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.error.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.error.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Revenue: $';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart2Data = [
     {
       name: 'Revenue',
-      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38, 47, 24, 65]
-    }
+      data: [45, 56, 24, 56, 54, 38, 47, 38, 56, 24, 38, 47, 24, 65],
+    },
   ];
 
   const chart3Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.success.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.success.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Orders:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart3Data = [
     {
       name: 'Sales',
-      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56, 47, 24, 65]
-    }
+      data: [45, 56, 24, 54, 38, 47, 38, 56, 24, 38, 56, 47, 24, 65],
+    },
   ];
 
   const chart4Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
-      }
+        enabled: true,
+      },
     },
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.info.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     colors: [theme.colors.info.main],
     markers: {
-      size: 0
+      size: 0,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Bugfixes:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
     legend: {
-      show: false
-    }
+      show: false,
+    },
   };
   const chart4Data = [
     {
       name: 'Tests',
-      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24, 38, 24, 65]
-    }
+      data: [24, 54, 38, 47, 56, 47, 45, 56, 38, 56, 24, 38, 24, 65],
+    },
   ];
 
   return (
@@ -273,7 +273,7 @@ function Block1() {
             borderBottomColor: `${theme.colors.warning.main}`,
             px: 3,
             pt: 3,
-            pb: 2
+            pb: 2,
           }}
         >
           <Box
@@ -283,7 +283,7 @@ function Block1() {
           >
             <Typography
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <AccessAlarmTwoToneIcon fontSize="large" />
@@ -295,7 +295,7 @@ function Block1() {
               component="span"
               sx={{
                 lineHeight: 1,
-                pr: 0.6
+                pr: 0.6,
               }}
               variant="h3"
             >
@@ -321,7 +321,7 @@ function Block1() {
             borderBottomColor: `${theme.colors.error.main}`,
             px: 3,
             pt: 3,
-            pb: 2
+            pb: 2,
           }}
         >
           <Box
@@ -331,7 +331,7 @@ function Block1() {
           >
             <Typography
               sx={{
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               <ArchiveTwoToneIcon fontSize="large" />
@@ -341,7 +341,7 @@ function Block1() {
                 sx={{
                   fontWeight: 'bold',
                   textTransform: 'uppercase',
-                  fontSize: `${theme.typography.pxToRem(11)}`
+                  fontSize: `${theme.typography.pxToRem(11)}`,
                 }}
               >
                 {t('Hot')}
@@ -353,7 +353,7 @@ function Block1() {
               component="span"
               sx={{
                 lineHeight: 1,
-                pr: 0.6
+                pr: 0.6,
               }}
               variant="h3"
             >
@@ -379,7 +379,7 @@ function Block1() {
             borderTopColor: `${theme.colors.success.main}`,
             px: 3,
             pt: 3,
-            pb: 2
+            pb: 2,
           }}
         >
           <Box
@@ -389,7 +389,7 @@ function Block1() {
           >
             <Typography
               sx={{
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <BallotTwoToneIcon fontSize="large" />
@@ -403,7 +403,7 @@ function Block1() {
               component="span"
               sx={{
                 lineHeight: 1,
-                pr: 0.6
+                pr: 0.6,
               }}
               variant="h3"
             >
@@ -429,7 +429,7 @@ function Block1() {
             borderTopColor: `${theme.colors.info.main}`,
             px: 3,
             pt: 3,
-            pb: 2
+            pb: 2,
           }}
         >
           <Box
@@ -439,7 +439,7 @@ function Block1() {
           >
             <Typography
               sx={{
-                color: `${theme.colors.info.main}`
+                color: `${theme.colors.info.main}`,
               }}
             >
               <AccountTreeTwoToneIcon fontSize="large" />
@@ -453,7 +453,7 @@ function Block1() {
               component="span"
               sx={{
                 lineHeight: 1,
-                pr: 0.6
+                pr: 0.6,
               }}
               variant="h3"
             >

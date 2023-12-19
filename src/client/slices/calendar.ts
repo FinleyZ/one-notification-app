@@ -10,7 +10,7 @@ interface CalendarState {
 }
 
 const initialState: CalendarState = {
-  events: []
+  events: [],
 };
 
 const slice = createSlice({
@@ -36,10 +36,10 @@ const slice = createSlice({
     },
     deleteEvent(state: CalendarState, action: PayloadAction<string>): void {
       state.events = state.events.filter(
-        (event) => event.id !== action.payload
+        (event) => event.id !== action.payload,
       );
-    }
-  }
+    },
+  },
 });
 
 export const { reducer } = slice;
@@ -63,7 +63,7 @@ export const updateEvent =
   async (dispatch): Promise<void> => {
     const data = await calendar.updateEvent({
       eventId,
-      update
+      update,
     });
 
     dispatch(slice.actions.updateEvent(data));

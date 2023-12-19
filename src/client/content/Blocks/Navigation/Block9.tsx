@@ -11,7 +11,7 @@ import {
   MenuList,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -34,7 +34,7 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(1, 1.5, 0.8)};
     line-height: 1;
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -43,7 +43,7 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const MenuListWrapperRounded = styled(MenuList)(
@@ -66,7 +66,7 @@ const MenuListWrapperRounded = styled(MenuList)(
             margin-bottom: 0;
         }
       }
-  `
+  `,
 );
 
 function Block9() {
@@ -77,7 +77,7 @@ function Block9() {
     <Card
       sx={{
         position: 'relative',
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <CardActions>
@@ -92,9 +92,9 @@ function Block9() {
               '&:hover': {
                 backgroundColor: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
-                )}`
-              }
+                  theme.colors.error.dark,
+                )}`,
+              },
             }}
           >
             <EmailTwoToneIcon fontSize="small" />
@@ -110,15 +110,15 @@ function Block9() {
             height: 104,
             boxShadow: `0 .213rem .5rem ${alpha(
               theme.colors.alpha.black[100],
-              0.4
-            )}, 0 .226rem .225rem ${alpha(theme.colors.alpha.black[100], 0.1)}`
+              0.4,
+            )}, 0 .226rem .225rem ${alpha(theme.colors.alpha.black[100], 0.1)}`,
           }}
           src="/static/images/avatars/3.jpg"
         />
         <Typography
           sx={{
             pb: 1,
-            pt: 2
+            pt: 2,
           }}
           variant="h2"
         >
@@ -130,13 +130,13 @@ function Block9() {
         <Typography
           sx={{
             px: 3,
-            pt: 3
+            pt: 3,
           }}
           variant="subtitle2"
           textAlign="center"
         >
           {t(
-            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes'
+            'High performance React template built with lots of powerful components across multiple product niches for fast & perfect apps development processes',
           )}
           .
         </Typography>
@@ -150,8 +150,8 @@ function Block9() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"
@@ -169,8 +169,8 @@ function Block9() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"
@@ -187,8 +187,8 @@ function Block9() {
                 color: `${theme.colors.primary.main}`,
                 '&:hover': {
                   background: `${alpha(theme.colors.primary.main, 0.2)}`,
-                  color: `${theme.colors.primary.main}`
-                }
+                  color: `${theme.colors.primary.main}`,
+                },
               }}
               color="primary"
               size="large"
@@ -204,33 +204,33 @@ function Block9() {
         sx={{
           textAlign: 'left',
           mb: 3,
-          mx: 3
+          mx: 3,
         }}
       >
         <MenuItem selected>
           <ListItemAvatar
             sx={{
               minWidth: 32,
-              display: 'flex'
+              display: 'flex',
             }}
           >
             <EnhancedEncryptionTwoToneIcon
               sx={{
-                opacity: 0.5
+                opacity: 0.5,
               }}
               fontSize="small"
             />
           </ListItemAvatar>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Analytics')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
@@ -238,19 +238,19 @@ function Block9() {
           <ListItemAvatar
             sx={{
               minWidth: 32,
-              display: 'flex'
+              display: 'flex',
             }}
           >
             <GppGoodTwoToneIcon
               sx={{
-                opacity: 0.5
+                opacity: 0.5,
               }}
               fontSize="small"
             />
           </ListItemAvatar>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Server Status')}
           />
@@ -260,8 +260,8 @@ function Block9() {
               sx={{
                 background: `${theme.colors.error.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.error.dark
-                )}`
+                  theme.colors.error.dark,
+                )}`,
               }}
             >
               675
@@ -270,7 +270,7 @@ function Block9() {
               sx={{
                 ml: 1,
                 color: `${theme.colors.alpha.black[30]}`,
-                opacity: 0.8
+                opacity: 0.8,
               }}
             />
           </Box>
@@ -279,26 +279,26 @@ function Block9() {
           <ListItemAvatar
             sx={{
               minWidth: 32,
-              display: 'flex'
+              display: 'flex',
             }}
           >
             <AlarmOnTwoToneIcon
               sx={{
-                opacity: 0.5
+                opacity: 0.5,
               }}
               fontSize="small"
             />
           </ListItemAvatar>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Reports Management')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>
@@ -306,26 +306,26 @@ function Block9() {
           <ListItemAvatar
             sx={{
               minWidth: 32,
-              display: 'flex'
+              display: 'flex',
             }}
           >
             <DateRangeTwoToneIcon
               sx={{
-                opacity: 0.5
+                opacity: 0.5,
               }}
               fontSize="small"
             />
           </ListItemAvatar>
           <ListItemText
             primaryTypographyProps={{
-              variant: 'h5'
+              variant: 'h5',
             }}
             primary={t('Real Estate')}
           />
           <ChevronRightTwoToneIcon
             sx={{
               color: `${theme.colors.alpha.black[30]}`,
-              opacity: 0.8
+              opacity: 0.8,
             }}
           />
         </MenuItem>

@@ -8,7 +8,7 @@ import {
   Divider,
   IconButton,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ const CardHeaderWrapper = styled(CardHeader)(
               right: ${theme.spacing(3)};
               top: ${theme.spacing(3)};
           }
-  `
+  `,
 );
 
 function Block5() {
@@ -37,79 +37,79 @@ function Block5() {
   const chart1Options: ApexOptions = {
     chart: {
       toolbar: {
-        show: false
+        show: false,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '60%'
-      }
+        columnWidth: '60%',
+      },
     },
     stroke: {
       show: true,
       width: 2,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     labels: ['2018', '2019', '2020', '2021', '2022'],
     fill: {
       opacity: 1,
-      colors: [theme.colors.warning.main, theme.colors.primary.main]
+      colors: [theme.colors.warning.main, theme.colors.primary.main],
     },
     colors: [theme.colors.warning.main, theme.colors.primary.main],
     legend: {
-      show: false
+      show: false,
     },
     grid: {
       strokeDashArray: 6,
-      borderColor: theme.palette.divider
+      borderColor: theme.palette.divider,
     },
     xaxis: {
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       labels: {
         style: {
-          colors: theme.palette.text.secondary
-        }
-      }
+          colors: theme.palette.text.secondary,
+        },
+      },
     },
     yaxis: {
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
+        show: false,
       },
       labels: {
         style: {
-          colors: theme.palette.text.secondary
-        }
-      }
-    }
+          colors: theme.palette.text.secondary,
+        },
+      },
+    },
   };
   const chart1Data = [
     {
       name: 'Net Profit',
-      data: [1008, 940, 1010, 821, 1035]
+      data: [1008, 940, 1010, 821, 1035],
     },
     {
       name: 'Net Loss',
-      data: [648, 745, 897, 743, 635]
-    }
+      data: [648, 745, 897, 743, 635],
+    },
   ];
 
   return (
@@ -117,7 +117,7 @@ function Block5() {
       <CardHeaderWrapper
         disableTypography
         sx={{
-          p: 3
+          p: 3,
         }}
         action={
           <IconButton size="small" color="secondary">
@@ -129,7 +129,7 @@ function Block5() {
             <Typography
               component="div"
               sx={{
-                fontSize: `${theme.typography.pxToRem(17)}`
+                fontSize: `${theme.typography.pxToRem(17)}`,
               }}
               textAlign="center"
               gutterBottom
@@ -160,7 +160,7 @@ function Block5() {
         fontWeight="bold"
         sx={{
           py: 4,
-          fontSize: `${theme.typography.pxToRem(40)}`
+          fontSize: `${theme.typography.pxToRem(40)}`,
         }}
       >
         <CountUp
@@ -178,7 +178,7 @@ function Block5() {
       <Divider />
       <Stack
         sx={{
-          mt: 4
+          mt: 4,
         }}
         direction="row"
         justifyContent="space-evenly"
@@ -201,7 +201,7 @@ function Block5() {
             fontWeight="bold"
             textAlign="center"
             sx={{
-              pb: 2
+              pb: 2,
             }}
           >
             <Box component="span" pr={1}>
@@ -226,7 +226,7 @@ function Block5() {
             fontWeight="bold"
             textAlign="center"
             sx={{
-              pb: 2
+              pb: 2,
             }}
           >
             <Box component="span" pr={1}>
@@ -240,7 +240,7 @@ function Block5() {
         component="div"
         sx={{
           mt: 3,
-          fontSize: `${theme.typography.pxToRem(17)}`
+          fontSize: `${theme.typography.pxToRem(17)}`,
         }}
         textAlign="center"
         variant="h3"

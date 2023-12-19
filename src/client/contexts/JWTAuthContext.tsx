@@ -51,7 +51,7 @@ type Action = InitializeAction | LoginAction | LogoutAction | RegisterAction;
 const initialAuthState: AuthState = {
   isAuthenticated: false,
   isInitialized: false,
-  user: null
+  user: null,
 };
 
 const handlers: Record<
@@ -65,7 +65,7 @@ const handlers: Record<
       ...state,
       isAuthenticated,
       isInitialized: true,
-      user
+      user,
     };
   },
   LOGIN: (state: AuthState, action: LoginAction): AuthState => {
@@ -74,13 +74,13 @@ const handlers: Record<
     return {
       ...state,
       isAuthenticated: true,
-      user
+      user,
     };
   },
   LOGOUT: (state: AuthState): AuthState => ({
     ...state,
     isAuthenticated: false,
-    user: null
+    user: null,
   }),
   REGISTER: (state: AuthState, action: RegisterAction): AuthState => {
     const { user } = action.payload;
@@ -88,9 +88,9 @@ const handlers: Record<
     return {
       ...state,
       isAuthenticated: true,
-      user
+      user,
     };
-  }
+  },
 };
 
 const reducer = (state: AuthState, action: Action): AuthState =>
@@ -101,7 +101,7 @@ export const AuthContext = createContext<AuthContextValue>({
   method: 'JWT',
   login: () => Promise.resolve(),
   logout: () => Promise.resolve(),
-  register: () => Promise.resolve()
+  register: () => Promise.resolve(),
 });
 
 export const AuthProvider: FC<AuthProviderProps> = (props) => {
@@ -120,16 +120,16 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
             type: 'INITIALIZE',
             payload: {
               isAuthenticated: true,
-              user
-            }
+              user,
+            },
           });
         } else {
           dispatch({
             type: 'INITIALIZE',
             payload: {
               isAuthenticated: false,
-              user: null
-            }
+              user: null,
+            },
           });
         }
       } catch (err) {
@@ -138,8 +138,8 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
           type: 'INITIALIZE',
           payload: {
             isAuthenticated: false,
-            user: null
-          }
+            user: null,
+          },
         });
       }
     };
@@ -156,8 +156,8 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
     dispatch({
       type: 'LOGIN',
       payload: {
-        user
-      }
+        user,
+      },
     });
   };
 
@@ -169,7 +169,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
   const register = async (
     email: string,
     name: string,
-    password: string
+    password: string,
   ): Promise<void> => {
     const accessToken = await authApi.register({ email, name, password });
     const user = await authApi.me(accessToken);
@@ -179,8 +179,8 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
     dispatch({
       type: 'REGISTER',
       payload: {
-        user
-      }
+        user,
+      },
     });
   };
 
@@ -191,7 +191,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
         method: 'JWT',
         login,
         logout,
-        register
+        register,
       }}
     >
       {children}
@@ -200,7 +200,7 @@ export const AuthProvider: FC<AuthProviderProps> = (props) => {
 };
 
 AuthProvider.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export const AuthConsumer = AuthContext.Consumer;

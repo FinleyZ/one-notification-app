@@ -5,7 +5,7 @@ import {
   Typography,
   Divider,
   Button,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -25,14 +25,14 @@ function Block1() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -45,47 +45,47 @@ function Block1() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       colors: [theme.colors.primary.main],
       curve: 'smooth',
-      width: 4
+      width: 4,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       y: {
         title: {
           formatter: function () {
             return 'Visitors:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.primary.main]
+    colors: [theme.colors.primary.main],
   };
   const Box1Data = [
     {
       name: 'Revenue',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
+      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348],
+    },
   ];
 
   return (
@@ -101,7 +101,7 @@ function Block1() {
           <Box
             p={1}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="warning">
@@ -113,7 +113,7 @@ function Block1() {
           <Box
             p={1}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="success">
@@ -125,7 +125,7 @@ function Block1() {
           <Box
             p={1}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="info">
@@ -140,7 +140,7 @@ function Block1() {
       <Box
         p={2}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button variant="outlined" startIcon={<PieChartTwoToneIcon />}>
@@ -152,7 +152,7 @@ function Block1() {
         px={2}
         py={3}
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
       >
         <Chart

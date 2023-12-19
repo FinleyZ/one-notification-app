@@ -13,7 +13,7 @@ import {
   ListItem,
   Avatar,
   useTheme,
-  circularProgressClasses
+  circularProgressClasses,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -38,7 +38,7 @@ function Block3() {
       sales: '87',
       progress: 76,
       arrow: '',
-      value: '685'
+      value: '685',
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ function Block3() {
       sales: '36',
       progress: 48,
       arrow: 'up',
-      value: '3,685'
+      value: '3,685',
     },
     {
       id: 3,
@@ -54,7 +54,7 @@ function Block3() {
       sales: '23',
       progress: 38,
       arrow: '',
-      value: '765'
+      value: '765',
     },
     {
       id: 4,
@@ -62,7 +62,7 @@ function Block3() {
       sales: '76',
       progress: 85,
       arrow: '',
-      value: '43,548'
+      value: '43,548',
     },
     {
       id: 5,
@@ -70,44 +70,44 @@ function Block3() {
       sales: '38',
       progress: 29,
       arrow: 'up',
-      value: '1,584'
-    }
+      value: '1,584',
+    },
   ];
 
   const Box2Options: ApexOptions = {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     plotOptions: {
       bar: {
         horizontal: false,
         borderRadius: 5,
-        columnWidth: '50%'
-      }
+        columnWidth: '50%',
+      },
     },
     colors: [theme.colors.primary.main, theme.colors.error.light],
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       show: true,
       width: 2,
-      colors: ['transparent']
+      colors: ['transparent'],
     },
     legend: {
-      show: false
+      show: false,
     },
     labels: [
       'Monday',
@@ -120,44 +120,44 @@ function Block3() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisBorder: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
+        show: false,
+      },
     },
     yaxis: {
       show: false,
-      min: 0
-    }
+      min: 0,
+    },
   };
   const Box2Data = [
     {
       name: 'Net Profit',
-      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2]
+      data: [2.3, 3.1, 4.0, 3.8, 5.1, 3.6, 4.0, 3.8, 5.1, 3.6, 3.2],
     },
     {
       name: 'Net Loss',
-      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2]
-    }
+      data: [2.1, 2.1, 3.0, 2.8, 4.0, 3.8, 5.1, 3.6, 4.1, 2.6, 1.2],
+    },
   ];
 
   return (
     <Card>
       <CardHeader
         sx={{
-          p: 2
+          p: 2,
         }}
         titleTypographyProps={{
           component: 'h4',
-          variant: 'h3'
+          variant: 'h3',
         }}
         action={
           <Button size="small" variant="text">
@@ -169,7 +169,7 @@ function Block3() {
       <Divider />
       <Box
         sx={{
-          background: `${alpha(theme.colors.alpha.black[10], 0.05)}`
+          background: `${alpha(theme.colors.alpha.black[10], 0.05)}`,
         }}
       >
         <Box
@@ -183,7 +183,7 @@ function Block3() {
               fontWeight="bold"
               gutterBottom
               sx={{
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
               component="h6"
               variant="caption"
@@ -193,7 +193,7 @@ function Block3() {
             <Typography
               gutterBottom
               sx={{
-                py: 0.5
+                py: 0.5,
               }}
               variant="h2"
             >
@@ -205,7 +205,7 @@ function Block3() {
               </Text>
               <Typography
                 sx={{
-                  pl: 0.2
+                  pl: 0.2,
                 }}
                 variant="subtitle2"
               >
@@ -218,7 +218,7 @@ function Block3() {
               width: 54,
               height: 54,
               background: `${theme.colors.alpha.white[100]}`,
-              color: `${theme.colors.primary.main}`
+              color: `${theme.colors.primary.main}`,
             }}
           >
             <EmojiObjectsTwoToneIcon />
@@ -239,7 +239,7 @@ function Block3() {
         sx={{
           py: 1,
           px: 2,
-          fontSize: `${theme.typography.pxToRem(13)}`
+          fontSize: `${theme.typography.pxToRem(13)}`,
         }}
         component="h6"
         variant="caption"
@@ -248,7 +248,7 @@ function Block3() {
       </Typography>
       <Box
         sx={{
-          height: 263
+          height: 263,
         }}
       >
         <Scrollbar>
@@ -258,13 +258,13 @@ function Block3() {
                 key={item.id}
                 sx={{
                   py: 1.5,
-                  px: 2
+                  px: 2,
                 }}
               >
                 <ListItemAvatar
                   sx={{
                     display: 'flex',
-                    mr: 1.5
+                    mr: 1.5,
                   }}
                 >
                   <Box display="inline-flex" position="relative">
@@ -273,7 +273,7 @@ function Block3() {
                         animationDuration: '550ms',
                         position: 'absolute',
                         left: 11,
-                        top: 11
+                        top: 11,
                       }}
                     >
                       {item.arrow ? (
@@ -283,7 +283,7 @@ function Block3() {
                             height: 34,
                             p: 0,
                             background: `${theme.colors.error.lighter}`,
-                            color: `${theme.colors.error.main}`
+                            color: `${theme.colors.error.main}`,
                           }}
                         >
                           <ArrowDownwardTwoToneIcon fontSize="small" />
@@ -295,7 +295,7 @@ function Block3() {
                             height: 34,
                             p: 0,
                             background: `${theme.colors.success.lighter}`,
-                            color: `${theme.colors.success.main}`
+                            color: `${theme.colors.success.main}`,
                           }}
                         >
                           <ArrowUpwardTwoToneIcon fontSize="small" />
@@ -308,7 +308,7 @@ function Block3() {
                         color: (theme) =>
                           item.arrow
                             ? theme.colors.error.lighter
-                            : theme.colors.success.lighter
+                            : theme.colors.success.lighter,
                       }}
                       size={56}
                       thickness={3}
@@ -326,8 +326,8 @@ function Block3() {
                             : theme.colors.success.main,
                         top: 0,
                         [`& .${circularProgressClasses.circle}`]: {
-                          strokeLinecap: 'round'
-                        }
+                          strokeLinecap: 'round',
+                        },
                       }}
                       thickness={3}
                       variant="determinate"
@@ -343,7 +343,7 @@ function Block3() {
                   }
                   primaryTypographyProps={{
                     variant: 'h5',
-                    noWrap: true
+                    noWrap: true,
                   }}
                   secondary={
                     <>
@@ -357,7 +357,7 @@ function Block3() {
                   }
                   secondaryTypographyProps={{
                     variant: 'subtitle2',
-                    noWrap: true
+                    noWrap: true,
                   }}
                 />
                 <Typography variant="subtitle2" fontWeight="bold">

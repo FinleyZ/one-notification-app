@@ -11,7 +11,7 @@ import {
   Card,
   IconButton,
   Typography,
-  styled
+  styled,
 } from '@mui/material';
 import { useSelector } from 'src/client/store';
 import type { Mail } from 'src/client/models/mailbox';
@@ -37,7 +37,7 @@ const IconButtonLabel = styled(Box)(
     &:hover {
       background: ${theme.colors.alpha.white[50]};
     }
-  `
+  `,
 );
 
 const MailboxItemWrapper = styled(Box)(
@@ -79,7 +79,7 @@ const MailboxItemWrapper = styled(Box)(
       text-decoration: none;
       padding: ${theme.spacing(3, 1, 3, 0)};
     }
-`
+`,
 );
 
 export const ResultsItem: FC<ResultsItemProps> = (props) => {
@@ -103,24 +103,24 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
   return (
     <MailboxItemWrapper
       sx={{
-        display: { sm: 'flex' }
+        display: { sm: 'flex' },
       }}
       className={clsx({
         'Mui-unread': !mailbox.opened,
-        'Mui-selected': selected
+        'Mui-selected': selected,
       })}
     >
       <Box
         display="flex"
         sx={{
-          mb: { xs: 2, sm: 0 }
+          mb: { xs: 2, sm: 0 },
         }}
         alignItems="center"
       >
         <Checkbox checked={selected} onChange={handleCheckboxChange} />
         <Box
           sx={{
-            minWidth: 80
+            minWidth: 80,
           }}
           display="flex"
           mr={1}
@@ -138,7 +138,7 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
                       sx={{
                         mx: 0.5,
                         p: 0.5,
-                        color: tag.color
+                        color: tag.color,
                       }}
                     >
                       <LocalOfferTwoToneIcon color="inherit" />
@@ -157,20 +157,20 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
           sx={{
             flex: 1,
             alignItems: 'center',
-            display: { md: 'flex' }
+            display: { md: 'flex' },
           }}
           component="a"
         >
           <Box
             sx={{
-              display: { md: 'flex' }
+              display: { md: 'flex' },
             }}
             flex={1}
             alignItems="center"
           >
             <Box
               sx={{
-                minWidth: { md: 175 }
+                minWidth: { md: 175 },
               }}
               display="flex"
               alignItems="center"
@@ -179,13 +179,13 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
                 src={mailbox.from.avatar}
                 sx={{
                   mb: { xs: 2, md: 0 },
-                  mr: 1
+                  mr: 1,
                 }}
               />
               <Box
                 component="span"
                 sx={{
-                  display: { xs: 'none', md: 'inline-block' }
+                  display: { xs: 'none', md: 'inline-block' },
                 }}
               >
                 <Typography
@@ -209,13 +209,13 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
           </Box>
           <Box
             sx={{
-              minWidth: 100
+              minWidth: 100,
             }}
           >
             <Typography
               variant="subtitle2"
               sx={{
-                textAlign: { md: 'right' }
+                textAlign: { md: 'right' },
               }}
             >
               {format(mailbox.date, 'dd MMMM')}
@@ -228,7 +228,7 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
           <IconButton
             color="primary"
             sx={{
-              p: 1
+              p: 1,
             }}
           >
             <ArchiveTwoToneIcon fontSize="small" />
@@ -238,7 +238,7 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
           <IconButton
             color="primary"
             sx={{
-              p: 1
+              p: 1,
             }}
           >
             <DeleteTwoToneIcon fontSize="small" />
@@ -248,7 +248,7 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
           <IconButton
             color="primary"
             sx={{
-              p: 1
+              p: 1,
             }}
           >
             <MarkEmailReadTwoToneIcon fontSize="small" />
@@ -264,10 +264,10 @@ ResultsItem.propTypes = {
   mailbox: PropTypes.object.isRequired,
   onDeselect: PropTypes.func,
   onSelect: PropTypes.func,
-  selected: PropTypes.bool.isRequired
+  selected: PropTypes.bool.isRequired,
 };
 
 ResultsItem.defaultProps = {
   onDeselect: () => {},
-  onSelect: () => {}
+  onSelect: () => {},
 };

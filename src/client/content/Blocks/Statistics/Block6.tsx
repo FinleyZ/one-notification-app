@@ -5,7 +5,7 @@ import {
   Typography,
   Avatar,
   alpha,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,7 +26,7 @@ function Block6() {
         <Card
           sx={{
             p: 2.5,
-            background: `${theme.colors.gradients.black1}`
+            background: `${theme.colors.gradients.black1}`,
           }}
         >
           <Box
@@ -41,7 +41,7 @@ function Block6() {
                 component="div"
                 variant="caption"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 {t('New Accounts')}
@@ -49,7 +49,7 @@ function Block6() {
               <Typography
                 variant="h3"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 586,356
@@ -61,7 +61,7 @@ function Block6() {
                 width: `${theme.spacing(7)}`,
                 height: `${theme.spacing(7)}`,
                 background: `${theme.colors.alpha.trueWhite[100]}`,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <AccountBoxTwoToneIcon />
@@ -74,13 +74,13 @@ function Block6() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.success.main}`
+                color: `${theme.colors.success.main}`,
               }}
             >
               <ArrowUpwardTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>16.5%</span>
@@ -89,7 +89,7 @@ function Block6() {
               variant="subtitle2"
               noWrap
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('increase this month')}
@@ -101,7 +101,7 @@ function Block6() {
         <Card
           sx={{
             p: 2.5,
-            background: `${theme.colors.gradients.green2}`
+            background: `${theme.colors.gradients.green2}`,
           }}
         >
           <Box
@@ -116,7 +116,7 @@ function Block6() {
                 component="div"
                 variant="caption"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 {t('Sales')}
@@ -124,7 +124,7 @@ function Block6() {
               <Typography
                 variant="h3"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 23,684
@@ -136,7 +136,7 @@ function Block6() {
                 width: `${theme.spacing(7)}`,
                 height: `${theme.spacing(7)}`,
                 background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <AddAlertTwoToneIcon />
@@ -149,13 +149,13 @@ function Block6() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.alpha.trueWhite[100]}`
+                color: `${theme.colors.alpha.trueWhite[100]}`,
               }}
             >
               <CompareArrowsTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>0.5%</span>
@@ -164,7 +164,7 @@ function Block6() {
               variant="subtitle2"
               noWrap
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('compared to previous month')}
@@ -176,7 +176,7 @@ function Block6() {
         <Card
           sx={{
             p: 2.5,
-            background: `${theme.colors.gradients.blue4}`
+            background: `${theme.colors.gradients.blue4}`,
           }}
         >
           <Box
@@ -191,7 +191,7 @@ function Block6() {
                 component="div"
                 variant="caption"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[70]}`
+                  color: `${theme.colors.alpha.trueWhite[70]}`,
                 }}
               >
                 {t('New Orders')}
@@ -199,7 +199,7 @@ function Block6() {
               <Typography
                 variant="h3"
                 sx={{
-                  color: `${theme.colors.alpha.trueWhite[100]}`
+                  color: `${theme.colors.alpha.trueWhite[100]}`,
                 }}
               >
                 36,594
@@ -211,7 +211,7 @@ function Block6() {
                 width: `${theme.spacing(7)}`,
                 height: `${theme.spacing(7)}`,
                 background: `${theme.colors.alpha.trueWhite[100]}`,
-                color: `${theme.colors.warning.main}`
+                color: `${theme.colors.warning.main}`,
               }}
             >
               <ThumbUpTwoToneIcon />
@@ -224,13 +224,13 @@ function Block6() {
                 display: 'flex',
                 alignItems: 'center',
                 pr: 0.5,
-                color: `${theme.colors.error.main}`
+                color: `${theme.colors.error.main}`,
               }}
             >
               <ArrowDownwardTwoToneIcon
                 fontSize="small"
                 sx={{
-                  mr: 0.2
+                  mr: 0.2,
                 }}
               />
               <span>8.25%</span>
@@ -239,7 +239,7 @@ function Block6() {
               variant="subtitle2"
               noWrap
               sx={{
-                color: `${theme.colors.alpha.trueWhite[70]}`
+                color: `${theme.colors.alpha.trueWhite[70]}`,
               }}
             >
               {t('decrease in orders amounts')}

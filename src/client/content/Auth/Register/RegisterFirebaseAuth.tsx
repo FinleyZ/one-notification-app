@@ -13,7 +13,7 @@ import {
   Box,
   Typography,
   CircularProgress,
-  styled
+  styled,
 } from '@mui/material';
 import { useAuth } from 'src/client/hooks/useAuth';
 import { useRefMounted } from 'src/client/hooks/useRefMounted';
@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next';
 const ImgWrapper = styled('img')(
   ({ theme }) => `
     margin-right: ${theme.spacing(1)};
-`
+`,
 );
 
 export const RegisterFirebaseAuth: FC = (props) => {
@@ -36,7 +36,7 @@ export const RegisterFirebaseAuth: FC = (props) => {
       email: '',
       password: '',
       terms: true,
-      submit: null
+      submit: null,
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -49,8 +49,8 @@ export const RegisterFirebaseAuth: FC = (props) => {
         .required(t('The password field is required')),
       terms: Yup.boolean().oneOf(
         [true],
-        t('You must agree to our terms and conditions')
-      )
+        t('You must agree to our terms and conditions'),
+      ),
     }),
     onSubmit: async (values, helpers): Promise<void> => {
       try {
@@ -70,7 +70,7 @@ export const RegisterFirebaseAuth: FC = (props) => {
           helpers.setSubmitting(false);
         }
       }
-    }
+    },
   });
 
   const handleGoogleClick = async (): Promise<void> => {
@@ -95,7 +95,7 @@ export const RegisterFirebaseAuth: FC = (props) => {
       <Divider
         sx={{
           mt: 4,
-          mb: 2
+          mb: 2,
         }}
       >
         {t('or')}
@@ -147,7 +147,7 @@ export const RegisterFirebaseAuth: FC = (props) => {
         />
         <Button
           sx={{
-            mt: 3
+            mt: 3,
           }}
           color="primary"
           startIcon={

@@ -18,7 +18,7 @@ import {
   Tooltip,
   AvatarGroup,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import Timeline from '@mui/lab/Timeline';
@@ -45,7 +45,7 @@ const LabelWrapper = styled(Box)(
     text-transform: uppercase;
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(0.5, 1)};
-  `
+  `,
 );
 
 function Block8() {
@@ -56,7 +56,7 @@ function Block8() {
 
   const handleViewOrientation = (
     _event: MouseEvent<HTMLElement>,
-    newValue: string | null
+    newValue: string | null,
   ) => {
     setTab(newValue);
   };
@@ -88,7 +88,7 @@ function Block8() {
               px: 2,
               py: 0.5,
               lineHeight: 1.5,
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
             disableRipple
             value="activity"
@@ -100,7 +100,7 @@ function Block8() {
               px: 2,
               py: 0.5,
               lineHeight: 1.5,
-              fontSize: `${theme.typography.pxToRem(12)}`
+              fontSize: `${theme.typography.pxToRem(12)}`,
             }}
             disableRipple
             value="trading"
@@ -115,20 +115,20 @@ function Block8() {
         <>
           <Box
             sx={{
-              height: 350
+              height: 350,
             }}
           >
             <Scrollbar>
               <Timeline>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineOppositeContent
                     sx={{
                       width: '85px',
-                      flex: 'none'
+                      flex: 'none',
                     }}
                     color="text.secondary"
                   >
@@ -136,13 +136,13 @@ function Block8() {
                   </TimelineOppositeContent>
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="primary"
@@ -151,7 +151,7 @@ function Block8() {
                   </TimelineSeparator>
                   <TimelineContent
                     sx={{
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <LabelWrapper
@@ -159,15 +159,15 @@ function Block8() {
                       sx={{
                         background: `${theme.colors.success.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.success.dark
-                        )}`
+                          theme.colors.success.dark,
+                        )}`,
                       }}
                     >
                       {t('Sell / Market')}
                     </LabelWrapper>
                     <Typography
                       sx={{
-                        pt: 1
+                        pt: 1,
                       }}
                       variant="body2"
                       color="text.primary"
@@ -178,13 +178,13 @@ function Block8() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineOppositeContent
                     sx={{
                       width: '85px',
-                      flex: 'none'
+                      flex: 'none',
                     }}
                     color="text.secondary"
                   >
@@ -192,13 +192,13 @@ function Block8() {
                   </TimelineOppositeContent>
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="primary"
@@ -207,7 +207,7 @@ function Block8() {
                   </TimelineSeparator>
                   <TimelineContent
                     sx={{
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h5" gutterBottom>
@@ -223,7 +223,7 @@ function Block8() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Remy Sharp"
@@ -235,7 +235,7 @@ function Block8() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Travis Howard"
@@ -247,7 +247,7 @@ function Block8() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Cindy Baker"
@@ -259,7 +259,7 @@ function Block8() {
                             component={Link}
                             sx={{
                               width: 32,
-                              height: 32
+                              height: 32,
                             }}
                             href="#"
                             alt="Agnes Walker"
@@ -272,13 +272,13 @@ function Block8() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineOppositeContent
                     sx={{
                       width: '85px',
-                      flex: 'none'
+                      flex: 'none',
                     }}
                     color="text.secondary"
                   >
@@ -286,13 +286,13 @@ function Block8() {
                   </TimelineOppositeContent>
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="primary"
@@ -301,7 +301,7 @@ function Block8() {
                   </TimelineSeparator>
                   <TimelineContent
                     sx={{
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h4" gutterBottom>
@@ -314,7 +314,7 @@ function Block8() {
                     <Box display="flex" mt={2} alignItems="flex-start">
                       <Card
                         sx={{
-                          mr: 2
+                          mr: 2,
                         }}
                       >
                         <CardActionArea>
@@ -328,7 +328,7 @@ function Block8() {
                       </Card>
                       <Card
                         sx={{
-                          mr: 2
+                          mr: 2,
                         }}
                       >
                         <CardActionArea>
@@ -345,13 +345,13 @@ function Block8() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineOppositeContent
                     sx={{
                       width: '85px',
-                      flex: 'none'
+                      flex: 'none',
                     }}
                     color="text.secondary"
                   >
@@ -359,13 +359,13 @@ function Block8() {
                   </TimelineOppositeContent>
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="primary"
@@ -374,7 +374,7 @@ function Block8() {
                   </TimelineSeparator>
                   <TimelineContent
                     sx={{
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h4" gutterBottom>
@@ -392,13 +392,13 @@ function Block8() {
                 </TimelineItem>
                 <TimelineItem
                   sx={{
-                    p: 0
+                    p: 0,
                   }}
                 >
                   <TimelineOppositeContent
                     sx={{
                       width: '85px',
-                      flex: 'none'
+                      flex: 'none',
                     }}
                     color="text.secondary"
                   >
@@ -406,13 +406,13 @@ function Block8() {
                   </TimelineOppositeContent>
                   <TimelineSeparator
                     sx={{
-                      position: 'relative'
+                      position: 'relative',
                     }}
                   >
                     <TimelineDot
                       sx={{
                         marginTop: 0,
-                        top: theme.spacing(1.2)
+                        top: theme.spacing(1.2),
                       }}
                       variant="outlined"
                       color="primary"
@@ -421,7 +421,7 @@ function Block8() {
                   </TimelineSeparator>
                   <TimelineContent
                     sx={{
-                      pb: 4
+                      pb: 4,
                     }}
                   >
                     <Typography variant="h4" gutterBottom>
@@ -439,13 +439,13 @@ function Block8() {
           <Box
             p={2}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Button
               sx={{
                 textTransform: 'uppercase',
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
               variant="contained"
               endIcon={<KeyboardArrowRightTwoToneIcon />}
@@ -459,14 +459,14 @@ function Block8() {
         <>
           <Box
             sx={{
-              height: 350
+              height: 350,
             }}
           >
             <Scrollbar>
               <List disablePadding>
                 <ListItem
                   sx={{
-                    p: 2.5
+                    p: 2.5,
                   }}
                 >
                   <ListItemAvatar
@@ -474,17 +474,17 @@ function Block8() {
                       mr: 1,
                       display: 'flex',
                       alignItems: 'center',
-                      minWidth: 0
+                      minWidth: 0,
                     }}
                   >
                     <Avatar
                       sx={{
                         background: `${theme.colors.success.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.success.dark
+                          theme.colors.success.dark,
                         )}`,
                         width: 44,
-                        height: 44
+                        height: 44,
                       }}
                     >
                       <TrendingDownTwoToneIcon />
@@ -504,7 +504,7 @@ function Block8() {
                   />
                   <Box
                     sx={{
-                      textAlign: 'right'
+                      textAlign: 'right',
                     }}
                   >
                     <Typography variant="h4">0.234894 BTC</Typography>
@@ -516,7 +516,7 @@ function Block8() {
                 <Divider />
                 <ListItem
                   sx={{
-                    p: 2.5
+                    p: 2.5,
                   }}
                 >
                   <ListItemAvatar
@@ -524,17 +524,17 @@ function Block8() {
                       mr: 1,
                       display: 'flex',
                       alignItems: 'center',
-                      minWidth: 0
+                      minWidth: 0,
                     }}
                   >
                     <Avatar
                       sx={{
                         background: `${theme.colors.info.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.info.dark
+                          theme.colors.info.dark,
                         )}`,
                         width: 44,
-                        height: 44
+                        height: 44,
                       }}
                     >
                       <TrendingUpTwoToneIcon />
@@ -554,7 +554,7 @@ function Block8() {
                   />
                   <Box
                     sx={{
-                      textAlign: 'right'
+                      textAlign: 'right',
                     }}
                   >
                     <Typography variant="h4">1.398456 ETH</Typography>
@@ -566,7 +566,7 @@ function Block8() {
                 <Divider />
                 <ListItem
                   sx={{
-                    p: 2.5
+                    p: 2.5,
                   }}
                 >
                   <ListItemAvatar
@@ -574,17 +574,17 @@ function Block8() {
                       mr: 1,
                       display: 'flex',
                       alignItems: 'center',
-                      minWidth: 0
+                      minWidth: 0,
                     }}
                   >
                     <Avatar
                       sx={{
                         background: `${theme.colors.error.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.error.dark
+                          theme.colors.error.dark,
                         )}`,
                         width: 44,
-                        height: 44
+                        height: 44,
                       }}
                     >
                       <TrendingFlatTwoToneIcon />
@@ -604,7 +604,7 @@ function Block8() {
                   />
                   <Box
                     sx={{
-                      textAlign: 'right'
+                      textAlign: 'right',
                     }}
                   >
                     <Typography variant="h4">
@@ -615,7 +615,7 @@ function Block8() {
                 <Divider />
                 <ListItem
                   sx={{
-                    p: 2.5
+                    p: 2.5,
                   }}
                 >
                   <ListItemAvatar
@@ -623,17 +623,17 @@ function Block8() {
                       mr: 1,
                       display: 'flex',
                       alignItems: 'center',
-                      minWidth: 0
+                      minWidth: 0,
                     }}
                   >
                     <Avatar
                       sx={{
                         background: `${theme.colors.success.main}`,
                         color: `${theme.palette.getContrastText(
-                          theme.colors.success.dark
+                          theme.colors.success.dark,
                         )}`,
                         width: 44,
-                        height: 44
+                        height: 44,
                       }}
                     >
                       <TrendingDownTwoToneIcon />
@@ -653,7 +653,7 @@ function Block8() {
                   />
                   <Box
                     sx={{
-                      textAlign: 'right'
+                      textAlign: 'right',
                     }}
                   >
                     <Typography variant="h4">
@@ -670,7 +670,7 @@ function Block8() {
                 px={2}
                 py={3}
                 sx={{
-                  textAlign: 'center'
+                  textAlign: 'center',
                 }}
               >
                 <Typography variant="subtitle2">
@@ -683,13 +683,13 @@ function Block8() {
           <Box
             p={2}
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Button
               sx={{
                 textTransform: 'uppercase',
-                fontSize: `${theme.typography.pxToRem(12)}`
+                fontSize: `${theme.typography.pxToRem(12)}`,
               }}
               variant="contained"
               endIcon={<KeyboardArrowRightTwoToneIcon />}
@@ -707,7 +707,7 @@ function Block8() {
           justifyContent="center"
           sx={{
             height: 422,
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Box>
@@ -717,7 +717,7 @@ function Block8() {
               fontWeight="normal"
               color="text.secondary"
               sx={{
-                mt: 3
+                mt: 3,
               }}
               gutterBottom
             >
@@ -725,7 +725,7 @@ function Block8() {
             </Typography>
             <Button
               sx={{
-                mt: 4
+                mt: 4,
               }}
             >
               Maybe, a button?

@@ -19,7 +19,7 @@ import {
   Tooltip,
   Avatar,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Text from 'src/client/components/Text';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
@@ -34,7 +34,7 @@ const AvatarGradient = styled(Avatar)(
   ({ theme }) => `
       background: ${theme.colors.gradients.blue1};
       color: ${theme.colors.alpha.trueWhite[100]};
-  `
+  `,
 );
 
 const DotLegend = styled('span')(
@@ -44,7 +44,7 @@ const DotLegend = styled('span')(
     height: 10px;
     display: inline-block;
     margin-right: ${theme.spacing(0.5)};
-`
+`,
 );
 
 const OutlinedInputWrapper = styled(OutlinedInput)(
@@ -54,7 +54,7 @@ const OutlinedInputWrapper = styled(OutlinedInput)(
     .MuiOutlinedInput-notchedOutline {
         border: 0;
     }
-`
+`,
 );
 
 const ListWrapper = styled(List)(
@@ -62,7 +62,7 @@ const ListWrapper = styled(List)(
     .MuiListItem-root:last-of-type + .MuiDivider-root {
         display: none;
     }
-`
+`,
 );
 
 const IconButtonWrapper = styled(IconButton)(
@@ -70,7 +70,7 @@ const IconButtonWrapper = styled(IconButton)(
   width: ${theme.spacing(4)};
   height: ${theme.spacing(4)};
   border-radius: ${theme.general.borderRadiusLg};
-`
+`,
 );
 
 function Chat() {
@@ -95,7 +95,7 @@ function Chat() {
       jobtitle: 'Senior Cost Accountant',
       company: 'Trudoo',
       avatar: '/static/images/avatars/1.jpg',
-      value: 65
+      value: 65,
     },
     {
       id: 2,
@@ -103,7 +103,7 @@ function Chat() {
       jobtitle: 'Associate Professor',
       company: 'Buzzdog',
       avatar: '/static/images/avatars/2.jpg',
-      value: 76
+      value: 76,
     },
     {
       id: 3,
@@ -111,7 +111,7 @@ function Chat() {
       jobtitle: 'Pharmacist',
       company: 'Yozio',
       avatar: '/static/images/avatars/3.jpg',
-      value: 54
+      value: 54,
     },
     {
       id: 4,
@@ -119,7 +119,7 @@ function Chat() {
       jobtitle: 'VP Product Management',
       company: 'Cogibox',
       avatar: '/static/images/avatars/4.jpg',
-      value: 23
+      value: 23,
     },
     {
       id: 5,
@@ -127,8 +127,8 @@ function Chat() {
       jobtitle: 'Social Worker',
       company: 'Babbleblab',
       avatar: '/static/images/avatars/5.jpg',
-      value: 16
-    }
+      value: 16,
+    },
   ];
 
   return (
@@ -139,12 +139,12 @@ function Chat() {
           overlap="circular"
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'right'
+            horizontal: 'right',
           }}
           sx={{
             '.MuiBadge-badge': {
-              background: theme.colors.error.main
-            }
+              background: theme.colors.error.main,
+            },
           }}
         >
           <IconButtonWrapper
@@ -157,8 +157,8 @@ function Chat() {
               color: theme.colors.warning.main,
 
               '&:hover': {
-                background: alpha(theme.colors.warning.main, 0.2)
-              }
+                background: alpha(theme.colors.warning.main, 0.2),
+              },
             }}
           >
             <ForumTwoToneIcon fontSize="small" />
@@ -172,11 +172,11 @@ function Chat() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
       >
         <Box minWidth={360} maxWidth={360}>
@@ -186,7 +186,7 @@ function Chat() {
             alignItems="center"
             justifyContent="space-between"
             sx={{
-              background: `${alpha(theme.colors.alpha.black[100], 0.07)}`
+              background: `${alpha(theme.colors.alpha.black[100], 0.07)}`,
             }}
           >
             <Button
@@ -194,7 +194,7 @@ function Chat() {
               color="primary"
               startIcon={<MarkChatReadTwoToneIcon />}
               sx={{
-                fontSize: theme.typography.pxToRem(12)
+                fontSize: theme.typography.pxToRem(12),
               }}
             >
               {t('Mark all as seen')}
@@ -203,7 +203,7 @@ function Chat() {
               color="error"
               anchorOrigin={{
                 vertical: 'bottom',
-                horizontal: 'left'
+                horizontal: 'left',
               }}
               variant="dot"
               overlap="circular"
@@ -211,7 +211,7 @@ function Chat() {
               <AvatarGradient
                 sx={{
                   fontWeight: 'normal',
-                  fontSize: theme.typography.pxToRem(12)
+                  fontSize: theme.typography.pxToRem(12),
                 }}
               >
                 ET
@@ -235,7 +235,7 @@ function Chat() {
           <Divider />
           <Box
             sx={{
-              height: 200
+              height: 200,
             }}
           >
             <Scrollbar>
@@ -246,8 +246,8 @@ function Chat() {
                       sx={{
                         py: 1.5,
                         '&:hover': {
-                          background: `${theme.colors.alpha.black[5]}`
-                        }
+                          background: `${theme.colors.alpha.black[5]}`,
+                        },
                       }}
                       secondaryAction={
                         <Button
@@ -263,9 +263,9 @@ function Chat() {
                             '&:hover': {
                               backgroundColor: `${theme.colors.secondary.main}`,
                               color: `${theme.palette.getContrastText(
-                                theme.colors.secondary.main
-                              )}`
-                            }
+                                theme.colors.secondary.main,
+                              )}`,
+                            },
                           }}
                         >
                           {t('Chat')}
@@ -275,13 +275,13 @@ function Chat() {
                       <ListItemAvatar
                         sx={{
                           minWidth: 38,
-                          mr: 1
+                          mr: 1,
                         }}
                       >
                         <Avatar
                           sx={{
                             width: 38,
-                            height: 38
+                            height: 38,
                           }}
                           alt={item.name}
                           src={item.avatar}
@@ -291,13 +291,13 @@ function Chat() {
                         sx={{
                           flexGrow: 0,
                           maxWidth: '50%',
-                          flexBasis: '50%'
+                          flexBasis: '50%',
                         }}
                         disableTypography
                         primary={
                           <Typography
                             sx={{
-                              pb: 0.6
+                              pb: 0.6,
                             }}
                             color="text.primary"
                             variant="h5"
@@ -309,13 +309,13 @@ function Chat() {
                           <Box display="flex" alignItems="flex-start">
                             <DotLegend
                               style={{
-                                background: `${theme.colors.success.main}`
+                                background: `${theme.colors.success.main}`,
                               }}
                             />
                             <Typography
                               sx={{
                                 fontSize: `${theme.typography.pxToRem(11)}`,
-                                lineHeight: 1
+                                lineHeight: 1,
                               }}
                               variant="body1"
                             >
@@ -335,7 +335,7 @@ function Chat() {
           <Box
             sx={{
               background: `${theme.colors.alpha.black[5]}`,
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             p={2}
           >

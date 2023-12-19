@@ -52,26 +52,26 @@ function MyApp(props: MyAppProps) {
       <ReduxProvider store={store}>
         <SidebarProvider>
           <ThemeProvider>
-              <AuthProvider>
-                <SnackbarProvider
-                  maxSnack={6}
-                  anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'right'
-                  }}
-                >
-                  <CssBaseline />
-                  <AuthConsumer>
-                    {(auth) =>
-                      !auth.isInitialized ? (
-                        <Loader />
-                      ) : (
-                        getLayout(<Component {...pageProps} />)
-                      )
-                    }
-                  </AuthConsumer>
-                </SnackbarProvider>
-              </AuthProvider>
+            <AuthProvider>
+              <SnackbarProvider
+                maxSnack={6}
+                anchorOrigin={{
+                  vertical: 'bottom',
+                  horizontal: 'right',
+                }}
+              >
+                <CssBaseline />
+                <AuthConsumer>
+                  {(auth) =>
+                    !auth.isInitialized ? (
+                      <Loader />
+                    ) : (
+                      getLayout(<Component {...pageProps} />)
+                    )
+                  }
+                </AuthConsumer>
+              </SnackbarProvider>
+            </AuthProvider>
           </ThemeProvider>
         </SidebarProvider>
       </ReduxProvider>

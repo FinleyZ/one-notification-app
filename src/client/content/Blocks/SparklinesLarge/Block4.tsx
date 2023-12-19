@@ -5,7 +5,7 @@ import {
   Typography,
   Divider,
   Button,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -26,14 +26,14 @@ function Block4() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -46,47 +46,47 @@ function Block4() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     theme: {
-      mode: theme.palette.mode
+      mode: theme.palette.mode,
     },
     stroke: {
       colors: [theme.colors.error.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     grid: {
       padding: {
         right: 5,
-        left: 5
-      }
+        left: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: true
+        show: true,
       },
       y: {
         title: {
           formatter: function () {
             return 'Transactions:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.error.main]
+    colors: [theme.colors.error.main],
   };
   const Box1Data = [
     {
       name: 'Revenue',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
+      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348],
+    },
   ];
 
   return (
@@ -100,7 +100,7 @@ function Block4() {
         >
           <Box
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="warning">
@@ -108,7 +108,7 @@ function Block4() {
             </Text>
             <Typography
               sx={{
-                pt: 1
+                pt: 1,
               }}
               variant="h4"
             >
@@ -118,7 +118,7 @@ function Block4() {
           </Box>
           <Box
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="error">
@@ -126,7 +126,7 @@ function Block4() {
             </Text>
             <Typography
               sx={{
-                pt: 1
+                pt: 1,
               }}
               variant="h4"
             >
@@ -136,7 +136,7 @@ function Block4() {
           </Box>
           <Box
             sx={{
-              textAlign: 'center'
+              textAlign: 'center',
             }}
           >
             <Text color="info">
@@ -144,7 +144,7 @@ function Block4() {
             </Text>
             <Typography
               sx={{
-                pt: 1
+                pt: 1,
               }}
               variant="h4"
             >
@@ -166,7 +166,7 @@ function Block4() {
       <Box
         p={1.5}
         sx={{
-          background: `${theme.colors.alpha.black[5]}`
+          background: `${theme.colors.alpha.black[5]}`,
         }}
         display="flex"
         alignItems="center"
@@ -176,7 +176,7 @@ function Block4() {
           sx={{
             display: 'flex',
             alignItems: 'center',
-            color: `${theme.colors.success.main}`
+            color: `${theme.colors.success.main}`,
           }}
         >
           <ArrowUpwardTwoToneIcon />
@@ -185,7 +185,7 @@ function Block4() {
         <Typography
           component="span"
           sx={{
-            pl: 1
+            pl: 1,
           }}
           variant="subtitle2"
         >
@@ -196,7 +196,7 @@ function Block4() {
       <Box
         p={3}
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
       >
         <Button
@@ -209,11 +209,11 @@ function Block4() {
 
             '&:hover': {
               transform: 'scale(1.05)',
-              boxShadow: `${theme.colors.shadows.error}`
+              boxShadow: `${theme.colors.shadows.error}`,
             },
             '&:active': {
-              boxShadow: 'none'
-            }
+              boxShadow: 'none',
+            },
           }}
           variant="contained"
           color="error"

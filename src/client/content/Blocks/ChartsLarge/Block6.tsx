@@ -10,7 +10,7 @@ import {
   IconButton,
   Grid,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { Chart } from 'src/client/components/Chart';
 import type { ApexOptions } from 'apexcharts';
@@ -23,7 +23,7 @@ const AvatarWrapper = styled(Avatar)(
   ({ theme }) => `
       width: ${theme.spacing(5)};
       height: ${theme.spacing(5)};
-  `
+  `,
 );
 
 const DotLegend = styled('span')(
@@ -34,13 +34,13 @@ const DotLegend = styled('span')(
       display: inline-block;
       margin-right: ${theme.spacing(0.5)};
       border: ${theme.colors.alpha.white[100]} solid 2px;
-  `
+  `,
 );
 
 const CardWrapper = styled(Card)(
   ({ theme }) => `
           background: ${theme.colors.gradients.blue3};
-  `
+  `,
 );
 
 const CardWhite = styled(Card)(
@@ -51,7 +51,7 @@ const CardWhite = styled(Card)(
               : theme.colors.alpha.trueWhite[100]
           };
           padding: ${theme.spacing(3)};
-  `
+  `,
 );
 
 function Block6() {
@@ -62,20 +62,20 @@ function Block6() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
-      }
+        show: false,
+      },
     },
     colors: [theme.colors.warning.main],
     markers: {
       hover: {
-        sizeOffset: 2
+        sizeOffset: 2,
       },
       shape: 'circle',
       size: 7,
       strokeWidth: 2,
       strokeOpacity: 1,
       strokeColors: theme.colors.warning.main,
-      colors: theme.colors.warning.main
+      colors: theme.colors.warning.main,
     },
     labels: [
       'Day 1',
@@ -87,61 +87,61 @@ function Block6() {
       'Day 7',
       'Day 8',
       'Day 9',
-      'Day 10'
+      'Day 10',
     ],
     theme: {
-      mode: 'dark'
+      mode: 'dark',
     },
     stroke: {
       colors: [theme.colors.warning.main],
-      width: 5
+      width: 5,
     },
     grid: {
       strokeDashArray: 5,
-      borderColor: theme.colors.alpha.trueWhite[10]
+      borderColor: theme.colors.alpha.trueWhite[10],
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Visitors: ';
-          }
-        }
-      }
+          },
+        },
+      },
     },
     legend: {
-      show: false
+      show: false,
     },
     yaxis: {
-      show: false
+      show: false,
     },
     dataLabels: {
-      enabled: false
+      enabled: false,
     },
     xaxis: {
       labels: {
-        show: false
+        show: false,
       },
       axisTicks: {
-        show: false
-      }
-    }
+        show: false,
+      },
+    },
   };
   const chart3Data = [
     {
-      data: [22, 40, 37, 14, 34, 13, 31, 30, 15, 29]
-    }
+      data: [22, 40, 37, 14, 34, 13, 31, 30, 15, 29],
+    },
   ];
 
   const data = {
     percentageLocal: 63,
-    percentageExternal: 37
+    percentageExternal: 37,
   };
 
   return (
@@ -149,7 +149,7 @@ function Block6() {
       <Box
         sx={{
           pt: 3,
-          px: 2
+          px: 2,
         }}
       >
         <Chart
@@ -161,13 +161,13 @@ function Block6() {
       </Box>
       <Stack
         sx={{
-          py: 4
+          py: 4,
         }}
         direction="row"
         divider={
           <Divider
             sx={{
-              background: `${theme.colors.alpha.trueWhite[10]}`
+              background: `${theme.colors.alpha.trueWhite[10]}`,
             }}
             orientation="vertical"
             flexItem
@@ -185,7 +185,7 @@ function Block6() {
             textAlign="center"
             sx={{
               pb: 2,
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('Returning Users')}
@@ -207,7 +207,7 @@ function Block6() {
             textAlign="center"
             sx={{
               pb: 2,
-              color: `${theme.colors.alpha.trueWhite[70]}`
+              color: `${theme.colors.alpha.trueWhite[70]}`,
             }}
           >
             {t('New Customers')}
@@ -236,7 +236,7 @@ function Block6() {
                   <Badge
                     anchorOrigin={{
                       vertical: 'bottom',
-                      horizontal: 'right'
+                      horizontal: 'right',
                     }}
                     overlap="circular"
                     badgeContent={
@@ -250,14 +250,14 @@ function Block6() {
                             subMinutes(new Date(), 37),
                             new Date(),
                             {
-                              addSuffix: true
-                            }
+                              addSuffix: true,
+                            },
                           )
                         }
                       >
                         <DotLegend
                           style={{
-                            background: `${theme.colors.success.main}`
+                            background: `${theme.colors.success.main}`,
                           }}
                         />
                       </Tooltip>
@@ -270,7 +270,7 @@ function Block6() {
                   </Badge>
                   <Box
                     sx={{
-                      ml: 1
+                      ml: 1,
                     }}
                   >
                     <Typography
@@ -311,7 +311,7 @@ function Block6() {
                   <Badge
                     anchorOrigin={{
                       vertical: 'bottom',
-                      horizontal: 'right'
+                      horizontal: 'right',
                     }}
                     overlap="circular"
                     badgeContent={
@@ -325,14 +325,14 @@ function Block6() {
                             subMinutes(new Date(), 37),
                             new Date(),
                             {
-                              addSuffix: true
-                            }
+                              addSuffix: true,
+                            },
                           )
                         }
                       >
                         <DotLegend
                           style={{
-                            background: `${theme.colors.success.main}`
+                            background: `${theme.colors.success.main}`,
                           }}
                         />
                       </Tooltip>
@@ -345,7 +345,7 @@ function Block6() {
                   </Badge>
                   <Box
                     sx={{
-                      ml: 1
+                      ml: 1,
                     }}
                   >
                     <Typography

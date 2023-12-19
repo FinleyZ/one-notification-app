@@ -14,7 +14,7 @@ import {
   IconButton,
   Typography,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useRouter } from 'next/router';
 
@@ -29,14 +29,14 @@ const MenuUserBox = styled(Box)(
   ({ theme }) => `
     background: ${theme.colors.alpha.black[5]};
     padding: ${theme.spacing(2)};
-`
+`,
 );
 
 const UserBoxText = styled(Box)(
   ({ theme }) => `
     text-align: left;
     padding-left: ${theme.spacing(1)};
-`
+`,
 );
 
 const UserBoxLabel = styled(Typography)(
@@ -48,7 +48,7 @@ const UserBoxLabel = styled(Typography)(
     &.popoverTypo {
       color: ${theme.palette.secondary.main};
     }
-`
+`,
 );
 
 const UserBoxDescription = styled(Typography)(
@@ -58,7 +58,7 @@ const UserBoxDescription = styled(Typography)(
     &.popoverTypo {
       color: ${theme.palette.secondary.light};
     }
-`
+`,
 );
 
 function SidebarTopSection() {
@@ -71,7 +71,7 @@ function SidebarTopSection() {
   const user = {
     avatar: '/static/images/avatars/1.jpg',
     name: 'Rachael Simons',
-    jobtitle: 'Lead Developer'
+    jobtitle: 'Lead Developer',
   };
 
   const ref = useRef<any>(null);
@@ -101,7 +101,7 @@ function SidebarTopSection() {
         textAlign: 'center',
         mx: 2,
         pt: 1,
-        position: 'relative'
+        position: 'relative',
       }}
     >
       <Avatar
@@ -109,7 +109,7 @@ function SidebarTopSection() {
           width: 68,
           height: 68,
           mb: 2,
-          mx: 'auto'
+          mx: 'auto',
         }}
         alt={user.name}
         src={user.avatar}
@@ -118,7 +118,7 @@ function SidebarTopSection() {
       <Typography
         variant="h4"
         sx={{
-          color: `${theme.colors.alpha.trueWhite[100]}`
+          color: `${theme.colors.alpha.trueWhite[100]}`,
         }}
       >
         {user.name}
@@ -126,7 +126,7 @@ function SidebarTopSection() {
       <Typography
         variant="subtitle1"
         sx={{
-          color: `${theme.colors.alpha.trueWhite[70]}`
+          color: `${theme.colors.alpha.trueWhite[70]}`,
         }}
       >
         {user.jobtitle}
@@ -142,8 +142,8 @@ function SidebarTopSection() {
 
           '&:hover': {
             color: `${theme.colors.alpha.trueWhite[100]}`,
-            background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`
-          }
+            background: `${alpha(theme.colors.alpha.trueWhite[100], 0.2)}`,
+          },
         }}
         ref={ref}
         onClick={handleOpen}
@@ -157,16 +157,16 @@ function SidebarTopSection() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'center',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
         transformOrigin={{
           vertical: 'center',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
       >
         <MenuUserBox
           sx={{
-            minWidth: 210
+            minWidth: 210,
           }}
           display="flex"
         >
@@ -182,12 +182,12 @@ function SidebarTopSection() {
         </MenuUserBox>
         <Divider
           sx={{
-            mb: 0
+            mb: 0,
           }}
         />
         <List
           sx={{
-            p: 1
+            p: 1,
           }}
           component="nav"
         >
@@ -224,7 +224,7 @@ function SidebarTopSection() {
           <Button color="primary" fullWidth onClick={handleLogout}>
             <LockOpenTwoToneIcon
               sx={{
-                mr: 1
+                mr: 1,
               }}
             />
             {t('Sign out')}

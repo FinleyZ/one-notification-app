@@ -12,7 +12,7 @@ import {
   styled,
   ListItemButton,
   alpha,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -37,7 +37,7 @@ const ListItemButtonWrapper = styled(ListItemButton)(
             0 0.225rem 0.8rem ${alpha(theme.colors.alpha.black[100], 0.15)};
         transform: scale(1.08);
     }
-  `
+  `,
 );
 
 function Block7() {
@@ -50,7 +50,7 @@ function Block7() {
       title: 'Build React Interface',
       category: 'Development',
       logo: '/static/images/placeholders/logo/discord-icon.svg',
-      value: '4,685'
+      value: '4,685',
     },
     {
       id: 2,
@@ -58,7 +58,7 @@ function Block7() {
       category: 'Marketing',
       logo: '/static/images/placeholders/logo/google-icon.svg',
       value: '8,434',
-      budget: 'over'
+      budget: 'over',
     },
     {
       id: 3,
@@ -66,7 +66,7 @@ function Block7() {
       category: 'Bugfixes',
       logo: '/static/images/placeholders/logo/spotify-icon.svg',
       value: '5,167',
-      budget: ''
+      budget: '',
     },
     {
       id: 4,
@@ -74,7 +74,7 @@ function Block7() {
       category: 'Development',
       logo: '/static/images/placeholders/logo/slack-icon.svg',
       value: '43,584',
-      budget: ''
+      budget: '',
     },
     {
       id: 5,
@@ -82,19 +82,19 @@ function Block7() {
       category: 'Marketing',
       logo: '/static/images/placeholders/logo/pinterest-icon.svg',
       value: '5,978',
-      budget: 'over'
-    }
+      budget: 'over',
+    },
   ];
 
   return (
     <Card
       sx={{
-        overflow: 'visible'
+        overflow: 'visible',
       }}
     >
       <Box
         sx={{
-          textAlign: 'center'
+          textAlign: 'center',
         }}
         p={2}
       >
@@ -102,7 +102,7 @@ function Block7() {
           variant="caption"
           fontWeight="bold"
           sx={{
-            fontSize: `${theme.typography.pxToRem(12)}`
+            fontSize: `${theme.typography.pxToRem(12)}`,
           }}
         >
           {t('Estimates')}
@@ -117,21 +117,21 @@ function Block7() {
               sx={{
                 display: { xs: 'block', sm: 'flex' },
                 py: 2,
-                px: 2.5
+                px: 2.5,
               }}
             >
               <ListItemAvatar
                 sx={{
                   minWidth: 'auto',
                   mr: 2,
-                  mb: { xs: 2, sm: 0 }
+                  mb: { xs: 2, sm: 0 },
                 }}
               >
                 <Avatar
                   variant="square"
                   sx={{
                     width: 42,
-                    height: 42
+                    height: 42,
                   }}
                   alt={item.title}
                   src={item.logo}
@@ -155,7 +155,7 @@ function Block7() {
               <Box
                 component="span"
                 sx={{
-                  display: { xs: 'none', sm: 'inline-block' }
+                  display: { xs: 'none', sm: 'inline-block' },
                 }}
               >
                 <Box textAlign="right">

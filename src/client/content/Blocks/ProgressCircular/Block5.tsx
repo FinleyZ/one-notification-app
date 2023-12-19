@@ -13,7 +13,7 @@ import {
   Avatar,
   circularProgressClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -28,7 +28,7 @@ const ListWrapper = styled(List)(
     .MuiDivider-root:first-of-type {
         display: none;
     }
-  `
+  `,
 );
 
 function Block5() {
@@ -42,7 +42,7 @@ function Block5() {
       orders: 65,
       progress: 76,
       arrow: '',
-      sales: '685'
+      sales: '685',
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ function Block5() {
       orders: 436,
       progress: 48,
       arrow: 'up',
-      sales: '3,685'
+      sales: '3,685',
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ function Block5() {
       orders: 734,
       progress: 38,
       arrow: '',
-      sales: '765'
+      sales: '765',
     },
     {
       id: 4,
@@ -66,7 +66,7 @@ function Block5() {
       orders: 654,
       progress: 85,
       arrow: '',
-      sales: '43,548'
+      sales: '43,548',
     },
     {
       id: 5,
@@ -74,7 +74,7 @@ function Block5() {
       orders: 764,
       progress: 29,
       arrow: 'up',
-      sales: '1,584'
+      sales: '1,584',
     },
     {
       id: 6,
@@ -82,8 +82,8 @@ function Block5() {
       orders: 274,
       progress: 43,
       arrow: 'up',
-      sales: '1,584'
-    }
+      sales: '1,584',
+    },
   ];
 
   return (
@@ -99,7 +99,7 @@ function Block5() {
       <Divider />
       <Box
         sx={{
-          height: 300
+          height: 300,
         }}
       >
         <Scrollbar>
@@ -110,14 +110,14 @@ function Block5() {
                 <ListItem
                   sx={{
                     py: 2,
-                    px: 2.5
+                    px: 2.5,
                   }}
                 >
                   <ListItemAvatar
                     sx={{
                       display: 'flex',
                       alignItems: 'center',
-                      mr: 1.5
+                      mr: 1.5,
                     }}
                   >
                     <Box display="inline-flex" position="relative">
@@ -131,7 +131,7 @@ function Block5() {
                           bottom: 0,
                           display: 'flex',
                           alignItems: 'center',
-                          justifyContent: 'center'
+                          justifyContent: 'center',
                         }}
                       >
                         <Typography
@@ -141,7 +141,7 @@ function Block5() {
                             color: (theme) =>
                               item.arrow
                                 ? theme.colors.error.main
-                                : theme.colors.success.main
+                                : theme.colors.success.main,
                           }}
                         >
                           {item.progress}%
@@ -150,7 +150,7 @@ function Block5() {
                       <CircularProgress
                         variant="determinate"
                         sx={{
-                          color: (theme) => theme.colors.alpha.black[10]
+                          color: (theme) => theme.colors.alpha.black[10],
                         }}
                         size={56}
                         thickness={2}
@@ -168,8 +168,8 @@ function Block5() {
                               : theme.colors.success.main,
                           top: -1,
                           [`& .${circularProgressClasses.circle}`]: {
-                            strokeLinecap: 'round'
-                          }
+                            strokeLinecap: 'round',
+                          },
                         }}
                         thickness={4}
                         variant="determinate"
@@ -190,7 +190,7 @@ function Block5() {
                             <Typography
                               sx={{
                                 fontSize: `${theme.typography.pxToRem(11)}`,
-                                fontWeight: 'bold'
+                                fontWeight: 'bold',
                               }}
                             >
                               {item.orders}
@@ -202,7 +202,7 @@ function Block5() {
                     }
                     secondaryTypographyProps={{
                       variant: 'subtitle2',
-                      noWrap: true
+                      noWrap: true,
                     }}
                   />
                   <Typography variant="h5">${item.sales}</Typography>
@@ -215,7 +215,7 @@ function Block5() {
                         height: 28,
                         p: 0,
                         background: `${theme.colors.error.lighter}`,
-                        color: `${theme.colors.error.main}`
+                        color: `${theme.colors.error.main}`,
                       }}
                     >
                       <KeyboardArrowDownTwoToneIcon />
@@ -229,7 +229,7 @@ function Block5() {
                         height: 28,
                         p: 0,
                         background: `${theme.colors.success.lighter}`,
-                        color: `${theme.colors.success.main}`
+                        color: `${theme.colors.success.main}`,
                       }}
                     >
                       <KeyboardArrowUpTwoToneIcon />

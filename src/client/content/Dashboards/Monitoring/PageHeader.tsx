@@ -18,21 +18,21 @@ function PageHeader() {
           variant="h2"
           component="h2"
           sx={{
-            pb: 1
+            pb: 1,
           }}
         >
           {t('Monitoring')}
         </Typography>
         <Typography variant="h4" color="text.secondary" fontWeight="normal">
           {t(
-            'This dashboard shows a live status for all your servers and database clusters!'
+            'This dashboard shows a live status for all your servers and database clusters!',
           )}
         </Typography>
       </Box>
       <Box mt={{ xs: 3, md: 0 }}>
         <LoadingButton
           sx={{
-            mt: { xs: 2, md: 0 }
+            mt: { xs: 2, md: 0 },
           }}
           variant="contained"
           color="primary"

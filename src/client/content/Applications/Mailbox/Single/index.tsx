@@ -16,7 +16,7 @@ import {
   Button,
   TextField,
   lighten,
-  styled
+  styled,
 } from '@mui/material';
 import NextLink from 'next/link';
 
@@ -45,7 +45,7 @@ const IconButtonError = styled(IconButton)(
      &:hover {
       background: ${lighten(theme.colors.error.lighter, 0.4)};
      }
-`
+`,
 );
 
 const DividerWrapper = styled(Divider)(
@@ -53,11 +53,11 @@ const DividerWrapper = styled(Divider)(
         height: 40px !important;
         margin: 0 ${theme.spacing(2)};
         align-self: center;
-`
+`,
 );
 
 const Input = styled('input')({
-  display: 'none'
+  display: 'none',
 });
 
 const BoxContent = styled(Box)(
@@ -65,13 +65,13 @@ const BoxContent = styled(Box)(
       border-radius: ${theme.general.borderRadius};
       background: ${theme.colors.alpha.black[5]};
       font-size: ${theme.typography.pxToRem(15)};
-`
+`,
 );
 
 const BoxReply = styled(Box)(
   ({ theme }) => `
       background: ${theme.colors.alpha.black[5]};
-`
+`,
 );
 
 export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
@@ -111,7 +111,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
         justifyContent="space-between"
         px={3}
         sx={{
-          pt: { lg: 3 }
+          pt: { lg: 3 },
         }}
         pb={3}
       >
@@ -120,7 +120,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
             <IconButton
               color="primary"
               sx={{
-                p: 1
+                p: 1,
               }}
               component="a"
             >
@@ -135,7 +135,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
               color="primary"
               sx={{
                 ml: 1,
-                p: 1
+                p: 1,
               }}
             >
               <ArchiveTwoToneIcon />
@@ -145,7 +145,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
             <IconButton
               color="primary"
               sx={{
-                p: 1
+                p: 1,
               }}
             >
               <DeleteTwoToneIcon />
@@ -155,7 +155,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
             <IconButton
               color="primary"
               sx={{
-                p: 1
+                p: 1,
               }}
             >
               <MarkEmailReadTwoToneIcon />
@@ -167,7 +167,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
             ref={moreRef}
             sx={{
               ml: 1,
-              p: 1
+              p: 1,
             }}
           >
             <MoreVertTwoToneIcon />
@@ -178,7 +178,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
       <Typography
         sx={{
           py: 4,
-          px: 10
+          px: 10,
         }}
         variant="h3"
       >
@@ -193,7 +193,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
         <Box display="flex" alignItems="center">
           <Avatar
             sx={{
-              mr: 2
+              mr: 2,
             }}
             src={mailbox.from.avatar}
           />
@@ -225,7 +225,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
           </Typography>
           <Typography align="right" variant="subtitle1">
             {formatDistance(mailbox.date, new Date(), {
-              addSuffix: true
+              addSuffix: true,
             })}
           </Typography>
         </Box>
@@ -260,7 +260,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
               </Typography>
               <TextField
                 sx={{
-                  mt: 2
+                  mt: 2,
                 }}
                 fullWidth
                 multiline
@@ -286,7 +286,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
                 <Tooltip arrow placement="top" title={t('Insert an emoji')}>
                   <IconButton
                     sx={{
-                      p: 1
+                      p: 1,
                     }}
                     color="primary"
                   >
@@ -309,7 +309,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
               <Tooltip arrow placement="top" title={t('Delete draft')}>
                 <IconButtonError
                   sx={{
-                    p: 1
+                    p: 1,
                   }}
                 >
                   <DeleteTwoToneIcon />
@@ -328,23 +328,23 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
         onClose={closeMenu}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'center'
+          horizontal: 'center',
         }}
       >
         <List
           sx={{
-            p: 1
+            p: 1,
           }}
           component="nav"
         >
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Mark as read')}
             />
@@ -352,7 +352,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Mark as important')}
             />
@@ -360,7 +360,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Show similar emails')}
             />
@@ -368,7 +368,7 @@ export const MailboxSingle: FC<MailboxSingleProps> = (props) => {
           <ListItem button>
             <ListItemText
               primaryTypographyProps={{
-                noWrap: true
+                noWrap: true,
               }}
               primary={t('Forward as attachment')}
             />

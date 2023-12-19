@@ -7,7 +7,7 @@ import {
   alpha,
   circularProgressClasses,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -17,7 +17,7 @@ import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
 const CardBorderBottom = styled(Card)(
   () => `
     border-bottom: transparent 5px solid;
-  `
+  `,
 );
 
 function Block4() {
@@ -36,7 +36,7 @@ function Block4() {
                     `,
             display: 'flex',
             alignItems: 'center',
-            p: 2
+            p: 2,
           }}
         >
           <Box flexGrow={1} mr={2}>
@@ -44,7 +44,7 @@ function Block4() {
               component="div"
               fontWeight="bold"
               sx={{
-                pb: 1
+                pb: 1,
               }}
               variant="caption"
             >
@@ -54,14 +54,14 @@ function Block4() {
               sx={{
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="h2"
             >
               <KeyboardArrowUpTwoToneIcon
                 sx={{
                   mr: 0.5,
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
               />
               <span>37,594</span>
@@ -78,12 +78,12 @@ function Block4() {
                 right: 0,
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
               }}
             >
               <Typography
                 sx={{
-                  color: `${theme.colors.error.main}`
+                  color: `${theme.colors.error.main}`,
                 }}
                 variant="h5"
               >
@@ -93,7 +93,7 @@ function Block4() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.error.lighter
+                color: theme.colors.error.lighter,
               }}
               size={70}
               thickness={2}
@@ -108,8 +108,8 @@ function Block4() {
                 color: theme.colors.error.main,
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={2}
               variant="determinate"
@@ -128,7 +128,7 @@ function Block4() {
                     `,
             display: 'flex',
             alignItems: 'center',
-            p: 2
+            p: 2,
           }}
         >
           <Box flexGrow={1} mr={2}>
@@ -136,7 +136,7 @@ function Block4() {
               component="div"
               fontWeight="bold"
               sx={{
-                pb: 1
+                pb: 1,
               }}
               variant="caption"
             >
@@ -146,21 +146,21 @@ function Block4() {
               sx={{
                 lineHeight: 1,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
               }}
               variant="h2"
             >
               <AddTwoToneIcon
                 sx={{
                   mr: 0.5,
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
               />
               <span>545</span>
               <Typography
                 sx={{
                   alignSelf: 'self-end',
-                  pl: 0.5
+                  pl: 0.5,
                 }}
                 variant="h4"
                 fontWeight="normal"
@@ -181,12 +181,12 @@ function Block4() {
                 right: 0,
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
               }}
             >
               <Typography
                 sx={{
-                  color: `${theme.colors.success.main}`
+                  color: `${theme.colors.success.main}`,
                 }}
                 variant="h5"
               >
@@ -196,7 +196,7 @@ function Block4() {
             <CircularProgress
               variant="determinate"
               sx={{
-                color: theme.colors.success.lighter
+                color: theme.colors.success.lighter,
               }}
               size={70}
               thickness={2}
@@ -211,8 +211,8 @@ function Block4() {
                 color: theme.colors.success.main,
                 top: 0,
                 [`& .${circularProgressClasses.circle}`]: {
-                  strokeLinecap: 'round'
-                }
+                  strokeLinecap: 'round',
+                },
               }}
               thickness={2}
               variant="determinate"

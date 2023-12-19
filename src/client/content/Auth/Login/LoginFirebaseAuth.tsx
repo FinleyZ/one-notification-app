@@ -14,7 +14,7 @@ import {
   TextField,
   Typography,
   CircularProgress,
-  styled
+  styled,
 } from '@mui/material';
 import { useAuth } from 'src/client/hooks/useAuth';
 import { useRefMounted } from 'src/client/hooks/useRefMounted';
@@ -22,7 +22,7 @@ import { useRefMounted } from 'src/client/hooks/useRefMounted';
 const ImgWrapper = styled('img')(
   ({ theme }) => `
     margin-right: ${theme.spacing(1)};
-`
+`,
 );
 
 export const LoginFirebaseAuth: FC = (props) => {
@@ -35,7 +35,7 @@ export const LoginFirebaseAuth: FC = (props) => {
       email: 'demo@example.com',
       password: 'TokyoPass1@',
       terms: true,
-      submit: null
+      submit: null,
     },
     validationSchema: Yup.object({
       email: Yup.string()
@@ -47,8 +47,8 @@ export const LoginFirebaseAuth: FC = (props) => {
         .required('The password field is required'),
       terms: Yup.boolean().oneOf(
         [true],
-        'You must agree to our terms and conditions'
-      )
+        'You must agree to our terms and conditions',
+      ),
     }),
     onSubmit: async (values, helpers): Promise<void> => {
       try {
@@ -68,7 +68,7 @@ export const LoginFirebaseAuth: FC = (props) => {
           helpers.setSubmitting(false);
         }
       }
-    }
+    },
   });
 
   const handleGoogleClick = async (): Promise<void> => {
@@ -93,7 +93,7 @@ export const LoginFirebaseAuth: FC = (props) => {
       <Divider
         sx={{
           mt: 4,
-          mb: 2
+          mb: 2,
         }}
       >
         or
@@ -103,8 +103,8 @@ export const LoginFirebaseAuth: FC = (props) => {
           error={Boolean(formik.touched.email && formik.errors.email)}
           fullWidth
           helperText={formik.touched.email && formik.errors.email}
-          label='Email address'
-          placeholder='Your email address here...'
+          label="Email address"
+          placeholder="Your email address here..."
           margin="normal"
           name="email"
           onBlur={formik.handleBlur}
@@ -161,7 +161,7 @@ export const LoginFirebaseAuth: FC = (props) => {
         )}
         <Button
           sx={{
-            mt: 3
+            mt: 3,
           }}
           color="primary"
           startIcon={

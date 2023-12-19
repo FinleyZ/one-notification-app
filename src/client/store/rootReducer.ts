@@ -6,5 +6,5 @@ import { reducer as mailboxReducer } from 'src/client/slices/mailbox';
 export const rootReducer = combineReducers({
   // calendar: calendarReducer,
   // projectsBoard: projectsBoardReducer,
-  mailbox: mailboxReducer
+  mailbox: mailboxReducer,
 });

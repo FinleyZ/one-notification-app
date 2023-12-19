@@ -10,7 +10,7 @@ import {
   Divider,
   alpha,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 
 import { useTranslation } from 'react-i18next';
@@ -31,7 +31,7 @@ const LabelWrapper = styled(Box)(
     border-radius: ${theme.general.borderRadiusSm};
     padding: ${theme.spacing(1.2, 2.5, 1)};
     line-height: 1;
-  `
+  `,
 );
 
 const CardActionAreaWrapper = styled(CardActionArea)(
@@ -49,7 +49,7 @@ const CardActionAreaWrapper = styled(CardActionArea)(
             opacity: .05;
           }
         }
-  `
+  `,
 );
 
 const CardActions = styled(Box)(
@@ -58,13 +58,13 @@ const CardActions = styled(Box)(
     right: ${theme.spacing(2)};
     top: ${theme.spacing(2)};
     z-index: 7;
-  `
+  `,
 );
 
 const CardWrapper = styled(Box)(
   ({ theme }) => `
       background: ${alpha(theme.colors.alpha.black[10], 0.03)};
-  `
+  `,
 );
 
 function Block7() {
@@ -75,7 +75,7 @@ function Block7() {
     <Card
       sx={{
         position: 'relative',
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <CardActions>
@@ -88,9 +88,9 @@ function Block7() {
               '&:hover': {
                 backgroundColor: `${theme.colors.primary.main}`,
                 color: `${theme.palette.getContrastText(
-                  theme.colors.primary.main
-                )}`
-              }
+                  theme.colors.primary.main,
+                )}`,
+              },
             }}
           >
             <EmailTwoToneIcon fontSize="small" />
@@ -103,7 +103,7 @@ function Block7() {
             mx: 'auto',
             mb: 1.5,
             width: 94,
-            height: 94
+            height: 94,
           }}
           src="/static/images/avatars/2.jpg"
         />
@@ -111,7 +111,7 @@ function Block7() {
           sx={{
             display: 'inline-flex',
             background: `${theme.colors.success.lighter}`,
-            color: `${theme.colors.success.main}`
+            color: `${theme.colors.success.main}`,
           }}
         >
           {t('Online')}
@@ -119,7 +119,7 @@ function Block7() {
         <Typography
           gutterBottom
           sx={{
-            pt: 2
+            pt: 2,
           }}
           variant="h2"
         >
@@ -131,7 +131,7 @@ function Block7() {
         <Box
           mt={1.5}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           <Tooltip arrow placement="top" title="Facebook">
@@ -158,13 +158,13 @@ function Block7() {
             <Card variant="outlined">
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <Text color="success">
                   <ContactSupportTwoToneIcon
                     sx={{
-                      mb: 1
+                      mb: 1,
                     }}
                   />
                 </Text>
@@ -181,13 +181,13 @@ function Block7() {
             <Card variant="outlined">
               <CardActionAreaWrapper
                 sx={{
-                  p: 2
+                  p: 2,
                 }}
               >
                 <Text color="primary">
                   <DashboardCustomizeTwoToneIcon
                     sx={{
-                      mb: 1
+                      mb: 1,
                     }}
                   />
                 </Text>

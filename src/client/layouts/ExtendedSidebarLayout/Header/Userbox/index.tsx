@@ -15,7 +15,7 @@ import {
   Popover,
   Typography,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
@@ -32,7 +32,7 @@ const DotLegend = styled('span')(
     height: ${theme.spacing(1.4)};
     display: inline-block;
     border: ${theme.colors.alpha.white[100]} solid 2px;
-`
+`,
 );
 
 const UserBoxButton = styled(IconButton)(
@@ -46,7 +46,7 @@ const UserBoxButton = styled(IconButton)(
   &:hover {
     background: ${theme.colors.primary.main};
   }
-`
+`,
 );
 
 const UserAvatar = styled(Avatar)(
@@ -54,7 +54,7 @@ const UserAvatar = styled(Avatar)(
         height: 90%;
         width: 90%;
         border-radius: ${theme.general.borderRadiusLg};
-`
+`,
 );
 
 const MenuListWrapperPrimary = styled(MenuList)(
@@ -80,21 +80,21 @@ const MenuListWrapperPrimary = styled(MenuList)(
           margin-bottom: 0;
       }
     }
-`
+`,
 );
 
 const MenuUserBox = styled(Box)(
   ({ theme }) => `
         background: ${alpha(theme.colors.alpha.black[100], 0.08)};
         padding: ${theme.spacing(2)};
-`
+`,
 );
 
 const UserBoxText = styled(Box)(
   ({ theme }) => `
         text-align: left;
         padding-left: ${theme.spacing(1)};
-`
+`,
 );
 
 const UserBoxLabel = styled(Typography)(
@@ -102,13 +102,13 @@ const UserBoxLabel = styled(Typography)(
         font-weight: ${theme.typography.fontWeightBold};
         color: ${theme.palette.secondary.main};
         display: block;
-`
+`,
 );
 
 const UserBoxDescription = styled(Typography)(
   ({ theme }) => `
         color: ${theme.palette.secondary.light}
-`
+`,
 );
 
 function HeaderUserbox() {
@@ -121,7 +121,7 @@ function HeaderUserbox() {
   const user = {
     avatar: '/static/images/avatars/1.jpg',
     name: 'Rachael Simons',
-    jobtitle: 'Lead Developer'
+    jobtitle: 'Lead Developer',
   };
 
   const ref = useRef<any>(null);
@@ -149,14 +149,14 @@ function HeaderUserbox() {
     chart: {
       background: 'transparent',
       toolbar: {
-        show: false
+        show: false,
       },
       sparkline: {
-        enabled: true
+        enabled: true,
       },
       zoom: {
-        enabled: false
-      }
+        enabled: false,
+      },
     },
     labels: [
       'Monday',
@@ -169,48 +169,48 @@ function HeaderUserbox() {
       'Last Week',
       'Last Month',
       'Last Year',
-      'Last Decade'
+      'Last Decade',
     ],
     theme: {
-      mode: theme.palette.mode === 'dark' ? 'light' : 'dark'
+      mode: theme.palette.mode === 'dark' ? 'light' : 'dark',
     },
     stroke: {
       colors: [theme.colors.error.main],
       curve: 'smooth',
-      width: 3
+      width: 3,
     },
     grid: {
       padding: {
         right: 5,
         left: 5,
-        bottom: 5
-      }
+        bottom: 5,
+      },
     },
     tooltip: {
       fixed: {
-        enabled: true
+        enabled: true,
       },
       x: {
-        show: false
+        show: false,
       },
       y: {
         title: {
           formatter: function () {
             return 'Orders:';
-          }
-        }
+          },
+        },
       },
       marker: {
-        show: true
-      }
+        show: true,
+      },
     },
-    colors: [theme.colors.error.main]
+    colors: [theme.colors.error.main],
   };
   const Box1Data = [
     {
       name: 'Revenue',
-      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348]
-    }
+      data: [465, 546, 234, 576, 554, 338, 427, 348, 586, 254, 348],
+    },
   ];
 
   return (
@@ -225,16 +225,16 @@ function HeaderUserbox() {
         open={isOpen}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
         transformOrigin={{
           vertical: 'top',
-          horizontal: 'right'
+          horizontal: 'right',
         }}
       >
         <MenuUserBox
           sx={{
-            minWidth: 210
+            minWidth: 210,
           }}
           display="flex"
         >
@@ -248,42 +248,42 @@ function HeaderUserbox() {
         </MenuUserBox>
         <Divider
           sx={{
-            mb: 0
+            mb: 0,
           }}
         />
         <MenuListWrapperPrimary disablePadding>
           <MenuItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('My account')}
             />
             <ChevronRightTwoToneIcon
               sx={{
                 color: `${theme.colors.alpha.black[30]}`,
-                opacity: 0.8
+                opacity: 0.8,
               }}
             />
           </MenuItem>
           <MenuItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('Profile settings')}
             />
             <Box display="flex" alignItems="center">
               <DotLegend
                 style={{
-                  background: `${theme.colors.warning.main}`
+                  background: `${theme.colors.warning.main}`,
                 }}
               />
               <ChevronRightTwoToneIcon
                 sx={{
                   ml: 1,
                   color: `${theme.colors.alpha.black[30]}`,
-                  opacity: 0.8
+                  opacity: 0.8,
                 }}
               />
             </Box>
@@ -291,14 +291,14 @@ function HeaderUserbox() {
           <MenuItem>
             <ListItemText
               primaryTypographyProps={{
-                variant: 'h5'
+                variant: 'h5',
               }}
               primary={t('Active tasks')}
             />
             <ChevronRightTwoToneIcon
               sx={{
                 color: `${theme.colors.alpha.black[30]}`,
-                opacity: 0.8
+                opacity: 0.8,
               }}
             />
           </MenuItem>
@@ -328,7 +328,7 @@ function HeaderUserbox() {
           <Button color="primary" fullWidth onClick={handleLogout}>
             <LockOpenTwoToneIcon
               sx={{
-                mr: 1
+                mr: 1,
               }}
             />
             {t('Sign out')}

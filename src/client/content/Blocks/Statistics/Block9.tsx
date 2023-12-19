@@ -8,7 +8,7 @@ import {
   ListItemText,
   ListItem,
   styled,
-  useTheme
+  useTheme,
 } from '@mui/material';
 import Link from 'src/client/components/Link';
 
@@ -25,7 +25,7 @@ const AvatarSuccess = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.success};
-  `
+  `,
 );
 
 const AvatarWarning = styled(Avatar)(
@@ -35,7 +35,7 @@ const AvatarWarning = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.warning};
-  `
+  `,
 );
 
 const AvatarError = styled(Avatar)(
@@ -45,7 +45,7 @@ const AvatarError = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.error};
-  `
+  `,
 );
 
 const AvatarPrimary = styled(Avatar)(
@@ -55,7 +55,7 @@ const AvatarPrimary = styled(Avatar)(
         width: ${theme.spacing(8)};
         height: ${theme.spacing(8)};
         box-shadow: ${theme.colors.shadows.primary};
-  `
+  `,
 );
 
 function Block5() {
@@ -72,7 +72,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 2,
-                mb: 1
+                mb: 1,
               }}
               component="div"
             >
@@ -87,8 +87,8 @@ function Block5() {
                   variant: 'h1',
                   sx: {
                     fontSize: `${theme.typography.pxToRem(35)}`,
-                    ml: 2
-                  }
+                    ml: 2,
+                  },
                 }}
               />
             </ListItem>
@@ -96,7 +96,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 0.5,
-                pb: 0
+                pb: 0,
               }}
               component="div"
             >
@@ -109,7 +109,7 @@ function Block5() {
                     <Box
                       component="span"
                       sx={{
-                        pl: 0.5
+                        pl: 0.5,
                       }}
                     >
                       {t('that were left by past customers from USA')}.
@@ -130,7 +130,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 2,
-                mb: 1
+                mb: 1,
               }}
               component="div"
             >
@@ -145,8 +145,8 @@ function Block5() {
                   variant: 'h1',
                   sx: {
                     fontSize: `${theme.typography.pxToRem(30)}`,
-                    ml: 2
-                  }
+                    ml: 2,
+                  },
                 }}
               />
             </ListItem>
@@ -154,7 +154,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 0.5,
-                pb: 0
+                pb: 0,
               }}
               component="div"
             >
@@ -167,7 +167,7 @@ function Block5() {
                     <Box
                       component="span"
                       sx={{
-                        pl: 0.5
+                        pl: 0.5,
                       }}
                     >
                       {t('that had a higher than expected bounce rate')}.
@@ -188,7 +188,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 2,
-                mb: 1
+                mb: 1,
               }}
               component="div"
             >
@@ -203,8 +203,8 @@ function Block5() {
                   variant: 'h1',
                   sx: {
                     fontSize: `${theme.typography.pxToRem(30)}`,
-                    ml: 2
-                  }
+                    ml: 2,
+                  },
                 }}
               />
             </ListItem>
@@ -212,7 +212,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 0.5,
-                pb: 0
+                pb: 0,
               }}
               component="div"
             >
@@ -225,7 +225,7 @@ function Block5() {
                     <Box
                       component="span"
                       sx={{
-                        pl: 0.5
+                        pl: 0.5,
                       }}
                     >
                       {t('domains that sent most visits last month')}.
@@ -246,7 +246,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 2,
-                mb: 1
+                mb: 1,
               }}
               component="div"
             >
@@ -261,8 +261,8 @@ function Block5() {
                   variant: 'h1',
                   sx: {
                     fontSize: `${theme.typography.pxToRem(30)}`,
-                    ml: 2
-                  }
+                    ml: 2,
+                  },
                 }}
               />
             </ListItem>
@@ -270,7 +270,7 @@ function Block5() {
               disableGutters
               sx={{
                 mt: 0.5,
-                pb: 0
+                pb: 0,
               }}
               component="div"
             >
@@ -283,7 +283,7 @@ function Block5() {
                     <Box
                       component="span"
                       sx={{
-                        pl: 0.5
+                        pl: 0.5,
                       }}
                     >
                       {t('that accepted your invitation to connect')}.
