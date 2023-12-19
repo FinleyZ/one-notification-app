@@ -67,6 +67,7 @@ export class EmailApiService {
       .sendMail({
         transporterName: 'gmail',
         to: dto.recipient, // receiver
+        //cc: dto.sender.email, 
         from: 'robot.fin.one@gmail.com', // sender address
         subject: dto.subject, // Subject line
         text: dto.content, // plaintext body
