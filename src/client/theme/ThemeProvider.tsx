@@ -7,7 +7,8 @@ interface ThemeProviderWrapperProps {
   children: ReactNode;
 }
 
-export const ThemeContext = createContext((_themeName: string): void => {});
+// export const ThemeContext = createContext((_themeName: string): void => {});
+export const ThemeContext = createContext(undefined);
 
 const ThemeProviderWrapper: FC<ThemeProviderWrapperProps> = (props) => {
   const [themeName, _setThemeName] = useState('PureLightTheme');

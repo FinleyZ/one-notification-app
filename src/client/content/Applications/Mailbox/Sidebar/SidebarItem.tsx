@@ -85,7 +85,7 @@ export const MailboxSidebarItem: FC<MailboxSidebarItemProps> = (props) => {
 
 MailboxSidebarItem.propTypes = {
   active: PropTypes.bool,
-  // @ts-ignore
+  // ts-ignore
   tag: PropTypes.object.isRequired,
   href: PropTypes.string,
   onClick: PropTypes.func,

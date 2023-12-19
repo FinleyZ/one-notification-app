@@ -1,8 +1,7 @@
-import { Box, Card, Container, Button, styled } from '@mui/material';
+import { Box, Card, Container, styled } from '@mui/material';
 import type { ReactElement } from 'react';
 import BaseLayout from 'src/client/layouts/BaseLayout';
 
-import Link from 'src/client/components/Link';
 import Head from 'next/head';
 import Logo from 'src/client/components/LogoSign';
 import Hero from 'src/client/content/overview/Hero';

@@ -244,8 +244,8 @@ ActionBarItem.propTypes = {
 };
 
 ActionBarItem.defaultProps = {
-  onDeselectAll: () => {},
-  onSelectAll: () => {},
+  // onDeselectAll: () => {},
+  // onSelectAll: () => {},
 };
 
 export default ActionBarItem;

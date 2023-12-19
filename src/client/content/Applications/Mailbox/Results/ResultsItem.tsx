@@ -260,14 +260,14 @@ export const ResultsItem: FC<ResultsItemProps> = (props) => {
 };
 
 ResultsItem.propTypes = {
-  // @ts-ignore
+  // ts-ignore
   mailbox: PropTypes.object.isRequired,
   onDeselect: PropTypes.func,
   onSelect: PropTypes.func,
   selected: PropTypes.bool.isRequired,
 };
 
-ResultsItem.defaultProps = {
-  onDeselect: () => {},
-  onSelect: () => {},
-};
+// ResultsItem.defaultProps = {
+//   onDeselect: () => {},
+//   onSelect: () => {},
+// };

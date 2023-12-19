@@ -229,7 +229,10 @@ function Block9() {
     { value: 'recent_activity', label: t('Recent activity') },
   ];
 
-  const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
+  const handleTabsChange = (
+    _event: ChangeEvent<HTMLElement>,
+    value: string,
+  ): void => {
     setCurrentTab(value);
   };
 

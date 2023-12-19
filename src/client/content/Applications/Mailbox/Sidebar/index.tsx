@@ -192,5 +192,5 @@ MailboxSidebar.propTypes = {
 };
 
 MailboxSidebar.defaultProps = {
-  handleMessageEvent: () => {},
+  // handleMessageEvent: () => {},
 };

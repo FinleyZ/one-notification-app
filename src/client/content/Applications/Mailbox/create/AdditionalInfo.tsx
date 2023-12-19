@@ -41,7 +41,14 @@ function AdditionalInfo() {
     { value: 'shipping', label: t('Shipping') },
   ];
 
-  const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
+  // const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
+  //   setCurrentTab(value);
+  // };
+
+  const handleTabsChange = (
+    _event: ChangeEvent<HTMLElement>,
+    value: string,
+  ): void => {
     setCurrentTab(value);
   };
 

@@ -301,9 +301,9 @@ const MessageDrawer: FC<AddEditEventModalProps> = ({
 };
 
 MessageDrawer.propTypes = {
-  // @ts-ignore
+  // ts-ignore
   // message: PropTypes.object,
-  // @ts-ignore
+  // ts-ignore
   // range: PropTypes.object,
   onSendComplete: PropTypes.func,
   onCancel: PropTypes.func,
@@ -312,10 +312,10 @@ MessageDrawer.propTypes = {
 };
 
 MessageDrawer.defaultProps = {
-  onSendComplete: () => {},
-  onCancel: () => {},
-  onDeleteComplete: () => {},
-  onEditComplete: () => {},
+  // onSendComplete: () => {},
+  // onCancel: () => {},
+  // onDeleteComplete: () => {},
+  // onEditComplete: () => {},
 };
 
 export default MessageDrawer;

@@ -117,7 +117,10 @@ function Block4() {
     { value: 'reports', label: t('Reports') },
   ];
 
-  const handleTabsChange = (_event: ChangeEvent<{}>, value: string): void => {
+  const handleTabsChange = (
+    _event: ChangeEvent<HTMLElement>,
+    value: string,
+  ): void => {
     setCurrentTab(value);
   };
 

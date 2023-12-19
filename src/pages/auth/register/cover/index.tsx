@@ -212,7 +212,7 @@ function RegisterCover() {
                     nextEl: '.MuiSwipe-right',
                     prevEl: '.MuiSwipe-left',
                   }}
-                  // @ts-ignore
+                  // ts-ignore
                   modules={[Navigation, Pagination]}
                   pagination={{
                     clickable: true,
