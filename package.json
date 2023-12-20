@@ -11,6 +11,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "npm run build:next && npm run build:nest",
+    "start": "npm run start:next && npm run start:nest",
     "build:next": "next build",
     "build:nest": "nest build --path tsconfig.server.json",
     "start:nest": "node ./dist/server/main.js",
