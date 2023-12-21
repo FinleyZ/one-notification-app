@@ -7,9 +7,9 @@ export class AppController {
 
   @Get()
   @Render('index')
-  page() {
-    return {};
-  }
+  // page() {
+  //   return {};
+  // }
   getHello(): string {
     return this.appService.getHello();
   }

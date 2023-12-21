@@ -1,4 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import {
+  Injectable,
+  BadRequestException,
+  UnauthorizedException,
+} from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { MailerService } from '@nestjs-modules/mailer';
 import { google } from 'googleapis';
@@ -16,74 +20,109 @@ export class EmailApiService {
   ) {}
 
   private async setTransport() {
-    const OAuth2 = google.auth.OAuth2;
-    const oauth2Client = new OAuth2(
-      this.configService.get('CLIENT_ID'),
-      this.configService.get('CLIENT_SECRET'),
-      'https://developers.google.com/oauthplayground',
-    );
+    try {
+      const OAuth2 = google.auth.OAuth2;
+      const oauth2Client = new OAuth2(
+        this.configService.get('CLIENT_ID'),
+        this.configService.get('CLIENT_SECRET'),
+        'https://developers.google.com/oauthplayground',
+      );
 
-    oauth2Client.setCredentials({
-      refresh_token: process.env.REFRESH_TOKEN,
-    });
-
-    const accessToken: string = await new Promise((resolve, reject) => {
-      oauth2Client.getAccessToken((err, token) => {
-        if (err) {
-          console.log(err);
-          reject('Failed to create access token :(');
-        }
-        resolve(token);
+      oauth2Client.setCredentials({
+        refresh_token: process.env.REFRESH_TOKEN,
       });
-    });
 
-    const config: Options = {
-      service: 'gmail',
-      auth: {
-        type: 'OAuth2',
-        user: this.configService.get('EMAIL'),
-        clientId: this.configService.get('CLIENT_ID'),
-        clientSecret: this.configService.get('CLIENT_SECRET'),
-        accessToken,
-      },
-    };
-    this.mailerService.addTransporter('gmail', config);
+      const accessToken: string = await new Promise((resolve, reject) => {
+        oauth2Client.getAccessToken((err, token) => {
+          if (err) {
+            reject('Failed to create access token for oauth2');
+          }
+          resolve(token);
+        });
+      });
+
+      const config: Options = {
+        service: 'gmail',
+        auth: {
+          type: 'OAuth2',
+          user: this.configService.get('EMAIL'),
+          clientId: this.configService.get('CLIENT_ID'),
+          clientSecret: this.configService.get('CLIENT_SECRET'),
+          accessToken,
+        },
+      };
+      this.mailerService.addTransporter('gmail', config);
+    } catch (error) {
+      throw new UnauthorizedException('Something bad happened', {
+        cause: new Error(),
+        description: 'Error setting up transporter smtp-transport',
+      });
+    }
   }
 
   //Save the email to the database
   private async saveEmail(dto: EmailDto) {
-    await this.prisma.emailNotifications.create({
+    const emailRecord = await this.prisma.emailNotifications.create({
       data: {
         recipient: dto.recipient,
         subject: dto.subject,
         content: dto.content,
       },
     });
+    return emailRecord;
   }
 
-  public async sendMail(dto: EmailDto) {
-    await this.setTransport();
-    this.mailerService
-      .sendMail({
-        transporterName: 'gmail',
-        to: dto.recipient, // receiver
-        //cc: dto.sender.email,
-        from: 'robot.fin.one@gmail.com', // sender address
-        subject: dto.subject, // Subject line
-        text: dto.content, // plaintext body
-        html: `<p>${dto.content}</p>`, // HTML body content
-      })
-      .then((success) => {
-        console.log(success);
-        this.saveEmail(dto);
-        dto.status = 'sent';
-      })
-      .catch((err) => {
-        //need error handling here
-        console.log('Failed to sent email :(');
-        console.log(err);
+  //update the email in the database
+  private async updateEmailStatus(emailRecord, status) {
+    const updatedEmailRecord = await this.prisma.emailNotifications.update({
+      where: { id: emailRecord.id },
+      data: { status: status },
+    });
+    return updatedEmailRecord;
+  }
 
-        dto.status = 'sent';
+  //Send the email
+  public async sendMail(dto: EmailDto) {
+    const emailRecord = await this.saveEmail(dto);
+    try {
+      await this.setTransport();
+      await this.mailerService.sendMail({
+        transporterName: 'gmail',
+        to: dto.recipient,
+        from: 'robot.fin.one@gmail.com',
+        subject: dto.subject,
+        text: dto.content,
+        html: `<p>${dto.content}</p>`,
       });
+      const updatedEmailRecord = await this.updateEmailStatus(
+        emailRecord,
+        'sent',
+      );
+      return updatedEmailRecord;
+    } catch (err) {
+      const updatedEmailRecord = await this.updateEmailStatus(
+        emailRecord,
+        'failed',
+      );
+      if (err instanceof UnauthorizedException) {
+        throw new UnauthorizedException({
+          message: 'Email failed to send',
+          description: 'Failed setting up transporter smtp-transport.',
+          emailRecord: updatedEmailRecord,
+        });
+      }
+      throw new BadRequestException(
+        'Something bad happened',
+        'Error sending email',
+      );
+    }
+  }
+
+  //get email by id
+  public async getEmail(id: number) {
+    const emailRecord = await this.prisma.emailNotifications.findUnique({
+      where: { id: id },
+    });
+    return emailRecord;
   }
 }

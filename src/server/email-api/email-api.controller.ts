@@ -1,6 +1,7 @@
-import { Body, Controller, Post } from '@nestjs/common';
+import { Body, Controller, Post, Get, Param } from '@nestjs/common';
 import { EmailApiService } from './email-api.service';
 import { EmailDto } from './dto';
+import { ParseIntPipe } from '@nestjs/common';
 
 @Controller('email-api')
 export class EmailApiController {
@@ -9,10 +10,11 @@ export class EmailApiController {
   //mocking the send email
   @Post('send-email')
   public async sendEmail(@Body() dto: EmailDto) {
-    await this.emailApiService.sendMail(dto);
+    return await this.emailApiService.sendMail(dto);
   }
 
-  // public async sendEmail(@Body() dto: EmailDto) {
-  //     await this.emailApiService.sendMail(EmailDto);
-  // }
+  @Get('emails/:id')
+  public async getEmail(@Param('id', ParseIntPipe) id: number) {
+    return await this.emailApiService.getEmail(id);
+  }
 }
