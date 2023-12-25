@@ -3,9 +3,9 @@ import Head from 'next/head';
 
 const Home: FC = () => {
   const emailData = {
-    to: 'recipient@example.com',
+    recipient: 'recipient@example.com',
     subject: 'Email Subject',
-    text: 'Email body text',
+    content: 'Email body text',
   };
 
   return (
