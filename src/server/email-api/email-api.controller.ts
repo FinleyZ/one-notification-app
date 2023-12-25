@@ -14,7 +14,7 @@ export class EmailApiController {
   }
 
   @Get('emails/:id')
-  public async getEmail(@Param('id', ParseIntPipe) id: number) {
+  public async getEmail(@Param('id', ParseIntPipe) id: string) {
     return await this.emailApiService.getEmail(id);
   }
 }

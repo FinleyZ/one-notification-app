@@ -62,14 +62,18 @@ export class EmailApiService {
 
   //Save the email to the database
   private async saveEmail(dto: EmailDto) {
-    const emailRecord = await this.prisma.emailNotifications.create({
-      data: {
-        recipient: dto.recipient,
-        subject: dto.subject,
-        content: dto.content,
-      },
-    });
-    return emailRecord;
+    try {
+      const emailRecord = await this.prisma.emailNotifications.create({
+        data: {
+          recipient: dto.recipient,
+          subject: dto.subject,
+          content: dto.content,
+        },
+      });
+      return emailRecord;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   //update the email in the database
@@ -119,7 +123,7 @@ export class EmailApiService {
   }
 
   //get email by id
-  public async getEmail(id: number) {
+  public async getEmail(id: string) {
     const emailRecord = await this.prisma.emailNotifications.findUnique({
       where: { id: id },
     });

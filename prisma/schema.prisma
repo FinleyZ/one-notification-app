@@ -6,41 +6,37 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   email     String  @unique
   hash      String
   firstName String?
-  LastName  String?
-
-  // emailNotifications EmailNotifications[]
+  lastName  String?
 
   @@map("users")
 }
 
 // This "EmailNotifications" model is used to store the email notifications user has sent.
 model EmailNotifications {
-  id Int @id @default(autoincrement())
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
 
   recipient   String
-  subject      String
+  subject     String
   content     String
   // emailDetails Json     // Storing recipient, subject, body, etc., as a JSON object
+
   attachments Json?
 
   status      String   @default("pending") // possible values: pending, sent, failed, etc.
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
-
-  // userId Int
-  // user   User @relation(fields: [userId], references: [id])
 
   @@map("email_notifications")
 }
