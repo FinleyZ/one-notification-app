@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Head from 'next/head';
+import styles from './Home.module.css';
 
 const Home: FC = () => {
   const emailData = {
@@ -9,26 +10,42 @@ const Home: FC = () => {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Email API Documentation</title>
       </Head>
-      <h1>One Notification: Email API Documentation</h1>
-      <h2>Endpoints</h2>
+      <h1 className={styles.title}>
+        One Notification: Email API Documentation
+      </h1>
+      <h2 className={styles.subtitle}>Endpoints</h2>
 
-      <h3>POST /email-api/send-email</h3>
-      <p>Sends an email.</p>
-      <h4>Request Body:</h4>
-      <pre>{JSON.stringify(emailData, null, 2)}</pre>
+      <section className={styles.endpoint}>
+        <h3>POST /email-api/send-email</h3>
+        <p>
+          Sends an email. This endpoint requires an API key to be provided in
+          the 'email-api-key' header.
+        </p>
+        <h4>Request Headers:</h4>
+        <pre className={styles.code}>{'email-api-key: your-api-key'}</pre>
+        <h4>Request Body:</h4>
+        <pre className={styles.code}>{JSON.stringify(emailData, null, 2)}</pre>
+      </section>
 
-      <h3>GET /email-api/emails/:id</h3>
-      <p>Retrieves an email by its ID.</p>
-      <h4>Parameters:</h4>
-      <ul>
-        <li>
-          <strong>id</strong>: The ID of the email to retrieve.
-        </li>
-      </ul>
+      <section className={styles.endpoint}>
+        <h3>GET /email-api/emails/:id</h3>
+        <p>
+          Retrieves an email by its ID. This endpoint requires an API key to be
+          provided in the 'email-api-key' header.
+        </p>
+        <h4>Request Headers:</h4>
+        <pre className={styles.code}>{'email-api-key: your-api-key'}</pre>
+        <h4>Parameters:</h4>
+        <ul className={styles.parameters}>
+          <li>
+            <strong>id</strong>: The ID of the email to retrieve.
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };

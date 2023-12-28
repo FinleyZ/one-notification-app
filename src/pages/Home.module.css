@@ -1,0 +1,30 @@
+/* temporal styling file */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.title {
+  font-size: 2em;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #666;
+}
+
+.endpoint {
+  margin-bottom: 2em;
+}
+
+.code {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.parameters {
+  list-style-type: none;
+}
