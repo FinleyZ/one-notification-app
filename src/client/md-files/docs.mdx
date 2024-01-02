@@ -1,0 +1,35 @@
+---
+title: My Documentation Page
+---
+
+# Email API Documentation
+
+## Endpoints
+
+### POST /email-api/send-email
+
+Sends an email. This endpoint requires an API key to be provided in the 'email-api-key' header.
+
+**Request Headers:**
+
+    email-api-key: your-api-key
+
+**Request Body:**
+
+    {
+      "recipient": "recipient@example.com",
+      "subject": "Email Subject",
+      "content": "Email body text"
+    }
+
+### GET /email-api/emails/:id
+
+Retrieves an email by its ID. This endpoint requires an API key to be provided in the 'email-api-key' header.
+
+**Request Headers:**
+
+    email-api-key: your-api-key
+
+**Parameters:**
+
+- **id**: The ID of the email to retrieve.
